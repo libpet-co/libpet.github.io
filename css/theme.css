@@ -1014,8 +1014,12 @@ body{
   position: absolute;
   bottom: 15%;
 }
-
+/*
 *::-webkit-media-controls-start-playback-button {
   display: none!important;
   -webkit-appearance: none;
+}
+*/
+.custom-video-controls {
+  z-index: 2147483647;
 }
