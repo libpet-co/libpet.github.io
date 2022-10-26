@@ -1044,3 +1044,11 @@ video::-webkit-media-controls-volume-slider {
 video::-webkit-media-controls-enclosure{ 
     display: none;
 }
+
+video{
+  pointer-events: none;
+}
+
+video::-webkit-media-controls-start-playback-button {
+  display: none;
+}
