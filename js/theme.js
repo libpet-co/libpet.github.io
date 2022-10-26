@@ -80,9 +80,13 @@ scene.on("update", e =>{
 
 setInterval(() => {
   delay += (scrollpos - delay) * accelamount;
-  console.log(scrollpos, delay);
-  if (delay==scrollpos){
+  console.log(roundToTwo(scrollpos), roundToTwo(delay));
+  if (roundToTwo(delay)==roundToTwo(scrollpos)){
     video.pause();
   }  
   video.currentTime = delay;
 }, 33.3);
+
+function roundToTwo(num) {
+  return +(Math.round(num + "e+2")  + "e-2");
+}
