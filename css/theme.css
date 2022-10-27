@@ -741,7 +741,7 @@ footer ul li a.active,footer ul li a:active,footer ul li a:focus,footer ul li a:
 .intro-section p{
   margin-top: 10px;
   text-align: center;
-  font-size: 2vw;
+  font-size: 3vw;
   font-weight: 600;
   color: #9E9E9E;
   margin-left: 0;
@@ -766,7 +766,7 @@ footer ul li a.active,footer ul li a:active,footer ul li a:focus,footer ul li a:
   letter-spacing: 1px;
   cursor: pointer;
   padding: 12px 28px;
-  font-size: 1.5vw;
+  font-size: 15px;
   margin-left: 10px;
   margin-right: 10px;
   text-transform: none;
