@@ -5,8 +5,7 @@
     position: relative;
     width: 100%;
     height: auto;
-    /* height: auto;
-    min-height: 400px; */
+    min-height: 400px;
     background: #000000;
 }
 
@@ -35,13 +34,14 @@
 /* .carousel .carousel-img::after {
     position: absolute;
     content: "";
-    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 1;
-} */
+    height: 35%;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(2px);
+
+}  */
 
 .carousel .carousel-img img {
     max-width: 100%;
@@ -99,7 +99,7 @@
     .carousel,
     .carousel .carousel-item,
     .carousel .carousel-text {
-        height: calc(100vh - 105px);
+        height: auto;
     }
     
     .carousel .carousel-text h1 {
@@ -121,7 +121,7 @@
     .carousel,
     .carousel .carousel-item,
     .carousel .carousel-text {
-        height: calc(100vh - 70px);
+        height: auto;
     }
     
     .carousel .carousel-text h1 {
@@ -163,11 +163,383 @@ svg {
 }
 
 .team-word-background{
-    position: absolute;
+    z-index: 1001;
+    height: 35%; 
+    width: 100%;
+    position: absolute; 
     bottom: 0;
     left: 0;
-    z-index: 12;
-    background-color: rgba(255, 0, 0 ,1);
-    height: 100px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(2px);
+}
+
+.team-word-container{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.team-word-word{
+    width: 50%;    
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+}
+
+.team-word-title{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 42px;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    color: #518EF8;
+}
+
+.team-word-content{
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+@media (max-width: 991.98px) {
+    .team-word-title{
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 42px;
+        text-transform: capitalize;
+        padding-bottom: 10px;
+        color: #518EF8;
+    }
     
+    .team-word-content{
+        font-weight: 400;
+        font-size: 12px;
+        color: #FFFFFF;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .team-word-title{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 42px;
+        text-transform: capitalize;
+        padding-bottom: 0px;
+        color: #518EF8;
+    }
+    
+    .team-word-content{
+        font-weight: 400;
+        font-size: 12px;
+        color: #FFFFFF;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .team-word-title{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 42px;
+        text-transform: capitalize;
+        padding-bottom: 0px;
+        color: #518EF8;
+    }
+    
+    .team-word-content{
+        font-weight: 400;
+        font-size: 10px;
+        color: #FFFFFF;
+    }
+}
+
+.team-background-2 {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+.centered {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+display: flex;
+flex-direction: column;
+}
+
+.team-2-logo{
+    width: 65px;
+}
+
+.team-2-slogan{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 3;
+    white-space: nowrap;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 500px){
+    .team-2-slogan{
+        font-size: 18px;
+    }
+
+    .team-2-logo{
+        width: 55px;
+    }
+}
+
+@media (max-width: 400px){
+    .team-2-slogan{
+        font-size: 15px;
+    }
+
+    .team-2-logo{
+        width: 45px;
+    }
+}
+
+@media (max-width: 300px){
+    .team-2-slogan{
+        font-size: 12px;
+    }
+
+    .team-2-logo{
+        width: 35px;
+    }
+}
+
+.meet-our-team{
+    background-color: #F5F5F5;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.team-card{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+
+.team-card img{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/*******************************/
+/********** Menu CSS ***********/
+/*******************************/
+/* .food {
+    position: relative;
+    width: 100%;
+    padding: 90px 0 60px 0;
+    margin: 45px 0;
+    background: rgba(0, 0, 0, .04);
+}
+
+.food .food-item {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 50px 30px 30px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .08);
+    transition: .3s;
+}
+
+.food .food-item:hover {
+    box-shadow: none;
+}
+
+.food .food-item i {
+    position: relative;
+    display: inline-block;
+    color: #fbaf32;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 20px;
+    transition: .3s;
+}
+
+.food .food-item:hover i {
+    color: #719a0a;
+}
+
+.food .food-item i::after {
+    position: absolute;
+    content: "";
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    top: -20px;
+    left: -15px;
+    border: 3px dotted #fbaf32;
+    border-right: transparent;
+    border-bottom: transparent;
+    border-radius: 100px;
+    transition: .3s;
+}
+
+.food .food-item:hover i::after {
+    border: 3px dotted #719a0a;
+    border-right: transparent;
+    border-bottom: transparent;
+}
+
+.food .food-item h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.food .food-item a {
+    position: relative;
+    font-size: 16px;
+}
+
+.food .food-item a::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 1px;
+    bottom: 0;
+    left: calc(50% - 25px);
+    background: #fbaf32;
+    transition: .3s;
+}
+
+.food .food-item a:hover::after {
+    width: 100%;
+    left: 0;
+    background: #719a0a;
+}
+
+.food-item img{
+    width: auto;
+    margin:auto;
+} */
+
+/*******************************/
+/*********** Team CSS **********/
+/*******************************/
+.team {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+    background-color: #F5F5F5;
+}
+
+.team .team-item {
+    position: relative;
+    margin-bottom: 30px;
+    background: #ffffff;
+    border-radius: 20px;
+    border: 2px solid #FFFFFF;
+}
+
+.team .team-img {
+    position: relative;
+
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+    height: auto;
+}
+
+.team .team-img img {
+    position: relative;
+    left: 30%;
+    margin-top: 10vh;
+}
+
+/* .team .team-item:hover img {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.team .team-social {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+.team .team-social a {
+    position: relative;
+    margin: 0 3px;
+    margin-top: 100px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #ffffff;
+    background: #fbaf32;
+    opacity: 0;
+}
+
+.team .team-social a:hover {
+    color: #ffffff;
+    background: #719a0a;
+}
+
+.team .team-item:hover .team-social {
+    background: rgba(256, 256, 256, .5);
+}
+
+.team .team-item:hover .team-social a:first-child {
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s 0s;
+}
+
+.team .team-item:hover .team-social a:nth-child(2) {
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s .1s;
+}
+
+.team .team-item:hover .team-social a:nth-child(3) {
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s .2s;
+}
+
+.team .team-item:hover .team-social a:nth-child(4) {
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s .3s;
+} */
+
+.team .team-text {
+    position: absolute;
+    padding: 25px 15px;
+    top:0;
+    left: 0;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, .07);
+    border-top: none;
+    border-radius: 0 0 15px 15px;
+}
+
+.team .team-text h2 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.team .team-text p {
+    margin: 0;
+    font-size: 16px;
 }
