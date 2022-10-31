@@ -182,9 +182,27 @@ svg {
 
 .team-word-word{
     width: 50%;    
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
     padding-top: 1%;
+}
+
+@media (max-width: 720px){
+    .team-word-word{
+        width: 50%;    
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 1%;
+    }
+}
+
+@media (max-width: 300px){
+    .team-word-word{
+        width: 50%;    
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 1%;
+    }
 }
 
 .team-word-title{
@@ -198,7 +216,7 @@ svg {
 
 .team-word-content{
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     color: #FFFFFF;
 }
 
@@ -309,27 +327,6 @@ flex-direction: column;
         width: 35px;
     }
 }
-
-.meet-our-team{
-    background-color: #F5F5F5;
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-
-.team-card{
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    background-color: #FFFFFF;
-    border: 2px solid #FFFFFF;
-}
-
-.team-card img{
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
 
 /*******************************/
 /********** Menu CSS ***********/
@@ -452,8 +449,7 @@ flex-direction: column;
 
 .team .team-img img {
     position: relative;
-    left: 30%;
-    margin-top: 10vh;
+    margin-top: 20vh;
 }
 
 /* .team .team-item:hover img {
@@ -522,24 +518,165 @@ flex-direction: column;
     transition: .3s .3s;
 } */
 
+
+
+
 .team .team-text {
     position: absolute;
-    padding: 25px 15px;
-    top:0;
-    left: 0;
-    text-align: center;
-    background: #ffffff;
-    border: 1px solid rgba(0, 0, 0, .07);
+    padding: 25px 30px;
+    background: transparent;
     border-top: none;
     border-radius: 0 0 15px 15px;
+    left: 0;
+    top: 25%;
+}
+
+@media (max-width: 370px){
+    .team .team-text{
+        position: absolute;
+        left:0;
+        bottom: 10%;
+        top: 60%;
+        z-index: 3;
+    }
+}
+
+.team .team-nickname {
+    position: absolute;
+    padding: 60px 30px;
+    background: transparent;
+    border-top: none;
+    border-radius: 0 0 15px 15px;
+    left: 0;
+    top: 0;
+}
+
+.team .team-nickname h1{
+    color: #518EF8;
+    font-size: 48px;
+    font-weight: 700;
 }
 
 .team .team-text h2 {
     font-size: 22px;
     font-weight: 700;
+    color: #518EF8;
 }
 
 .team .team-text p {
     margin: 0;
     font-size: 16px;
 }
+
+.team-image{
+    position: absolute;
+    text-align: center;
+    background: transparent;
+    border-top: none;
+    bottom: 0;
+    right: 0;
+    z-index:2;
+}
+
+.photo-container{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.section-header{
+    margin-bottom: 10%;
+}
+
+.maintanence-btn-2 {
+    background: linear-gradient(92.31deg, #B2CBF0 0.44%, #1C6BF3 108.25%);
+    width: auto;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 10px 25px;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+    position: relative;
+    top: 100%;
+}
+
+.recruit{
+    display: flex;
+    flex-direction: row;
+}
+
+.recruit-box-1{
+    width: 50%;
+    justify-content: center;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #518EF8, #FFFFFF);
+}
+
+.recruit-box-2{
+    width: 50%;
+    justify-content: center;
+}
+
+.recruit .title h1{
+    color: #FFFFFF;
+    text-align: left;
+    padding-left: 10%;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 550;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .center-button{
+    margin:0 auto;
+    display:block;
+  }
+
+  .col-md-offset-right-1 {
+    margin-right: 8.33333333%;
+  }
+
+  @media (max-width:992px){
+    .col-md-offset-right-1 {
+        margin-right: 0;
+    }
+  }
+
+  @media (max-width: 768px){
+    .col-md-offset-right-1 {
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+  }
+
+  @media (max-width: 550px){
+    .col-md-offset-right-1 {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+  }
+  @media (max-width: 350px){
+    .col-md-offset-right-1 {
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+  }

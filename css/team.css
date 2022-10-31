@@ -83,7 +83,7 @@ p {
 	color:#fdcc52
 }
 .navbar-default .nav>li.active>a,.navbar-default .nav>li.active>a:focus {
-  color: #bb0000!important;
+  color: #ffffff!important;
 	background-color:transparent
 }
 .navbar-default .nav>li.active>a:focus:hover,.navbar-default .nav>li.active>a:hover {
@@ -376,9 +376,9 @@ section.couponsection h2 {
 section#faq {
   background-color:#edeef3;
 }
-section#faq p{
+/* section#faq p{
   font-size:16px;
-}
+} */
 section#faq .section-heading {
 	margin-bottom:40px
 }
@@ -943,8 +943,56 @@ body{
 
 .box-1{
   border-radius: 47px;
-  height: 100%;
+  height: 410px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #518EF8, #FFFFFF);
+}
+
+@media (max-width:767px) {
+  .col-xs-12{
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+@media (max-width:550px) {
+  .col-xs-12{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media (max-width:465px) {
+  .col-xs-12{
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+
+.box-2{
   border-radius: 47px;
+  height: 410px;
+  border-radius: 20px;
+  background: linear-gradient(360deg, #518EF8, #FFFFFF);
+}
+
+.title h1{
+  color: #FFFFFF;
+  text-align: left;
+  padding-left: 10%;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 550;
+}
+
+.title p{
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
 }
 
 .box-1 img{
@@ -956,10 +1004,9 @@ body{
 }
 
 .box-2{
-  border-radius: 47px;
+  border-radius: 20px;
   margin-bottom: 10vh;
-  height: 100%;
-  border-radius: 47px;
+
 }
 
 .box-2 img{
@@ -1586,10 +1633,7 @@ body{
   margin: auto;
 }
 
-@media (max-width: 992px){
-.col-md-6 {
-    width: 100%;
-}
+
 
 .detail-box-4{
   padding-top: 10%;
@@ -1965,7 +2009,3 @@ body{
   margin: auto;
 }
 
-img{
-  width: 100%:
-  overflow: hidden;
-}
