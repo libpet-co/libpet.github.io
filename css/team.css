@@ -948,21 +948,21 @@ body{
   background: linear-gradient(180deg, #518EF8, #FFFFFF);
 }
 
-@media (max-width:767px) {
+@media (max-width:768px) {
   .col-xs-12{
     margin-left: 20%;
     margin-right: 20%;
   }
 }
 
-@media (max-width:550px) {
+@media (max-width:640px) {
   .col-xs-12{
     margin-left: 10%;
     margin-right: 10%;
   }
 }
 
-@media (max-width:465px) {
+@media (max-width:470px) {
   .col-xs-12{
     margin-left: 0%;
     margin-right: 0%;
