@@ -246,6 +246,17 @@
   margin: auto;
 }
 
+.img-box-6{
+  transform: translateX(10%);
+}
+
+@media only screen and (max-width: 992px){
+
+  .img-box-6{
+    transform: translateX(10%);
+  }
+}
+
 .detail-box-6{
   padding-top: 10%;
   padding-left: 10%;
