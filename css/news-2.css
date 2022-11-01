@@ -741,6 +741,7 @@ flex-direction: column;
   }
 
   .news .news-image{
+    
     display: flex;
     justify-content: center;
   }
