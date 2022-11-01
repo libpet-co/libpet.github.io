@@ -253,8 +253,8 @@
 @media only screen and (max-width: 992px){
 
   .img-box-6{
-    transform: translateX(10%);
-    
+    transform: translateX(0%);
+
   }
 }
 
