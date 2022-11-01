@@ -947,7 +947,9 @@ body{
   background: linear-gradient(180deg, #518EF8, #FFFFFF);
 }
 
-@media (max-width:768px) {
+
+
+/* @media (max-width:768px) {
   .col-xs-12{
     margin-left: 20%;
     margin-right: 20%;
@@ -966,7 +968,7 @@ body{
     margin-left: 0%;
     margin-right: 0%;
   }
-}
+} */
 
 .box-2{
   border-radius: 47px;
