@@ -554,7 +554,7 @@ footer ul li a.active,footer ul li a:active,footer ul li a:focus,footer ul li a:
 }
 
 .spacer-h1{
-  font-size: 2vw;
+  font-size: 24px;
   font-weight: 500;
   font-family: 'Roboto Flex', sans-serif;
   background-image: linear-gradient(45deg, #000 -200%, #fff -100%, #323232 0%);
@@ -728,6 +728,14 @@ footer ul li a.active,footer ul li a:active,footer ul li a:focus,footer ul li a:
 .intro-section{
   height: 100vh;
   background-color: black;
+}
+
+.intro-section-text{
+  position: absolute;
+  width: 100vw;
+  top: 40vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
 }
 
 .intro-section h1{

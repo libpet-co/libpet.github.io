@@ -12,7 +12,7 @@ let headings = gsap.utils.toArray(".spacer-h1");
 
 headings.forEach(function (element, index) {
   gsap.to(element, {
-    backgroundImage: "linear-gradient(45deg, #000 0%, #fff 200%, #323232 400%)",
+    backgroundImage: "linear-gradient(45deg, #000 0%, #fff 100%, #323232 200%)",
     duration: 2,
     ease: "none",
     scrollTrigger: {
