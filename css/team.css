@@ -985,6 +985,28 @@ body{
   font-weight: 550;
 }
 
+@media (max-width:420px){
+  .title h1{
+    color: #FFFFFF;
+    text-align: left;
+    padding-left: 10%;
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 550;
+  }
+}
+
+@media (max-width:300px){
+  .title h1{
+    color: #FFFFFF;
+    text-align: left;
+    padding-left: 10%;
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 550;
+  }
+}
+
 .title p{
   padding-left: 10%;
   padding-right: 10%;

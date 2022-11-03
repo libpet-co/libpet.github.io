@@ -732,10 +732,11 @@ footer ul li a.active,footer ul li a:active,footer ul li a:focus,footer ul li a:
 
 .intro-section-text{
   position: absolute;
-  width: 100vw;
+  width: auto;
   top: 40vh;
   left: 50vw;
   transform: translate(-50%, -50%);
+  white-space: nowrap;
 }
 
 .intro-section h1{
@@ -1108,10 +1109,8 @@ body{
 }
 
 .content{
-  background-color: #333;
+  background-color: #000;
   width: 100%;
-  position: relative;
-  top: -30%;
 }
 
 .content p {
@@ -1134,7 +1133,13 @@ body{
 
 .content-main{
   padding: 10px;
-  background-image: radial-gradient(circle at center, rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.5) 65%, rgba(0, 0, 0, 1) 100%);
+  /* background-image: radial-gradient(circle at center, rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.5) 65%, rgba(0, 0, 0, 1) 100%); */
+  background-color: #000;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('../img/background-index.png');
 }
 
 .content-top:before {
@@ -1230,10 +1235,10 @@ body{
   justify-content: center;
 }
 
-.two-box-container{
+/* .two-box-container{
   position: relative;
   top:-70%;
-}
+} */
 
 
 .maintanence-btn{
