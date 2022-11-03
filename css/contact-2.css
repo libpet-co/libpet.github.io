@@ -1,43 +1,62 @@
 /*******************************/
 /********* Contact CSS *********/
 /*******************************/
-.contact {
+.contact-2 {
     position: relative;
     width: 100%;
     padding: 45px 0 15px 0;
 }
 
-.contact .contact-information {
+.contact-2 .contact-information {
     min-height: 150px;
     margin: 0 0 30px 0;
     padding: 30px 15px 0 15px;
     background: rgba(0, 0, 0, .04);
 }
 
-.contact .contact-info {
+@media (max-width: 768px){
+    .contact-2 .contact-information {
+        min-height: 150px;
+        margin: 0 10% 30px 10%;
+        padding: 30px 15px 0 15px;
+        background: rgba(0, 0, 0, .04);
+    }
+}
+
+@media (max-width: 370px){
+    .contact-2 .contact-information {
+        min-height: 150px;
+        margin: 0 0 30px 0;
+        padding: 30px 15px 0 15px;
+        background: rgba(0, 0, 0, .04);
+        border-radius: 20px;
+    }
+}
+
+.contact-2 .contact-info {
     position: relative;
     display: flex;
     align-items: center;
     margin-bottom: 30px;
 }
 
-.contact .contact-icon {
+.contact-2 .contact-icon {
     position: relative;
     width: 50px;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #fbaf32;
+    background: #000000;
     border-radius: 50px;
 }
 
-.contact .contact-icon i {
+.contact-2 .contact-icon i {
     font-size: 18px;
     color: #ffffff;
 }
 
-.contact .contact-text {
+.contact-2 .contact-text {
     position: relative;
     width: calc(100% - 50px);
     display: flex;
@@ -45,43 +64,43 @@
     padding-left: 15px;
 }
 
-.contact .contact-text h3 {
+.contact-2 .contact-text h3 {
     font-size: 18px;
     font-weight: 700;
-    color: #719a0a;
+    color: #000000;
 }
 
-.contact .contact-text p {
+.contact-2 .contact-text p {
     margin: 0;
-    font-size: 16px;
+    font-size: 12px;
     color: #454545;
 }
 
-.contact .contact-social a {
+.contact-2 .contact-social a {
     margin-right: 10px;
     font-size: 18px;
-    color: #fbaf32;
+    color: #000000;
 }
 
-.contact .contact-social a:hover {
+.contact-2 .contact-social a:hover {
     color: #719a0a;
 }
 
-.contact .contact-form iframe {
+.contact-2 .contact-form iframe {
     width: 100%;
     height: 380px;
     border-radius: 15px;
     margin-bottom: 25px;
 }
 
-.contact .contact-form input {
+.contact-2 .contact-form input {
     padding: 15px;
     background: none;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, .1);
 }
 
-.contact .contact-form textarea {
+.contact-2 .contact-form textarea {
     height: 150px;
     padding: 8px 15px;
     background: none;
@@ -89,8 +108,15 @@
     border: 1px solid rgba(0, 0, 0, .1);
 }
 
-.contact .help-block ul {
+.contact-2 .help-block ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+.contact-form iframe {
+    width: 100%;
+    height: 380px;
+    border-radius: 15px;
+    margin-bottom: 25px;
 }
