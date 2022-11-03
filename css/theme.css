@@ -775,10 +775,16 @@ footer ul li a.active,footer ul li a:active,footer ul li a:focus,footer ul li a:
   letter-spacing: 1px;
   cursor: pointer;
   padding: 12px 28px;
-  font-size: 15px;
+  font-size: 14px;
   margin-left: 10px;
   margin-right: 10px;
   text-transform: none;
+}
+
+@media (max-width: 400px){
+  .intro-section .btn{
+    font-size: 12px;
+  }
 }
 
 .button-center{
@@ -1179,9 +1185,11 @@ body{
     letter-spacing: 1px;
     cursor: pointer;
     padding: 10px 25px;
-    font-size: 1.5vw;
+    font-size: 12px;
     margin-left: 10px;
     margin-right: 10px;
+    width: 100%;
+    white-space: nowrap;
 }
 
 
