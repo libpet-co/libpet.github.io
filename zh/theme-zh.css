@@ -1,4 +1,4 @@
- .heading-font {
+.heading-font {
 	font-family:Catamaran,Helvetica,Arial,sans-serif;
 	font-weight:200;
 	letter-spacing:1px
@@ -749,7 +749,7 @@ footer ul li a.active,footer ul li a:active,footer ul li a:focus,footer ul li a:
 .intro-section h1{
   padding-top: 200px;
   text-align: center;
-  font-size: 8vw;
+  font-size: 10vw;
   font-weight: 600;
   color: white;
   margin-left: 0;
@@ -1129,6 +1129,25 @@ body{
   font-weight: 600;
   font-size: 56px;
 }
+
+@media (min-width: 540px){
+  .hidden-ss {
+    display: none !important;
+  }
+}
+
+@media (max-width: 320px){
+  .content .content-main .title{
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 290px){
+  .content .content-main .title{
+    font-size: 36px;
+  }
+}
+
 .content-top, .content-bottom{
   width: 100%;
   height: 50vh;

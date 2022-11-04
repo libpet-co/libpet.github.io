@@ -90,3 +90,8 @@ setInterval(() => {
 function roundToTwo(num) {
   return +(Math.round(num + "e+2")  + "e-2");
 }
+
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
