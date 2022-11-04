@@ -25,12 +25,6 @@
             nav : false,
         });
 
-    var myImg = document.querySelector(".img");
-    var currHeight = myImg.clientHeight;
-    var element = document.querySelector(".carousel");
-    element.style.height = currHeight;
-
-
 
 }(jQuery);
 

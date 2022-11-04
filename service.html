@@ -27,6 +27,8 @@
     <!-- Theme CSS -->
     <link href="css/service.css" rel="stylesheet">
     <link href="css/service-2.css" rel="stylesheet">
+    <link href="css/dropdown.css" rel="stylesheet">
+
 
 
 </head>
@@ -43,45 +45,60 @@
 -->
 
 
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container" style="padding-left: 0; padding-right:0; width: 90%;">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="background-color:black;">
-                    <span class="sr-only">Toggle navigation</span> <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="index.html"><img class="iconlogo" src="img/logo.svg" width="50"></a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="product.html">Product</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#" style="color:white;">Service</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="team.html">About Us</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="news.html">Event</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="contact.html">Contact</a>
-                    </li>
-                    <!--
-                    <li>
-                        <a target="_blank" href="#event" class="menuhighlight">Contact</a>
-                    </li>
-                  -->
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container" style="padding-left: 0; padding-right:0; width: 90%;">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="background-color:black;">
+                <span class="sr-only">Toggle navigation</span> <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="index.html"><img class="iconlogo" src="img/icon.png" width="50"></a>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right" style="margin-right: 10%;">
+                <li>
+                    <a class="page-scroll" href="product.html">Product</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="service.html" style="color: #FFFFFF;">Service</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="team.html">About Us</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="news.html">Event</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="contact.html">Contact</a>
+                </li>
+                <!--
+                <li>
+                    <a target="_blank" href="#event" class="menuhighlight">Contact</a>
+                </li>
+            -->
+            </ul>
+
+        </div>
+        <!-- /.navbar-collapse -->
+        
+    </div>
+    <!-- /.container-fluid -->
+
+    <div class="dropdown div-inline">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+        </button>
+        <div class="dropdown-menu pull-right" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item float-right" href="#">Global - English</a>
+        <a class="dropdown-item float-right" href="#">China - 繁體中文</a>
+        <a class="dropdown-item float-right" href="#">Korea - 한국어</a>
+        <a class="dropdown-item float-right" href="#">Japan - 日本語</a>
+
+        </div>
+    </div>
+  </nav>
 
 
     <section class="about_section layout_padding2-top layout_padding-bottom" style="padding-top: 90px; padding-bottom:0; background-color:black;">
