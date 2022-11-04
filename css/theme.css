@@ -49,6 +49,13 @@ p {
 	line-height:1.5;
 	margin-bottom:20px
 }
+
+@media (max-width: 350px){
+  p{
+    font-size: 12px;
+  }
+}
+
 .navbar-default {
 	background-color:#000;
 	border-color:rgba(34,34,34,.05);
