@@ -50,7 +50,7 @@ p {
 	margin-bottom:20px
 }
 
-@media (max-width: 350px){
+@media (max-width: 360px){
   p{
     font-size: 12px;
   }
