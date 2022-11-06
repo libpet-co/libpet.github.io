@@ -730,7 +730,7 @@ flex-direction: column;
     color: #000000;
   }
 
-  @media (max-width: 450px){
+  @media (max-width: 560px){
     .news .news-text h2{
         font-size: 18px;
     }
@@ -747,15 +747,15 @@ flex-direction: column;
     }
   }
 
-  @media (max-width: 290px){
+  @media (max-width: 350px){
     .news .news-text h2{
-        font-size: 16px;
+        font-size: 14px;
     }
     .news .news-text h1{
-        font-size: 18px;
+        font-size: 16px;
     }
     .news .news-text h2{
-        font-size: 16px;
+        font-size: 14px;
     }
     .news .news-text p{
         font-size: 12px;
