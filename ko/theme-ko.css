@@ -329,6 +329,13 @@ section {
 section h2 {
 	font-size:50px
 }
+
+#coupon{
+  background: url(../img/index-background.png) no-repeat center center;
+
+  background-size: auto 100%;
+}
+
 section.couponsection {
   padding: 50px 0;
   position: relative;
