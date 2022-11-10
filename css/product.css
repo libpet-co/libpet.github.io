@@ -1216,6 +1216,8 @@ body{
   width: 100%;
 }
 
+
+
 @media only screen and (max-width: 992px){
 
   .about_section .img-box img {
@@ -1224,6 +1226,8 @@ body{
     display: block;
     margin: auto;
   }
+
+
 }
 
 .detail{
