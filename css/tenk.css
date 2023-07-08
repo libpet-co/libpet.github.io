@@ -1,0 +1,311 @@
+/* Scroll Container */
+
+section {
+    height: auto;
+    scroll-snap-align: start;
+    padding: 0;
+}
+
+.scroll-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: auto;
+}
+
+/* transition-one See the Magic start */
+.transition-one {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    min-height: 500px;
+    margin-bottom: 400px;
+}
+
+#transition-word {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    /* transition: fill 0.5s ease forward 3s; */
+}
+
+#transition-word .path-stroke:nth-child(2) {
+    stroke-dasharray: 306;
+    stroke-dashoffset: 306;
+    /* animation: line-anim 2s ease forwards; */
+}
+
+#transition-word .path-stroke:nth-child(3) {
+    stroke-dasharray: 313;
+    stroke-dashoffset: 313;
+    /* animation: line-anim 2s ease forwards 0.3s; */
+
+}
+
+#transition-word .path-stroke:nth-child(4) {
+    stroke-dasharray: 313;
+    stroke-dashoffset: 313;
+    /* animation: line-anim 2s ease forwards 0.6s; */
+
+}
+
+#transition-word .path-stroke:nth-child(5) {
+    stroke-dasharray: 248;
+    stroke-dashoffset: 248;
+    /* animation: line-anim 2s ease forwards 0.9s; */
+}
+
+#transition-word .path-stroke:nth-child(6) {
+    stroke-dasharray: 326;
+    stroke-dashoffset: 326;
+    /* animation: line-anim 2s ease forwards 1.2s; */
+
+}
+
+#transition-word .path-stroke:nth-child(7) {
+    stroke-dasharray: 313;
+    stroke-dashoffset: 313;
+    /* animation: line-anim 2s ease forwards 1.5s; */
+
+}
+
+#transition-word .path-stroke:nth-child(8) {
+    stroke-dasharray: 465;
+    stroke-dashoffset: 465;
+    /* animation: line-anim 2s ease forwards 1.8s; */
+
+}
+
+#transition-word .path-stroke:nth-child(9) {
+    stroke-dasharray: 339;
+    stroke-dashoffset: 339;
+    /* animation: line-anim 2s ease forwards 2.1s; */
+
+}
+
+#transition-word .path-stroke:nth-child(10) {
+    stroke-dasharray: 424;
+    stroke-dashoffset: 424;
+    /* animation: line-anim 2s ease forwards 2.4s; */
+
+}
+
+#transition-word .path-stroke:nth-child(11) {
+    stroke-dasharray: 164;
+    stroke-dashoffset: 164;
+    /* animation: line-anim 2s ease forwards 2.7s; */
+
+}
+
+#transition-word .path-stroke:nth-child(12) {
+    stroke-dasharray: 203;
+    stroke-dashoffset: 203;
+    /* animation: line-anim 2s ease forwards 3s; */
+
+}
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill {
+    to {
+        fill: black;
+    }
+}
+
+/* transition-one See the Magic end */
+/* transition section start*/
+.transition-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    height: 100vh;
+    min-height: 500px;
+    position: relative;
+}
+
+.transition-section .pin-transition{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* transition section end*/
+
+/* video container start */
+
+.swiper-container [class^="swiper-button-"]::after {
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #FFF !important;
+}
+
+.swiper-container {
+    width: 100%;
+}
+
+.swiper {
+    width: 90%;
+    aspect-ratio: 1.78;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide .video-slide {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 90vw;
+}
+
+.autoplay-progress {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        font-weight: bold;
+        color: #FFF;
+}
+
+.autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+        top: 0px;
+        z-index: 10;
+    width: 100%;
+    height: 100%;
+        stroke-width: 4px;
+        stroke: #FFFFFF;
+        fill: none;
+        stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+        stroke-dasharray: 125.6;
+        transform: rotate(-90deg);
+}
+
+.video-text-container{
+    position: absolute;
+    top: 5%;
+}
+
+/* video container end */
+
+
+/* pinContainer start */
+#pinContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-perspective: 1000;
+            perspective: 1000;
+}
+#slideContainer {
+    width: 400%; /* to contain 4 panels, each with 100% of window width */
+    height: 100%;
+}
+.panel {
+    height: 100%;
+    width: 25%; /* relative to parent -> 25% of 400% = 100% of window width */
+    float: left;
+}
+
+.blue{
+    background-color: blue;
+}
+.turqoise{
+    background-color: turquoise;
+}
+.green{
+    background-color: green;
+}
+.bordeaux{
+    background-color: brown;
+}
+/* pinContainer end */ 
+
+
+.intro .intro-image{
+    width: 100%;
+}
+
+.intro .intro-image .intro-text-container h1{
+    font-size: 3rem;
+    color: #000000;
+}
+
+.intro .intro-image .intro-text-container p{
+    font-size: 1.3rem;
+    color: #000000;
+    width: 40%;
+}
+
+.intro .intro-image .btn{
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
+.ca3-scroll-down-link{
+    color: #000000;
+    width: 30px;
+    margin: 0 0 0 -10px;
+}
+
+.ca3-scroll-down-arrow{
+    background-image: url('../img/arrow-black.svg');
+}
+
+@media (max-width: 768px) {
+    .intro .intro-image .intro-text-container p{
+        width: 40%;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .intro .intro-image .intro-text-container p{
+        width: 50%;
+        font-size: 1rem;
+    }
+    .intro .intro-text-container{
+        top: 10%;
+    }
+}
+
+@media (max-width: 425px) {
+    .intro .intro-image .intro-text-container h1{
+        font-size: 2rem;
+    }
+    .intro .intro-image .intro-text-container p{
+        width: 50%;
+        font-size: 0.8rem;
+    }
+    .intro .intro-image .btn{
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+}
+
