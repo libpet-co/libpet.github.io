@@ -1922,7 +1922,7 @@ body{
     flex-direction: column-reverse;
   }
   .images img{
-    opacity: 0.7;
+    opacity: 1;
   }
 
   .images .left{
@@ -1970,7 +1970,7 @@ body{
     transition: none;
   } 
   .images .hero-text h3, .btn{
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 
