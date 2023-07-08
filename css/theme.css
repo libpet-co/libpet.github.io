@@ -27,27 +27,28 @@ a{
   NAVIGATION              
 -----------------------------------------*/
 .nav-container{
-  min-height: 50px;
-  height: 50px;
+  min-height: 70px;
+  height: 70px;
 }
 
 @media (max-width: 768px){
   .nav-container{
     min-height: 35px;
     height: 35px;
+    margin-top: 15px;
   }
 }
 
 .navbar {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
 
 .navbar-brand {
   color: var(--primary-color);
   font-size: var(--h5-font-size);
   font-weight: var(--font-weight-bold);
-  margin: 0 30px 0 50px;
+  margin: 0 20px 0 50px;
   padding: 0;
   text-align: center;
   position: relative;
@@ -1832,7 +1833,7 @@ body{
 
 .images .hero-text{
   position: relative;
-  top: 20%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -1850,7 +1851,7 @@ body{
   /* color: rgba(255, 255, 255, 0.3); */
 }
 
-.images .hero-text h3{
+.images .hero-text h3, .btn{
   position: relative;
   color: black;
   z-index: 10;
@@ -1911,6 +1912,9 @@ body{
   .shadow-left-text h1{
     font-size: 4rem;
   }
+  .main .images .btn{
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 735px) {
@@ -1918,16 +1922,18 @@ body{
     flex-direction: column-reverse;
   }
   .images img{
-    opacity: 0.6;
+    opacity: 0.7;
   }
 
   .images .left{
     width: 100%;
     transition: none;
+    display: flex;
+    flex-direction: column;
   }
   .left .main-image-1 {
     left: 50%;
-    height: 90%;
+    height: 60%;
   }
 
   .images .right{
@@ -1936,14 +1942,16 @@ body{
   }
   .right .main-image-2{
     right: 50%;
-    height: 90%;
+    height: 60%;
   }
   .right-transparent{
     height: 50%;
     width: 100%;
     left: 0;
   }
-
+  .main{
+    height: 1080px;
+  }
   .main .main-divider{
     top: 50%;
     left: 0%;
@@ -1951,7 +1959,7 @@ body{
     width: 100%;
   }
   .images .hero-text{
-    top: 30%;
+    top: 15%;
   }  
   .images .hero-text h1{
     font-size: 28px;
@@ -1961,6 +1969,9 @@ body{
     font-size: 14px;
     transition: none;
   } 
+  .images .hero-text h3, .btn{
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 425px){
@@ -2561,6 +2572,7 @@ footer{
   .underline {
     text-decoration: none;
   }
+
 }
 
 .mission span{
