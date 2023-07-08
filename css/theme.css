@@ -48,7 +48,7 @@ a{
   color: var(--primary-color);
   font-size: var(--h5-font-size);
   font-weight: var(--font-weight-bold);
-  margin: 0 20px 0 50px;
+  margin: 0 20px 0 20px;
   padding: 0;
   text-align: center;
   position: relative;
@@ -1858,6 +1858,7 @@ body{
   margin-bottom: 0;
   font-size: 21px;
   font-weight: 400;
+  letter-spacing: 1px;
 }
 
 .shadow-right-text h1{
@@ -2549,6 +2550,10 @@ footer{
   color: #000000;
 }
 
+.mission .btn{
+  float: right;
+}
+
 @media (max-width:768px) {
   .mission .hero-text {
     font-size: 28px;
@@ -2559,6 +2564,10 @@ footer{
   .mission .hero-text {
     font-size: 24px;
   }
+  .mission .btn{
+    font-size: 16px;
+  }
+
 }
 
 @media (max-width:375px) {
@@ -2589,5 +2598,18 @@ footer{
   .mission .hero-text {
     font-size: 18px;
   }
+  .mission .btn{
+    font-size: 12px;
+  }
 
+}
+
+#about-button{
+  opacity: 0;
+  text-transform: none;
+  transition: all 1s ease 2s;
+}
+
+#about-button.appear{
+  opacity: 1;
 }

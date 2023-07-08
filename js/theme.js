@@ -31,13 +31,13 @@ const fancyText = document.querySelector(".mission .hero-text");
 const strText = fancyText.textContent;
 const splitText = strText.split("");
 fancyText.textContent = "";
-console.log(splitText);
 for (let i = 0; i < splitText.length; i++){
   fancyText.innerHTML += "<span>" + splitText[i] + "</span>";
 //   const span = fancyText.querySelectorAll('span')[i];
 //   span.classList.add('faded');
 }
 
+const aboutUsBtn = document.getElementById("about-button");
 const staggerTween = TweenMax.staggerFromTo(".faded", 0.01, {opacity:0}, {opacity:1, ease:Back.easeOut}, 0.5);
 let fancyScene = new ScrollMagic.Scene({
   duration: 500,
@@ -52,7 +52,19 @@ let fancyScene = new ScrollMagic.Scene({
             span.classList.add('faded');
         }, i * 25);
     }
+
 })
+.addTo(controller);
+
+let buttonFadeScene = new ScrollMagic.Scene({
+  duration: 1000,
+  triggerElement: '.mission',
+  triggerHook: 0.5
+})
+.on('leave', function(e){
+  aboutUsBtn.classList.remove('appear');
+})
+.setClassToggle('#about-button', 'appear')
 .addTo(controller);
 
 
