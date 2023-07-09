@@ -108,6 +108,12 @@ footer hr {
         border-left: #ABABAB solid 1px;
     }
 }
+
+@media (max-width: 320px) {
+    .footer-text{
+        font-size: 12px;
+    }
+}
 .copyright {
     margin-top: 20px;
     padding-bottom: 20px;

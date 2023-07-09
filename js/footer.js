@@ -54,7 +54,7 @@ function change_2() {
     var dropdownContent = document.getElementById('dropdown-content-2');
     var icon = document.getElementById('icon_2');
     if(dropdownContent.clientHeight == 0) {
-        dropdownContent.style.height = '150px';
+        dropdownContent.style.height = '200px';
         dropdownContent.style.opacity = 1;
         icon.style.transform = 'rotate(45deg)';
     }

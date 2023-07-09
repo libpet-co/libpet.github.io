@@ -2443,6 +2443,12 @@ New footer CSS rules
   margin: 0;
   color: #696970;
 }
+@media (max-width: 320px) {
+  .footer-text {
+    font-size: 12px;
+  }
+}
+
 .footer_cont {
   margin-left: 50%;
   width: 100%;

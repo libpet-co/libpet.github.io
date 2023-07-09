@@ -1,4 +1,4 @@
-let text = [...document.querySelectorAll('h1')];
+let text = [...document.querySelectorAll('.musya h1')];
 let spans = [];
 
 text.forEach(paragraph => {
