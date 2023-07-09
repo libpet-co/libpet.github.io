@@ -2607,7 +2607,7 @@ footer{
 #about-button{
   opacity: 0;
   text-transform: none;
-  transition: all 1s ease 2s;
+  transition: all 1s ease;
 }
 
 #about-button.appear{

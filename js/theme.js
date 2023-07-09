@@ -52,20 +52,22 @@ let fancyScene = new ScrollMagic.Scene({
             span.classList.add('faded');
         }, i * 25);
     }
-
+    setTimeout(function(){
+      aboutUsBtn.classList.add("appear");
+    }, 2000);
 })
 .addTo(controller);
 
-let buttonFadeScene = new ScrollMagic.Scene({
-  duration: 1000,
-  triggerElement: '.mission',
-  triggerHook: 0.5
-})
-.on('leave', function(e){
-  aboutUsBtn.classList.remove('appear');
-})
-.setClassToggle('#about-button', 'appear')
-.addTo(controller);
+// let buttonFadeScene = new ScrollMagic.Scene({
+//   duration: 1000,
+//   triggerElement: '.mission',
+//   triggerHook: 0.5
+// })
+// .on('leave', function(e){
+//   aboutUsBtn.classList.remove('appear');
+// })
+// .setClassToggle('#about-button', 'appear')
+// .addTo(controller);
 
 
     // const text = document.querySelector(".mission .hero-text");
