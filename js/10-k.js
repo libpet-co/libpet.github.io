@@ -102,35 +102,35 @@ const controller = new ScrollMagic.Controller();
 //   }
 // });
 
-const progressCircles = document.querySelectorAll(".autoplay-progress svg");
-const progressContents = document.querySelectorAll(".autoplay-progress span");
+// const progressCircles = document.querySelectorAll(".autoplay-progress svg");
+// const progressContents = document.querySelectorAll(".autoplay-progress span");
 
-var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 30,
-  centeredSlides: true,
-  autoplay: {
-    delay: 10000,
-    disableOnInteraction: false
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  },
-  on: {
-    autoplayTimeLeft(s, time, progress) {
-      progressCircles.forEach(circle => {
-        circle.style.setProperty("--progress", 1 - progress);
-      });
-      progressContents.forEach(content => {
-        content.textContent = `${Math.ceil(time / 1000)}`;
-      });
-    }
-  }
-});
+// var swiper = new Swiper(".mySwiper", {
+//   spaceBetween: 30,
+//   centeredSlides: true,
+//   autoplay: {
+//     delay: 10000,
+//     disableOnInteraction: false
+//   },
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true
+//   },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev"
+//   },
+//   on: {
+//     autoplayTimeLeft(s, time, progress) {
+//       progressCircles.forEach(circle => {
+//         circle.style.setProperty("--progress", 1 - progress);
+//       });
+//       progressContents.forEach(content => {
+//         content.textContent = `${Math.ceil(time / 1000)}`;
+//       });
+//     }
+//   }
+// });
 
 
 
@@ -142,12 +142,12 @@ const transitionText = document.querySelectorAll(".path-stroke");
 
 const seeTheMagicStagger = TweenMax.staggerTo(".path-stroke", 2, {'stroke-dashoffset': 0, ease:Back.easeOut}, 0.2);
 let seeTheMagicScene = new ScrollMagic.Scene({
+  triggerElement: "#trigger1",
   duration: "100%",
-  triggerElement: '.transition-one',
-  triggerHook: 0,
-  offset: 0,
+  triggerHook: 0
+
 })
-.setPin('.transition-one', {pushFollowers: false})
+.setPin("#pin1", {pushFollowers: false})
 .addIndicators()
 .setTween(seeTheMagicStagger)
 .addTo(controller);

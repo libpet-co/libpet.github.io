@@ -32,43 +32,93 @@ revealSpans();
 gsap.registerPlugin(ScrollTrigger);
 gsap.set(".slide-1", { opacity: 1});
 
-let tl = gsap
-  .timeline({
-    scrollTrigger: {
-      trigger: "#cont_anim",
-      start: "top top",
-      scrub: true,
-      pin: true,
-      end: "bottom+=3000px",
-      markers: true
-    }
-  })
-  .to(".slide-1", { opacity: 0, xPercent: 20})
-  .to(".slide-2", { opacity: 1, xPercent: 20})
-  .to(".slide-2", {opacity: 1, xPercent: 20})
-  .to(".slide-2", { opacity: 0, xPercent: 40 })
-  .to(".slide-3", { opacity: 1 })
-  .to(".slide-3", { opacity: 1 });
-
-  let tl_2 = gsap.timeline({
+function animationOne() {
+    const animationOne = gsap.timeline({
         scrollTrigger: {
-        trigger: "#cont_anim_2",
-        start: "top 10%",
-        scrub: true,
-        pin: true,
-        end: "bottom+=3000px",
-        markers: true
+          trigger: "#cont_anim",
+          start: "top top",
+          scrub: true,
+          pin: true,
+          end: "bottom+=3000px",
+          markers: true,
         }
-    });
+      });
+    animationOne
+    .to(".slide-1", { opacity: 0, xPercent: 20})
+    .to(".slide-2", { opacity: 1, xPercent: 20})
+    .to(".slide-2", {opacity: 1, xPercent: 20})
+    .to(".slide-2", { opacity: 0, xPercent: 40 })
+    .to(".slide-3", { opacity: 1 });
+    return animationOne;
+}
 
-    tl_2
-    .to(".slide-2-1", { opacity: 0})
-    .to(".slide-2-2", { opacity: 1})
-    .to(".slide-2-2", {opacity: 0})
-    .to(".slide-2-3", { opacity: 1})
-    .to(".slide-2-3", { opacity: 0})
-    .to(".slide-2-4", { opacity: 1 })
-    .to(".slide-2-4", { opacity: 0 });
+function animationTwo() {
+    const animationTwo = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#cont_anim_2",
+            start: "top top",
+            scrub: true,
+            pin: true,
+            end: "bottom+=3000px",
+            markers: true
+        }
+      });
+    animationTwo
+    // .to(".slide-x1", { opacity: 0})
+    .to(".slide-x2", { opacity: 1, xPercent: 20})
+    .to(".slide-x2", {opacity: 0, xPercent: 40})
+    .to(".slide-x3", { opacity: 1})
+    .to(".slide-x3", { opacity: 0})
+    .to(".slide-x4", { opacity: 1, xPercent: 20})
+    .to(".slide-x4", { opacity: 0, xPercent: 40})
+    .to(".slide-x5", { opacity: 1, xPercent: 20})
+    .to(".slide-x5", { opacity: 0, xPercent: 40})
+    .to(".slide-x6", { opacity: 1, xPercent: 20});
+    return animationTwo;
+}
+
+// let tl = gsap
+//   .timeline({
+//     scrollTrigger: {
+//       trigger: "#cont_anim",
+//       start: "top top",
+//       scrub: true,
+//       pin: true,
+//       end: "bottom+=3000px",
+//       markers: true,
+//       paused: true
+//     }
+//   })
+//   .to(".slide-1", { opacity: 0, xPercent: 20})
+//   .to(".slide-2", { opacity: 1, xPercent: 20})
+//   .to(".slide-2", {opacity: 1, xPercent: 20})
+//   .to(".slide-2", { opacity: 0, xPercent: 40 })
+//   .to(".slide-3", { opacity: 1 });
+
+const master = gsap.timeline();
+master.add(animationOne());
+master.add(animationTwo(), '+=1');
+
+//   let tl_2 = gsap.timeline({
+//         scrollTrigger: {
+//         trigger: "#cont_anim_2",
+//         start: "top 5%",
+//         scrub: true,
+//         pin: true,
+//         end: "bottom+=3000px",
+//         markers: true,
+//         paused: true
+//         }
+//     });
+
+//     tl_2
+//     .to(".slide-x1", { opacity: 0})
+//     .to(".slide-x2", { opacity: 1})
+//     .to(".slide-x2", {opacity: 0})
+//     .to(".slide-x3", { opacity: 1})
+//     .to(".slide-x3", { opacity: 0})
+//     .to(".slide-2-4", { opacity: 1 })
+//     .to(".slide-2-4", { opacity: 0 });
 
 
   
