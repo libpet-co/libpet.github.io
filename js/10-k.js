@@ -148,6 +148,6 @@ let seeTheMagicScene = new ScrollMagic.Scene({
 
 })
 .setPin("#pin1", {pushFollowers: false})
-.addIndicators()
+// .addIndicators()
 .setTween(seeTheMagicStagger)
 .addTo(controller);
