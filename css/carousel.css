@@ -159,7 +159,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    z-index: 10;
+    z-index: 9;
     width: 100%;
     height: 100%;
     stroke-width: 4px;
@@ -172,10 +172,7 @@
   
   
   #play-control-btn {
-    cursor: pointer;
-    position: absolute;
-    left: 0;
-    top: 0;
+    cursor: pointer;  
     transform: rotate(0deg);
   }
   #play-control-btn #pause {

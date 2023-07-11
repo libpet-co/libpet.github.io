@@ -39,7 +39,7 @@ function animationOne() {
           start: "top top",
           scrub: true,
           pin: true,
-          end: "bottom+=3000px",
+          end: "bottom+=2000px",
           markers: true,
         }
       });
@@ -60,7 +60,8 @@ function animationTwo() {
             scrub: true,
             pin: true,
             end: "bottom+=3000px",
-            markers: true
+            markers: true,
+            ease: "slow(0.7, 0.7, false)"
         }
       });
     animationTwo

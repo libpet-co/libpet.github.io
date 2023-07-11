@@ -1614,39 +1614,6 @@ body{
   overflow: clip;
 }
 
-#play-control-btn {
-  cursor: pointer;
-  position: absolute;
-  top: 100px;
-  right: 100px;
-  z-index: 5;
-}
-
-#play-control-btn #pause {
-  display: none;
-}
-#play-control-btn.playing #play {
-  display: none;
-}
-#play-control-btn.playing #pause {
-  display: block;
-}
-
-@media (max-width: 1000px){
-  .video-wrapper video {
-    object-fit: contain;
-  }
-
-  .index-video{
-    align-items: center;
-  }
-
-  #play-control-btn{
-    top: 30px;
-    right: 30px;
-  }
-}
-
 .main{
   width: 100%;
   height: 100vh;

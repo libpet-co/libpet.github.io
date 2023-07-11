@@ -24,8 +24,24 @@
           }
   
           var playing = true;
-          var btn = $(".center .svg").get(0);
-          console.log(btn);
+          var btn = $(".center #play-control-btn").get(0);
+  
+          $(btn).click(function() {
+            // toggle the value of the 'playing' variable
+            if(playing){
+              $(btn).removeClass("playing");
+              currentVideo.pause();
+              console.log(playing);
+            }
+            
+            if (!playing){
+              $(btn).addClass("playing");
+              currentVideo.play();
+              console.log(playing);
+            }
+            playing = !playing;
+  
+          });
   
         },
         onTranslated: function(event) {
@@ -49,10 +65,23 @@
           }
   
           var playing = true;
-          console.log(progressCircles);
+          var btn = $(".center #play-control-btn").get(0);
   
-          $(progressCircles).click(function() {
-            console.log("Hello");
+          $(btn).click(function() {
+            // toggle the value of the 'playing' variable
+            if(playing){
+              $(btn).removeClass("playing");
+              currentVideo.pause();
+              console.log(playing);
+            }
+            
+            if (!playing){
+              $(btn).addClass("playing");
+              currentVideo.play();
+              console.log(playing);
+            }
+            playing = !playing;
+  
           });
         },
         loop: true,
@@ -62,11 +91,11 @@
         nav: false,
         responsive: {
           0: {
-            items: 1,
+            items: 1.1,
             nav: true
           },
           680: {
-            items: 1.2,
+            items: 1.1,
             nav: true,
           },
           1000: {
