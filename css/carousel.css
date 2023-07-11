@@ -98,8 +98,6 @@
   @media (max-width: 767px) {
     .gtco-testimonials {
       margin-top: 20px;
-      height: 100%;
-
     }
   }
   .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
