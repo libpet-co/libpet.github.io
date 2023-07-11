@@ -194,3 +194,8 @@
   #play-control-btn.playing #pause {
     display: block;
   }
+
+  .video-slide{
+    height: auto;
+    width: 100%;
+  }

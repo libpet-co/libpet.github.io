@@ -1,0 +1,66 @@
+.car-stat-section {
+    height: 100vh;
+    min-height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.car-stat-section .img-fluid {
+    width: 40vw;
+}
+
+.car-stat-section .container-fluid {
+    height: fit-content;
+    width: fit-content;
+}
+
+.stat-text-group {
+    margin-top: 3vh;
+}
+
+.stat-heading {
+    font-weight: 700;
+    font-size: 4.5vw;
+    line-height: 100%;
+    color: #FA7765;
+}
+
+.in-text {
+    font-size: 1.3vw;
+    color: #FA7765;
+}
+
+/* tablet view */
+@media(max-width:1199px) {
+    .stat-heading {
+        font-size: 5.6vw;
+    }
+
+    .in-text {
+        font-size: 2.8vw;
+    }
+
+    .car-stat-section .img-fluid {
+        width: 100%;
+    }
+}
+
+/* phone view */
+@media(max-width:576px) {
+    .car-stat-section .img-fluid {
+        width: 90vw;
+    }
+
+    .stat-heading {
+        font-size: 45px;
+    }
+
+    .in-text {
+        font-size: 20px;
+    }
+
+    .stat-text-group {
+        margin-top: 1vh;
+    }
+}
