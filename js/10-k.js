@@ -145,7 +145,6 @@ let seeTheMagicScene = new ScrollMagic.Scene({
   triggerElement: "#trigger1",
   duration: "100%",
   triggerHook: 0
-
 })
 .setPin("#pin1", {pushFollowers: false})
 // .addIndicators()
