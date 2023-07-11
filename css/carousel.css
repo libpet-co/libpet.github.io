@@ -14,7 +14,6 @@
   }
   .gtco-testimonials .owl-stage-outer {
     padding: 30px 0;
-    height: 100%;
   }
   .gtco-testimonials .owl-nav {
     display: none;
@@ -49,7 +48,6 @@
     padding: 0 0;
     border-radius: 20px;
     border: 0;
-    height: 100%;
   }
   .gtco-testimonials .card .card-img-top {
     max-width: 100px;
@@ -76,16 +74,13 @@
   .gtco-testimonials .owl-item{
     opacity: 0.5;
     transition: all 0.3s;
-    height: 100%;
   }
   .gtco-testimonials .active {
     opacity: 0.5;
     transition: all 0.3s;
-    height: 100%;
   }
   .gtco-testimonials .center {
     opacity: 1;
-    height: 100%;
 
   }
   .gtco-testimonials .center h5 {
