@@ -138,16 +138,16 @@ const elts = {
   text2: document.getElementById("text2")
 };
 
-console.log(elts);
-
 const texts = [
+  "",
   "See",
   "The",
   "Magic",
   "See The Magic",
+  "",
 ];
 
-const morphTime = 1;
+const morphTime = 0.5;
 const cooldownTime = 0.25;
 
 let textIndex = texts.length - 1;
@@ -195,7 +195,10 @@ function doCooldown() {
 }
 
 function animate() {
-  requestAnimationFrame(animate);
+  if (textIndex <= 9) {
+    // Stop the animation if textIndex is equal to 5
+    requestAnimationFrame(animate);
+  }
 
   let newTime = new Date();
   let shouldIncrementIndex = cooldown > 0;
@@ -213,7 +216,21 @@ function animate() {
   } else {
       doCooldown();
   }
+
+
 }
 
-animate();
+let transitionOneScene = new ScrollMagic.Scene({
+  triggerElement: '#trigger1',
+  triggerHook: 0.5,
+})
+.on('enter', function(e){
 
+  if (textIndex <= 6 && textIndex > 0) {
+    animate();
+  }
+})
+// .addIndicators()
+.addTo(controller);
+
+// animate();
