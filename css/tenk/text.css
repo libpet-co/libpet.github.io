@@ -6,7 +6,7 @@
     top: 0;
     bottom: 0;
 
-    filter: url(#threshold) blur(0.6px);
+    filter: url(#threshold) blur(0px);
 }
 
 #text1,
