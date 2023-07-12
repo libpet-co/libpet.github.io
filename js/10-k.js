@@ -241,7 +241,7 @@ let transitionOneScene = new ScrollMagic.Scene({
     animate();
   }
 })
-.addIndicators()
+// .addIndicators()
 .setPin('#pin1')
 .addTo(controller);
 
