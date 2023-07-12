@@ -17,6 +17,6 @@ scene.each( function()
     })
     .setPin( this )
     .addTo( scrollMagicController )
-    .addIndicators()
+    // .addIndicators()
     .setClassToggle( scene, 'is-active' )
 });

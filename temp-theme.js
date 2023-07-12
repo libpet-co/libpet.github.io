@@ -134,7 +134,7 @@ const opacityFancyScene = new ScrollMagic.Scene({
   triggerHook: 1,
   duration: 200,
 })
-.addIndicators()
+// .addIndicators()
 .setTween(opacityFancyTween)
 .addTo(controller);
 /*

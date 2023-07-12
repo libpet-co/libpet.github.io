@@ -200,6 +200,15 @@ function animate() {
     requestAnimationFrame(animate);
   }
 
+  if (textIndex === 10) {
+    const testimonialsElement = document.querySelector('.gtco-testimonials');
+    if (testimonialsElement) {
+      const offsetTop = testimonialsElement.getBoundingClientRect().top + window.pageYOffset - 100;
+      window.scrollTo({ top: offsetTop, behavior: 'auto' });
+    }
+  }
+
+  console.log(textIndex);
   let newTime = new Date();
   let shouldIncrementIndex = cooldown > 0;
   let dt = (newTime - time) / 1000;
@@ -222,7 +231,9 @@ function animate() {
 
 let transitionOneScene = new ScrollMagic.Scene({
   triggerElement: '#trigger1',
-  triggerHook: 0.5,
+  triggerHook: 0,
+  duration: '100%',
+  indent: 200
 })
 .on('enter', function(e){
 
@@ -230,7 +241,16 @@ let transitionOneScene = new ScrollMagic.Scene({
     animate();
   }
 })
-// .addIndicators()
+.setPin('#pin1')
+.addIndicators()
 .addTo(controller);
+
+// var pinIntroScene2 = new ScrollMagic.Scene({
+//   triggerElement: '#trigger1',
+//   triggerHook: 0.4
+// })
+// .setPin('#pin1', {pushFollowers: false})
+// .addTo(controller);
+
 
 // animate();

@@ -15,7 +15,7 @@ section {
 /* transition-one See the Magic start */
 .transition-one {
     position: relative;
-    height: 50vh;
+    height: 75vh;
     width: 100%;
     overflow: hidden;
     min-height: 300px;
