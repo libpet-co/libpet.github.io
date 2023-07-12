@@ -1,7 +1,7 @@
 #container {
     position: absolute;
     margin: auto;
-    width: 100%;
+    width: 100vw;
     height: 80pt;
     top: 0;
     bottom: 0;
