@@ -624,7 +624,7 @@
     font-weight: 600;
     font-family: Outfit;
     margin-bottom: 25px;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .font-p {
@@ -639,6 +639,10 @@
 .flow-text {
     position: absolute;
     z-index: 1;
+}
+
+.visible_div {
+    
 }
 
 .invisible_div {
@@ -719,7 +723,7 @@
 
     .font-h2 {
         margin-left: 50px;
-        margin-top: 0;
+        margin-top: 0px;
     }
 
     .container-mower {
@@ -758,19 +762,24 @@
 
     .title-s-c {
         padding: 0;
-        margin-right: 20px;
+        margin-right: 0px;
     }
 
     .font-p {
         width: 90%;
-        font-size: 23px;
+        font-size: 20px;
         margin: 20px;
-        margin-top: 40px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-top: 20px;
         font-weight: 300;
     }
 
     .font-h2 {
-        margin: 20px;
+        font-size: 50px;
+        width: 50%;
+        line-height: 45px;
+        margin: 0px 20px;
     }
 
     .visible_div {
@@ -872,7 +881,9 @@
 .font1 {
     color: #2F2E2E;
     font-family: Outfit;
-    font-size: 25px;
+    font-size: 23px;
+    line-height: 30px;
+    font-weight: 300;
 }
 
 #wood_floor {
@@ -920,11 +931,11 @@
         display: none;
     } */
         .font3 {
-            margin-top: 40px;
-            font-size: 13vw;
+            margin-top: 20px;
+            font-size: 11vw;
             color: #2F2E2E;
             font-family: Outfit;
-            line-height: 60px;
+            line-height: 40px;
         }
 
         .font2 {
@@ -937,8 +948,8 @@
         .font1 {
             color: #2F2E2E;
             font-family: Outfit;
-            font-size: 23px;
-            line-height: 30px;
+            font-size: 20px;
+            line-height: 25px;
             font-weight: 300;
         }
 
@@ -965,13 +976,6 @@
         }
     }
 
-    .font1 {
-        color: #2F2E2E;
-        font-family: Outfit;
-        font-size: 23px;
-        line-height: 30px;
-        font-weight: 300;
-    }
 
     #wood_floor {
         width: 140px;
@@ -996,6 +1000,25 @@
     }
 }
 
+@media (max-width: 576px) {
+    #wood_floor {
+        width: 28vw;
+        height: 300px;
+    }
+
+    #grass_floor {
+        width: 28vw;
+        height: 300px;
+    }
+    #robo1 {
+        width: 21vw;
+    }
+    .font3 {
+        margin-top: 3vh;
+    }
+
+}
+
 .anima_div {
     position: absolute;
     display: flex;
@@ -1006,14 +1029,17 @@
     height: 100vh;
     width: 100%;
 }
+
 .translatex-20 {
     transform: translateX(-20%);
 }
+
 .anima_div_2 {
     position: absolute;
     height: 100vh;
 }
-.anima_div > div {
+
+.anima_div>div {
     width: 100%;
     display: flex;
     align-items: center;
@@ -1023,4 +1049,14 @@
 
 .opac_0 {
     opacity: 0;
+}
+
+.black-sbt-btn {
+    background-color: #008CBA;
+    color: black;
+    font-size: 10px 20px;
+    width: 50px;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
 }

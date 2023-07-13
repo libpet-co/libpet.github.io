@@ -308,3 +308,42 @@ section {
     }
 }
 
+.scroll-magic-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+
+.scroll-magic-container .magic-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+.scroll-magic-container span {
+    font-size: 56px;
+    font-weight: bold;
+    color: #000000;
+}
+
+@media (max-width: 510px){
+    .scroll-magic-container span {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 330px){
+    .scroll-magic-container span {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 279px){
+    .scroll-magic-container span {
+        font-size: 24px;
+    }
+}

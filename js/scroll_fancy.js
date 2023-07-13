@@ -39,8 +39,7 @@ function animationOne() {
           start: "top top",
           scrub: true,
           pin: true,
-          end: "bottom+=2000px",
-          markers: true,
+          end: "bottom+=2000px"
         }
       });
     animationOne
@@ -59,8 +58,7 @@ function animationTwo() {
             start: "top top",
             scrub: true,
             pin: true,
-            end: "bottom+=3000px",
-            markers: true,
+            end: "bottom+=5000px",
             ease: "slow(0.7, 0.7, false)"
         }
       });
@@ -69,12 +67,17 @@ function animationTwo() {
     .to(".slide-x2", { opacity: 1, xPercent: 20})
     .to(".slide-x2", {opacity: 0, xPercent: 40})
     .to(".slide-x3", { opacity: 1})
+    .to(".slide-x3", { opacity: 1})
     .to(".slide-x3", { opacity: 0})
     .to(".slide-x4", { opacity: 1, xPercent: 20})
+    .to(".slide-x4", { opacity: 1})
     .to(".slide-x4", { opacity: 0, xPercent: 40})
     .to(".slide-x5", { opacity: 1, xPercent: 20})
+    .to(".slide-x5", { opacity: 1})
     .to(".slide-x5", { opacity: 0, xPercent: 40})
-    .to(".slide-x6", { opacity: 1, xPercent: 20});
+    .to(".slide-x6", { opacity: 1, xPercent: 20})
+    .to(".slide-x6", { opacity: 1})
+    .to(".slide-x6", { opacity: 0, xPercent: 40});
     return animationTwo;
 }
 
@@ -122,4 +125,6 @@ master.add(animationTwo(), '+=1');
 //     .to(".slide-2-4", { opacity: 0 });
 
 
-  
+// window.onscroll = function (e) {
+//     window.scrollBy(0, 100vw);
+// }

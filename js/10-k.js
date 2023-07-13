@@ -72,185 +72,28 @@ const controller = new ScrollMagic.Controller();
     });
   });
 
-// const progressCircles = document.querySelectorAll(".autoplay-progress svg");
-// const progressContents = document.querySelectorAll(".autoplay-progress span");
-
-// var swiper = new Swiper(".mySwiper", {
-//   spaceBetween: 30,
-//   centeredSlides: true,
-//   autoplay: {
-//     delay: 7000,
-//     disableOnInteraction: false
-//   },
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true
-//   },
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev"
-//   },
-//   on: {
-//     autoplayTimeLeft(s, time, progress) {
-//       progressCircles.forEach(circle => {
-//         circle.style.setProperty("--progress", 1 - progress);
-//       });
-//       progressContents.forEach(content => {
-//         content.textContent = `${Math.ceil(time / 1000)}`;
-//       });
-//     }
-//   }
-// });
-
-// const progressCircles = document.querySelectorAll(".autoplay-progress svg");
-// const progressContents = document.querySelectorAll(".autoplay-progress span");
-
-// var swiper = new Swiper(".mySwiper", {
-//   spaceBetween: 30,
-//   centeredSlides: true,
-//   autoplay: {
-//     delay: 10000,
-//     disableOnInteraction: false
-//   },
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true
-//   },
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev"
-//   },
-//   on: {
-//     autoplayTimeLeft(s, time, progress) {
-//       progressCircles.forEach(circle => {
-//         circle.style.setProperty("--progress", 1 - progress);
-//       });
-//       progressContents.forEach(content => {
-//         content.textContent = `${Math.ceil(time / 1000)}`;
-//       });
-//     }
-//   }
-// });
-
-
-const elts = {
-  text1: document.getElementById("text1"),
-  text2: document.getElementById("text2")
-};
-
-const texts = [
-  "",
-  "See",
-  "The",
-  "Magic",
-  "See The Magic",
-  "",
-];
-
-const morphTime = 0.5;
-const cooldownTime = 0.25;
-
-let textIndex = texts.length - 1;
-let time = new Date();
-let morph = 0;
-let cooldown = cooldownTime;
-
-elts.text1.textContent = texts[textIndex % texts.length];
-elts.text2.textContent = texts[(textIndex + 1) % texts.length];
-
-function doMorph() {
-  morph -= cooldown;
-  cooldown = 0;
-
-  let fraction = morph / morphTime;
-
-  if (fraction > 1) {
-      cooldown = cooldownTime;
-      fraction = 1;
+const tl2 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".scroll-magic-container",
+    start: "top top",
+    scrub: true,
+    pin: true,
+    end: "bottom top",
+    // markers: true,
   }
-
-  setMorph(fraction);
-}
-
-function setMorph(fraction) {
-  elts.text2.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
-  elts.text2.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
-
-  fraction = 1 - fraction;
-  elts.text1.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
-  elts.text1.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
-
-  elts.text1.textContent = texts[textIndex % texts.length];
-  elts.text2.textContent = texts[(textIndex + 1) % texts.length];
-}
-
-function doCooldown() {
-  morph = 0;
-
-  elts.text2.style.filter = "";
-  elts.text2.style.opacity = "100%";
-
-  elts.text1.style.filter = "";
-  elts.text1.style.opacity = "0%";
-}
-
-function animate() {
-  if (textIndex <= 9) {
-    // Stop the animation if textIndex is equal to 5
-    requestAnimationFrame(animate);
-  }
-
-  if (textIndex === 10) {
-    const testimonialsElement = document.querySelector('.gtco-testimonials');
-    if (testimonialsElement) {
-      const offsetTop = testimonialsElement.getBoundingClientRect().top + window.pageYOffset - 100;
-      window.scrollTo({ top: offsetTop, behavior: 'auto' });
+});
+tl2.staggerFromTo(
+    '.magic-text-container span', .5, {
+        ease: Back.easeOut.config(1.7),
+        opacity: 0,
+        rotation: 180,
+        y: -100
+    }, {
+        ease: Back.easeOut.config(1.7),
+        opacity: 1,
+        rotation: 360,
+        y: 0
+    }, .1, '+=0', () => {
+        console.log('tl2:end')
     }
-  }
-
-  console.log(textIndex);
-  let newTime = new Date();
-  let shouldIncrementIndex = cooldown > 0;
-  let dt = (newTime - time) / 1000;
-  time = newTime;
-
-  cooldown -= dt;
-
-  if (cooldown <= 0) {
-      if (shouldIncrementIndex) {
-          textIndex++;
-      }
-
-      doMorph();
-  } else {
-      doCooldown();
-  }
-
-
-}
-
-let transitionOneScene = new ScrollMagic.Scene({
-  triggerElement: '#trigger1',
-  triggerHook: 0,
-  duration: '100%',
-  indent: 200
-})
-.on('enter', function(e){
-
-  if (textIndex <= 6 && textIndex > 0) {
-    animate();
-  }
-})
-// .addIndicators()
-.setPin('#pin1')
-.addTo(controller);
-
-// var pinIntroScene2 = new ScrollMagic.Scene({
-//   triggerElement: '#trigger1',
-//   triggerHook: 0.4
-// })
-// .setPin('#pin1', {pushFollowers: false})
-// .addTo(controller);
-
-
-// animate();
+)

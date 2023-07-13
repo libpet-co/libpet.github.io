@@ -91,7 +91,7 @@
     <section class="intro-GOX-section d-none d-xl-block">
         <div class="centered-items">
             <div class="container-fluid">
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="col-xs-12 col-sm-12 col-xl-6">
                         <h2>
                             GO-X GO-X
@@ -147,14 +147,14 @@
             <div class="" style="width:900px; overflow: hidden">
                 <div class="row" style="overflow: hidden;">
 
-                    <div class="col-md-3 col-6 non-mobile">
+                    <div class="col-md-3 col-6 non-mobile align-items-end">
                         <picture>
                             <source media="(max-width: 768px)" srcset="/img/floor_wood_s.png">
                             <img id="wood_floor" class="not_mobile" src="/img/floor_wood.png" alt="floor wood">
                         </picture>
                         <img id="robo1" style="" src="/img/toptop_1.png" alt="robo">
                     </div>
-                    <div class="col-md-3 col-6 non-mobile">
+                    <div class="col-md-3 col-6 non-mobile align-items-end">
                         <picture>
                             <source media="(max-width: 768px)" srcset="/img/floor_grass_s.png">
                             <img id="grass_floor" class="not_mobile" src="/img/floor_grass.png" alt="floor grass">
@@ -242,10 +242,10 @@
             </div>
         </div>
     </section> -->
-<!-- 
+    <!-- 
     <div> -->
-        <!-- for >md -->
-        <!-- <section class="title-section slide-2-1 d-md-none d-xxl-none" style="align-items: baseline;">
+    <!-- for >md -->
+    <!-- <section class="title-section slide-2-1 d-md-none d-xxl-none" style="align-items: baseline;">
             <div class="centered-items">
                 <div class="image-container-mobile">
                     <div class="centered-items">
@@ -291,7 +291,7 @@
                             dream
                             together.
                         </p><br>
-                        <div class="centered-items">
+                        <div class="">
                             <a href="#"><button type="button" class="button_join">Become our developer</button></a>
                         </div>
                     </div>
@@ -346,13 +346,13 @@
         </section>
 
     <div id="cont_anim_2" style="overflow: hidden;">
-        <section class="anima_div slide slide-x2 opac_0 translatex-20" style="z-index: 100">
+        <section class="anima_div slide slide-x2 opac_0 translatex-20" style="z-index: 100; overflow: hidden">
             <div class="title-text"><b>And we make that
                     person smart </b>
             </div>
         </section>
         <section class="anima_div slide slide-x3 opac_0 ">
-            <div class="container-fluid voice-section" style="padding-top: 5vh;">
+            <div class="container-fluid voice-section" style="padding-top: 5vh; overflow: hidden">
                 <div class="centered-items">
                     <img src="img/go-x.png" class="img-fluid" alt="go-X2">
                     <h2 style="font-family: 'Outfit'; text-align: center;">Voice control +
@@ -364,34 +364,34 @@
                 </div>
             </div>
         </section>
-        <section class="anima_div slide slide-x4 opac_0 translatex-20">
+        <section class="anima_div slide slide-x4 opac_0 translatex-20" style="overflow: hidden;">
             <div class="title-text">
                 <b>We believe</b>
             </div>
         </section>
-        <section class="anima_div slide slide-x5 opac_0 translatex-20">
+        <section class="anima_div slide slide-x5 opac_0 translatex-20" style="overflow: hidden;">
             <div class="title-text">
                 <b>In the near
                     future</b>
             </div>
         </section>
-        <section class="title-section slide-x6 opac_0 translatex-20">
+        <section class="title-section slide-x6 opac_0 translatex-20" style="overflow: hidden;">
             <div class="title-text">
                 <b>GO-X will be that person</b>
             </div>
         </section>
-        <section class="title-section" style=" color: #000000">
-            <div class="title-text centered-items">
+        <section class="title-section" style="overflow: hidden; color: #000000">
+            <div class="title-text centered-items" >
                 <b>Too tired?</b>
             </div>
-            <img src="img/men_ride2.png" class="img-fluid" alt="men_ride2">
+            <img src="img/men_ride2.png" class="img-fluid centered-items" alt="men_ride2">
             <div class="title-text centered-items">
                 <b>Go For A Ride!</b>
             </div>
         </section>
         <section class="title-section kickstarter-section">
             <div class="container-fluid">
-                <div class="centered-items">
+                <div class="centered-items" data-aos="fade-down" data-aos-duration="3000">
                     <img src="img/kickstarter.png" class="img-fluid" alt="kickstarter">
                     <h2>
                         We will be launching on Kickstarter
@@ -403,13 +403,11 @@
                         join our discord and get the latest news.
                     </h2>
                 </div>
-                <div style="margin-top: 3vw; text-align: center;">
-                    <input type="email" class="input">
-                    <a>
-                        <button type="button">notify
-                            me</button>
-                    </a>
-                </div>
+                <form style="margin-top: 3vw; text-align: center;">
+                    <input type="email" class="input" placeholder="Enter email" required>
+                    <!-- <input type="submit" class="black-sbt-btn" value="notify me" > -->
+                    <button type="submit">notify me</button>
+                </form>
             </div>
     </div>
     </section>
@@ -424,58 +422,52 @@
         </a>
     </div> -->
     <!-- Footer Start -->
-    <div style="background-color: #f2f2f2;">
-        <footer style="min-height:200px;">
-            <div class="container py-3">
-                <div class="row">
-                    <hr>
-                    <div class="col-md-3 col-sm-12 dropdown1">
-                        <u class="underline" style="color: #1D1D1F">
-                            <h4 style="color: #1D1D1F" id="footer-text-1" class="footer-text"
-                                ontouchstart="touchAvailable=true; change_1();"
-                                onclick="if(!touchAvailable) change_1();">CONTACT US <i id="icon_1"
-                                    class="fa fa-plus"></i> </h4>
-                        </u>
-                        <div id="dropdown-content-1" class="dropdown-content" style="pointer-events: cursor;">
-                            <p class="footer-text no-bottom-pad no-top-pad">+852 9345 3493</p>
-                            <p class="footer-text no-bottom-pad no-top-pad">info@libpet.com</p>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="col-md-6 col-sm-12 pl-5 dropdown2">
-                        <u class="underline" style="color: #1D1D1F">
-                            <h4 style="color: #1D1D1F" id="footer-text-2" class="footer-text"
-                                ontouchstart="touchAvailable=true; change_2();"
-                                onclick="if(!touchAvailable) change_2();">LOCATION <i id="icon_2"
-                                    class="fa fa-plus"></i> </h4>
-                        </u>
-
-                        <div id="dropdown-content-2" class="dropdown-content" style="pointer-events: cursor;">
-                            <p class="footer-text">InnoHub 4/F, Jockey Club Innovation Tower, The Hong Kong Polytechnic
-                                University &</p>
-                            <p class="footer-text">Unit 659, 6/F, Building 19W, No. 19 Science Park West Avenue, Hong
-                                Kong Science Park</p>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="col-md-3 col-sm-12">
-                        <div class="footer_cont">
-                            <a href="#">
-                                <p style="color: #1D1D1F" class="footer-text no-bottom-pad">Privacy policy</p>
-                            </a>
-                            <a href="#">
-                                <p style="color: #1D1D1F" id="p_w_b" class="footer-text no-top-pad">Terms of Use</p>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- <hr> -->
-                </div>
+  <div style="background-color: #f2f2f2;">
+    <footer style="min-height:200px;">
+      <div class="container py-3">
+        <div class="row">
+          <hr>
+          <div class="col-md-3 col-sm-12 dropdown1">
+            <u class="underline" style="color: #1D1D1F">
+              <h4 style="color: #1D1D1F" id="footer-text-1" class="footer-text" ontouchstart="touchAvailable=true; change_1();"
+              onclick="if(!touchAvailable) change_1();">CONTACT US <i id="icon_1" class="fa fa-plus"></i> </h4>
+            </u>
+            <div id="dropdown-content-1" class="dropdown-content" style="pointer-events: cursor;">
+              <p class="footer-text no-bottom-pad no-top-pad"><i class="fa fa-phone-alt"></i> +852 5931 7389</p>
+              <p class="footer-text no-bottom-pad no-top-pad"><i class="fa fa-envelope"></i> info@libpet.com</p>
             </div>
-        </footer>
-        <!-- Footer End -->
+          </div>
+          <hr>
+          <div class="col-md-6 col-sm-12 pl-5 dropdown2">
+            <u class="underline" style="color: #1D1D1F">
+              <h4 style="color: #1D1D1F" id="footer-text-2" class="footer-text" ontouchstart="touchAvailable=true; change_2();"
+                onclick="if(!touchAvailable) change_2();">LOCATION <i id="icon_2" class="fa fa-plus"></i> </h4>
+            </u>
+            
+            <div id="dropdown-content-2" class="dropdown-content" style="pointer-events: cursor;">
+              <p class="footer-text"><i class="fa fa-map-marker-alt"></i> InnoHub 4/F, Jockey Club Innovation Tower, The Hong Kong Polytechnic University</p>
+              <p class="footer-text"><i class="fa fa-map-marker-alt"></i> Unit 659, 6/F, Building 19W, No. 19 Science Park West Avenue, Hong Kong Science Park</p>
+            </div>
+          </div>
+          <hr>
+          <div class="col-md-3 col-sm-12">
+            <div class="footer_cont">
+              <a href="#">
+                <p style="color: #1D1D1F" class="footer-text no-bottom-pad">Privacy policy</p>
+              </a>
+              <a href="#">
+                <p style="color: #1D1D1F" id="p_w_b" class="footer-text no-top-pad">Terms of Use</p>
+              </a>
+            </div>
+          </div>
+          <!-- <hr> -->
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
 
-        <p class="text-center footer-text copyright"> Copyright © Libpet Tech Limited, All Right Reserved.</p>
-    </div>
+    <p class="text-center footer-text copyright"> Copyright © Libpet Tech Limited, All Right Reserved.</p>
+  </div>
 
     <!-- jQuery -->
 
