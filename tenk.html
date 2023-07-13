@@ -30,6 +30,7 @@
     <link href="css/tenk/text.css" rel="stylesheet">
     <link href="css/tenk/car-stat.css" rel="stylesheet">
 
+    <link href="css/tenk/app.css" rel="stylesheet">
 
 
     <link rel="icon" type="image/x-icon" href="/img/logo-black-without-word.svg">
@@ -58,7 +59,7 @@
               <ul class="navbar-nav mx-auto">
 
                     <li class="nav-item active">
-                      <a class="nav-link" href="#">TenK</a>
+                      <a class="nav-link" href="TENK.html">TenK</a>
                     </li>
 
                     <li class="nav-item">
@@ -86,7 +87,9 @@
       <div class="intro-text-container">
         <h1>TenK</h1>
         <p>Never been so easy for a mobility device to climb stairs.</p>
-        <button type="button" class="btn" name="button" onclick="location.href='product.html'">Pre Order</button>
+        <button type="button" class="btn" name="button"
+          onclick="event.preventDefault(); alert('Please contact us by the email or phone call\nfor more information about tenk:\ninfo@libpet.com & +852 5931 7389'); location.href='team.html'">
+          Pre Order</button>
       </div>
       <a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
     </div>
@@ -107,7 +110,7 @@
       <span>G</span>
       <span>I</span>
       <span>C</span>
-  </div>
+    </div>
   </div>
 
 
@@ -334,34 +337,59 @@
 
   </section>
 
-  <section class="phone-apps-section px-3">
-    <img class="img-fluid mx-auto" src="/img/phone-apps-1.png" alt="phone-apps-1">
-  </section>
-
-  <section class="phone-apps-section px-3">
-    <img class="img-fluid mx-auto" src="/img/phone-apps-2.png" alt="phone-apps-2">
-  </section>
-
-  <section class="phone-apps-section px-3">
-    <div class="container-fluid py-5">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-sm-12 col-md-6 mx-auto text-center">
-          <img class="img-fluid" src="/img/phone-apps-3.png" alt="phone-apps-3">
+  <div class="app-container" style="overflow-x: hidden;">
+    <div class="caption">
+      <h2 class="text">Remote <span>Control</span></h2>
+      <p>That’s what drivers love. <br> Get your Libpet - 10 in and out your car easily.</p>
+    </div>
+    <img class="cover-img-1" src="img/tenk/phone-app-cover.png" alt="">
+    <img class="img-2" src="img/tenk/phone-apps-1.png" alt="">
+    <img class="img-3" src="img/tenk/phone-apps-2.png" alt="">
+  
+    <div class="big-container">
+      <img class="img-4" src="img/tenk/phone-apps-3.png" alt="">
+  
+      <div class="app-container-description">
+        <div class="apps-container-heading">Making sure the <br>ride is safe <br> before you go
         </div>
-        <div class="col-sm-12 col-md-6 mx-auto px-5">
-          <div class="apps-heading">Making sure the ride is safe before you go</div>
-          <div class="apps-in-text">Our <b>On-board diagnose system</b> allow us to tell our users when some parts went
-            wrong, and we our technical
-            support team will assist you in real time.
-          </div>
+        <div class="apps-container-in-text">Our <b>On-board diagnose system</b> allow us to tell our users when some parts
+          went
+          wrong, and we our technical
+          support team will assist you in real time.
         </div>
+  
       </div>
-  </section>
-
+    </div>
+  </div>
+  
+  
+  <!-- <section class="phone-apps-section px-3">
+                                                            <img class="img-fluid mx-auto" src="/img/phone-apps-1.png" alt="phone-apps-1">
+                                                          </section>
+                                                        
+                                                          <section class="phone-apps-section px-3">
+                                                            <img class="img-fluid mx-auto" src="/img/phone-apps-2.png" alt="phone-apps-2">
+                                                          </section>
+                                                        
+                                                          <section class="phone-apps-section px-3">
+                                                            <div class="container-fluid py-5">
+                                                              <div class="row justify-content-center align-items-center">
+                                                                <div class="col-sm-12 col-md-6 mx-auto text-center">
+                                                                  <img class="img-fluid" src="/img/phone-apps-3.png" alt="phone-apps-3">
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-6 mx-auto px-5">
+                                                                  <div class="apps-heading">Making sure the ride is safe before you go</div>
+                                                                  <div class="apps-in-text">Our <b>On-board diagnose system</b> allow us to tell our users when some parts went
+                                                                    wrong, and we our technical
+                                                                    support team will assist you in real time.
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                          </section> -->
 
 
   <!-- Footer Start -->
-  <div style="background-color: #f2f2f2;">
+  <div style="background-color: #f2f2f2; margin-top: 20px;">
     <footer style="min-height:200px;">
       <div class="container py-3">
         <div class="row">
@@ -408,7 +436,7 @@
     <p class="text-center footer-text copyright"> Copyright © Libpet Tech Limited, All Right Reserved.</p>
   </div>
 
-
+  
     <!-- jQuery -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
@@ -446,7 +474,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
@@ -463,8 +491,13 @@
     <script src="js/10-k.js"></script>
     <script src="js/footer.js"></script>
     <script  src="2.js"></script>
+    <script src="js/tenk/app.js"></script>
 
-
+    <script>
+      function contact() {
+        alert("Please contact us directly by email: info@libpet.com");
+      }
+    </script>
 
 </body>
 

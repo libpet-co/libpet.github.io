@@ -1,3 +1,45 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app-container{
+    min-height: 3000px;
+    overflow-x: hidden;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+}
+
+section .box{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    max-width: 1000px;
+    transform: translate(-50%, -50%);
+}
+
+section .box img{
+    max-width: 50%;
+}
+
+section .text{
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    font-size: 3em;
+    font-weight: 400;
+}
+
+section .text span{
+    color: #16b716;
+    font-weight: 700;
+} */
 
 body{
     margin: 0;
@@ -8,27 +50,21 @@ body{
     position: relative;
     width: 100%;
     height: 100vh;
-    max-height: 600px;
+    min-height: 600px;
     background-color: #FFF;
-    min-height: 200px;
 }
 
-.app-container .caption{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.app-container .text{
     position: absolute;
-    left: 0;
-    top: 0;
-    text-align: center;
+    bottom: 40px;
+    left: 40px;
+    font-size: 3em;
+    font-weight: 400;
 }
 
-.app-container .cover-img-1, .img-2, .img-3 {
+.app-container img {
 
-    height: 70%;
+    height: 50%;
     width: auto;
     position: absolute;
     top: 50%;
@@ -36,111 +72,6 @@ body{
     transform: translate(-50%, -50%);
 }
 
-.big-container{
-    display: flex;
-    flex-direction: row;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-}
+@media (max-width: 576px) {
 
-.big-container .img-4{
-    height: 70%;
-    width: auto;
-}
-
-.app-container .app-container-description{
-    opacity: 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 60%;
-    margin-left: 5%;
-}
-
-.app-container .app-container-description .apps-container-heading{
-    font-weight: 700;
-    font-size: 42px;
-    text-align: left;
-    line-height: 100%;
-}
-
-.app-container .app-container-description .apps-container-in-text{
-    font-size: 18px;
-    text-align: left;
-    margin-top: 24px;
-    padding-right: 30%;
-}
-
-@media (max-width: 769px) {
-    .app-container .app-container-description .apps-container-heading{
-        font-size: 32px;
-    }
-    .app-container .app-container-description .apps-container-in-text{
-        font-size: 14px;
-    }
-} 
-
-@media (max-width: 475px) {
-    .app-container .app-container-description .apps-container-heading{
-        font-size: 26px;
-    }
-}
-
-@media (max-width: 426px){
-    .big-container{
-        flex-direction: column;
-    }
-
-    .app-container .app-container-description{
-        margin-left: 0;
-        width: 80%;
-        margin-top: 10px;
-    }
-    .app-container .app-container-description .apps-container-in-text{
-        padding-right: 0;
-        margin-top: 12px;
-    }
-    .app-title-break{
-        display: none;
-    }
-}
-
- @media (max-width: 380px) {
-    /* .app-container .app-container-description{
-        right: 10%;
-        top: 110%;
-        width: 70%;
-    } */
-    .app-container .app-container-description .apps-container-heading{
-        font-size: 18px;
-    }
-    .app-container .app-container-description .apps-container-in-text{
-        font-size: 12px;
-    }
-}
-
-.caption .text{
-    font-size: 42px;
-}
-.caption p{
-    font-size: 18px;
-}
-
-@media (max-width: 375px){
-    .caption .text{
-        font-size: 36px;
-    }
-    .caption p{
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 320px){
-    .caption .text{
-        font-size: 28px;
-    }
 }
