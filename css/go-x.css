@@ -1,4 +1,3 @@
-
 .centered-items {
     display: flex;
     flex-direction: column;
@@ -12,9 +11,8 @@
 /* ====================================================== */
 .intro-GOX-section {
     height: 90vh;
-    min-height: 700px;
-    padding-left: 15vw;
-    padding-right: 15vw;
+    min-height: 500px;
+    padding: 0 15vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,10 +20,10 @@
 }
 
 .intro-GOX-section .container-fluid {
-    min-height: 400px;
+    min-height: 250px;
     border-radius: 26px;
     padding: 5vh 5vw 5vh;
-    height: 100%;
+    height: 80%;
     background-color: #EFEFEF;
     /* text-align: center; */
 }
@@ -34,11 +32,11 @@
     height: 100%;
 }
 
-.intro-GOX-section .col-lg-6 {
+/* .intro-GOX-section .col-lg-6 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
+} */
 
 .intro-GOX-section h2 {
     /* margin-top: 12vh; */
@@ -51,7 +49,7 @@
 .intro-GOX-section h6 {
     margin-top: 3vh;
     font-family: 'Outfit';
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: #000000;
 }
 
@@ -81,17 +79,32 @@
     }
 
     .intro-GOX-section h2 {
-        text-align: center;
-        font-size: 8vw;
+        /* text-align: center; */
+        font-size: 5vw;
     }
 
     .intro-GOX-section h6 {
-        font-size: 4vw;
+        font-size: 2vw;
     }
 
     .intro-GOX-section img {
         margin-top: 3vw;
         width: 30vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    .intro-GOX-section {
+        padding: 0 100px;
+    }
+
+    .intro-GOX-section h2 {
+        /* text-align: center; */
+        font-size: 6vw;
+    }
+
+    .intro-GOX-section h6 {
+        font-size: 2vw;
     }
 }
 
@@ -105,11 +118,10 @@
     .intro-GOX-section h2 {
         margin-top: 3vh;
         font-size: 6vw;
-        text-align: center;
     }
 
     .intro-GOX-section h6 {
-        font-size: 3.5vw;
+        font-size: 2vw;
         text-align: left;
     }
 
@@ -119,37 +131,11 @@
     }
 }
 
-/* for mobile landscape. Base on iphone 12 Pro */
-@media screen and (min-width: 769px) and (max-width: 992px) and (orientation:landscape) {
-    .intro-GOX-section {
-        border-radius: 39px;
-        height: 10vh;
-        min-height: 500px;
-        padding: 10vh 15vw 10vh;
-    }
-
-    .intro-GOX-section .container-fluid {
-        padding: 3vh 5vw 3vh;
-        height: fit-content;
-    }
-
-    .intro-GOX-section h2 {
-        margin-top: 3vh;
-        font-size: 5vw;
-        text-align: center;
-    }
-
-    .intro-GOX-section h6 {
-        font-size: 3vw;
-        text-align: left;
-    }
-
-    .intro-GOX-section img {
-        width: 20vw;
-    }
-}
-
 @media (max-width: 769px) {
+    .intro-GOX-section {
+        padding: 0 5vw;
+    }
+
     .intro-GOX-section .container-fluid {
         border-radius: 39px;
         padding: 5vh 5vw 5vh;
@@ -158,12 +144,12 @@
 
     .intro-GOX-section h2 {
         margin-top: 3vh;
-        font-size: 8vw;
-        text-align: center;
+        font-size: 6vw;
+        text-align: left;
     }
 
     .intro-GOX-section h6 {
-        font-size: 4vw;
+        font-size: 2.5vw;
         text-align: left;
     }
 
@@ -173,13 +159,42 @@
     }
 }
 
-@media screen and (min-width: 575.98px) and (max-width: 769px) and (orientation:landscape) {
-    .intro-GOX-section .container-fluid {
-        border-radius: 39px;
-        padding: 1vh 5vw 1vh;
-        height: fit-content;
+@media (max-width: 575.98px) {
+    .intro-GOX-section .centered-items{
+        height: 100%;
+    }
+    .intro-GOX-section {
+        padding: 5vh 5vw 5vh;
+        /* height: fit-content; */
+        align-items: flex-start;
     }
 
+    .intro-GOX-section .container-fluid {
+        border-radius: 39px;
+        padding: 2vh 5vw 2vh;
+        height: 80%;
+    }
+
+    .intro-GOX-section h2 {
+        margin-top: 3vh;
+        font-size: 7vw;
+        text-align: center;
+    }
+
+    .intro-GOX-section h6 {
+        margin-top: 0vh;
+        margin-bottom: 1vh;
+        font-size: 3vw;
+        text-align: left;
+    }
+
+    .intro-GOX-section img {
+        margin-top: 3vh;
+        width: 30vw;
+        height: auto;
+    }
+}
+@media (max-width: 425px) {
     .intro-GOX-section h2 {
         margin-top: 3vh;
         font-size: 7vw;
@@ -193,38 +208,8 @@
 
     .intro-GOX-section img {
         margin-top: 3vh;
-        width: 25vw;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .intro-GOX-section {
-        padding: 5vh 5vw 5vh;
-        /* height: fit-content; */
-    }
-
-    .intro-GOX-section .container-fluid {
-        border-radius: 39px;
-        padding: 2vh 5vw 2vh;
-        height: fit-content;
-    }
-
-    .intro-GOX-section h2 {
-        margin-top: 3vh;
-        font-size: 18vw;
-        text-align: center;
-    }
-
-    .intro-GOX-section h6 {
-        margin-top: 0vh;
-        margin-bottom: 1vh;
-        font-size: 5vw;
-        text-align: left;
-    }
-
-    .intro-GOX-section img {
-        margin-top: 3vh;
-        width: 55vw;
+        width: 45vw;
+        height: auto;
     }
 }
 
@@ -641,9 +626,7 @@
     z-index: 1;
 }
 
-.visible_div {
-    
-}
+.visible_div {}
 
 .invisible_div {
     display: none;
@@ -964,6 +947,7 @@
         #robo1 {
             width: 100px;
         }
+
     }
 
     @media (min-width: 515px) and (max-width: 768px) {
@@ -987,6 +971,7 @@
 
     #robo1 {
         width: 100px;
+        margin-left: 20px;
     }
 }
 
@@ -1000,7 +985,7 @@
     }
 }
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
     #wood_floor {
         width: 28vw;
         height: 300px;
@@ -1010,14 +995,16 @@
         width: 28vw;
         height: 300px;
     }
+
     #robo1 {
         width: 21vw;
     }
+
     .font3 {
         margin-top: 3vh;
     }
 
-}
+} */
 
 .anima_div {
     position: absolute;
