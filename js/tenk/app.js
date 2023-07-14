@@ -24,12 +24,12 @@
 // t.to(".img-4", {left: '10%', duration: 3})
 
 ScrollTrigger.create({
-  trigger: '.app-container',
+  trigger: '.trigger-app',
   start: 'top top',
   end: '+=8000',
   scrub: true,
   // markers: true,
-  pin: true,
+  pin: ".app-container",
   animation:
     gsap.timeline()
     .to(".caption", {scale: 0})
