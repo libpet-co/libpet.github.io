@@ -39,13 +39,13 @@ function animationOne() {
           start: "top top",
           scrub: true,
           pin: true,
-          end: "bottom+=2000px"
+          end: "bottom+=2000px",
+        //   markers: true
         }
       });
     animationOne
     .to(".slide-1", { opacity: 0, xPercent: 20})
     .to(".slide-2", { opacity: 1, xPercent: 20})
-    .to(".slide-2", {opacity: 1, xPercent: 20})
     .to(".slide-2", { opacity: 0, xPercent: 40 })
     .to(".slide-3", { opacity: 1 });
     return animationOne;
@@ -85,7 +85,9 @@ function animationTwo() {
     .to(".slide-x6", { opacity: 0, xPercent: 40});
     return animationTwo;
 }
-
+const master = gsap.timeline();
+master.add(animationOne());
+master.add(animationTwo(), '+=1');
 // let tl = gsap
 //   .timeline({
 //     scrollTrigger: {
@@ -104,9 +106,7 @@ function animationTwo() {
 //   .to(".slide-2", { opacity: 0, xPercent: 40 })
 //   .to(".slide-3", { opacity: 1 });
 
-const master = gsap.timeline();
-master.add(animationOne());
-master.add(animationTwo(), '+=1');
+
 
 //   let tl_2 = gsap.timeline({
 //         scrollTrigger: {
