@@ -10,7 +10,7 @@ text.forEach(paragraph => {
     paragraph.innerHTML = htmlString;
 })
 
-spans = [...document.querySelectorAll('span')];
+// spans = [...document.querySelectorAll('span')];
 
 function revealSpans() {
     for(let i = 0; i < spans.length; i++){

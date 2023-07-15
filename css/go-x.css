@@ -221,7 +221,7 @@
     justify-content: center;
     align-items: center;
     background-color: #FFFFFF;
-    padding: 3vh 5vw 3vh;
+    padding: 3vh 0 3vh;
     /* padding-left: 3vw;
     padding-right: 3vw; */
 }
@@ -502,7 +502,7 @@
     }
 
     .kickstarter-section h2 {
-        font-size: 12px;
+        font-size: 16px;
     }
 }
 
@@ -529,7 +529,9 @@
     .kickstarter-section input{
         width: 100%;
     }
-
+    .kickstarter-section h2 {
+        font-size: 13px;
+    }
 }
 
 
@@ -920,71 +922,67 @@
 } */
 @media (max-width: 1100px) {
     .font3 {
-        font-size: 54px;
+        font-size: 48px;
+    }
+
+    .font2 {
+        font-size: 26px;
+    }
+
+    .font1 {
+        font-size: 22px;
+        padding-right: 5%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .font3 {
+        margin-top: 20px;
+        font-size: 11vw;
+        color: #2F2E2E;
+        font-family: Outfit;
+        line-height: 40px;
     }
 
     .font2 {
         font-size: 30px;
+        color: #2F2E2E;
+        font-family: Outfit;
+        display: none;
     }
 
     .font1 {
-        font-size: 25px;
+        color: #2F2E2E;
+        font-family: Outfit;
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: 300;
     }
 
-    @media (max-width: 768px) {
-
-        /* .mobile_s {
-        display: block;
-    }
-    .non-mobile {
-        display: none;
-    } */
-        .font3 {
-            margin-top: 20px;
-            font-size: 11vw;
-            color: #2F2E2E;
-            font-family: Outfit;
-            line-height: 40px;
-        }
-
-        .font2 {
-            font-size: 30px;
-            color: #2F2E2E;
-            font-family: Outfit;
-            display: none;
-        }
-
-        .font1 {
-            color: #2F2E2E;
-            font-family: Outfit;
-            font-size: 20px;
-            line-height: 25px;
-            font-weight: 300;
-        }
-
-        #wood_floor {
-            width: 140px;
-        }
-
-        #grass_floor {
-            width: 140px;
-        }
-
-        #robo1 {
-            width: 100px;
-        }
-
+    #wood_floor {
+        width: 140px;
     }
 
-    @media (min-width: 515px) and (max-width: 768px) {
-        .font3 {
-            font-size: 50px;
-        }
-
-        .font1 {
-            font-size: 26px;
-        }
+    #grass_floor {
+        width: 140px;
     }
+
+    #robo1 {
+        width: 100px;
+    }
+
+}
+
+@media (min-width: 515px) and (max-width: 768px) {
+    .font3 {
+        font-size: 50px;
+    }
+
+    .font1 {
+        font-size: 26px;
+    }
+    
 
 
     #wood_floor {
@@ -1001,36 +999,38 @@
     }
 }
 
-@media (min-width: 515px) and (max-width: 768px) {
+@media (max-width: 768px) {
     .font3 {
-        font-size: 50px;
+        font-size: 42px;
     }
 
     .font1 {
-        font-size: 26px;
+        font-size: 18px;
+        padding: 0 10%;
     }
 }
 
-/* @media (max-width: 576px) {
-    #wood_floor {
-        width: 28vw;
-        height: 300px;
-    }
-
-    #grass_floor {
-        width: 28vw;
-        height: 300px;
-    }
-
-    #robo1 {
-        width: 21vw;
-    }
-
+@media (max-width: 425.5px) {
     .font3 {
-        margin-top: 3vh;
+        font-size: 32px;
     }
 
-} */
+    .font1 {
+        font-size: 14px;
+        padding: 0 10%;
+    }
+}
+
+@media (max-width: 425.5px) {
+    .font3 {
+        font-size: 26px;
+    }
+
+    .font1 {
+        font-size: 14px;
+        padding: 0 10%;
+    }
+}
 
 .anima_div {
     position: absolute;
@@ -1071,4 +1071,12 @@
     padding: 10px;
     text-decoration: none;
     cursor: pointer;
+}
+
+.no-wrap{
+    white-space: nowrap;
+}
+
+.breakline{
+    
 }
