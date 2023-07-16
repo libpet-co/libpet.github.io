@@ -41,16 +41,19 @@
 .intro-GOX-section h2 {
     /* margin-top: 12vh; */
     font-family: 'Source Sans Pro';
-    font-weight: 700;
-    font-size: 5vw;
+    font-weight: 800;
+    font-size: 70px;
     color: #000000;
+    text-align: left;
 }
 
 .intro-GOX-section h6 {
     margin-top: 3vh;
     font-family: 'Outfit';
-    font-size: 1.5vw;
+    font-size: 36px;
+    font-weight: 400;
     color: #000000;
+    text-align: left;
 }
 
 .intro-GOX-section img {
@@ -80,11 +83,11 @@
 
     .intro-GOX-section h2 {
         /* text-align: center; */
-        font-size: 5vw;
+        font-size: 64px;
     }
 
     .intro-GOX-section h6 {
-        font-size: 2vw;
+        font-size: 26px;
     }
 
     .intro-GOX-section img {
@@ -100,11 +103,11 @@
 
     .intro-GOX-section h2 {
         /* text-align: center; */
-        font-size: 6vw;
+        font-size: 64px;
     }
 
     .intro-GOX-section h6 {
-        font-size: 2vw;
+        font-size: 26px;
     }
 }
 
@@ -116,13 +119,12 @@
     }
 
     .intro-GOX-section h2 {
-        margin-top: 3vh;
-        font-size: 6vw;
+        /* text-align: center; */
+        font-size: 48px;
     }
 
     .intro-GOX-section h6 {
-        font-size: 2vw;
-        text-align: left;
+        font-size: 22px;
     }
 
     .intro-GOX-section img {
@@ -143,14 +145,12 @@
     }
 
     .intro-GOX-section h2 {
-        margin-top: 3vh;
-        font-size: 6vw;
-        text-align: left;
+        /* text-align: center; */
+        font-size: 48px;
     }
 
     .intro-GOX-section h6 {
-        font-size: 2.5vw;
-        text-align: left;
+        font-size: 22px;
     }
 
     .intro-GOX-section img {
@@ -177,14 +177,14 @@
 
     .intro-GOX-section h2 {
         margin-top: 3vh;
-        font-size: 7vw;
+        font-size: 48px;
         text-align: center;
     }
 
     .intro-GOX-section h6 {
         margin-top: 0vh;
         margin-bottom: 1vh;
-        font-size: 3vw;
+        font-size: 22px;
         text-align: left;
     }
 
@@ -197,12 +197,12 @@
 @media (max-width: 425px) {
     .intro-GOX-section h2 {
         margin-top: 3vh;
-        font-size: 7vw;
+        font-size: 48px;
         text-align: center;
     }
 
     .intro-GOX-section h6 {
-        font-size: 4vw;
+        font-size: 22px;
         text-align: left;
     }
 
@@ -210,6 +210,12 @@
         margin-top: 3vh;
         width: 45vw;
         height: auto;
+    }
+}
+
+@media (max-width: 300px){
+    .intro-GOX-section h6 {
+        font-size: 17px;
     }
 }
 
@@ -320,13 +326,13 @@
 }
 
 .voice-section h2 {
-    font-size: 40px;
-    font-weight: 400;
+    font-size: 48px;
+    font-weight: 700;
 }
 
 .voice-section h6 {
-    font-size: 21px;
-    font-weight: 400;
+    font-size: 28px;
+    font-weight: 500;
 }
 
 @media (max-width: 1200px) {
@@ -339,12 +345,10 @@
     .voice-section img {
         width: 40vw
     }
-
-    .voice-section h2 {
+    .voice-title-break{
+        display: block;
     }
 
-    .voice-section h6 {
-    }
 }
 
 /* for mobile landscape. Base on iphone 12 Pro */
@@ -354,11 +358,11 @@
     }
 
     .voice-section h2 {
-        font-size: 3vw;
+        font-size: 48px;
     }
 
     .voice-section h6 {
-        font-size: 2vw;
+        font-size: 28px;
     }
 }
 
@@ -368,11 +372,11 @@
     }
 
     .voice-section h2 {
-        font-size: 32px;
+        font-size: 42px;
     }
 
     .voice-section h6 {
-        font-size: 19px;
+        font-size: 24px;
     }
 }
 
@@ -382,11 +386,11 @@
     }
 
     .voice-section h2 {
-        font-size: 32px;
+        font-size: 42px;
     }
 
     .voice-section h6 {
-        font-size: 19px;
+        font-size: 22px;
     }
 }
 
@@ -396,14 +400,30 @@
     }
 
     .voice-section h2 {
-        font-size: 26px;
+        font-size: 36px;
     }
 
     .voice-section h6 {
-        font-size: 16px;
+        font-size: 24px;
     }
-    .voice-title-break{
+}
+
+.p-break{
+    display: none;
+}
+@media (min-width: 460px) {
+    .p-break{
         display: block;
+    }    
+}
+
+@media (max-width: 300px) {
+    .voice-section h2 {
+        font-size: 32px;
+    }
+
+    .voice-section h6 {
+        font-size: 17px;
     }
 }
 
@@ -417,9 +437,9 @@
     font-family: 'Outfit';
     color: #515151;
     text-align: center;
-    font-weight: 500;
+    font-weight: 700;
     /* margin-bottom: 3vh; */
-    font-size: 26px;
+    font-size: 32px;
 }
 
 .kickstarter-section .kickstart-form{
@@ -452,7 +472,7 @@
 }
 
 .kickstarter-breakline{
-    display: none;
+    display: block;
 }
 
 @media (max-width: 1200px) {
@@ -461,7 +481,7 @@
     }
 
     .kickstarter-section h2 {
-        font-size: 26px;
+        font-size: 32px;
     }
 }
 
@@ -471,7 +491,10 @@
     }
 
     .kickstarter-section h2 {
-        font-size: 20px;
+        font-size: 32px;
+    }
+    .kickstarter-breakline{
+        display: none;
     }
 }
 
@@ -481,7 +504,8 @@
     }
 
     .kickstarter-section h2 {
-        font-size: 20px;
+        width: 80%;
+        font-size: 32px;
     }
 }
 
@@ -491,10 +515,13 @@
     }
 
     .kickstarter-section h2 {
-        font-size: 16px;
+        width: 80%;
+        font-size: 24px;
     }
 
 }
+
+
 
 @media (max-width: 575.98px) {
     .kickstarter-section img {
@@ -502,14 +529,13 @@
     }
 
     .kickstarter-section h2 {
-        font-size: 16px;
+        width: 80%;
+        font-size: 22px;
     }
 }
 
 @media (max-width: 450px) {
-    .kickstarter-breakline{
-        display: block;
-    }
+
     .kickstart-form{
         flex-direction: column;
     }
@@ -530,7 +556,13 @@
         width: 100%;
     }
     .kickstarter-section h2 {
-        font-size: 13px;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 300px){
+    .kickstarter-section h2 {
+        font-size: 17px;
     }
 }
 
@@ -603,7 +635,7 @@
 .font-h2 {
     line-height: 55px;
     font-size: 60px;
-    font-weight: 600;
+    font-weight: 800;
     font-family: Outfit;
     margin-bottom: 25px;
     margin-top: 60px;
@@ -611,9 +643,9 @@
 
 .font-p {
     font-family: Outfit;
-    line-height: 25px;
-    font-size: 20px;
-    font-weight: 400;
+    line-height: 1.2;
+    font-size: 24px;
+    font-weight: 600;
     color: #000000;
     margin-top: 35px;
 }
@@ -622,8 +654,6 @@
     position: absolute;
     z-index: 1;
 }
-
-.visible_div {}
 
 .invisible_div {
     display: none;
@@ -750,12 +780,11 @@
 
     .font-p {
         width: auto;
-        font-size: 20px;
+        font-size: 24px;
         margin-left: 20px;
         margin-right: 10%;
         margin-bottom: 0;
         margin-top: 20px;
-        font-weight: 300;
     }
 
     .font-h2 {
@@ -795,23 +824,23 @@
 
 @media (max-width: 520px) {
     .font-h2{
-        font-size: 32px;
+        font-size: 50px;
     }
 
     .font-p{
         margin-right: 5%;
-        font-size: 16px;
+        font-size: 22px;
     }
 }
 
 @media (max-width: 300px) {
     .font-h2{
-        font-size: 28px;
+        font-size: 36px;
     }
 
     .font-p{
         margin-right: 5%;
-        font-size: 14px;
+        font-size: 17px;
     }
 }
 
@@ -894,7 +923,7 @@
     font-family: Outfit;
     font-size: 23px;
     line-height: 30px;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 #wood_floor {
@@ -921,9 +950,6 @@
     display: none;
 } */
 @media (max-width: 1100px) {
-    .font3 {
-        font-size: 48px;
-    }
 
     .font2 {
         font-size: 26px;
@@ -957,7 +983,7 @@
         font-family: Outfit;
         font-size: 20px;
         line-height: 25px;
-        font-weight: 300;
+        font-weight: 600;
     }
 
     #wood_floor {
@@ -1005,7 +1031,7 @@
     }
 
     .font1 {
-        font-size: 18px;
+        font-size: 24px;
         padding: 0 10%;
     }
 }
@@ -1016,18 +1042,17 @@
     }
 
     .font1 {
-        font-size: 14px;
+        font-size: 22px;
         padding: 0 10%;
     }
 }
 
-@media (max-width: 425.5px) {
+@media (max-width: 300px) {
     .font3 {
         font-size: 26px;
     }
-
     .font1 {
-        font-size: 14px;
+        font-size: 17px;
         padding: 0 10%;
     }
 }

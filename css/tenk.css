@@ -347,3 +347,30 @@ section {
         font-size: 24px;
     }
 }
+
+.tenk-last{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 300px;
+    overflow: hidden;
+}
+
+.tenk-last img{
+    height: auto;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.tenk-last .tenk-last-text-container{
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.tank-last .tenk-last-text-container h1{
+    
+}
