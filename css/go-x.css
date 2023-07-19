@@ -32,12 +32,6 @@
     height: 100%;
 }
 
-/* .intro-GOX-section .col-lg-6 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} */
-
 .intro-GOX-section h2 {
     /* margin-top: 12vh; */
     font-family: 'Source Sans Pro';
@@ -50,18 +44,14 @@
 .intro-GOX-section h6 {
     margin-top: 3vh;
     font-family: 'Outfit';
-    font-size: 36px;
-    font-weight: 400;
-    color: #000000;
+    font-size: 28px;
+    font-weight: 500;
+    color: #86868B;
     text-align: left;
 }
 
 .intro-GOX-section img {
-    /* margin-left: 5vw; */
     width: 20vw;
-    /* justify-content: center; */
-    /* text-align: center; */
-    /* float: right; */
 }
 
 .ca3-scroll-down-arrow {
@@ -124,7 +114,7 @@
     }
 
     .intro-GOX-section h6 {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .intro-GOX-section img {
@@ -150,7 +140,7 @@
     }
 
     .intro-GOX-section h6 {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .intro-GOX-section img {
@@ -172,7 +162,7 @@
     .intro-GOX-section .container-fluid {
         border-radius: 39px;
         padding: 2vh 5vw 2vh;
-        height: 80%;
+        height: 100%;
     }
 
     .intro-GOX-section h2 {
@@ -184,7 +174,7 @@
     .intro-GOX-section h6 {
         margin-top: 0vh;
         margin-bottom: 3vh;
-        font-size: 22px;
+        font-size: 24px;
         text-align: left;
     }
 
@@ -215,7 +205,7 @@
 
 @media (max-width: 300px){
     .intro-GOX-section h6 {
-        font-size: 17px;
+        font-size: 22px;
     }
 }
 
@@ -333,6 +323,7 @@
 .voice-section h6 {
     font-size: 28px;
     font-weight: 500;
+    color: #86868B;
 }
 
 @media (max-width: 1200px) {
@@ -449,7 +440,7 @@
 }
 
 .kickstarter-section input {
-    width: 50%;
+    width: 30%;
     height: auto;
     border-color: transparent;
     border-radius: 16px;
@@ -496,6 +487,9 @@
     .kickstarter-breakline{
         display: none;
     }
+    .kickstarter-section input{
+        width: 50%;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) and (orientation:landscape) {
@@ -524,6 +518,15 @@
 
 
 @media (max-width: 575.98px) {
+    .kickstart-form{
+        flex-direction: column;
+    }
+    .kickstarter-section input{
+        width: 70%;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 20px;
+    }
     .kickstarter-section img {
         width: 40vw
     }
@@ -536,16 +539,6 @@
 
 @media (max-width: 450px) {
 
-    .kickstart-form{
-        flex-direction: column;
-    }
-
-    .kickstarter-section input{
-        width: 70%;
-        padding-top: 0;
-        padding-bottom: 0;
-        margin-bottom: 20px;
-    }
     .kickstarter-section button{
         padding: 2px 20px;
     }
@@ -553,7 +546,7 @@
 
 @media (max-width: 375px){
     .kickstarter-section input{
-        width: 100%;
+        width: 80%;
     }
     .kickstarter-section h2 {
         font-size: 22px;
@@ -646,7 +639,7 @@
     line-height: 1.2;
     font-size: 24px;
     font-weight: 600;
-    color: #000000;
+    color: #86868B;
     margin-top: 35px;
 }
 
@@ -919,7 +912,7 @@
 }
 
 .font1 {
-    color: #2F2E2E;
+    color: #86868B;
     font-family: Outfit;
     font-size: 23px;
     line-height: 30px;
@@ -929,15 +922,7 @@
 #wood_floor {
     width: 165px;
     z-index: 0;
-    position: absolute;
-}
-
-#robo1 {
     position: relative;
-    width: 125px;
-    z-index: 10;
-    margin-left: 20px;
-    bottom: 0px;
 }
 
 #grass_floor {
@@ -945,6 +930,38 @@
     z-index: 0;
     position: relative;
 }
+
+#robo1 {
+    position: absolute;
+    width: 125px;
+    z-index: 10;
+    margin-left: 0px;
+    bottom: 0px;
+    animation: moveUp 5s infinite;
+}
+
+#robo2 {
+    position: absolute;
+    width: 125px;
+    z-index: 10;
+    margin-left: 0px;
+    transform: rotate(180deg);
+    top: -40%;
+    animation: moveDown 5s infinite;
+    animation-delay: 3s;
+}
+
+@keyframes moveUp {
+    from {top: 150%;}
+    to {top: -60%;}
+}
+
+@keyframes moveDown {
+    from {top: -60%;}
+    to {top: 150%;}
+}
+
+
 
 /* .mobile_s {
     display: none;
@@ -966,21 +983,15 @@
     .font3 {
         margin-top: 20px;
         font-size: 11vw;
-        color: #2F2E2E;
-        font-family: Outfit;
         line-height: 40px;
     }
 
     .font2 {
         font-size: 30px;
-        color: #2F2E2E;
-        font-family: Outfit;
         display: none;
     }
 
     .font1 {
-        color: #2F2E2E;
-        font-family: Outfit;
         font-size: 20px;
         line-height: 25px;
         font-weight: 600;
@@ -995,6 +1006,9 @@
     }
 
     #robo1 {
+        width: 100px;
+    }
+    #robo2 {
         width: 100px;
     }
 
@@ -1021,7 +1035,9 @@
 
     #robo1 {
         width: 100px;
-        margin-left: 20px;
+    }
+    #robo2 {
+        width: 100px;
     }
 }
 
@@ -1033,6 +1049,18 @@
     .font1 {
         font-size: 24px;
         padding: 0 10%;
+    }
+}
+
+@media (max-width: 767.5px){
+    @keyframes moveUp {
+        from {top: 110%;}
+        to {top: -40%;}
+    }
+    
+    @keyframes moveDown {
+        from {top: -40%;}
+        to {top: 110%;}
     }
 }
 
@@ -1102,6 +1130,6 @@
     white-space: nowrap;
 }
 
-.breakline{
-    
+.highlighted{
+    color: #1D1D1F;
 }
