@@ -257,8 +257,11 @@ section {
 }
 
 .intro .intro-image .intro-text-container p{
-    font-size: 1.3rem;
-    color: #000000;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2;
+    font-family: 'Outfit';
+    color: #1D1D1F;
     width: 40%;
 }
 
@@ -277,34 +280,49 @@ section {
     background-image: url('../img/arrow-black.svg');
 }
 
+.intro .intro-image .btn{
+    background-color: rgba(0, 113, 227, 0.9);
+}
+
+.intro .intro-image .btn:hover{
+    opacity: 0.7;
+    transition: 1s;
+}
+
+
 @media (max-width: 768px) {
     .intro .intro-image .intro-text-container p{
         width: 40%;
-        font-size: 1.1rem;
-    }
-}
-
-@media (max-width: 425px) {
-    .intro .intro-image .intro-text-container p{
-        width: 50%;
-        font-size: 1rem;
-    }
-    .intro .intro-text-container{
-        top: 10%;
+        font-size: 22px;
     }
 }
 
 @media (max-width: 425px) {
     .intro .intro-image .intro-text-container h1{
-        font-size: 2rem;
+        font-size: 36px;
     }
     .intro .intro-image .intro-text-container p{
-        width: 50%;
-        font-size: 0.8rem;
+        width: 70%;
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    .intro .intro-text-container{
+        top: 10%;
     }
     .intro .intro-image .btn{
-        font-size: 0.8rem;
-        padding: 5px 10px;
+        font-size: 18px;
+        padding: 5px 15px;
+    }
+}
+
+@media (max-width: 300px){
+        .intro .intro-image .intro-text-container h1{
+        font-size: 32px;
+    }
+    .intro .intro-image .intro-text-container p{
+        width: 70%;
+        font-size: 17px;
+        margin-top: 10px;
     }
 }
 
