@@ -705,6 +705,12 @@ flex-direction: column;
     color: #518EF8;
   }
 
+  @media (max-width: 991.5px){
+    .news .news-text h2{
+        margin-top: 23px;
+    }
+  }
+
   .news .news-text h1{
     font-weight: 700;
     font-size: 36px;
