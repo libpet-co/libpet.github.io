@@ -1,29 +1,5 @@
 const controller = new ScrollMagic.Controller();
 
-//video slider //
-
-const btns = document.querySelectorAll(".nav-btn");
-const slides = document.querySelectorAll(".video-slide");
-
-var slideNav = function(manual){
-  btns.forEach((btn) => {
-    btn.classList.remove("active");
-  });
-
-  slides.forEach((slide) => {
-    slide.classList.remove("active");
-  });
-
-  btns[manual].classList.add("active");
-  slides[manual].classList.add("active");
-}
-
-btns.forEach((btn, i) => {
-  btn.addEventListener("click", () => {
-    slideNav(i);
-  });
-});
-
 const tl2 = gsap.timeline({
   scrollTrigger: {
     trigger: ".scroll-magic-container",
