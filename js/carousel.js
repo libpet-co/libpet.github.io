@@ -45,6 +45,8 @@
   
         },
         onTranslated: function(event) {
+          var btn = $(".center #play-control-btn").get(0);
+
           $(event.target).find('video').each(function(){
             this.pause();
           });
@@ -52,6 +54,7 @@
           if(currentVideo){
             currentVideo.currentTime = 0;
             currentVideo.play();
+            $(btn).addClass("playing");
           }
           currentVideo.onended = function(){
             $(event.target).trigger('next.owl.carousel');
@@ -65,7 +68,6 @@
           }
   
           var playing = true;
-          var btn = $(".center #play-control-btn").get(0);
   
           $(btn).click(function() {
             // toggle the value of the 'playing' variable
