@@ -4,9 +4,9 @@
     var carousels = function () {
       $(".owl-carousel1").owlCarousel({
         onInitialized: function(event) {
-          // $(event.target).find('video').each(function(){
-          //   this.pause();
-          // });
+          $(event.target).find('video').each(function(){
+            this.pause();
+          });
           var currentVideo = $(event.target).find('.owl-item.active video')[0];
           if(currentVideo){
             currentVideo.currentTime = 0;
@@ -47,9 +47,9 @@
         onTranslated: function(event) {
           var btn = $(".center #play-control-btn").get(0);
 
-          // $(event.target).find('video').each(function(){
-          //   this.pause();
-          // });
+          $(event.target).find('video').each(function(){
+            this.pause();
+          });
           var currentVideo = $(event.target).find('.owl-item.active video')[0];
           if(currentVideo){
             currentVideo.currentTime = 0;
