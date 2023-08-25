@@ -116,9 +116,9 @@
     };
   
     (function ($) {
-      $(window).on('load', function(){
-        carousels();
-      })
-      // carousels();
+      // $(window).on('load', function(){
+      //   carousels();
+      // })
+      carousels();
     })(jQuery);
   })();
