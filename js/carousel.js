@@ -116,8 +116,10 @@
     };
   
     (function ($) {
-      $(document).ready(function(){
+      $(window).ready(function(){
         carousels();
+        alert("Loaded");
+
       });
     })(jQuery);
   })();
