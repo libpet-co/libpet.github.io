@@ -116,10 +116,9 @@
     };
   
     (function ($) {
-      $(window).ready(function(){
+      $(window).on('load', function(){
         carousels();
-        alert("Loaded");
-
-      });
+      })
+      // carousels();
     })(jQuery);
   })();
