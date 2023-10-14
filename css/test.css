@@ -1,0 +1,128 @@
+body {
+  background-color: #dedede;
+}
+
+.toggle-switch.switch-vertical {
+  position: relative;
+  height: 55px;
+}
+
+.toggle-inside {
+  position: absolute;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  height: 17px;
+  width: 17px;
+  margin-left: 2%;
+}
+
+.toggle-inside:first-child {
+  background-color: #ffffff;
+  top: 0;
+}
+
+.toggle-inside:last-child {
+  background-color: #757272;
+  bottom: 0;
+}
+
+.main {
+  height: 100vh;
+  min-height: 800px;
+}
+
+.main-container {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.main-text-container {
+  position: relative;
+  height: auto;
+}
+
+.main-text-container svg {
+  width: 100%;
+}
+
+.main-text-container text {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1.44px;
+}
+
+.main-text-container .slogan {
+  margin-top: -1%;
+  margin-bottom: 5%;
+}
+
+.main-text-container .slogan p {
+  margin-left: 2%;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 34px;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.main-container .main-image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 4%;
+  left: 10%;
+  margin-top: 0;
+  overflow: hidden;
+}
+
+.main-container .main-image img {
+  width: auto;
+  height: 100%;
+  margin-left: 17%;
+}
+
+.toggle-row {
+  height: 100%;
+}
+
+@media (max-width: 991.5px) {
+  .main-container .main-image img {
+    width: auto;
+    height: 70%;
+    margin-left: 20%;
+  }
+}
+
+@media (max-width: 767.5px) {
+  .main-text-container .slogan p {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 540px) {
+  .main-container .main-image img {
+    margin-top: 20%;
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 470px) {
+  .main-container .main-image img {
+    width: auto;
+    height: 50%;
+    margin-left: 20%;
+  }
+}
+
+@media (max-width: 385px) {
+  .main-container .main-image img {
+    margin-top: 40%;
+    margin-left: 0;
+  }
+
+  .main-text-container .slogan p {
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
