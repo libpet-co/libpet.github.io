@@ -30,8 +30,8 @@ h3 {
 }
 
 .bg-custom-light {
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
   border-color: transparent;
 }
 
