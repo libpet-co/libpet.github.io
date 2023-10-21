@@ -2,11 +2,16 @@ var element = document.querySelector(".bg-custom-light");
 var exhibitionHome = document.getElementById("exhibition-main");
 
 window.addEventListener("scroll", function () {
+  var elementRect = exhibitionHome.getBoundingClientRect();
+
   // 计算元素底部相对于视口顶部的距离
-  var elementBottom = exhibitionHome.offsetTop + exhibitionHome.offsetHeight;
+  var elementBottom = elementRect.top + elementRect.height;
 
   // 计算视口底部相对于文档顶部的距离
-  var viewportBottom = window.scrollY + window.innerHeight;
+  var viewportBottom = window.scrollY;
+
+  console.log(elementBottom);
+  console.log(viewportBottom);
 
   console.log(elementBottom);
   console.log(viewportBottom);
