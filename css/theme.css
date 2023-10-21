@@ -78,8 +78,8 @@ a{
   color: var(--p-color);
   font-weight: var(--font-weight-semibold);
   font-size: var(--menu-font-size);
-  padding-top: 15px;
-  padding-bottom: 15px;
+  /* padding-top: 15px;
+  padding-bottom: 15px; */
 }
 
 .navbar-nav .nav-item.active .nav-link, 
