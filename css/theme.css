@@ -27,8 +27,8 @@ a{
   NAVIGATION              
 -----------------------------------------*/
 .nav-container{
-  min-height: 70px;
-  height: 70px;
+  min-height: 55px;
+  height: 55px;
 }
 
 @media (max-width: 767.5px){
