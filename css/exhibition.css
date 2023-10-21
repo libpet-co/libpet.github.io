@@ -1,0 +1,206 @@
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+.override-nav {
+  max-width: 1600px;
+  padding: 0 5%;
+}
+
+.exhibition-home {
+  background-image: url("../img/exhibition_home.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.custom-nav-exhibition {
+  min-height: 0;
+  height: 0;
+}
+
+.bg-custom-light {
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  border-color: transparent;
+}
+
+.exhibition-home .exhibition-home-text-container {
+}
+
+.exhibition-home-text-container .home-title {
+  font-size: 350px;
+  letter-spacing: 20px;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 1.2;
+  transform: translateX(10px);
+}
+
+.exhibition-home-text-container .home-subtitle {
+  font-size: 80px;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Outfit";
+  text-align: center;
+  line-height: 1.1;
+}
+
+.home-subtitle-break{
+    display: none;
+}
+
+@media (max-width: 1440.5px){
+    .exhibition-home-text-container .home-title {
+        font-size: 300px;
+    }
+    .exhibition-home-text-container .home-subtitle {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 1274px){
+    .exhibition-home-text-container .home-title {
+        font-size: 250px;
+    }
+    .exhibition-home-text-container .home-subtitle {
+        font-size: 60px;
+    }
+}
+
+@media (min-width: 1274.5px){
+    .home-title{
+        padding-top: 100px;
+    }
+    .exhibition-home {
+        min-height: 800px;
+    }
+}
+
+@media (max-width: 1024.5px){
+    .exhibition-home-text-container .home-title {
+        font-size: 180px;
+    }
+    .exhibition-home-text-container .home-subtitle {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 1024px){
+    .exhibition-home-text-container .home-title {
+        line-height: 1;
+    }
+}
+
+@media (max-width: 768.5px){
+    .exhibition-home-text-container .home-title {
+        font-size: 150px;
+    }
+    .exhibition-home-text-container .home-subtitle {
+        font-size: 40px;
+    }
+    .home-subtitle-break{
+        display: block;
+    }
+}
+
+@media (max-width: 640px){
+    .exhibition-home-text-container .home-title {
+        font-size: 130px;
+    }
+    .exhibition-home-text-container .home-subtitle {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 550px){
+    .exhibition-home-text-container .home-title {
+        font-size: 110px;
+    }
+    .exhibition-home-text-container .home-subtitle {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 500px){
+    .exhibition-home-text-container .home-title {
+        font-size: 100px;
+    }
+    .exhibition-home-text-container .home-subtitle {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 475px){
+    .exhibition-home-text-container .home-title {
+        font-size: 80px;
+    }
+    .exhibition-home-text-container .home-subtitle {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 400px){
+    .exhibition-home-text-container .home-title {
+        font-size: 70px;
+    }
+    .exhibition-home-text-container .home-subtitle {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 360px){
+    .exhibition-home-text-container .home-title {
+        font-size: 55px;
+    }
+    .exhibition-home-text-container .home-subtitle {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 310px){
+    .exhibition-home-text-container .home-title {
+        font-size: 40px;
+    }
+    .exhibition-home-text-container .home-subtitle {
+        font-size: 20px;
+    }
+}
+
+.exhibition-main{
+    text-align: center;
+    font-size: 27px;
+    height: auto;
+    min-height: 800px;
+}
+
+.exhibition-main p{
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.exhibition-details{
+    margin-top: 5%;
+}
+
+.exhibition-image{
+    width: 100%;
+    height: auto;
+}
+
+.exhibition-main .exhibition-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.exhibition-text{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: auto;
+}

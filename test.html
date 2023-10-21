@@ -47,13 +47,20 @@
       type="image/x-icon"
       href="/img/logo-black-without-word.svg"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body id="page-top">
     <main>
       <div class="nav-container">
         <nav class="navbar navbar-expand-md bg-light fixed-top shadow-md">
-          <div class="container">
+          <div class="container override-nav" style="max-width: 1600px; padding: 0 5%;">
             <a class="navbar-brand mx-auto d-lg-none" href="index.html">
               <img
                 class="iconlogo"
@@ -82,7 +89,7 @@
                   width="23"
                 />
               </a>
-              <ul class="navbar-nav" style="margin-left: auto;">
+              <ul class="navbar-nav" style="margin-left: auto">
                 <li class="nav-item">
                   <a class="nav-link" href="tenk.html">TenK</a>
                 </li>
@@ -106,7 +113,7 @@
     </main>
 
     <div class="main">
-      <div class="toggle-switch-container container">
+      <div class="toggle-switch-container">
         <div class="row toggle-row">
           <div class="main-container">
             <div class="main-text-container">
@@ -133,9 +140,151 @@
       </div>
     </div>
 
+    <div class="stat">
+      <div class="container stat-container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="card" id="card-1">
+              <div class="card-body">
+                <div class="card-logo">
+                  <img src="img/speed.svg" alt="" />
+                </div>
+                <p class="card-text card-info">
+                  <span class="f-large">10</span>
+                  <span class="f-bold">&nbsp;km/h</span>
+                </p>
+                <p class="card-text card-description">
+                  Max <br />
+                  Speed
+                </p>
+                <div class="white-circle"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card" id="card-2">
+              <div class="card-body">
+                <div class="card-logo">
+                  <img src="img/distance.svg" alt="" />
+                </div>
+                <p class="card-text card-info">
+                  <span class="f-large">35</span>
+                  <span class="f-bold">&nbsp;km</span>
+                </p>
+                <p class="card-text card-description">
+                  Max <br />
+                  Distance
+                </p>
+                <div class="white-circle"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card" id="card-3">
+              <div class="card-body">
+                <div class="card-logo">
+                  <img src="img/gradient.svg" alt="" />
+                </div>
+                <p class="card-text card-info">
+                  <span class="f-large">36°</span>
+                </p>
+                <p class="card-text card-description">
+                  Max <br />
+                  Gradient
+                </p>
+                <div class="white-circle"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card" id="card-4">
+              <div class="card-body">
+                <div class="card-logo">
+                  <img src="img/obstacle.svg" alt="" />
+                </div>
+                <p class="card-text card-info">
+                  <span class="f-large">20</span>
+                  <span class="f-bold">&nbsp;cm</span>
+                </p>
+                <p class="card-text card-description">
+                  Max <br />
+                  Obstacle Height
+                </p>
+                <div class="white-circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stat-image">
+      <img src="img/power-remote.png" alt="" />
+      <div class="center-horizontally">
+        <div class="control-word-container">
+          <h1 class="control-title">Central Control</h1>
+          <p class="control-description">
+            In order to provide you with a better control experience, <br />
+            we are offering you a brand new generation of intelligent control
+            center. <br />
+            You can master it without any learning, and it provides you with a
+            more user-friendly design for your control.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="stair-stat">
+      <picture>
+        <img src="img/power-stair-background.png" alt="" />
+      </picture>
+      <div class="stair-stat-center">
+        <div class="control-word-container">
+          <h1 class="control-title">36°</h1>
+          <p class="control-subtitle">
+            Max <br />
+            Gradient
+          </p>
+          <br />
+          <p class="control-description">
+            The "Power" has a more powerful climbing ability, <br />
+            and it is safe and reliable. <br />
+            The maximum gradient reaches 36 degrees.It will be your most trusted
+            friend.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <div class="image-container-text">
+        <div class="image-container-title">
+          All <br />
+          Terrain <br />
+          Adaptation
+        </div>
+        <div class="image-container-description">
+          We have employed various technologies, including an advanced
+          <b>mechanical design,</b> <br />
+          <b>control algorithms,</b> and <b>combinations of sensors,</b> to enable POWER to
+          tackle various terrains with ease. In particular, its design allows
+          for climbing stairs, as well as smoothly traversing <b>urban roads,
+          beaches, grasslands,</b> and more. <br />
+          POWER means mobility without boundaries.
+        </div>
+      </div>
+      <div class="first-row">
+        <img src="img/terrain-one.png" alt="Image 3" />
+        <img src="img/terrain-two.png" alt="Image 4" />
+      </div>
+      <div class="second-row">
+        <img src="img/terrain-three.png" alt="Image 3" />
+        <img src="img/terrain-four.png" alt="Image 4" />
+      </div>
+    </div>
 
     <!-- Footer Start -->
-    <div style="background-color: #dedede">
+    <div style="background-color: #dedede; margin-top: 10%">
       <footer style="min-height: 200px">
         <div class="container py-3">
           <div class="row">

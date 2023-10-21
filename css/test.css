@@ -1,19 +1,38 @@
 body {
   background-color: #dedede;
+  font-family: "Outfit", sans-serif;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.override-nav {
+  max-width: 1600px;
+  padding: 0 5%;
+}
+
+.main {
+  justify-content: center;
 }
 
 .toggle-switch.switch-vertical {
   position: relative;
-  height: 55px;
+  height: 70px;
+}
+
+.toggle-switch-container {
+  width: 100%;
+  max-width: 1600px;
 }
 
 .toggle-inside {
   position: absolute;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
-  height: 17px;
-  width: 17px;
-  margin-left: 2%;
+  height: 22px;
+  width: 22px;
+  margin-left: 6%;
 }
 
 .toggle-inside:first-child {
@@ -28,28 +47,34 @@ body {
 
 .main {
   height: 100vh;
-  min-height: 800px;
+  min-height: 1320px;
+  position: static;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 .main-container {
   position: relative;
   height: 100%;
-  overflow: hidden;
 }
 
 .main-text-container {
   position: relative;
   height: auto;
+  margin-top: 5%;
 }
 
 .main-text-container svg {
   width: 100%;
+  padding: 0 4%;
 }
 
 .main-text-container text {
   font-weight: 600;
   font-size: 14px;
-  letter-spacing: 1.44px;
+  letter-spacing: 1.25px;
+  opacity: 0.878;
 }
 
 .main-text-container .slogan {
@@ -58,7 +83,7 @@ body {
 }
 
 .main-text-container .slogan p {
-  margin-left: 2%;
+  margin-left: 6%;
   color: #ffffff;
   font-weight: 600;
   line-height: 30px;
@@ -69,28 +94,42 @@ body {
 .main-container .main-image {
   position: absolute;
   height: 100%;
-  width: 100%;
-  top: 4%;
-  left: 10%;
+  width: 100vw;
+  top: 0%;
+  left: 0%;
   margin-top: 0;
-  overflow: hidden;
 }
 
 .main-container .main-image img {
   width: auto;
   height: 100%;
-  margin-left: 17%;
+  margin-left: 10%;
+  margin-top: 5%;
 }
 
 .toggle-row {
   height: 100%;
 }
 
+@media (max-width: 1600px) {
+  .main-container .main-image img {
+    height: 80%;
+    margin-left: 27%;
+    margin-top: 7%;
+  }
+}
+
+@media (max-width: 1160px) {
+  .main-container .main-image img {
+    margin-left: 10%;
+  }
+}
+
 @media (max-width: 991.5px) {
   .main-container .main-image img {
     width: auto;
     height: 70%;
-    margin-left: 20%;
+    margin-left: 5%;
   }
 }
 
@@ -98,31 +137,299 @@ body {
   .main-text-container .slogan p {
     font-size: 24px;
   }
-}
 
-@media (max-width: 540px) {
   .main-container .main-image img {
-    margin-top: 20%;
-    margin-left: 10%;
+    margin-top: 25%;
+    margin-left: 0%;
+    height: 55%;
   }
 }
 
-@media (max-width: 470px) {
+@media (max-width: 568px) {
   .main-container .main-image img {
-    width: auto;
+    margin-top: 25%;
+    margin-left: 0%;
     height: 50%;
-    margin-left: 20%;
   }
 }
 
-@media (max-width: 385px) {
+@media (max-width: 528px) {
   .main-container .main-image img {
-    margin-top: 40%;
-    margin-left: 0;
+    margin-top: 25%;
+    margin-left: 0%;
+    height: 40%;
+  }
+}
+
+@media (max-width: 425px) {
+  .main-container .main-image img {
+    margin-top: 25%;
+    margin-left: 0%;
+    height: 30%;
   }
 
   .main-text-container .slogan p {
     font-size: 22px;
     line-height: 24px;
   }
+}
+
+@media (max-width: 320px) {
+  .main-container .main-image img {
+    margin-top: 25%;
+    margin-left: 0%;
+    height: 25%;
+  }
+
+  .main-text-container .slogan p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .toggle-inside {
+    height: 18px;
+    width: 18px;
+  }
+
+  .toggle-switch.switch-vertical {
+    height: 60px;
+  }
+}
+
+.stat {
+  overflow: hidden;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f7f7f7;
+}
+
+.card .card-logo {
+  height: 50px;
+  position: relative;
+  margin-top: 20%;
+  margin-left: 7%;
+}
+
+.card .card-logo img {
+  height: 100%;
+  width: auto;
+  color: #ffffff;
+}
+
+.card .f-large {
+  font-size: 110px;
+  font-weight: 300;
+  font-family: "Outfit", sans-serif;
+}
+
+.card .f-bold {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.card .card-info {
+  margin-top: 28%;
+  margin-left: 7%;
+}
+
+.card .card-description {
+  margin-left: 7%;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 34px;
+  margin-top: -5%;
+}
+
+#card-1 {
+  background-color: #ff4646;
+  border-radius: 50px;
+  color: #ffffff;
+}
+
+#card-2 {
+  background-color: #cbcbcb;
+  border-radius: 50px;
+  color: #ffffff;
+}
+
+#card-3 {
+  background-color: #1c1c1c;
+  border-radius: 50px;
+  color: #ffffff;
+}
+
+#card-4 {
+  background-color: #a1a1a1;
+  border-radius: 50px;
+  color: #ffffff;
+}
+
+.white-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 23px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 7%;
+  right: 8%;
+}
+
+.stat-container {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  max-width: 1440px;
+}
+
+.center-horizontally {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 8%;
+  left: 57%;
+  transform: translateX(-57%);
+}
+
+.stat-image .control-word-container {
+  display: inline-block;
+  text-align: right;
+}
+
+.stat-image .control-title {
+  font-size: 175px;
+  white-space: nowrap;
+  font-weight: 400;
+  color: #000000;
+  line-height: 179px;
+}
+
+.stat-image .control-description {
+  font-size: 27px;
+  white-space: nowrap;
+  font-weight: 300;
+  color: #000000;
+  line-height: 34px;
+}
+
+.stat-image {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #f7f7f7;
+  padding-top: 200px;
+}
+
+.stat-image img {
+  object-fit: cover;
+  width: 80%;
+  height: auto;
+  transform: translateX(-7%);
+}
+
+.stair-stat {
+  background-color: #efefef;
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding-top: 150px;
+}
+
+.stair-stat .stair-stat-center {
+  position: absolute;
+  bottom: 8%;
+  left: 42%;
+  transform: translateX(-40%);
+}
+
+.stair-stat img {
+  object-fit: cover;
+  width: 80%;
+  height: auto;
+}
+
+.stair-stat .control-word-container {
+  display: inline-block;
+  text-align: left;
+}
+
+.stair-stat .control-title {
+  font-size: 175px;
+  white-space: nowrap;
+  font-weight: 400;
+  color: #000000;
+  line-height: 140px;
+}
+
+.stair-stat .control-subtitle {
+  font-size: 32px;
+  white-space: nowrap;
+  font-weight: 300;
+  color: #000000;
+  line-height: 34px;
+}
+
+.stair-stat .control-description {
+  font-size: 24px;
+  white-space: nowrap;
+  font-weight: 300;
+  color: #000000;
+  line-height: 34px;
+}
+
+.image-container {
+  width: 100%;
+  position: relative;
+}
+
+.first-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: row;
+}
+
+.second-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: row;
+}
+
+.first-row img {
+  width: 50%;
+  height: 833px;
+  object-fit: cover;
+}
+
+.second-row img {
+  width: 50%;
+  height: 833px;
+  object-fit: cover;
+}
+
+.image-container .image-container-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-container .image-container-title {
+  font-size: 210px;
+  line-height: 179px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.image-container .image-container-description {
+  font-size: 27px;
+  line-height: 34px;
+  color: #ffffff;
+  font-weight: 300;
+  margin-top: 50px;
 }
