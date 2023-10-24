@@ -3,6 +3,10 @@ body {
   font-family: "Outfit", sans-serif;
 }
 
+section{
+  padding: 0;
+}
+
 .main {
   overflow: hidden;
 }
@@ -45,10 +49,18 @@ body {
   bottom: 0;
 }
 
+#main-section{
+  position: relative;
+  height: 100vh;
+  min-height: 1320px;
+  width: 100%;
+}
+
 .main {
   height: 100vh;
   min-height: 1320px;
-  position: static;
+  position: absolute;
+  z-index: 1;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -67,7 +79,7 @@ body {
 
 .main-text-container svg {
   width: 100%;
-  padding: 0 4%;
+  padding: 0 0 0 5%;
 }
 
 .main-text-container text {
@@ -103,12 +115,24 @@ body {
 .main-container .main-image img {
   width: auto;
   height: 100%;
-  margin-left: 10%;
+  margin-left: 12%;
   margin-top: 5%;
 }
 
 .toggle-row {
   height: 100%;
+}
+
+@media (min-width: 1600.5px){
+  .main{
+    min-height: 1320px;
+    max-height: 1320px;
+  }
+
+  #main-section{
+    min-height: 1320px;
+    max-height: 1320px;
+  }
 }
 
 @media (max-width: 1600px) {
@@ -126,10 +150,21 @@ body {
 }
 
 @media (max-width: 991.5px) {
+  .main {
+    min-height: 1086px;
+    max-height: 1086px;
+  }
+
+  #main-section{
+    min-height: 1086px;
+    max-height: 1086px;
+  }
+  
   .main-container .main-image img {
     width: auto;
-    height: 70%;
-    margin-left: 5%;
+    height: 90%;
+    margin-left: 0%;
+    margin-top: 10%;
   }
 }
 
@@ -141,31 +176,44 @@ body {
   .main-container .main-image img {
     margin-top: 25%;
     margin-left: 0%;
-    height: 55%;
+    height: 70%;
   }
 }
 
 @media (max-width: 568px) {
+  .main {
+    min-height: 1000px;
+    max-height: 1000px;
+  }
+  #main-section{
+    min-height: 1000px;
+    max-height: 1000px;
+  }
+  .main-text-container{
+    margin-top: 0%;
+  }
   .main-container .main-image img {
     margin-top: 25%;
     margin-left: 0%;
-    height: 50%;
+    height: 60%;
   }
 }
 
 @media (max-width: 528px) {
-  .main-container .main-image img {
-    margin-top: 25%;
-    margin-left: 0%;
-    height: 40%;
-  }
 }
 
 @media (max-width: 425px) {
+  .main {
+    min-height: 600px;
+    max-height: 600px;
+  }
+  #main-section{
+    min-height: 600px;
+    max-height: 600px;
+  }
   .main-container .main-image img {
-    margin-top: 25%;
-    margin-left: 0%;
-    height: 30%;
+    margin-top: 30%;
+    height: 75%;
   }
 
   .main-text-container .slogan p {
@@ -174,11 +222,15 @@ body {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 325px) {
+  .main-text-container{
+    margin-top: 15%;
+  }
+
   .main-container .main-image img {
-    margin-top: 25%;
+    margin-top: 60%;
     margin-left: 0%;
-    height: 25%;
+    height: 60%;
   }
 
   .main-text-container .slogan p {
@@ -230,15 +282,14 @@ body {
 
 .card .card-info {
   margin-top: 28%;
-  margin-left: 7%;
 }
 
 .card .card-description {
-  margin-left: 7%;
   font-size: 26px;
   font-weight: 300;
   line-height: 34px;
   margin-top: -5%;
+  margin-bottom: 60px;
 }
 
 #card-1 {
@@ -271,9 +322,52 @@ body {
   border-radius: 23px;
   background-color: #ffffff;
   position: absolute;
-  bottom: 7%;
+  bottom: 5%;
   right: 8%;
 }
+
+@media (max-width: 992.5px){
+  .card{
+    margin-bottom: 25px;
+  }
+  .card .card-logo {
+    margin-top: 15%;
+    margin-left: 10%;
+  }
+  .card .card-info {
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+  .card .card-description {
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 575.5px){
+  .card{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 320.5px){
+  .card{
+    width: 95% ;
+  }
+  .card .card-logo {
+    margin-left: 5%;
+  }
+  .card .card-info {
+    margin-top: 5%;
+    margin-left: 2%;
+  }
+
+  .card .card-description {
+    margin-left: 5%;
+  }
+}
+
 
 .stat-container {
   width: 100%;

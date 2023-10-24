@@ -111,39 +111,68 @@
         </nav>
       </div>
     </main>
-
-    <div class="main">
-      <div class="toggle-switch-container">
-        <div class="row toggle-row">
-          <div class="main-container">
-            <div class="main-text-container">
-              <svg viewBox="0 0 56 18">
-                <text x="0" y="15" fill="#FFFFFF">LIBPET</text>
-              </svg>
-              <div class="slogan">
-                <p>
-                  MAKE <br />
-                  GREAT THINGS <br />
-                  HAPPEN
-                </p>
+    <section id="main-section">
+      <div class="main page" style="background-color:#BBB5B5">
+        <div class="toggle-switch-container">
+          <div class="row toggle-row">
+            <div class="main-container">
+              <div class="main-text-container">
+                <svg viewBox="0 0 56 18">
+                  <text x="0" y="15" fill="#FFFFFF">LIBPET</text>
+                </svg>
+                <div class="slogan">
+                  <p>
+                    MAKE <br />
+                    GREAT THINGS <br />
+                    HAPPEN
+                  </p>
+                </div>
+                <div class="toggle-switch switch-vertical">
+                  <span class="toggle-inside" style="scale:0.7;"></span>
+                  <span class="toggle-inside"></span>
+                </div>
               </div>
-              <div class="toggle-switch switch-vertical">
-                <span class="toggle-inside"></span>
-                <span class="toggle-inside"></span>
+              <div class="main-image">
+                <img src="img/new-prototype-white.png" alt="" />
               </div>
-            </div>
-            <div class="main-image">
-              <img src="img/new-prototype-white.png" alt="" />
             </div>
           </div>
         </div>
       </div>
-    </div>
+
+      <div class="main page" style="background-color: #dedede">
+        <div class="toggle-switch-container">
+          <div class="row toggle-row">
+            <div class="main-container">
+              <div class="main-text-container">
+                <svg viewBox="0 0 56 18">
+                  <text x="0" y="15" fill="#FFFFFF">LIBPET</text>
+                </svg>
+                <div class="slogan">
+                  <p>
+                    MAKE <br />
+                    GREAT THINGS <br />
+                    HAPPEN
+                  </p>
+                </div>
+                <div class="toggle-switch switch-vertical">
+                  <span class="toggle-inside"></span>
+                  <span class="toggle-inside" style="scale:0.7;"></span>
+                </div>
+              </div>
+              <div class="main-image">
+                <img src="img/new-prototype-black.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <div class="stat">
       <div class="container stat-container">
         <div class="row">
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-sm-6">
             <div class="card" id="card-1">
               <div class="card-body">
                 <div class="card-logo">
@@ -161,7 +190,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-sm-6">
             <div class="card" id="card-2">
               <div class="card-body">
                 <div class="card-logo">
@@ -179,7 +208,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-sm-6">
             <div class="card" id="card-3">
               <div class="card-body">
                 <div class="card-logo">
@@ -196,7 +225,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-sm-6">
             <div class="card" id="card-4">
               <div class="card-body">
                 <div class="card-logo">
@@ -217,7 +246,7 @@
         </div>
       </div>
     </div>
-
+<!--
     <div class="stat-image">
       <img src="img/power-remote.png" alt="" />
       <div class="center-horizontally">
@@ -281,10 +310,10 @@
         <img src="img/terrain-three.png" alt="Image 3" />
         <img src="img/terrain-four.png" alt="Image 4" />
       </div>
-    </div>
+    </div> -->
 
     <!-- Footer Start -->
-    <div style="background-color: #dedede; margin-top: 10%">
+    <!-- <div style="background-color: #dedede; margin-top: 10%">
       <footer style="min-height: 200px">
         <div class="container py-3">
           <div class="row">
@@ -362,15 +391,14 @@
                 </a>
               </div>
             </div>
-            <!-- <hr> -->
           </div>
         </div>
-      </footer>
+      </footer> -->
       <!-- Footer End -->
 
-      <p class="text-center footer-text copyright">
+      <!-- <p class="text-center footer-text copyright">
         Copyright © Libpet Tech Limited, All Right Reserved.
-      </p>
+      </p> -->
     </div>
 
     <!-- jQuery -->
@@ -426,6 +454,10 @@
     <script src="js/nav.js"></script>
     <script src="js/coin.js"></script>
     <script src="js/footer.js"></script>
+    <script src="js/test.js"></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js'></script><script  src="./script.js"></script>
+    
 
     <script>
       AOS.init();
