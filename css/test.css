@@ -344,23 +344,89 @@ section {
 }
 
 @media (max-width: 575.5px) {
+  #card-1{
+    border-radius: 25px;
+  }
+  #card-2{
+    border-radius: 25px;
+  }
+  #card-3{
+    border-radius: 25px;
+  }
+  #card-4{
+    border-radius: 25px;
+  }
   .card {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
+  }
+
+  .card .card-logo{
+    margin-top: 0;
+    margin-left: 3%;
+  }
+  .card .card-info{
+    line-height: 1;
+    position: absolute;
+    right: 5%;
+    top: 40%;
+    transform: translateY(-50%);
+    margin: 0;
+  }
+  .card .card-description{
+    margin-top: 10%;
+    margin-bottom: 0;
+    margin-left: 3%;
+    font-size: 22px;
+    line-height: 1.1;
+  }
+  .white-circle{
+    display: none;
+  }
+  .degree-right-25{
+    margin-right: 20px;
+  }
+  .degree-right-5{
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 375px){
+  .card .f-large{
+    font-size: 90px;
+  }
+  .card .f-bold{
+    font-size: 24px;
+  }
+  .card .card-logo img{
+    height: 80%;
+  }
+  .degree{
+    vertical-align: top;
+    font-size: 80px;
+  }
+  .card .card-info {
+    top: 30%;
   }
 }
 
 @media (max-width: 320.5px) {
+  .card .f-large{
+    font-size: 70px;
+  }
+  .card .f-bold{
+    font-size: 22px;
+  }
+  .degree{
+    font-size: 50px;
+  }
   .card {
     width: 95%;
   }
   .card .card-logo {
     margin-left: 5%;
-  }
-  .card .card-info {
-    margin-top: 5%;
-    margin-left: 2%;
   }
 
   .card .card-description {
@@ -374,7 +440,7 @@ section {
   padding-right: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
+  margin-top: 50px;
   max-width: 1440px;
 }
 
