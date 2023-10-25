@@ -780,6 +780,7 @@ section {
 }
 
 .image-container {
+  height: auto;
   width: 100%;
   position: relative;
 }
@@ -830,4 +831,110 @@ section {
   color: #ffffff;
   font-weight: 300;
   margin-top: 50px;
+}
+
+@media (max-width: 1140px) {
+  .image-container .image-container-title {
+    font-size: 190px;
+    line-height: 0.9;
+  }
+  .image-container-breakline-lg {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .image-container .image-container-title {
+    font-size: 170px;
+  }
+}
+
+@media (max-width: 900px) {
+  .image-container .image-container-title {
+    font-size: 145px;
+  }
+}
+
+@media (max-width: 767.5px) {
+  .image-container .image-container-title {
+    font-size: 130px;
+  }
+  .first-row img {
+    height: 50vh;
+    min-height: 500px;
+  }
+  .second-row img {
+    height: 50vh;
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 680px) {
+  .image-container .image-container-title {
+    font-size: 120px;
+  }
+}
+
+@media (max-width: 630px) {
+  .image-container .image-container-title {
+    font-size: 110px;
+  }
+}
+
+@media (max-width: 576px) {
+  .image-container .image-container-title {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 542px) {
+  .image-container .image-container-title {
+    font-size: 80px;
+  }
+  .image-container .image-container-description {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 460px) {
+  .image-container .image-container-title {
+    font-size: 70px;
+  }
+  .first-row {
+    flex-direction: column;
+  }
+  .second-row {
+    flex-direction: column;
+  }
+  .first-row img {
+    width: 100%;
+    height: 25vw;
+    min-height: 200px;
+  }
+  .second-row img {
+    width: 100%;
+    height: 25vw;
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 375.5px) {
+    .image-container .image-container-title {
+    font-size: 60px;
+  }
+  .image-container .image-container-description {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 320.5px) {
+    .image-container .image-container-title {
+    font-size: 50px;
+  }
+  .image-container .image-container-description {
+    font-size: 20px;
+    line-height: 1.1;
+  }
 }
