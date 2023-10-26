@@ -7,22 +7,104 @@ section {
   padding: 0;
 }
 
-
-
-
-
-
-.main {
-  overflow: hidden;
+/*##############################*/
+.main-section-new {
+  width: 100%;
 }
+
+.main-new {
+  position: relative;
+  max-width: 2560px;
+  margin: 0 auto;
+  height: 1225px;
+}
+
+.cover-new {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover-word-wrapper {
+  width: 100%;
+  max-width: 1224.5px;
+  height: min-content;
+  margin-bottom: 180px;
+}
+
+.cover-word-wrapper .toggle-inside {
+  margin-left: 0;
+}
+
+.main-new .slogan p {
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 1.1;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.cover-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.unit-image-black {
+  background-image: url(../img/prototype-black-lg.png);
+  width: 100%; /* 将宽度设置为相对于父元素的百分比 */
+  height: 1225px;
+  background-size: 2262px auto; /* 设置背景图片的宽度为2262px，高度自动调整 */
+  background-repeat: no-repeat;
+  background-position-x: center; /* 将背景图片在元素内居中显示 */
+  background-position-y: center;
+  z-index: 1;
+  position: absolute;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  -webkit-transform: none; /* 移除水平平移变换 */
+  transform: none;
+}
+
+.unit-image-white {
+  background-image: url(../img/prototype-white-lg.png);
+  width: 100%;
+  height: auto;
+  background-size: 2262px auto; 
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+  position: absolute;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  -webkit-transform: none; /* 移除水平平移变换 */
+  transform: none;
+}
+
+.main-new .slogan {
+  margin-bottom: 100px;
+}
+
+/*##############################*/
 
 .override-nav {
   max-width: 1600px;
   padding: 0 5%;
-}
-
-.main {
-  justify-content: center;
 }
 
 .toggle-switch.switch-vertical {
@@ -62,13 +144,13 @@ section {
 }
 
 .main {
-  height: 100vh;
-  min-height: 1320px;
   position: absolute;
   z-index: 1;
-  margin-left: auto;
-  margin-right: auto;
   width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .main-container {
@@ -129,11 +211,6 @@ section {
 }
 
 @media (min-width: 1600.5px) {
-  .main {
-    min-height: 1320px;
-    max-height: 1320px;
-  }
-
   #main-section {
     min-height: 1320px;
     max-height: 1320px;
@@ -155,11 +232,6 @@ section {
 }
 
 @media (max-width: 991.5px) {
-  .main {
-    min-height: 1086px;
-    max-height: 1086px;
-  }
-
   #main-section {
     min-height: 1086px;
     max-height: 1086px;
@@ -186,10 +258,6 @@ section {
 }
 
 @media (max-width: 568px) {
-  .main {
-    min-height: 1000px;
-    max-height: 1000px;
-  }
   #main-section {
     min-height: 1000px;
     max-height: 1000px;
@@ -208,10 +276,6 @@ section {
 }
 
 @media (max-width: 425px) {
-  .main {
-    min-height: 600px;
-    max-height: 600px;
-  }
   #main-section {
     min-height: 600px;
     max-height: 600px;
@@ -349,16 +413,16 @@ section {
 }
 
 @media (max-width: 575.5px) {
-  #card-1{
+  #card-1 {
     border-radius: 25px;
   }
-  #card-2{
+  #card-2 {
     border-radius: 25px;
   }
-  #card-3{
+  #card-3 {
     border-radius: 25px;
   }
-  #card-4{
+  #card-4 {
     border-radius: 25px;
   }
   .card {
@@ -368,11 +432,11 @@ section {
     margin-bottom: 10px;
   }
 
-  .card .card-logo{
+  .card .card-logo {
     margin-top: 0;
     margin-left: 3%;
   }
-  .card .card-info{
+  .card .card-info {
     line-height: 1;
     position: absolute;
     right: 5%;
@@ -380,35 +444,35 @@ section {
     transform: translateY(-50%);
     margin: 0;
   }
-  .card .card-description{
+  .card .card-description {
     margin-top: 10%;
     margin-bottom: 0;
     margin-left: 3%;
     font-size: 22px;
     line-height: 1.1;
   }
-  .white-circle{
+  .white-circle {
     display: none;
   }
-  .degree-right-25{
+  .degree-right-25 {
     margin-right: 20px;
   }
-  .degree-right-6{
+  .degree-right-6 {
     margin-right: 6px;
   }
 }
 
-@media (max-width: 375px){
-  .card .f-large{
+@media (max-width: 375px) {
+  .card .f-large {
     font-size: 90px;
   }
-  .card .f-bold{
+  .card .f-bold {
     font-size: 24px;
   }
-  .card .card-logo img{
+  .card .card-logo img {
     height: 80%;
   }
-  .degree{
+  .degree {
     vertical-align: top;
     font-size: 80px;
   }
@@ -418,13 +482,13 @@ section {
 }
 
 @media (max-width: 320.5px) {
-  .card .f-large{
+  .card .f-large {
     font-size: 70px;
   }
-  .card .f-bold{
+  .card .f-bold {
     font-size: 22px;
   }
-  .degree{
+  .degree {
     font-size: 50px;
   }
   .card {
@@ -991,7 +1055,7 @@ section {
 }
 
 @media (max-width: 375.5px) {
-    .image-container .image-container-title {
+  .image-container .image-container-title {
     font-size: 60px;
   }
   .image-container .image-container-description {
@@ -1001,7 +1065,7 @@ section {
 }
 
 @media (max-width: 320.5px) {
-    .image-container .image-container-title {
+  .image-container .image-container-title {
     font-size: 50px;
   }
   .image-container .image-container-description {
