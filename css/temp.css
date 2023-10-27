@@ -395,7 +395,7 @@ section {
   right: 8%;
 }
 
-@media (max-width: 992.5px) {
+@media (max-width: 991.5px) {
   .card {
     margin-bottom: 25px;
   }
