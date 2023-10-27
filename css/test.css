@@ -551,8 +551,8 @@ section {
 }
 
 @media (max-width: 1090px) {
-  .stat-image {
-    padding-bottom: 100px;
+  .stat-image img {
+    transform: translateX(-15%);
   }
   .stat-image .control-title {
     font-size: 90px;
@@ -575,11 +575,11 @@ section {
 }
 
 @media (max-width: 875px) {
+  .stat-image {
+    padding-bottom: 20px;
+  }
   .stat-image .control-title {
     font-size: 80px;
-  }
-  .stat-image {
-    padding-bottom: 100px;
   }
   .stat-image .control-description {
     font-size: 24px;
@@ -587,6 +587,9 @@ section {
 }
 
 @media (max-width: 767.5px) {
+  .stat-image {
+    padding-bottom: 80px;
+  }
   .stat-image .control-title {
     visibility: hidden;
     font-size: 70px;
@@ -614,12 +617,16 @@ section {
     font-size: 60px;
   }
   .stat-image {
-    padding-bottom: 200px;
+    padding-bottom: 50px;
   }
   .stat-image .control-word-container {
     bottom: 5%;
     right: 5%;
-    width: 70%;
+    width: 80%;
+  }
+  .stat-image .control-description {
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
 
@@ -629,7 +636,7 @@ section {
   }
   .stat-image {
     padding-top: 150px;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
   }
   .stat-image .control-title {
     font-size: 50px;
@@ -641,7 +648,7 @@ section {
   .stat-image .control-word-container {
     bottom: 5%;
     right: 5%;
-    width: 75%;
+    width: 85%;
   }
   .stat-image {
     padding-top: 100px;
@@ -658,7 +665,7 @@ section {
   }
   .stat-image {
     padding-top: 100px;
-    padding-bottom: 170px;
+    padding-bottom: 150px;
   }
 }
 
