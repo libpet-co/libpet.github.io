@@ -798,6 +798,76 @@ section {
 
 /****************************************/
 
+/****************************************/
+.stair-section {
+  position: relative;
+  max-width: 3440px;
+  margin: 0 auto;
+  height: 2474px;
+  background-color: #efefef;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.stair-word-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  height: min-content;
+  margin-bottom: 230px;
+  z-index: 2;
+}
+
+.stair-word-wrapper .stair-word-title {
+  font-size: 210px;
+  color: #000000;
+  font-weight: 400;
+}
+
+.stair-word-wrapper .stair-word-subtitle {
+  font-size: 32px;
+  line-height: 1;
+  color: #000000;
+  font-weight: 300;
+}
+
+.stair-word-wrapper .stair-word-description {
+  font-size: 27px;
+  line-height: 1.25;
+  color: #000000;
+  font-weight: 300;
+}
+
+.stair-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.unit-stair {
+  background-image: url(../img/power-stair-background-lg.png);
+  width: 100%; /* 将宽度设置为相对于父元素的百分比 */
+  height: 2474px;
+  background-size: 3440px auto; /* 设置背景图片的宽度为2262px，高度自动调整 */
+  background-repeat: no-repeat;
+  background-position-x: center; /* 将背景图片在元素内居中显示 */
+  background-position-y: center;
+  z-index: 1;
+  position: absolute;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  -webkit-transform: none; /* 移除水平平移变换 */
+  transform: none;
+}
+/****************************************/
+
 .stair-stat {
   background-color: #efefef;
   width: 100%;
