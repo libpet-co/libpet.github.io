@@ -868,6 +868,44 @@ section {
 }
 /****************************************/
 
+/****************************************/
+.terrain-images-section {
+  position: relative;
+  max-width: 3440px;
+  margin: 0 auto;
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+}
+
+.terrain-images-section img {
+  width: 50%;
+}
+
+.terrain-word-wrapper {
+  width: 1440px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.terrain-word-wrapper .terrain-word-title {
+  font-size: 210px;
+  line-height: 0.85;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.terrain-word-wrapper .terrain-word-description {
+  font-size: 27px;
+  line-height: 1.25;
+  color: #ffffff;
+  font-weight: 300;
+  margin-top: 50px;
+}
+/****************************************/
+
 .stair-stat {
   background-color: #efefef;
   width: 100%;
