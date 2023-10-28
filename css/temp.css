@@ -1,5 +1,5 @@
 body {
-  background-color: #dedede;
+  background-color: #ffffff;
   font-family: "Outfit", sans-serif;
 }
 
@@ -8,6 +8,12 @@ section {
 }
 
 /*##############################*/
+
+.stat {
+  max-width: 2560px;
+  padding-bottom: 200px;
+}
+
 .main-section-new {
   width: 100%;
 }
@@ -80,7 +86,7 @@ section {
   background-image: url(../img/prototype-white-lg.png);
   width: 100%;
   height: auto;
-  background-size: 2262px auto; 
+  background-size: 2262px auto;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1;
@@ -725,6 +731,72 @@ section {
     padding-bottom: 170px;
   }
 }
+
+/****************************************/
+.control-section {
+  position: relative;
+  max-width: 3440px;
+  margin: 0 auto;
+  height: 1375px;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.control-word-wrapper {
+  width: auto;
+  height: min-content;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.control-word-wrapper .control-word-title {
+  text-align: center;
+  font-size: 210px;
+  line-height: 1;
+  color: #000000;
+  font-weight: 400;
+}
+
+.control-word-wrapper .control-word-description {
+  font-size: 27px;
+  line-height: 1.25;
+  color: #000000;
+  font-weight: 300;
+  font-family: "Outfit";
+  text-align: right;
+}
+
+.control-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.unit-control {
+  background-image: url(../img/power-remote-lg.png);
+  width: 100%; /* 将宽度设置为相对于父元素的百分比 */
+  height: 1375px;
+  background-size: 3440px auto; /* 设置背景图片的宽度为2262px，高度自动调整 */
+  background-repeat: no-repeat;
+  background-position-x: center; /* 将背景图片在元素内居中显示 */
+  background-position-y: center;
+  z-index: 1;
+  position: absolute;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  -webkit-transform: none; /* 移除水平平移变换 */
+  transform: none;
+}
+
+/****************************************/
 
 .stair-stat {
   background-color: #efefef;
