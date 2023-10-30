@@ -1330,7 +1330,6 @@ section {
   position: relative;
   max-width: 3440px;
   margin: 0 auto;
-  height: 2030px;
   background-color: #000000;
   display: flex;
   justify-content: center;
@@ -1343,7 +1342,7 @@ section {
   max-width: 1224.5px;
   height: min-content;
   margin-top: 140px;
-  margin-bottom: 230px;
+  margin-bottom: 140px;
   z-index: 2;
 }
 
