@@ -1126,8 +1126,8 @@ section {
   max-width: 3440px;
   margin: 0 auto;
   height: 1375px;
-  /* background-color: #f7f7f7; */
-  background-color: #a1a1a1;
+  background-color: #f7f7f7;
+  /* background-color: #a1a1a1; */
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -1141,7 +1141,7 @@ section {
 }
 
 .control-word-wrapper .control-word-title {
-  text-align: center;
+  text-align: right;
   font-size: 210px;
   line-height: 1;
   color: #000000;
@@ -1185,6 +1185,10 @@ section {
   transform: none;
 }
 
+.control-break-lg {
+  display: inline;
+}
+
 @media (max-width: 1460px) {
   .unit-control {
     width: 100%;
@@ -1192,7 +1196,10 @@ section {
     background-size: 2700px auto;
   }
   .control-word-wrapper .control-word-title {
-    font-size: 190px;
+    font-size: 13vw;
+  }
+    .control-section {
+    height: 1224px;
   }
 }
 
@@ -1202,13 +1209,13 @@ section {
     height: 1375px;
     background-size: 2500px auto;
   }
-  .control-word-wrapper .control-word-title {
-    font-size: 180px;
-  }
   .control-word-wrapper {
     padding-left: 3%;
     padding-right: 3%;
   }
+}
+
+@media (max-width: 1120px) {
 }
 
 @media (max-width: 1024px) {
@@ -1217,17 +1224,17 @@ section {
     height: 1000px;
     background-size: 1800px auto;
   }
-  .control-word-wrapper .control-word-title {
-    font-size: 160px;
-  }
   .control-section {
-    height: 1200px;
+    height: 1024px;
+  }
+  .control-break-lg {
+    display: none;
   }
 }
 
 @media (max-width: 768px) {
   .control-section {
-    height: 1100px;
+    height: 800px;
   }
   .unit-control {
     width: 100%;
@@ -1238,14 +1245,89 @@ section {
 
 @media (max-width: 567.5px) {
   .control-section {
-    height: 700px;
+    height: 750px;
   }
   .control-word-wrapper .control-word-title {
-    text-align: right;
+    text-align: center;
     font-size: 105px;
   }
-  .unit-control{
+  .control-word-wrapper .control-word-description {
+    text-align: center;
+    font-size: 22px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .unit-control {
+    height: 550px;
     background-image: url(../img/power-remote-sm.png);
+    background-size: 567px auto;
+  }
+}
+
+@media (max-width: 510px) {
+  .unit-control {
+    background-size: 510px auto;
+  }
+  .control-word-wrapper .control-word-title {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 425px) {
+  .unit-control {
+    height: 300px;
+    background-size: 425px auto;
+  }
+  .control-word-wrapper .control-word-title {
+    font-size: 70px;
+  }
+  .control-section {
+    height: 500px;
+}
+.control-word-wrapper{
+  margin-bottom: 50px;
+}
+}
+
+@media (max-width: 375px) {
+  .unit-control {
+    background-size: 375px auto;
+  }
+  .control-word-wrapper .control-word-title {
+    font-size: 60px;
+  }
+  .control-word-wrapper .control-word-description {
+    font-size: 20px;
+  }
+  .unit-control {
+    height: 300px;
+  }
+  .control-section {
+    height: 500px;
+  }
+  .control-word-wrapper {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  .unit-control {
+    background-size: 320px auto;
+    height: 300px;
+  }
+  .control-word-wrapper {
+    margin-bottom: 50px;
+  }
+  .control-word-wrapper .control-word-title {
+    font-size: 50px;
+  }
+  .control-word-wrapper .control-word-description {
+    font-size: 18px;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  .control-section {
+    height: 450px;
   }
 }
 
