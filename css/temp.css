@@ -1133,6 +1133,11 @@ section {
   align-items: flex-end;
 }
 
+.temp-blank {
+  height: 300px;
+  background-color: #f7f7f7;
+}
+
 .control-word-wrapper {
   width: auto;
   height: min-content;
@@ -1198,8 +1203,11 @@ section {
   .control-word-wrapper .control-word-title {
     font-size: 13vw;
   }
-    .control-section {
+  .control-section {
     height: 1224px;
+  }
+  .temp-blank {
+    height: 0px;
   }
 }
 
@@ -1283,10 +1291,10 @@ section {
   }
   .control-section {
     height: 500px;
-}
-.control-word-wrapper{
-  margin-bottom: 50px;
-}
+  }
+  .control-word-wrapper {
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 375px) {
