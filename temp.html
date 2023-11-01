@@ -286,25 +286,26 @@
         <figure class="unit-stair"></figure>
       </div>
     </div>
-    <!--
+
     <div class="terrain-images-section">
       <div class="terrain-word-wrapper">
-        <h1 class="terrain-word-title">
+        <h1 class="terrain-word-title" id="terrain-title">
           All <br />
           Terrain <br />
           Adaptation
         </h1>
-        <p class="terrain-word-description">
+        <p class="terrain-word-description" id="terrain-description">
           We have employed various technologies, including an advanced
           <b style="font-weight: bold">mechanical design,</b>
-          <br />
           <b style="font-weight: bold">control algorithms,</b> and
           <b style="font-weight: bold">combinations of sensors,</b> to enable
-          POWER to tackle various terrains with ease. In particular, <br />
-          its design allows for climbing stairs, as well as smoothly traversing
+          POWER to tackle various terrains with ease.
+          <br class="terrain-breakline" />
+          In particular, its design allows for climbing stairs, as well as
+          smoothly traversing
           <b style="font-weight: bold">urban roads, beaches, grasslands,</b> and
           more.
-          <br />
+          <br class="terrain-breakline" />
           POWER means mobility without boundaries.
         </p>
         <div class="terrain-word-description"></div>
@@ -318,7 +319,7 @@
         <img src="img/terrain-four.png" alt="" />
       </div>
     </div>
-
+    <!--
     <div class="app-section">
       <div class="app-word-wrapper">
         <h1>Libpet App</h1>
@@ -575,6 +576,9 @@
         var titleElement = document.getElementById("control-title");
         var descriptionElement = document.getElementById("control-description");
         var stairDescription = document.getElementById("stair-description");
+        var terrainTitle = document.getElementById("terrain-title");
+        var terrainDescription = document.getElementById("terrain-description");
+
         var windowWidth =
           window.innerWidth ||
           document.documentElement.clientWidth ||
@@ -586,12 +590,18 @@
             "New smart control center for easier use and better experience, no learning necessary.";
           stairDescription.innerHTML =
             "POWER has strong climbing ability (up to 36°) and is safe/reliable. Trustworthy companion.";
+          terrainTitle.innerHTML = "All <br />Terrain <br />Ada-<br />ptation";
+          terrainDescription.innerHTML =
+            'Our advanced technology enables POWER to take on any terrain with ease, including stairs and various surfaces. No limits to mobility.<br> <br><div class="terrain-added">Stairs  /  Beach  /  City Road  /  Grassland</div>';
         } else {
           titleElement.textContent = "Central Control";
           descriptionElement.innerHTML =
             'In order to provide you with a better control experience, <br id="remote-break-lg" /> we are offering you a brand new generation of intelligent control center. <br id="remote-break-lg" /> You can master it without any learning, <br id="remote-break" />and it provides you with a more user-friendly design for your control.';
           stairDescription.innerHTML =
-            'The "Power" has a more powerful climbing ability, <br class="stair-section-breakline" /> and it is safe and reliable. <br class="stair-section-breakline" /> The maximum gradient reaches 36 degrees. It will be your most trusted friend.';
+            'In order to provide you with a better control experience, <br id="remote-break-lg" /> we are offering you a brand new generation of intelligent control center. <br id="remote-break-lg" /> You can master it without any learning, <br id="remote-break" />and it provides you with a more user-friendly design for your control.';
+          terrainTitle.innerHTML = "All <br />Terrain <br />Adaptation";
+          terrainDescription.innerHTML =
+            'We have employed various technologies, including an advanced <b style="font-weight: bold">mechanical design,</b> <b style="font-weight: bold">control algorithms,</b> and <b style="font-weight: bold">combinations of sensors,</b> to enable POWER to tackle various terrains with ease. <br class="terrain-breakline" /> In particular, its design allows for climbing stairs, as well as smoothly traversing <b style="font-weight: bold">urban roads, beaches, grasslands,</b> and more. <br class="terrain-breakline" /> POWER means mobility without boundaries.';
         }
       }
 

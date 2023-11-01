@@ -3,6 +3,60 @@ body {
   font-family: "Outfit", sans-serif;
 }
 
+.image-container {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+
+.first-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: row;
+}
+
+.second-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: row;
+}
+
+.first-row img {
+  width: 50%;
+  height: 833px;
+  object-fit: cover;
+}
+
+.second-row img {
+  width: 50%;
+  height: 833px;
+  object-fit: cover;
+}
+
+.image-container .image-container-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-container .image-container-title {
+  font-size: 210px;
+  line-height: 179px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.image-container .image-container-description {
+  font-size: 27px;
+  line-height: 34px;
+  color: #ffffff;
+  font-weight: 300;
+  margin-top: 50px;
+}
+
 section {
   padding: 0;
 }
@@ -1521,13 +1575,12 @@ section {
     font-size: 22px;
     line-height: 1;
   }
-  .stair-section-break{
+  .stair-section-break {
     display: none;
   }
 }
 
-@media (max-width: 375px){
-  
+@media (max-width: 375px) {
 }
 /****************************************/
 
@@ -1566,6 +1619,95 @@ section {
   font-weight: 300;
   margin-top: 50px;
 }
+
+@media (max-width: 1120px) {
+  .terrain-word-wrapper .terrain-word-title {
+    font-size: 190px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .terrain-word-wrapper .terrain-word-title {
+    font-size: 170px;
+  }
+}
+
+@media (max-width: 924px) {
+  .terrain-word-wrapper .terrain-word-title {
+    font-size: 150px;
+  }
+}
+
+@media (max-width: 824px) {
+  .terrain-word-wrapper .terrain-word-title {
+    font-size: 130px;
+  }
+}
+
+@media (max-width: 724px) {
+  .terrain-word-wrapper .terrain-word-title {
+    font-size: 100px;
+  }
+  .terrain-breakline {
+    display: none;
+  }
+}
+
+@media (max-width: 567.5px) {
+  .first-row {
+    flex-direction: column;
+  }
+  .second-row {
+    flex-direction: column;
+  }
+  .first-row img {
+    width: 100%;
+    height: 195px;
+    min-height: 200px;
+  }
+  .second-row img {
+    width: 100%;
+    height: 195px;
+    min-height: 200px;
+  }
+  .terrain-word-wrapper {
+    min-width: 70%;
+  }
+  .terrain-word-wrapper .terrain-word-description {
+    font-size: 19px;
+    line-height: 1.1;
+  }
+  .terrain-word-wrapper .terrain-added {
+    font-size: 22px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 375px) {
+  .first-row img {
+    width: 100%;
+    height: 170px;
+    min-height: 170px;
+  }
+  .second-row img {
+    width: 100%;
+    height: 170px;
+    min-height: 170px;
+  }
+  .terrain-word-wrapper .terrain-added {
+    white-space: normal;
+  }
+  .terrain-word-wrapper .terrain-word-title {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 320px) {
+  .terrain-word-wrapper .terrain-word-title {
+    font-size: 70px;
+  }
+}
+
 /****************************************/
 
 /****************************************/
@@ -2239,61 +2381,7 @@ section {
   }
 }
 
-.image-container {
-  height: auto;
-  width: 100%;
-  position: relative;
-}
-
-.first-row {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  flex-direction: row;
-}
-
-.second-row {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  flex-direction: row;
-}
-
-.first-row img {
-  width: 50%;
-  height: 833px;
-  object-fit: cover;
-}
-
-.second-row img {
-  width: 50%;
-  height: 833px;
-  object-fit: cover;
-}
-
-.image-container .image-container-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.image-container .image-container-title {
-  font-size: 210px;
-  line-height: 179px;
-  color: #ffffff;
-  font-weight: 400;
-}
-
-.image-container .image-container-description {
-  font-size: 27px;
-  line-height: 34px;
-  color: #ffffff;
-  font-weight: 300;
-  margin-top: 50px;
-}
-
-@media (max-width: 1140px) {
+/* @media (max-width: 1140px) {
   .image-container .image-container-title {
     font-size: 190px;
     line-height: 0.9;
@@ -2397,4 +2485,4 @@ section {
     font-size: 20px;
     line-height: 1.1;
   }
-}
+} */
