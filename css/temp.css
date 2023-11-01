@@ -7,107 +7,6 @@ section {
   padding: 0;
 }
 
-/*##############################*/
-
-.stat {
-  max-width: 2560px;
-  padding-bottom: 200px;
-}
-
-.main-section-new {
-  width: 100%;
-}
-
-.main-new {
-  position: relative;
-  max-width: 2560px;
-  margin: 0 auto;
-  height: 1225px;
-}
-
-.cover-new {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.cover-word-wrapper {
-  width: 100%;
-  max-width: 1224.5px;
-  height: min-content;
-  margin-bottom: 100px;
-}
-
-.cover-word-wrapper .toggle-inside {
-  margin-left: 0;
-}
-
-.main-new .slogan p {
-  color: #ffffff;
-  font-weight: 600;
-  line-height: 1.1;
-  font-size: 28px;
-  margin-bottom: 10px;
-}
-
-.cover-image-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.unit-image-black {
-  background-image: url(../img/prototype-black-lg.png);
-  width: 100%; /* 将宽度设置为相对于父元素的百分比 */
-  height: 1225px;
-  background-size: 2262px auto; /* 设置背景图片的宽度为2262px，高度自动调整 */
-  background-repeat: no-repeat;
-  background-position-x: center; /* 将背景图片在元素内居中显示 */
-  background-position-y: center;
-  z-index: 1;
-  position: absolute;
-  border: 0;
-  margin: 0;
-  padding: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  -webkit-transform: none; /* 移除水平平移变换 */
-  transform: none;
-}
-
-.unit-image-white {
-  background-image: url(../img/prototype-white-lg.png);
-  width: 100%;
-  height: auto;
-  background-size: 2262px auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 1;
-  position: absolute;
-  border: 0;
-  margin: 0;
-  padding: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  -webkit-transform: none; /* 移除水平平移变换 */
-  transform: none;
-}
-
-.main-new .slogan {
-  margin-bottom: 100px;
-}
-
-/*##############################*/
-
 .override-nav {
   max-width: 1600px;
   padding: 0 5%;
@@ -401,6 +300,16 @@ section {
   right: 8%;
 }
 
+.stat-container {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  max-width: 1440px;
+}
+
 @media (max-width: 991.5px) {
   .card {
     margin-bottom: 25px;
@@ -418,7 +327,119 @@ section {
   }
 }
 
-@media (max-width: 575.5px) {
+@media (max-width: 567.5px) {
+  .card .card-logo {
+    margin-top: 5%;
+    margin-left: 60%;
+  }
+  .card .card-info {
+    margin-top: 0%;
+    margin-left: 5%;
+    margin-bottom: 0;
+  }
+  .card .card-description {
+    margin-left: 5%;
+    margin-bottom: 20px;
+  }
+  .card .white-circle {
+    display: none;
+  }
+  .stat-container {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .card .card-description {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+  .card .f-large {
+    font-size: 90px;
+  }
+  .card .f-bold {
+    font-size: 22px;
+  }
+}
+
+.breakline-475 {
+  display: none;
+}
+
+@media (max-width: 475.5px) {
+  .card .card-logo {
+    margin-top: 5%;
+    margin-left: 50%;
+  }
+  .card .card-description {
+    font-size: 20px;
+  }
+  .card .f-large {
+    font-size: 70px;
+  }
+  .card .f-bold {
+    font-size: 20px;
+  }
+  .breakline-475 {
+    display: inline;
+  }
+  .card {
+    height: 260px;
+  }
+  #card-1 {
+    border-radius: 25px;
+  }
+  #card-2 {
+    border-radius: 25px;
+  }
+  #card-3 {
+    border-radius: 25px;
+  }
+  #card-4 {
+    border-radius: 25px;
+  }
+}
+
+@media (max-width: 375px) {
+  .card .card-logo {
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  .card .f-large {
+    font-size: 50px;
+  }
+  .card .f-bold {
+    font-size: 20px;
+  }
+  .card {
+    height: 220px;
+  }
+  .card .card-logo img {
+    height: 80%;
+  }
+
+  #card-1 {
+    border-radius: 25px;
+  }
+  #card-2 {
+    border-radius: 25px;
+  }
+  #card-3 {
+    border-radius: 25px;
+  }
+  #card-4 {
+    border-radius: 25px;
+  }
+  .card .card-info {
+    margin-left: 2%;
+  }
+  .card .card-description {
+    margin-left: 2%;
+  }
+  .card-body {
+    padding: 0.3rem 0.3rem;
+  }
+}
+
+/* @media (max-width: 575.5px) {
   #card-1 {
     border-radius: 25px;
   }
@@ -466,9 +487,9 @@ section {
   .degree-right-6 {
     margin-right: 6px;
   }
-}
+} */
 
-@media (max-width: 375px) {
+/* @media (max-width: 375px) {
   .card .f-large {
     font-size: 90px;
   }
@@ -507,17 +528,7 @@ section {
   .card .card-description {
     margin-left: 5%;
   }
-}
-
-.stat-container {
-  width: 100%;
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-  max-width: 1440px;
-}
+} */
 
 .stat-image .control-word-container {
   display: inline-block;
@@ -732,13 +743,391 @@ section {
   }
 }
 
+/*##############################*/
+
+.stat {
+  max-width: 3440px;
+}
+
+.main-new {
+  position: relative;
+  max-width: 3440px;
+  margin: 0 auto;
+  height: 1225px;
+}
+
+.cover-new {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover-word-wrapper {
+  width: 100%;
+  max-width: 1224.5px;
+  height: min-content;
+  margin-bottom: 100px;
+}
+
+.cover-word-wrapper .toggle-inside {
+  margin-left: 0;
+}
+
+.main-new .slogan p {
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 1.1;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.cover-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.unit-image-black {
+  background-image: url(../img/prototype-black-lg.png);
+  width: 100%; /* 将宽度设置为相对于父元素的百分比 */
+  height: 1225px;
+  background-size: 3440px auto;
+  background-repeat: no-repeat;
+  background-position-x: center; /* 将背景图片在元素内居中显示 */
+  background-position-y: center;
+  z-index: 1;
+  position: absolute;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  -webkit-transform: none; /* 移除水平平移变换 */
+  transform: none;
+}
+
+.unit-image-white {
+  background-image: url(../img/prototype-white-lg.png);
+  width: 100%;
+  height: 1225px;
+  background-size: 3440px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+  position: absolute;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  -webkit-transform: none; /* 移除水平平移变换 */
+  transform: none;
+}
+
+.main-new .slogan {
+  margin-bottom: 100px;
+}
+
+@media (max-width: 1439.5px) {
+  .unit-image-black {
+    height: 961px;
+    background-size: 2700px auto;
+  }
+  .unit-image-white {
+    height: 961px;
+    background-size: 2700px auto;
+  }
+  .cover-word-wrapper {
+    max-width: 964.5px;
+    margin-bottom: 20px;
+  }
+  .main-new {
+    height: 961px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .unit-image-black {
+    height: 961px;
+    background-size: 2500px auto;
+  }
+  .unit-image-white {
+    height: 961px;
+    background-size: 2500px auto;
+  }
+  .cover-word-wrapper {
+    max-width: 895.75px;
+    margin-bottom: 20px;
+  }
+  .main-new {
+    height: 961px;
+  }
+}
+
+@media (max-width: 945px) {
+  .unit-image-black {
+    height: 961px;
+    background-size: 2300px auto;
+  }
+  .unit-image-white {
+    height: 961px;
+    background-size: 2300px auto;
+  }
+  .cover-word-wrapper {
+    max-width: 823.87px;
+    margin-bottom: 20px;
+  }
+  .main-new .slogan {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 876px) {
+  .unit-image-black {
+    height: 748px;
+    background-size: 2000px auto;
+  }
+  .unit-image-white {
+    height: 748px;
+    background-size: 2000px auto;
+  }
+  .cover-word-wrapper {
+    max-width: 715.87px;
+    margin-bottom: 20px;
+  }
+  .main-new .slogan {
+    margin-bottom: 50px;
+  }
+  .main-new {
+    height: 748px;
+  }
+}
+
+@media (max-width: 767.5px) {
+  .unit-image-black {
+    height: 748px;
+    background-size: 1800px auto;
+  }
+  .unit-image-white {
+    height: 748px;
+    background-size: 1800px auto;
+  }
+  .cover-word-wrapper {
+    max-width: 643.87px;
+    margin-bottom: 20px;
+    margin-top: 60px;
+  }
+  .main-new .slogan {
+    margin-bottom: 50px;
+  }
+  .main-new {
+    height: 748px;
+  }
+
+  .main-new .slogan p {
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 1.1;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 682px) {
+  .main-new {
+    height: 552px;
+  }
+  .unit-image-black {
+    height: 552px;
+    background-size: 1500px auto;
+  }
+  .unit-image-white {
+    height: 552px;
+    background-size: 1500px auto;
+  }
+  .cover-word-wrapper {
+    max-width: 535.87px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+  }
+  .main-new .slogan {
+    margin-bottom: 50px;
+  }
+
+  .main-new .slogan p {
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 1.1;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 567.5px) {
+  .main-new {
+    height: 800px;
+  }
+  .unit-image-black {
+    background-image: url(../img/prototype-black-sm.png);
+    height: 800px;
+    background-size: 567px auto;
+  }
+
+  .unit-image-white {
+    background-image: url(../img/prototype-white-sm.png);
+    height: 800px;
+    background-size: 567px auto;
+  }
+  .cover-word-wrapper {
+    max-width: 510.87px;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+  .main-new .slogan p {
+    font-size: 21px;
+  }
+  .toggle-switch.switch-vertical {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 70px;
+    width: 64px;
+  }
+  .toggle-inside:last-child {
+    right: 0;
+    top: 0;
+  }
+}
+
+@media (max-width: 535px) {
+  .unit-image-black {
+    height: 800px;
+    background-size: 517px auto;
+  }
+
+  .unit-image-white {
+    height: 800px;
+    background-size: 517px auto;
+  }
+  .cover-word-wrapper {
+    max-width: 479.62px;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-new {
+    height: 600px;
+  }
+  .unit-image-black {
+    height: 600px;
+    background-size: 423px auto;
+  }
+
+  .unit-image-white {
+    height: 600px;
+    background-size: 423px auto;
+  }
+  .cover-word-wrapper {
+    max-width: 380px;
+    margin-bottom: 0px;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .main-new {
+    height: 600px;
+  }
+  .unit-image-black {
+    height: 600px;
+    background-size: 374px auto;
+  }
+
+  .unit-image-white {
+    height: 600px;
+    background-size: 374px auto;
+  }
+  .cover-word-wrapper {
+    max-width: 340px;
+    margin-bottom: 0px;
+    margin-top: 0;
+    z-index: 5;
+  }
+}
+
+@media (max-width: 375px) {
+  .main-new {
+    height: 500px;
+  }
+  .unit-image-black {
+    height: 500px;
+    background-size: 320px auto;
+  }
+
+  .unit-image-white {
+    height: 500px;
+    background-size: 320px auto;
+  }
+  .cover-word-wrapper {
+    max-width: 290px;
+    margin-bottom: 0px;
+    margin-top: 0;
+    z-index: 5;
+  }
+
+  .main-new .slogan {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 300px) {
+  .main-new {
+    height: 500px;
+  }
+  .unit-image-black {
+    height: 500px;
+    background-size: 280px auto;
+  }
+
+  .unit-image-white {
+    height: 500px;
+    background-size: 280px auto;
+  }
+  .cover-word-wrapper {
+    max-width: 250px;
+    margin-bottom: 0px;
+    margin-top: 0;
+    z-index: 5;
+  }
+
+  .main-new .slogan {
+    margin-bottom: 20px;
+  }
+
+  .main-new .slogan p {
+    font-size: 19px;
+  }
+}
 /****************************************/
 .control-section {
   position: relative;
   max-width: 3440px;
   margin: 0 auto;
   height: 1375px;
-  background-color: #f7f7f7;
+  /* background-color: #f7f7f7; */
+  background-color: #a1a1a1;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -780,7 +1169,7 @@ section {
   background-image: url(../img/power-remote-lg.png);
   width: 100%; /* 将宽度设置为相对于父元素的百分比 */
   height: 1375px;
-  background-size: 3440px auto; /* 设置背景图片的宽度为2262px，高度自动调整 */
+  background-size: 3440px auto;
   background-repeat: no-repeat;
   background-position-x: center; /* 将背景图片在元素内居中显示 */
   background-position-y: center;
@@ -794,6 +1183,70 @@ section {
   top: 0;
   -webkit-transform: none; /* 移除水平平移变换 */
   transform: none;
+}
+
+@media (max-width: 1460px) {
+  .unit-control {
+    width: 100%;
+    height: 1375px;
+    background-size: 2700px auto;
+  }
+  .control-word-wrapper .control-word-title {
+    font-size: 190px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .unit-control {
+    width: 100%;
+    height: 1375px;
+    background-size: 2500px auto;
+  }
+  .control-word-wrapper .control-word-title {
+    font-size: 180px;
+  }
+  .control-word-wrapper {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .unit-control {
+    width: 100%;
+    height: 1000px;
+    background-size: 1800px auto;
+  }
+  .control-word-wrapper .control-word-title {
+    font-size: 160px;
+  }
+  .control-section {
+    height: 1200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .control-section {
+    height: 1100px;
+  }
+  .unit-control {
+    width: 100%;
+    height: 600px;
+    background-size: 1200px auto;
+  }
+}
+
+@media (max-width: 567.5px) {
+  .control-section {
+    height: 700px;
+  }
+  .control-word-wrapper .control-word-title {
+    text-align: right;
+    font-size: 105px;
+  }
+  .unit-control{
+    background-image: url(../img/power-remote-sm.png);
+  }
 }
 
 /****************************************/
@@ -857,7 +1310,7 @@ section {
   background-image: url(../img/power-stair-background-lg.png);
   width: 100%; /* 将宽度设置为相对于父元素的百分比 */
   height: 2474px;
-  background-size: 3440px auto; /* 设置背景图片的宽度为2262px，高度自动调整 */
+  background-size: 3440px auto;
   background-repeat: no-repeat;
   background-position-x: center; /* 将背景图片在元素内居中显示 */
   background-position-y: center;
@@ -1008,7 +1461,7 @@ section {
   background-image: url(../img/app-hand-showcase-1.png);
   width: 100%; /* 将宽度设置为相对于父元素的百分比 */
   height: 934px;
-  background-size: 3440px auto; /* 设置背景图片的宽度为2262px，高度自动调整 */
+  background-size: 3440px auto;
   background-repeat: no-repeat;
   background-position-x: center; /* 将背景图片在元素内居中显示 */
   background-position-y: center;
@@ -1028,7 +1481,7 @@ section {
   background-image: url(../img/app-hand-showcase-2.png);
   width: 100%; /* 将宽度设置为相对于父元素的百分比 */
   height: 934px;
-  background-size: 3440px auto; /* 设置背景图片的宽度为2262px，高度自动调整 */
+  background-size: 3440px auto;
   background-repeat: no-repeat;
   background-position-x: center; /* 将背景图片在元素内居中显示 */
   background-position-y: center;
@@ -1048,7 +1501,7 @@ section {
   background-image: url(../img/app-hand-showcase-3.png);
   width: 100%; /* 将宽度设置为相对于父元素的百分比 */
   height: 934px;
-  background-size: 3440px auto; /* 设置背景图片的宽度为2262px，高度自动调整 */
+  background-size: 3440px auto;
   background-repeat: no-repeat;
   background-position-x: center; /* 将背景图片在元素内居中显示 */
   background-position-y: center;
@@ -1240,7 +1693,7 @@ section {
   background-image: url(../img/comfort-background-lg.png);
   width: 100%; /* 将宽度设置为相对于父元素的百分比 */
   height: 1847px;
-  background-size: 3440px auto; /* 设置背景图片的宽度为2262px，高度自动调整 */
+  background-size: 3440px auto;
   background-repeat: no-repeat;
   background-position-x: center; /* 将背景图片在元素内居中显示 */
   background-position-y: center;
@@ -1308,7 +1761,7 @@ section {
   background-image: url(../img/storage-background.png);
   width: 100%; /* 将宽度设置为相对于父元素的百分比 */
   height: 2030px;
-  background-size: 3440px auto; /* 设置背景图片的宽度为2262px，高度自动调整 */
+  background-size: 3440px auto;
   background-repeat: no-repeat;
   background-position-x: center; /* 将背景图片在元素内居中显示 */
   background-position-y: center;
