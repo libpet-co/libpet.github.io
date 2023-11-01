@@ -265,7 +265,7 @@
         <figure class="unit-control"></figure>
       </div>
     </div>
-    <!--
+
     <div class="stair-section">
       <div class="stair-word-wrapper">
         <h1 class="stair-word-title">36°</h1>
@@ -273,11 +273,11 @@
           Max <br />
           Gradient
         </p>
-        <br />
-        <p class="stair-word-description">
+        <br class="stair-section-break" />
+        <p class="stair-word-description" id="stair-description">
           The "Power" has a more powerful climbing ability,
-          <br />
-          and it is safe and reliable. <br />
+          <br class="stair-section-breakline" />
+          and it is safe and reliable. <br class="stair-section-breakline" />
           The maximum gradient reaches 36 degrees. It will be your most trusted
           friend.
         </p>
@@ -286,7 +286,7 @@
         <figure class="unit-stair"></figure>
       </div>
     </div>
-
+    <!--
     <div class="terrain-images-section">
       <div class="terrain-word-wrapper">
         <h1 class="terrain-word-title">
@@ -574,6 +574,7 @@
       function updateTitleContent() {
         var titleElement = document.getElementById("control-title");
         var descriptionElement = document.getElementById("control-description");
+        var stairDescription = document.getElementById("stair-description");
         var windowWidth =
           window.innerWidth ||
           document.documentElement.clientWidth ||
@@ -583,10 +584,14 @@
           titleElement.textContent = "Controller";
           descriptionElement.innerHTML =
             "New smart control center for easier use and better experience, no learning necessary.";
+          stairDescription.innerHTML =
+            "POWER has strong climbing ability (up to 36°) and is safe/reliable. Trustworthy companion.";
         } else {
           titleElement.textContent = "Central Control";
           descriptionElement.innerHTML =
             'In order to provide you with a better control experience, <br id="remote-break-lg" /> we are offering you a brand new generation of intelligent control center. <br id="remote-break-lg" /> You can master it without any learning, <br id="remote-break" />and it provides you with a more user-friendly design for your control.';
+          stairDescription.innerHTML =
+            'The "Power" has a more powerful climbing ability, <br class="stair-section-breakline" /> and it is safe and reliable. <br class="stair-section-breakline" /> The maximum gradient reaches 36 degrees. It will be your most trusted friend.';
         }
       }
 

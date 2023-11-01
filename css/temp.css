@@ -1362,10 +1362,11 @@ section {
 .stair-word-wrapper {
   position: relative;
   width: 100%;
-  max-width: 1440px;
+  max-width: calc(1440px + 5%);
   height: min-content;
   margin-bottom: 230px;
   z-index: 2;
+  padding-left: 5%;
 }
 
 .stair-word-wrapper .stair-word-title {
@@ -1414,6 +1415,119 @@ section {
   top: 0;
   -webkit-transform: none; /* 移除水平平移变换 */
   transform: none;
+}
+
+@media (max-width: 1460px) {
+  .unit-stair {
+    background-size: 2400px auto;
+    height: 1800px;
+  }
+  .stair-section {
+    height: 1765px;
+  }
+  .stair-word-wrapper {
+    margin-bottom: 100px;
+    padding-right: 5%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .unit-stair {
+    background-size: 2000px auto;
+    height: 1500px;
+  }
+  .stair-section {
+    height: 1470px;
+  }
+  .stair-word-wrapper {
+    margin-bottom: 50px;
+    padding-right: 5%;
+  }
+}
+
+@media (max-width: 880px) {
+  .unit-stair {
+    background-size: 1600px auto;
+    height: 1200px;
+  }
+  .stair-section {
+    height: 1175px;
+  }
+  .stair-word-wrapper {
+    margin-bottom: 25px;
+    padding-right: 5%;
+  }
+  .stair-word-wrapper .stair-word-title {
+    line-height: 1;
+    font-size: 160px;
+  }
+}
+
+@media (max-width: 725px) {
+  .unit-stair {
+    background-size: 1300px auto;
+    height: 1000px;
+  }
+  .stair-section {
+    height: 970px;
+  }
+  .stair-word-wrapper .stair-word-description {
+    font-size: 24px;
+    line-height: 1.1;
+  }
+  .stair-word-wrapper .stair-word-title {
+    font-size: 130px;
+  }
+  .stair-section-breakline {
+    display: none;
+  }
+  .stair-word-wrapper {
+    padding-right: 13%;
+  }
+}
+
+@media (max-width: 567.5px) {
+  .unit-stair {
+    background-image: url(../img/power-stair-background-sm.png);
+    background-size: 1100px auto;
+    height: 1050px;
+  }
+  .stair-section {
+    height: 1040px;
+  }
+  .stair-word-wrapper {
+    margin-bottom: 0px;
+  }
+  .stair-word-wrapper {
+    padding-right: 5%;
+  }
+}
+
+@media (max-width: 425px) {
+  .unit-stair {
+    background-size: 820px auto;
+    height: 850px;
+  }
+  .stair-section {
+    height: 830px;
+  }
+  .stair-word-wrapper .stair-word-title {
+    font-size: 100px;
+  }
+  .stair-word-wrapper .stair-word-subtitle {
+    font-size: 26px;
+  }
+  .stair-word-wrapper .stair-word-description {
+    font-size: 22px;
+    line-height: 1;
+  }
+  .stair-section-break{
+    display: none;
+  }
+}
+
+@media (max-width: 375px){
+  
 }
 /****************************************/
 
