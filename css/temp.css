@@ -1995,7 +1995,7 @@ section {
   }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1439.5px) {
   .app-breakline {
     display: none;
   }
@@ -2009,6 +2009,22 @@ section {
     font-size: 24px;
     line-height: 1.1;
     margin-top: 15px;
+  }
+
+  .custom-carousel-open:checked + .custom-carousel-item {
+    height: 700px;
+  }
+  .unit-app-showcase-1 {
+    height: 700px;
+    background-size: 2500px auto;
+  }
+  .unit-app-showcase-2 {
+    height: 700px;
+    background-size: 2500px auto;
+  }
+  .unit-app-showcase-3 {
+    height: 700px;
+    background-size: 2500px auto;
   }
 }
 
@@ -2028,6 +2044,22 @@ section {
   .app-section .app-showcase-wrapper {
     margin-top: 25px;
   }
+
+  .custom-carousel-open:checked + .custom-carousel-item {
+    height: 550px;
+  }
+  .unit-app-showcase-1 {
+    height: 550px;
+    background-size: 1850px auto;
+  }
+  .unit-app-showcase-2 {
+    height: 550px;
+    background-size: 1850px auto;
+  }
+  .unit-app-showcase-3 {
+    height: 550px;
+    background-size: 1850px auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2046,6 +2078,40 @@ section {
   .app-section .app-showcase-wrapper {
     margin-top: 10px;
   }
+
+  .custom-carousel-open:checked + .custom-carousel-item {
+    height: 450px;
+  }
+  .unit-app-showcase-1 {
+    height: 450px;
+    background-size: 1550px auto;
+  }
+  .unit-app-showcase-2 {
+    height: 450px;
+    background-size: 1550px auto;
+  }
+  .unit-app-showcase-3 {
+    height: 450px;
+    background-size: 1550px auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .custom-carousel-open:checked + .custom-carousel-item {
+    height: 380px;
+  }
+  .unit-app-showcase-1 {
+    height: 380px;
+    background-size: 1350px auto;
+  }
+  .unit-app-showcase-2 {
+    height: 380px;
+    background-size: 1350px auto;
+  }
+  .unit-app-showcase-3 {
+    height: 380px;
+    background-size: 1350px auto;
+  }
 }
 
 #app-breakline {
@@ -2063,8 +2129,32 @@ section {
     padding: 0 0%;
     font-size: 20px;
   }
+  .custom-carousel-open:checked + .custom-carousel-item {
+    height: 320px;
+  }
+  .unit-app-showcase-1 {
+    height: 320px;
+    background-size: 1100px auto;
+  }
+  .unit-app-showcase-2 {
+    height: 320px;
+    background-size: 1100px auto;
+  }
+  .unit-app-showcase-3 {
+    height: 320px;
+    background-size: 1100px auto;
+  }
+  .custom-carousel-bullet {
+    width: 25px;
+    height: 5px;
+  }
+  .custom-carousel-control {
+    font-size: 35px;
+    width: 2.0588235294rem;
+    height: 2.0588235294rem;
+    line-height: 0.7;
+  }
 }
-
 
 @media (max-width: 435px) {
   .remote-sm-breakline {
@@ -2075,8 +2165,26 @@ section {
     font-size: 21px;
     margin-top: 25px;
   }
-  .remote-first-breakline{
+  .remote-first-breakline {
     display: none;
+  }
+  .custom-carousel-open:checked + .custom-carousel-item {
+    height: 250px;
+  }
+  .unit-app-showcase-1 {
+    height: 250px;
+    background-size: 900px auto;
+  }
+  .unit-app-showcase-2 {
+    height: 250px;
+    background-size: 900px auto;
+  }
+  .unit-app-showcase-3 {
+    height: 250px;
+    background-size: 900px auto;
+  }
+  .custom-carousel {
+    margin-top: 0px;
   }
 }
 
@@ -2084,14 +2192,50 @@ section {
   .app-section .app-word-wrapper h1 {
     font-size: 90px;
   }
+  .custom-carousel-open:checked + .custom-carousel-item {
+    height: 220px;
+  }
+  .unit-app-showcase-1 {
+    height: 220px;
+    background-size: 760px auto;
+  }
+  .unit-app-showcase-2 {
+    height: 220px;
+    background-size: 760px auto;
+  }
+  .unit-app-showcase-3 {
+    height: 220px;
+    background-size: 760px auto;
+  }
+  .custom-carousel {
+    margin-top: 0px;
+  }
 }
 
 @media (max-width: 320px) {
   .app-section .app-word-wrapper h1 {
     font-size: 70px;
   }
-    .app-section .app-word-wrapper p {
+  .app-section .app-word-wrapper p {
     font-size: 19px;
+  }
+  .custom-carousel-open:checked + .custom-carousel-item {
+    height: 200px;
+  }
+  .unit-app-showcase-1 {
+    height: 200px;
+    background-size: 650px auto;
+  }
+  .unit-app-showcase-2 {
+    height: 200px;
+    background-size: 650px auto;
+  }
+  .unit-app-showcase-3 {
+    height: 200px;
+    background-size: 650px auto;
+  }
+  .custom-carousel {
+    margin-top: 0px;
   }
 }
 
