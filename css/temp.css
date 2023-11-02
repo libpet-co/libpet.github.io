@@ -1745,10 +1745,9 @@ section {
 
 .app-section .app-showcase-wrapper {
   margin-top: 50px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
+  display: flex;
   max-width: 1440px;
+  column-gap: 50px;
 }
 
 .app-showcase-wrapper .app-showcase-image {
@@ -2003,14 +2002,96 @@ section {
   .app-section .app-word-wrapper h1 {
     font-size: 190px;
   }
+  .app-section .app-showcase-wrapper {
+    column-gap: 15px;
+  }
+  .app-showcase-image p {
+    font-size: 24px;
+    line-height: 1.1;
+    margin-top: 15px;
+  }
 }
 
-@media (max-width: 1023.5px){
+@media (max-width: 1023.5px) {
   .app-section .app-word-wrapper h1 {
-    font-size: 170px;
+    font-size: 140px;
+  }
+  .app-showcase-image p {
+    font-size: 21px;
+    line-height: 1.1;
+    margin-top: 10px;
+  }
+  .app-section .app-word-wrapper p {
+    font-size: 24px;
+    line-height: 1.2;
   }
   .app-section .app-showcase-wrapper {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-section .app-word-wrapper h1 {
+    font-size: 110px;
+  }
+  .app-showcase-image p {
+    font-size: 19px;
+    line-height: 1.1;
+    margin-top: 10px;
+  }
+  .app-section .app-word-wrapper p {
+    font-size: 21px;
+    line-height: 1.1;
+  }
+  .app-section .app-showcase-wrapper {
+    margin-top: 10px;
+  }
+}
+
+#app-breakline {
+  display: none;
+}
+
+@media (max-width: 567.5px) {
+  .app-section .app-showcase-wrapper {
     display: none;
+  }
+  #app-breakline {
+    display: inline;
+  }
+  .app-section .app-word-wrapper p {
+    padding: 0 0%;
+    font-size: 20px;
+  }
+}
+
+
+@media (max-width: 435px) {
+  .remote-sm-breakline {
+    display: none;
+  }
+  .app-section .app-word-wrapper p {
+    padding: 0 2%;
+    font-size: 21px;
+    margin-top: 25px;
+  }
+  .remote-first-breakline{
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .app-section .app-word-wrapper h1 {
+    font-size: 90px;
+  }
+}
+
+@media (max-width: 320px) {
+  .app-section .app-word-wrapper h1 {
+    font-size: 70px;
+  }
+    .app-section .app-word-wrapper p {
+    font-size: 19px;
   }
 }
 
