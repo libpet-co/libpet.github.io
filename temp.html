@@ -449,16 +449,19 @@
         </ol>
       </div>
     </div>
-    <!--
+
     <div class="comfort-section">
       <div class="comfort-text-wrapper">
         <h1>Maximum <br />Comfort</h1>
-        <p>
+        <p id="comfort-description">
           This wheelchair delivers maximum comfort through its flexible seating
-          design. <br />
-          The adjustable backrest and elevating footrest <br />
-          can be precisely tailored to each user's dimensions, <br />
-          enabling customized positioning for consistent spinal alignment <br />
+          design. <br class="comfort-sm-breakline" />
+          The adjustable backrest and elevating footrest
+          <br class="comfort-sm-breakline" />
+          can be precisely tailored to each user's dimensions,
+          <br class="comfort-sm-breakline" />
+          enabling customized positioning for consistent spinal alignment
+          <br class="comfort-sm-breakline" />
           and balanced pressure relief whether at home or on the go.
         </p>
       </div>
@@ -466,7 +469,7 @@
         <figure class="unit-comfort"></figure>
       </div>
     </div>
-
+    <!--
     <div class="storage-section">
       <div class="storage-text-wrapper">
         <h1>
@@ -486,7 +489,7 @@
         <figure class="unit-storage"></figure>
       </div>
     </div>
-
+-->
     <footer class="footer-section">
       <div class="footer-text-wrapper">
         <h1>CONTACT US</h1>
@@ -521,7 +524,7 @@
           Copyright © Libpet Tech Limited, All Right Reserved.
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- jQuery -->
 
@@ -589,6 +592,7 @@
         var terrainTitle = document.getElementById("terrain-title");
         var terrainDescription = document.getElementById("terrain-description");
         var appDescription = document.getElementById("app-description");
+        var comfortDescription = document.getElementById("comfort-description");
         var windowWidth =
           window.innerWidth ||
           document.documentElement.clientWidth ||
@@ -603,8 +607,10 @@
           terrainTitle.innerHTML = "All <br />Terrain <br />Ada-<br />ptation";
           terrainDescription.innerHTML =
             'Our advanced technology enables POWER to take on any terrain with ease, including stairs and various surfaces. No limits to mobility.<br> <br><div class="terrain-added">Stairs  /  Beach  /  City Road  /  Grassland</div>';
-          appDescription.innerHTML = stairDescription.innerHTML =
+          appDescription.innerHTML =
             '"Libpet app makes it easy to access <br class="remote-first-breakline"> all POWER functions. <br class="remote-sm-breakline"> We constantly monitor POWER\'s performance.<br > Stay connected with Family<br class="remote-sm-breakline"> Care and real-time location tracking. <br> We\'re here to help."';
+          comfortDescription.innerHTML =
+            "This wheelchair offers optimal comfort with flexible seating that can be adjusted to fit each user's dimensions, ensuring consistent spinal alignment and balanced pressure relief whether at home or on the go.";
         } else {
           titleElement.textContent = "Central Control";
           descriptionElement.innerHTML =
@@ -616,6 +622,8 @@
             'We have employed various technologies, including an advanced <b style="font-weight: bold">mechanical design,</b> <b style="font-weight: bold">control algorithms,</b> and <b style="font-weight: bold">combinations of sensors,</b> to enable POWER to tackle various terrains with ease. <br class="terrain-breakline" /> In particular, its design allows for climbing stairs, as well as smoothly traversing <b style="font-weight: bold">urban roads, beaches, grasslands,</b> and more. <br class="terrain-breakline" /> POWER means mobility without boundaries.';
           appDescription.innerHTML =
             'Libpet app let you navigate all functions of POWER from your phone with just a few taps. <br class="app-breakline" /> Our onboard diagnostics constantly monitor your wheelchair\'s systems for optimal performance. <br class="app-breakline" /> And if an issue does arise, you have direct access to our technical support team at the touch of a button. <br class="app-breakline" /> Love ones can also stay close through our Family Care features, emergency contacts will always know your real-time <br class="app-breakline" /> location for added reassurance. Assistance is never far.';
+          comfortDescription.innerHTML =
+            'This wheelchair delivers maximum comfort through its flexible seating design. <br class="comfort-sm-breakline" /> The adjustable backrest and elevating footrest <br class="comfort-sm-breakline" /> can be precisely tailored to each user\'s dimensions, <br class="comfort-sm-breakline" /> enabling customized positioning for consistent spinal alignment <br class="comfort-sm-breakline" /> and balanced pressure relief whether at home or on the go.';
         }
       }
 
