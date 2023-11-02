@@ -1680,6 +1680,7 @@ section {
   .terrain-word-wrapper .terrain-added {
     font-size: 22px;
     white-space: nowrap;
+    font-weight: 400;
   }
 }
 
@@ -1985,6 +1986,34 @@ section {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33),
     -1px 0px 2px rgba(255, 255, 255, 0);
 }
+
+@media (max-width: 1460px) {
+  .app-section .app-word-wrapper {
+    text-align: center;
+    max-width: calc(1440px + 2%);
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .app-breakline {
+    display: none;
+  }
+  .app-section .app-word-wrapper h1 {
+    font-size: 190px;
+  }
+}
+
+@media (max-width: 1023.5px){
+  .app-section .app-word-wrapper h1 {
+    font-size: 170px;
+  }
+  .app-section .app-showcase-wrapper {
+    display: none;
+  }
+}
+
 /****************************************/
 
 /****************************************/
