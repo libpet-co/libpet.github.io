@@ -9,6 +9,14 @@
   align-items: flex-end;
 }
 
+.air-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
 .unit-air {
   background-image: url(../img/air/prototype-air-background.png);
   width: 100%; /* 将宽度设置为相对于父元素的百分比 */
@@ -106,7 +114,7 @@
   flex-direction: column;
 }
 
-.stat-small-item h1{
+.stat-small-item h1 {
   font-size: 133px;
   line-height: 0.62;
   color: #fd4830;
@@ -115,28 +123,28 @@
   height: 40%;
 }
 
-.stat-small-item .f-small{
+.stat-small-item .f-small {
   font-size: 32px;
   line-height: 1.1;
   color: #fd4830;
   font-weight: 300;
 }
 
-.stat-small-item .small-item-description{
+.stat-small-item .small-item-description {
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 55%;
 }
 
-.stat-small-item .small-item-description-2{
+.stat-small-item .small-item-description-2 {
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 70%;
 }
 
-.small-item-description-2 .description-word-wrapper{
+.small-item-description-2 .description-word-wrapper {
   font-size: 32px;
   line-height: 1.1;
   color: #fd4830;
@@ -147,9 +155,7 @@
   margin-left: auto;
 }
 
-
-
-.small-item-description .description-word-wrapper{
+.small-item-description .description-word-wrapper {
   font-size: 32px;
   line-height: 1.1;
   color: #fd4830;
@@ -191,4 +197,124 @@
   color: #fd4830;
   font-weight: 300;
   text-align: right;
+}
+
+/**************************************/
+
+.air-control-section {
+  position: relative;
+  max-width: 3440px;
+  margin: 0 auto;
+  height: 1800px;
+  background-color: #bbbbbb;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.air-control-section .air-control-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.unit-air-control {
+  background-image: url(../img/air/air-remote-background.png);
+  width: 100%; /* 将宽度设置为相对于父元素的百分比 */
+  height: 1287px;
+  background-size: 3440px auto;
+  background-repeat: no-repeat;
+  background-position-x: center; /* 将背景图片在元素内居中显示 */
+  background-position-y: center;
+  z-index: 1;
+  position: absolute;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  -webkit-transform: none; /* 移除水平平移变换 */
+  transform: none;
+}
+
+.air-control-word-wrapper {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  height: min-content;
+  margin-bottom: 160px;
+  z-index: 2;
+}
+
+.air-control-word-wrapper .air-control-title {
+  font-size: 210px;
+  line-height: 1.17;
+  color: #000000;
+  font-weight: 400;
+}
+
+.air-control-word-wrapper .air-control-description {
+  font-size: 27px;
+  line-height: 1.25;
+  color: #000000;
+  font-weight: 300;
+}
+
+/**************************************/
+
+.air-smart-section {
+  position: relative;
+  max-width: 3440px;
+  margin: 0 auto;
+  background-color: #bbbbbb;
+  display: flex;
+  flex-direction: column;
+}
+
+.air-smart-section .air-smart-image-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: row;
+}
+
+.air-smart-image-wrapper img {
+  width: 50%;
+  height: 1330px;
+  object-fit: cover;
+}
+
+.air-smart-image-wrapper #air-smart-image-1{
+  object-position: right center;
+}
+
+.air-smart-image-wrapper #air-smart-image-2{
+  object-position: left center;
+}
+
+.air-smart-section .air-smart-word-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.air-smart-word-wrapper .air-smart-title {
+  min-width: 1440px;
+  font-size: 200px;
+  line-height: 0.85;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.air-smart-word-wrapper .air-smart-description {
+  font-size: 27px;
+  line-height: 1.25;
+  color: #ffffff;
+  font-weight: 300;
+  padding-left: 1%;
 }
