@@ -318,3 +318,69 @@
   font-weight: 300;
   padding-left: 1%;
 }
+
+/**************************************/
+
+.air-omni-section{
+  position: relative;
+  max-width: 3440px;
+  margin: 0 auto;
+  height: 1846px;
+  background-color: #efefef;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.air-omni-section .air-omni-image-wrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.air-omni-image-wrapper .unit-air-omni{
+  background-image: url(../img/air/air-omni-background.png);
+  width: 100%; /* 将宽度设置为相对于父元素的百分比 */
+  height: 2174px;
+  background-size: 3440px auto;
+  background-repeat: no-repeat;
+  background-position-x: center; /* 将背景图片在元素内居中显示 */
+  background-position-y: center;
+  z-index: 1;
+  position: absolute;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  -webkit-transform: none; /* 移除水平平移变换 */
+  transform: none;
+}
+
+.air-omni-word-wrapper {
+  text-align: right;
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  height: min-content;
+  margin-top: 130px;
+  z-index: 2;
+}
+
+.air-omni-word-wrapper .air-omni-title {
+  font-size: 210px;
+  line-height: 0.85;
+  color: #000000;
+  font-weight: 400;
+}
+
+.air-omni-word-wrapper .air-omni-description {
+  margin-top: 30px;
+  font-size: 27px;
+  line-height: 1.25;
+  color: #000000;
+  font-weight: 300;
+}
