@@ -288,11 +288,11 @@
   object-fit: cover;
 }
 
-.air-smart-image-wrapper #air-smart-image-1{
+.air-smart-image-wrapper #air-smart-image-1 {
   object-position: right center;
 }
 
-.air-smart-image-wrapper #air-smart-image-2{
+.air-smart-image-wrapper #air-smart-image-2 {
   object-position: left center;
 }
 
@@ -321,7 +321,7 @@
 
 /**************************************/
 
-.air-omni-section{
+.air-omni-section {
   position: relative;
   max-width: 3440px;
   margin: 0 auto;
@@ -332,7 +332,7 @@
   align-items: flex-start;
 }
 
-.air-omni-section .air-omni-image-wrapper{
+.air-omni-section .air-omni-image-wrapper {
   position: absolute;
   top: 0;
   left: 0;
@@ -340,7 +340,7 @@
   width: 100%;
 }
 
-.air-omni-image-wrapper .unit-air-omni{
+.air-omni-image-wrapper .unit-air-omni {
   background-image: url(../img/air/air-omni-background.png);
   width: 100%; /* 将宽度设置为相对于父元素的百分比 */
   height: 2174px;
@@ -383,4 +383,78 @@
   line-height: 1.25;
   color: #000000;
   font-weight: 300;
+}
+
+/**************************************/
+
+.air-radius-section {
+  position: relative;
+  max-width: 3440px;
+  margin: 0 auto;
+  height: 2300px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.air-radius-section .air-radius-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.air-radius-image-wrapper .unit-air-radius {
+  background-image: url(../img/air/air-radius-background.png);
+  width: 100%; /* 将宽度设置为相对于父元素的百分比 */
+  height: 1800px;
+  background-size: 3440px auto;
+  background-repeat: no-repeat;
+  background-position-x: center; /* 将背景图片在元素内居中显示 */
+  background-position-y: center;
+  z-index: 1;
+  position: absolute;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  -webkit-transform: none; /* 移除水平平移变换 */
+  transform: none;
+}
+
+.air-radius-word-wrapper {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  height: min-content;
+  margin-bottom: 100px;
+  z-index: 2;
+}
+
+.air-radius-word-wrapper .air-radius-subtitle {
+  font-size: 210px;
+  line-height: 0.85;
+  color: #78c9fd;
+  font-weight: 400;
+}
+
+.air-radius-word-wrapper .air-radius-title {
+  font-size: 210px;
+  line-height: 0.85;
+  color: #000000;
+  font-weight: 400;
+  margin-top: 50px;
+}
+
+.air-radius-word-wrapper .air-radius-description {
+  font-size: 27px;
+  line-height: 1.25;
+  color: #000000;
+  font-weight: 300;
+  margin-top: 50px;
 }
