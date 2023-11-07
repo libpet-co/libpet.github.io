@@ -460,6 +460,223 @@
 }
 
 /**************************************/
+.air-app-section {
+  position: relative;
+  max-width: 3440px;
+  margin: 0 auto;
+  background-color: #efefef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.air-app-word-wrapper {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  height: min-content;
+  margin-bottom: 100px;
+  z-index: 2;
+}
+
+.air-app-word-wrapper .air-app-title {
+  font-size: 210px;
+  line-height: 0.85;
+  color: #000000;
+  font-weight: 400;
+}
+
+.air-app-word-wrapper .air-app-description {
+  font-size: 27px;
+  line-height: 1.25;
+  color: #000000;
+  font-weight: 300;
+}
+/**************************************/
+
+.unit-air-app-showcase-1 {
+  background-image: url(../img/air/air-hand-app-showcase-1.png);
+  width: 100%; /* 将宽度设置为相对于父元素的百分比 */
+  height: 934px;
+  background-size: 3440px auto;
+  background-repeat: no-repeat;
+  background-position-x: center; /* 将背景图片在元素内居中显示 */
+  background-position-y: center;
+  z-index: 1;
+  position: absolute;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  -webkit-transform: none; /* 移除水平平移变换 */
+  transform: none;
+}
+
+.unit-air-app-showcase-2 {
+  background-image: url(../img/air/air-hand-app-showcase-2.png);
+  width: 100%; /* 将宽度设置为相对于父元素的百分比 */
+  height: 934px;
+  background-size: 3440px auto;
+  background-repeat: no-repeat;
+  background-position-x: center; /* 将背景图片在元素内居中显示 */
+  background-position-y: center;
+  z-index: 1;
+  position: absolute;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  -webkit-transform: none; /* 移除水平平移变换 */
+  transform: none;
+}
+
+.unit-air-app-showcase-3 {
+  background-image: url(../img/air/air-hand-app-showcase-3.png);
+  width: 100%; /* 将宽度设置为相对于父元素的百分比 */
+  height: 934px;
+  background-size: 3440px auto;
+  background-repeat: no-repeat;
+  background-position-x: center; /* 将背景图片在元素内居中显示 */
+  background-position-y: center;
+  z-index: 1;
+  position: absolute;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  -webkit-transform: none; /* 移除水平平移变换 */
+  transform: none;
+}
+
+@media (max-width: 1439.5px) {
+  .unit-air-app-showcase-1 {
+    height: 700px;
+    background-size: 2500px auto;
+  }
+  .unit-air-app-showcase-2 {
+    height: 700px;
+    background-size: 2500px auto;
+  }
+  .unit-air-app-showcase-3 {
+    height: 700px;
+    background-size: 2500px auto;
+  }
+}
+
+@media (max-width: 1023.5px) {
+  .unit-air-app-showcase-1 {
+    height: 550px;
+    background-size: 1850px auto;
+  }
+  .unit-air-app-showcase-2 {
+    height: 550px;
+    background-size: 1850px auto;
+  }
+  .unit-air-app-showcase-3 {
+    height: 550px;
+    background-size: 1850px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .unit-air-app-showcase-1 {
+    height: 450px;
+    background-size: 1550px auto;
+  }
+  .unit-air-app-showcase-2 {
+    height: 450px;
+    background-size: 1550px auto;
+  }
+  .unit-air-app-showcase-3 {
+    height: 450px;
+    background-size: 1550px auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .unit-air-app-showcase-1 {
+    height: 380px;
+    background-size: 1350px auto;
+  }
+  .unit-air-app-showcase-2 {
+    height: 380px;
+    background-size: 1350px auto;
+  }
+  .unit-air-app-showcase-3 {
+    height: 380px;
+    background-size: 1350px auto;
+  }
+}
+
+@media (max-width: 567.5px) {
+  .unit-air-app-showcase-1 {
+    height: 320px;
+    background-size: 1100px auto;
+  }
+  .unit-air-app-showcase-2 {
+    height: 320px;
+    background-size: 1100px auto;
+  }
+  .unit-air-app-showcase-3 {
+    height: 320px;
+    background-size: 1100px auto;
+  }
+}
+
+@media (max-width: 435px) {
+  .unit-air-app-showcase-1 {
+    height: 250px;
+    background-size: 900px auto;
+  }
+  .unit-air-app-showcase-2 {
+    height: 250px;
+    background-size: 900px auto;
+  }
+  .unit-air-app-showcase-3 {
+    height: 250px;
+    background-size: 900px auto;
+  }
+}
+
+@media (max-width: 375px) {
+  .unit-air-app-showcase-1 {
+    height: 220px;
+    background-size: 760px auto;
+  }
+  .unit-air-app-showcase-2 {
+    height: 220px;
+    background-size: 760px auto;
+  }
+  .unit-air-app-showcase-3 {
+    height: 220px;
+    background-size: 760px auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .unit-air-app-showcase-1 {
+    height: 200px;
+    background-size: 650px auto;
+  }
+  .unit-air-app-showcase-2 {
+    height: 200px;
+    background-size: 650px auto;
+  }
+  .unit-air-app-showcase-3 {
+    height: 200px;
+    background-size: 650px auto;
+  }
+}
+
+/**************************************/
 
 .air-journey-section {
   position: relative;
@@ -510,11 +727,10 @@
   z-index: 2;
 }
 
-.air-journey-word-wrapper .air-journey-title{
+.air-journey-word-wrapper .air-journey-title {
   font-size: 210px;
-line-height: 0.85;
-color: #ffffff;
-font-weight: 400;
-text-align: left;
+  line-height: 0.85;
+  color: #ffffff;
+  font-weight: 400;
+  text-align: left;
 }
-
