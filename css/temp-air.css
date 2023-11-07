@@ -1,0 +1,1011 @@
+.air-section {
+  position: relative;
+  max-width: 3440px;
+  margin: 0 auto;
+  height: 1225px;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.air-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.unit-air {
+  background-image: url(../img/air/prototype-air-background.png);
+  width: 100%; /* 将宽度设置为相对于父元素的百分比 */
+  height: 1225px;
+  background-size: 3440px auto;
+  background-repeat: no-repeat;
+  background-position-x: center; /* 将背景图片在元素内居中显示 */
+  background-position-y: center;
+  z-index: 1;
+  position: absolute;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  -webkit-transform: none; /* 移除水平平移变换 */
+  transform: none;
+}
+
+.air-word-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: calc(1236px + 5%);
+  height: min-content;
+  margin-bottom: 370px;
+  z-index: 2;
+  padding-right: 2.5%;
+}
+
+.air-word-wrapper .air-word-title {
+  font-size: 45px;
+  line-height: 1.1;
+  color: #cecece;
+  font-weight: 600;
+  text-align: right;
+}
+
+@media (max-width: 1340px) {
+  .unit-air {
+    background-size: 3250px auto;
+  }
+  .air-word-wrapper {
+    max-width: 1170px;
+    padding-right: 0%;
+  }
+}
+
+@media (max-width: 1240px) {
+  .unit-air {
+    background-size: 2750px auto;
+  }
+  .air-word-wrapper {
+    max-width: 990px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .air-section {
+    height: 950px;
+  }
+  .unit-air {
+    background-size: 2450px auto;
+    height: 950px;
+  }
+  .air-word-wrapper {
+    max-width: 870px;
+    margin-bottom: 250px;
+  }
+}
+
+@media (max-width: 1023.5px) {
+  .air-section {
+    height: 950px;
+  }
+  .unit-air {
+    background-size: 2200px auto;
+    height: 950px;
+  }
+  .air-word-wrapper {
+    max-width: 780px;
+    margin-bottom: 250px;
+  }
+}
+
+@media (max-width: 900px) {
+  .air-section {
+    height: 800px;
+  }
+  .unit-air {
+    background-size: 1880px auto;
+    height: 800px;
+  }
+  .air-word-wrapper {
+    max-width: 670px;
+    margin-bottom: 210px;
+  }
+  .air-word-wrapper .air-word-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 800px) {
+  .air-section {
+    height: 800px;
+  }
+  .unit-air {
+    background-size: 1800px auto;
+    height: 800px;
+  }
+  .air-word-wrapper {
+    max-width: 630px;
+    margin-bottom: 210px;
+  }
+  .air-word-wrapper .air-word-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 750px) {
+  .air-section {
+    height: 700px;
+  }
+  .unit-air {
+    background-size: 1750px auto;
+    height: 700px;
+  }
+  .air-word-wrapper {
+    max-width: 630px;
+    margin-bottom: 200px;
+  }
+  .air-word-wrapper .air-word-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 700px) {
+  .air-section {
+    height: 650px;
+  }
+  .unit-air {
+    background-size: 1640px auto;
+    height: 650px;
+  }
+  .air-word-wrapper {
+    max-width: 580px;
+    margin-bottom: 180px;
+  }
+  .air-word-wrapper .air-word-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 650px) {
+  .air-section {
+    height: 600px;
+  }
+  .unit-air {
+    background-size: 1530px auto;
+    height: 600px;
+  }
+  .air-word-wrapper {
+    max-width: 540px;
+    margin-bottom: 150px;
+  }
+  .air-word-wrapper .air-word-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 567.5px) {
+  .air-section {
+    height: 700px;
+  }
+
+  .air-image-wrapper {
+    transform: translateX(-40px);
+  }
+  .unit-air {
+    background-image: url(../img/air/prototype-air-background-sm.png);
+    background-size: 620px auto;
+    height: 700px;
+  }
+  .air-word-wrapper {
+    max-width: 490px;
+    margin-bottom: 290px;
+  }
+  .air-word-wrapper .air-word-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 557px) {
+  .air-section {
+    height: 700px;
+    overflow-x: hidden;
+  }
+
+  .air-image-wrapper {
+    transform: translateX(5px);
+    width: 110%;
+  }
+  .unit-air {
+    background-size: 560px auto;
+    height: 700px;
+    transform: translateX(-60px);
+  }
+  .air-word-wrapper {
+    max-width: 450px;
+    margin-bottom: 290px;
+  }
+  .air-word-wrapper .air-word-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 500px) {
+  .air-section {
+    height: 600px;
+    overflow-x: hidden;
+  }
+  .unit-air {
+    background-size: 500px auto;
+    height: 600px;
+    transform: translateX(-60px);
+  }
+  .air-word-wrapper {
+    max-width: 390px;
+    margin-bottom: 230px;
+  }
+  .air-word-wrapper .air-word-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 450px) {
+    .air-section {
+      height: 550px;
+      overflow-x: hidden;
+    }
+    .unit-air {
+      background-size: 450px auto;
+      height: 550px;
+      transform: translateX(-50px);
+    }
+    .air-word-wrapper {
+      max-width: 360px;
+      margin-bottom: 205px;
+    }
+    .air-word-wrapper .air-word-title {
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .air-section {
+      height: 500px;
+      overflow-x: hidden;
+    }
+    .unit-air {
+      background-size: 415px auto;
+      height: 500px;
+      transform: translateX(-50px);
+    }
+    .air-word-wrapper {
+      max-width: 330px;
+      margin-bottom: 180px;
+    }
+    .air-word-wrapper .air-word-title {
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .air-section {
+      height: 450px;
+      overflow-x: hidden;
+    }
+    .unit-air {
+      background-size: 365px auto;
+      height: 450px;
+      transform: translateX(-40px);
+    }
+    .air-word-wrapper {
+      max-width: 300px;
+      margin-bottom: 160px;
+    }
+    .air-word-wrapper .air-word-title {
+      font-size: 22px;
+      line-height: 1;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .air-section {
+      height: 370px;
+      overflow-x: hidden;
+    }
+    .unit-air {
+      background-size: 310px auto;
+      height: 370px;
+      transform: translateX(-40px);
+    }
+    .air-word-wrapper {
+      max-width: 250px;
+      margin-bottom: 130px;
+    }
+    .air-word-wrapper .air-word-title {
+      font-size: 19px;
+      line-height: 1;
+    }
+  }
+
+/**************************************/
+
+.air-stat-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  max-width: 3440px;
+  margin: 0 auto;
+  background-color: #bbbbbb;
+  display: flex;
+  flex-direction: column;
+  row-gap: 43px;
+}
+
+.stat-first-row {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 3.6%;
+  margin: 0 auto;
+}
+
+.stat-small {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  column-gap: 3.6%;
+}
+
+.stat-second-row {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 3.6%;
+  margin: 0 auto;
+}
+
+.stat-item {
+  height: 340px;
+  border-radius: 50px;
+  background-color: #272727;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.stat-small-item {
+  height: 340px;
+  border-radius: 50px;
+  background-color: #272727;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.stat-small-item h1 {
+  font-size: 133px;
+  line-height: 0.62;
+  color: #fd4830;
+  font-weight: 250;
+  font-family: "Outfit";
+  height: 40%;
+}
+
+.stat-small-item .f-small {
+  font-size: 32px;
+  line-height: 1.1;
+  color: #fd4830;
+  font-weight: 300;
+}
+
+.stat-small-item .small-item-description {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 55%;
+}
+
+.stat-small-item .small-item-description-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 70%;
+}
+
+.small-item-description-2 .description-word-wrapper {
+  font-size: 32px;
+  line-height: 1.1;
+  color: #fd4830;
+  font-weight: 300;
+  font-family: "Outfit";
+  text-align: center;
+  margin: 0;
+  margin-left: auto;
+}
+
+.small-item-description .description-word-wrapper {
+  font-size: 32px;
+  line-height: 1.1;
+  color: #fd4830;
+  font-weight: 300;
+  font-family: "Outfit";
+  text-align: center;
+  margin: 0;
+  margin-left: auto;
+}
+
+.stat-item h1 {
+  font-size: 248px;
+  line-height: 0.85;
+  color: #fd4830;
+  font-weight: 250;
+  font-family: "Outfit";
+  padding-left: 10%;
+}
+
+.stat-item .f-small {
+  font-size: 32px;
+  line-height: 1.1;
+  color: #fd4830;
+  font-weight: 300;
+}
+
+.item-description {
+  height: min-content;
+  margin-left: auto;
+  margin-right: 10%;
+  text-align: right;
+}
+
+.item-description .description-word-wrapper {
+  position: relative;
+  top: 32px;
+  font-size: 32px;
+  line-height: 1.1;
+  color: #fd4830;
+  font-weight: 300;
+  text-align: right;
+}
+
+/**************************************/
+
+.air-control-section {
+  position: relative;
+  max-width: 3440px;
+  margin: 0 auto;
+  height: 1800px;
+  background-color: #bbbbbb;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.air-control-section .air-control-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.unit-air-control {
+  background-image: url(../img/air/air-remote-background.png);
+  width: 100%; /* 将宽度设置为相对于父元素的百分比 */
+  height: 1287px;
+  background-size: 3440px auto;
+  background-repeat: no-repeat;
+  background-position-x: center; /* 将背景图片在元素内居中显示 */
+  background-position-y: center;
+  z-index: 1;
+  position: absolute;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  -webkit-transform: none; /* 移除水平平移变换 */
+  transform: none;
+}
+
+.air-control-word-wrapper {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  height: min-content;
+  margin-bottom: 160px;
+  z-index: 2;
+}
+
+.air-control-word-wrapper .air-control-title {
+  font-size: 210px;
+  line-height: 1.17;
+  color: #000000;
+  font-weight: 400;
+}
+
+.air-control-word-wrapper .air-control-description {
+  font-size: 27px;
+  line-height: 1.25;
+  color: #000000;
+  font-weight: 300;
+}
+
+/**************************************/
+
+.air-smart-section {
+  position: relative;
+  max-width: 3440px;
+  margin: 0 auto;
+  background-color: #bbbbbb;
+  display: flex;
+  flex-direction: column;
+}
+
+.air-smart-section .air-smart-image-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: row;
+}
+
+.air-smart-image-wrapper img {
+  width: 50%;
+  height: 1330px;
+  object-fit: cover;
+}
+
+.air-smart-image-wrapper #air-smart-image-1 {
+  object-position: right center;
+}
+
+.air-smart-image-wrapper #air-smart-image-2 {
+  object-position: left center;
+}
+
+.air-smart-section .air-smart-word-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.air-smart-word-wrapper .air-smart-title {
+  min-width: 1440px;
+  font-size: 200px;
+  line-height: 0.85;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.air-smart-word-wrapper .air-smart-description {
+  font-size: 27px;
+  line-height: 1.25;
+  color: #ffffff;
+  font-weight: 300;
+  padding-left: 1%;
+}
+
+/**************************************/
+
+.air-omni-section {
+  position: relative;
+  max-width: 3440px;
+  margin: 0 auto;
+  height: 1846px;
+  background-color: #efefef;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.air-omni-section .air-omni-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.air-omni-image-wrapper .unit-air-omni {
+  background-image: url(../img/air/air-omni-background.png);
+  width: 100%; /* 将宽度设置为相对于父元素的百分比 */
+  height: 2174px;
+  background-size: 3440px auto;
+  background-repeat: no-repeat;
+  background-position-x: center; /* 将背景图片在元素内居中显示 */
+  background-position-y: center;
+  z-index: 1;
+  position: absolute;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  -webkit-transform: none; /* 移除水平平移变换 */
+  transform: none;
+}
+
+.air-omni-word-wrapper {
+  text-align: right;
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  height: min-content;
+  margin-top: 130px;
+  z-index: 2;
+}
+
+.air-omni-word-wrapper .air-omni-title {
+  font-size: 210px;
+  line-height: 0.85;
+  color: #000000;
+  font-weight: 400;
+}
+
+.air-omni-word-wrapper .air-omni-description {
+  margin-top: 30px;
+  font-size: 27px;
+  line-height: 1.25;
+  color: #000000;
+  font-weight: 300;
+}
+
+/**************************************/
+
+.air-radius-section {
+  position: relative;
+  max-width: 3440px;
+  margin: 0 auto;
+  height: 2300px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.air-radius-section .air-radius-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.air-radius-image-wrapper .unit-air-radius {
+  background-image: url(../img/air/air-radius-background.png);
+  width: 100%; /* 将宽度设置为相对于父元素的百分比 */
+  height: 1800px;
+  background-size: 3440px auto;
+  background-repeat: no-repeat;
+  background-position-x: center; /* 将背景图片在元素内居中显示 */
+  background-position-y: center;
+  z-index: 1;
+  position: absolute;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  -webkit-transform: none; /* 移除水平平移变换 */
+  transform: none;
+}
+
+.air-radius-word-wrapper {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  height: min-content;
+  margin-bottom: 100px;
+  z-index: 2;
+}
+
+.air-radius-word-wrapper .air-radius-subtitle {
+  font-size: 210px;
+  line-height: 0.85;
+  color: #78c9fd;
+  font-weight: 400;
+}
+
+.air-radius-word-wrapper .air-radius-title {
+  font-size: 210px;
+  line-height: 0.85;
+  color: #000000;
+  font-weight: 400;
+  margin-top: 50px;
+}
+
+.air-radius-word-wrapper .air-radius-description {
+  font-size: 27px;
+  line-height: 1.25;
+  color: #000000;
+  font-weight: 300;
+  margin-top: 50px;
+}
+
+/**************************************/
+.air-app-section {
+  position: relative;
+  max-width: 3440px;
+  margin: 0 auto;
+  background-color: #efefef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.air-app-word-wrapper {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  height: min-content;
+  margin-bottom: 100px;
+  z-index: 2;
+}
+
+.air-app-word-wrapper .air-app-title {
+  font-size: 210px;
+  line-height: 0.85;
+  color: #000000;
+  font-weight: 400;
+}
+
+.air-app-word-wrapper .air-app-description {
+  font-size: 27px;
+  line-height: 1.25;
+  color: #000000;
+  font-weight: 300;
+}
+/**************************************/
+
+.unit-air-app-showcase-1 {
+  background-image: url(../img/air/air-hand-app-showcase-1.png);
+  width: 100%; /* 将宽度设置为相对于父元素的百分比 */
+  height: 934px;
+  background-size: 3440px auto;
+  background-repeat: no-repeat;
+  background-position-x: center; /* 将背景图片在元素内居中显示 */
+  background-position-y: center;
+  z-index: 1;
+  position: absolute;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  -webkit-transform: none; /* 移除水平平移变换 */
+  transform: none;
+}
+
+.unit-air-app-showcase-2 {
+  background-image: url(../img/air/air-hand-app-showcase-2.png);
+  width: 100%; /* 将宽度设置为相对于父元素的百分比 */
+  height: 934px;
+  background-size: 3440px auto;
+  background-repeat: no-repeat;
+  background-position-x: center; /* 将背景图片在元素内居中显示 */
+  background-position-y: center;
+  z-index: 1;
+  position: absolute;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  -webkit-transform: none; /* 移除水平平移变换 */
+  transform: none;
+}
+
+.unit-air-app-showcase-3 {
+  background-image: url(../img/air/air-hand-app-showcase-3.png);
+  width: 100%; /* 将宽度设置为相对于父元素的百分比 */
+  height: 934px;
+  background-size: 3440px auto;
+  background-repeat: no-repeat;
+  background-position-x: center; /* 将背景图片在元素内居中显示 */
+  background-position-y: center;
+  z-index: 1;
+  position: absolute;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  -webkit-transform: none; /* 移除水平平移变换 */
+  transform: none;
+}
+
+@media (max-width: 1439.5px) {
+  .unit-air-app-showcase-1 {
+    height: 700px;
+    background-size: 2500px auto;
+  }
+  .unit-air-app-showcase-2 {
+    height: 700px;
+    background-size: 2500px auto;
+  }
+  .unit-air-app-showcase-3 {
+    height: 700px;
+    background-size: 2500px auto;
+  }
+}
+
+@media (max-width: 1023.5px) {
+  .unit-air-app-showcase-1 {
+    height: 550px;
+    background-size: 1850px auto;
+  }
+  .unit-air-app-showcase-2 {
+    height: 550px;
+    background-size: 1850px auto;
+  }
+  .unit-air-app-showcase-3 {
+    height: 550px;
+    background-size: 1850px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .unit-air-app-showcase-1 {
+    height: 450px;
+    background-size: 1550px auto;
+  }
+  .unit-air-app-showcase-2 {
+    height: 450px;
+    background-size: 1550px auto;
+  }
+  .unit-air-app-showcase-3 {
+    height: 450px;
+    background-size: 1550px auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .unit-air-app-showcase-1 {
+    height: 380px;
+    background-size: 1350px auto;
+  }
+  .unit-air-app-showcase-2 {
+    height: 380px;
+    background-size: 1350px auto;
+  }
+  .unit-air-app-showcase-3 {
+    height: 380px;
+    background-size: 1350px auto;
+  }
+}
+
+@media (max-width: 567.5px) {
+  .unit-air-app-showcase-1 {
+    height: 320px;
+    background-size: 1100px auto;
+  }
+  .unit-air-app-showcase-2 {
+    height: 320px;
+    background-size: 1100px auto;
+  }
+  .unit-air-app-showcase-3 {
+    height: 320px;
+    background-size: 1100px auto;
+  }
+}
+
+@media (max-width: 435px) {
+  .unit-air-app-showcase-1 {
+    height: 250px;
+    background-size: 900px auto;
+  }
+  .unit-air-app-showcase-2 {
+    height: 250px;
+    background-size: 900px auto;
+  }
+  .unit-air-app-showcase-3 {
+    height: 250px;
+    background-size: 900px auto;
+  }
+}
+
+@media (max-width: 375px) {
+  .unit-air-app-showcase-1 {
+    height: 220px;
+    background-size: 760px auto;
+  }
+  .unit-air-app-showcase-2 {
+    height: 220px;
+    background-size: 760px auto;
+  }
+  .unit-air-app-showcase-3 {
+    height: 220px;
+    background-size: 760px auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .unit-air-app-showcase-1 {
+    height: 200px;
+    background-size: 650px auto;
+  }
+  .unit-air-app-showcase-2 {
+    height: 200px;
+    background-size: 650px auto;
+  }
+  .unit-air-app-showcase-3 {
+    height: 200px;
+    background-size: 650px auto;
+  }
+}
+
+/**************************************/
+
+.air-journey-section {
+  position: relative;
+  max-width: 3440px;
+  margin: 0 auto;
+  height: 1816px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.air-journey-section .air-journey-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.air-journey-image-wrapper .unit-air-journey {
+  background-image: url(../img/air/air-journey-background.png);
+  width: 100%; /* 将宽度设置为相对于父元素的百分比 */
+  height: 1816px;
+  background-size: 3440px auto;
+  background-repeat: no-repeat;
+  background-position-x: center; /* 将背景图片在元素内居中显示 */
+  background-position-y: center;
+  z-index: 1;
+  position: absolute;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  -webkit-transform: none; /* 移除水平平移变换 */
+  transform: none;
+}
+
+.air-journey-word-wrapper {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  height: min-content;
+  margin-bottom: 100px;
+  z-index: 2;
+}
+
+.air-journey-word-wrapper .air-journey-title {
+  font-size: 210px;
+  line-height: 0.85;
+  color: #ffffff;
+  font-weight: 400;
+  text-align: left;
+}
