@@ -216,10 +216,12 @@
           Mobility Device.
         </h1>
         <br />
-        <br class="air-smart-para-breakline"/>
+        <br class="air-smart-para-breakline" />
         <p class="air-smart-description">
-          Air can handle any indoor or outdoor scene, <br class="air-smart-breakline-2"/>
-          thanks to its reasonable design <br class="air-smart-breakline"> and intelligent control mode.
+          Air can handle any indoor or outdoor scene,
+          <br class="air-smart-breakline-2" />
+          thanks to its reasonable design <br class="air-smart-breakline" />
+          and intelligent control mode.
         </p>
       </div>
       <div class="air-smart-image-wrapper">
@@ -235,18 +237,20 @@
         />
       </div>
     </div>
-    <!--
+
     <div class="air-omni-section">
       <div class="air-omni-word-wrapper">
         <h1 class="air-omni-title">
           Omni <br />
           Wheel
         </h1>
-        <p class="air-omni-description">
+        <p class="air-omni-description" id="air-omni-d">
           Omni wheels give electric wheelchairs unparalleled maneuverability
-          through <br />
-          their 360-degree pivot for easy navigation in tight spaces. <br />
-          This simplified movement delivers enhanced accessibility, <br />
+          through <br class="air-omni-breakline" />
+          their 360-degree pivot for easy navigation in tight spaces.
+          <br class="air-omni-breakline" />
+          This simplified movement delivers enhanced accessibility,
+          <br class="air-omni-breakline" />
           control and independence for wheelchair users.
         </p>
       </div>
@@ -254,7 +258,7 @@
         <figure class="unit-air-omni"></figure>
       </div>
     </div>
-
+    <!--
     <div class="air-radius-section">
       <div class="air-radius-word-wrapper">
         <p class="air-radius-subtitle">66cm</p>
@@ -446,6 +450,7 @@
       function updateTitleContent() {
         var airCTitle = document.getElementById("air-c-title");
         var airCDescription = document.getElementById("air-c-description");
+        var airOmniDescription = document.getElementById("air-omni-d");
 
         var windowWidth =
           window.innerWidth ||
@@ -455,9 +460,11 @@
         if (windowWidth < 568) {
           airCTitle.textContent = "Controller";
           airCDescription.innerHTML = `Comfortable, intuitive use with ergonomic joystick, <br class="air-control-breakline-sm"> LED indicators for speed and battery life. <br class="air-control-breakline-sm"> Bluetooth enabled for easy updates and reliable, independent mobility.`;
+          airOmniDescription.innerHTML = "Omni wheels enhance electric wheelchair maneuverability for increased accessibility and independence.";
         } else {
           airCTitle.textContent = "Central Control";
           airCDescription.innerHTML = `The Libpet Air controller offers comfortable, intuitive use through its ergonomic joystick grip and series of LED indicators. <br class="air-control-breakline" /> Its angled design and helpful lights display speed, <br class="air-control-breakline" /> battery life and more for seamless wheelchair navigation. <br class="air-control-breakline" /> With Bluetooth for updates, the Libpet Air empowers independent mobility through simple, reliable control.`;
+          airOmniDescription.innerHTML = `Omni wheels give electric wheelchairs unparalleled maneuverability through <br class="air-omni-breakline"/> their 360-degree pivot for easy navigation in tight spaces. <br class="air-omni-breakline"/> This simplified movement delivers enhanced accessibility, <br class="air-omni-breakline"/> control and independence for wheelchair users.`;
         }
       }
 
