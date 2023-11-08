@@ -1013,7 +1013,7 @@
   }
   .air-control-word-wrapper .air-control-title {
     font-size: 100px;
-}
+  }
 }
 
 .air-control-breakline-sm {
@@ -1039,7 +1039,7 @@
   }
   .air-control-word-wrapper .air-control-title {
     font-size: 90px;
-}
+  }
 }
 
 @media (max-width: 450px) {
@@ -1055,13 +1055,13 @@
   }
   .air-control-word-wrapper .air-control-title {
     font-size: 80px;
-}
+  }
 }
 
-@media (max-width: 400px){
+@media (max-width: 400px) {
   .air-control-word-wrapper .air-control-title {
     font-size: 70px;
-}
+  }
 }
 
 @media (max-width: 350px) {
@@ -1080,7 +1080,7 @@
   }
 }
 
-@media (max-width: 300px){
+@media (max-width: 300px) {
   .air-control-word-wrapper .air-control-title {
     font-size: 55px;
   }
@@ -1095,7 +1095,7 @@
   }
   .air-control-section {
     height: 600px;
-}
+  }
 }
 
 /**************************************/
@@ -1135,10 +1135,11 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 1440px;
 }
 
 .air-smart-word-wrapper .air-smart-title {
-  min-width: 1440px;
   font-size: 200px;
   line-height: 0.85;
   font-weight: 400;
@@ -1153,6 +1154,174 @@
   padding-left: 1%;
 }
 
+@media (max-width: 1445px) {
+  .air-smart-section .air-smart-word-wrapper {
+    padding-left: 2%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .air-smart-word-wrapper .air-smart-title {
+    font-size: 190px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .air-smart-word-wrapper .air-smart-title {
+    font-size: 180px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .air-smart-word-wrapper .air-smart-title {
+    font-size: 170px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .air-smart-word-wrapper .air-smart-title {
+    font-size: 160px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .air-smart-word-wrapper .air-smart-title {
+    font-size: 150px;
+  }
+  .air-smart-image-wrapper img {
+    height: 1130px;
+}
+}
+
+@media (max-width: 1100px) {
+  .air-smart-word-wrapper .air-smart-title {
+    font-size: 140px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .air-smart-word-wrapper .air-smart-title {
+    font-size: 130px;
+  }
+  .air-smart-image-wrapper img {
+    height: 1030px;
+}
+}
+
+@media (max-width: 950px) {
+  .air-smart-word-wrapper .air-smart-title {
+    font-size: 120px;
+  }
+}
+
+@media (max-width: 900px) {
+  .air-smart-word-wrapper .air-smart-title {
+    font-size: 110px;
+  }
+}
+
+@media (max-width: 800px) {
+  .air-smart-word-wrapper .air-smart-title {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 750px) {
+  .air-smart-word-wrapper .air-smart-title {
+    font-size: 90px;
+  }
+  .air-smart-image-wrapper img {
+    height: 930px;
+}
+}
+
+@media (max-width: 700px) {
+  .air-smart-word-wrapper .air-smart-title {
+    font-size: 80px;
+  }
+
+  .air-smart-image-wrapper img {
+    height: 730px;
+}
+}
+
+@media (max-width: 600px) {
+  .air-smart-word-wrapper .air-smart-title {
+    font-size: 75px;
+  }
+  .air-smart-para-breakline{
+    display: none;
+  }
+}
+
+.air-smart-breakline {
+  display: none;
+}
+
+@media (max-width: 567.5px) {
+  .air-smart-word-wrapper .air-smart-title {
+    font-size: 105px;
+  }
+  .air-smart-breakline {
+    display: inline;
+  }
+  .air-smart-section .air-smart-image-wrapper {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .air-smart-image-wrapper img {
+    width: 100%;
+    height: 520px;
+  }
+}
+
+@media (max-width: 500px) {
+  .air-smart-image-wrapper img {
+    height: 450px;
+  }
+}
+
+@media (max-width: 450px) {
+  .air-smart-word-wrapper .air-smart-title {
+    font-size: 100px;
+  }
+  .air-smart-image-wrapper img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .air-smart-word-wrapper .air-smart-title {
+    font-size: 90px;
+  }
+  .air-smart-breakline {
+    display: none;
+  }
+  .air-smart-word-wrapper .air-smart-description {
+    padding-right: 4%;
+  }
+}
+
+@media (max-width: 350px) {
+  .air-smart-word-wrapper .air-smart-title {
+    font-size: 80px;
+  }
+  .air-smart-breakline-2 {
+    display: none;
+  }
+}
+
+@media (max-width: 300px) {
+  .air-smart-word-wrapper .air-smart-title {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 270px) {
+  .air-smart-word-wrapper .air-smart-title {
+    font-size: 60px;
+  }
+}
 /**************************************/
 
 .air-omni-section {
