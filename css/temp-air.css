@@ -1114,6 +1114,7 @@
   background-color: #bbbbbb;
   display: flex;
   flex-direction: column;
+  transform: translateY(-1px);
 }
 
 .air-smart-section .air-smart-image-wrapper {
