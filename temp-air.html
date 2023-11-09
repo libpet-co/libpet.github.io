@@ -258,24 +258,29 @@
         <figure class="unit-air-omni"></figure>
       </div>
     </div>
-    <!--
+
     <div class="air-radius-section">
       <div class="air-radius-word-wrapper">
         <p class="air-radius-subtitle">66cm</p>
-        <h1 class="air-radius-title">Turning Radius</h1>
-        <p class="air-radius-description">
-          With a tight turning radius of only 66 cm, <br />
+        <h1 class="air-radius-title">
+          Turning <br class="air-radius-title-breakline" />
+          Radius
+        </h1>
+        <p class="air-radius-description" id="radius-descsription">
+          With a tight turning radius of only 66cm,
+          <br class="radius-breakline" />
           the Libpet Air wheelchair can smoothly maneuver around furniture and
-          through tight spaces, <br />
+          through tight spaces, <br class="radius-breakline" />
           allowing users to easily make U-turns and fit through narrow doors
           where other chairs may struggle.
         </p>
+        <p class="air-radius-subtitle-sm">66cm</p>
       </div>
       <div class="air-radius-image-wrapper">
         <figure class="unit-air-radius"></figure>
       </div>
     </div>
-
+    <!--
     <div class="air-app-section">
       <div class="air-app-word-wrapper">
         <h1 class="air-app-title">Libpet App</h1>
@@ -451,6 +456,7 @@
         var airCTitle = document.getElementById("air-c-title");
         var airCDescription = document.getElementById("air-c-description");
         var airOmniDescription = document.getElementById("air-omni-d");
+        var radiusDescription = document.getElementById("radius-descsription");
 
         var windowWidth =
           window.innerWidth ||
@@ -460,11 +466,14 @@
         if (windowWidth < 568) {
           airCTitle.textContent = "Controller";
           airCDescription.innerHTML = `Comfortable, intuitive use with ergonomic joystick, <br class="air-control-breakline-sm"> LED indicators for speed and battery life. <br class="air-control-breakline-sm"> Bluetooth enabled for easy updates and reliable, independent mobility.`;
-          airOmniDescription.innerHTML = "Omni wheels enhance electric wheelchair maneuverability for increased accessibility and independence.";
+          airOmniDescription.innerHTML =
+            "Omni wheels enhance electric wheelchair maneuverability for increased accessibility and independence.";
+          radiusDescription.innerHTML = `Libpet Air wheelchair maneuvers <br class="radius-breakline-sm"> easily in tight spaces thanks to a 66cm turning radius.`;
         } else {
           airCTitle.textContent = "Central Control";
           airCDescription.innerHTML = `The Libpet Air controller offers comfortable, intuitive use through its ergonomic joystick grip and series of LED indicators. <br class="air-control-breakline" /> Its angled design and helpful lights display speed, <br class="air-control-breakline" /> battery life and more for seamless wheelchair navigation. <br class="air-control-breakline" /> With Bluetooth for updates, the Libpet Air empowers independent mobility through simple, reliable control.`;
           airOmniDescription.innerHTML = `Omni wheels give electric wheelchairs unparalleled maneuverability through <br class="air-omni-breakline"/> their 360-degree pivot for easy navigation in tight spaces. <br class="air-omni-breakline"/> This simplified movement delivers enhanced accessibility, <br class="air-omni-breakline"/> control and independence for wheelchair users.`;
+          radiusDescription.innerHTML = `With a tight turning radius of only 66cm, <br class="radius-breakline" /> the Libpet Air wheelchair can smoothly maneuver around furniture and through tight spaces, <br class="radius-breakline" /> allowing users to easily make U-turns and fit through narrow doors where other chairs may struggle.`;
         }
       }
 
