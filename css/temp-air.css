@@ -2204,7 +2204,7 @@
   }
   .air-radius-section {
     height: 700px;
-}
+  }
 }
 
 /**************************************/
@@ -2225,7 +2225,7 @@
   width: 100%;
   max-width: 1440px;
   height: min-content;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   z-index: 2;
 }
 
@@ -2241,6 +2241,124 @@
   line-height: 1.25;
   color: #000000;
   font-weight: 300;
+}
+
+@media (max-width: 1439.5px) {
+  .air-app-description-breakline-2 {
+    display: none;
+  }
+  .air-app-word-wrapper .air-app-description {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .air-app-word-wrapper .air-app-title {
+    font-size: 150px;
+  }
+}
+
+@media (max-width: 1023.5px){
+  .air-app-word-wrapper {
+    margin-bottom: 25px;
+}
+}
+
+@media (max-width: 920px) {
+  .air-app-word-wrapper .air-app-description {
+    font-size: 24px;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .air-app-section {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 850px) {
+  .air-app-word-wrapper .air-app-title {
+    font-size: 130px;
+  }
+}
+
+@media (max-width: 800px) {
+  .air-app-word-wrapper .air-app-description {
+    font-size: 21px;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .air-app-para-breakline {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .air-app-word-wrapper .air-app-title {
+    font-size: 110px;
+  }
+  .air-app-description-breakline-1 {
+    display: none;
+  }
+  .air-app-word-wrapper .air-app-description {
+    font-size: 21px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.air-app-title-breakline {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .air-app-word-wrapper .air-app-title {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 567.5px) {
+  .air-app-title-breakline {
+    display: inline;
+  }
+}
+
+@media (max-width: 500px) {
+  .air-app-word-wrapper .air-app-title {
+    font-size: 90px;
+  }
+}
+
+@media (max-width: 400px) {
+  .air-app-word-wrapper .air-app-title {
+    font-size: 80px;
+  }
+  .air-app-section {
+    padding-top: 25px;
+}
+}
+
+@media (max-width: 375px){
+  .air-app-word-wrapper {
+    margin-bottom: 15px;
+}
+}
+
+@media (max-width: 300px) {
+  .air-app-word-wrapper .air-app-title {
+    font-size: 70px;
+  }
+  .air-app-word-wrapper {
+    margin-bottom: 0px;
+}
+}
+
+@media (max-width: 280px) {
+  .air-app-word-wrapper .air-app-title {
+    font-size: 60px;
+  }
+  .air-app-word-wrapper .air-app-description {
+    font-size: 19px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
 }
 /**************************************/
 
@@ -2306,120 +2424,120 @@
 
 @media (max-width: 1439.5px) {
   .unit-air-app-showcase-1 {
-    height: 700px;
+    height: 724px;
     background-size: 2500px auto;
   }
   .unit-air-app-showcase-2 {
-    height: 700px;
+    height: 724px;
     background-size: 2500px auto;
   }
   .unit-air-app-showcase-3 {
-    height: 700px;
+    height: 724px;
     background-size: 2500px auto;
   }
 }
 
 @media (max-width: 1023.5px) {
   .unit-air-app-showcase-1 {
-    height: 550px;
+    height: 600px;
     background-size: 1850px auto;
   }
   .unit-air-app-showcase-2 {
-    height: 550px;
+    height: 600px;
     background-size: 1850px auto;
   }
   .unit-air-app-showcase-3 {
-    height: 550px;
+    height: 600px;
     background-size: 1850px auto;
   }
 }
 
 @media (max-width: 768px) {
   .unit-air-app-showcase-1 {
-    height: 450px;
+    height: 484px;
     background-size: 1550px auto;
   }
   .unit-air-app-showcase-2 {
-    height: 450px;
+    height: 484px;
     background-size: 1550px auto;
   }
   .unit-air-app-showcase-3 {
-    height: 450px;
+    height: 484px;
     background-size: 1550px auto;
   }
 }
 
 @media (max-width: 650px) {
   .unit-air-app-showcase-1 {
-    height: 380px;
+    height: 400px;
     background-size: 1350px auto;
   }
   .unit-air-app-showcase-2 {
-    height: 380px;
+    height: 400px;
     background-size: 1350px auto;
   }
   .unit-air-app-showcase-3 {
-    height: 380px;
+    height: 400px;
     background-size: 1350px auto;
   }
 }
 
 @media (max-width: 567.5px) {
   .unit-air-app-showcase-1 {
-    height: 320px;
+    height: 350px;
     background-size: 1100px auto;
   }
   .unit-air-app-showcase-2 {
-    height: 320px;
+    height: 350px;
     background-size: 1100px auto;
   }
   .unit-air-app-showcase-3 {
-    height: 320px;
+    height: 350px;
     background-size: 1100px auto;
   }
 }
 
 @media (max-width: 435px) {
   .unit-air-app-showcase-1 {
-    height: 250px;
+    height: 260px;
     background-size: 900px auto;
   }
   .unit-air-app-showcase-2 {
-    height: 250px;
+    height: 260px;
     background-size: 900px auto;
   }
   .unit-air-app-showcase-3 {
-    height: 250px;
+    height: 260px;
     background-size: 900px auto;
   }
 }
 
 @media (max-width: 375px) {
   .unit-air-app-showcase-1 {
-    height: 220px;
+    height: 235px;
     background-size: 760px auto;
   }
   .unit-air-app-showcase-2 {
-    height: 220px;
+    height: 235px;
     background-size: 760px auto;
   }
   .unit-air-app-showcase-3 {
-    height: 220px;
+    height: 235px;
     background-size: 760px auto;
   }
 }
 
 @media (max-width: 320px) {
   .unit-air-app-showcase-1 {
-    height: 200px;
+    height: 225px;
     background-size: 650px auto;
   }
   .unit-air-app-showcase-2 {
-    height: 200px;
+    height: 225px;
     background-size: 650px auto;
   }
   .unit-air-app-showcase-3 {
-    height: 200px;
+    height: 225px;
     background-size: 650px auto;
   }
 }

@@ -280,27 +280,36 @@
         <figure class="unit-air-radius"></figure>
       </div>
     </div>
-    <!--
+
     <div class="air-app-section">
       <div class="air-app-word-wrapper">
-        <h1 class="air-app-title">Libpet App</h1>
-        <br><br>
-        <p class="air-app-description">
+        <h1 class="air-app-title">
+          Libpet <br class="air-app-title-breakline" />
+          App
+        </h1>
+        <br /><br class="air-app-para-breakline" />
+        <p class="air-app-description" id="air-app-d">
           Libpet app let you navigate AIR from your phone with just a few taps.
-          <br />
+          <br class="air-app-description-breakline-1" />
           Our onboard diagnostics constantly monitor your wheelchair's systems
-          for optimal performance. <br />
+          for optimal performance.
+          <br class="air-app-description-breakline-2" />
           And if an issue does arise, you have direct access to our technical
-          support team at the touch of a button. <br />
+          support team at the touch of a button.
+          <br class="air-app-description-breakline-2" />
           Love ones can also stay close through our Family Care features,
-          emergency contacts will always know your real-time <br />
+          emergency contacts will always know your real-time
+          <br class="air-app-description-breakline-2" />
           location for added reassurance. Assistance is never far.
         </p>
       </div>
     </div>
 
-    <div class="custom-carousel" style=" margin-top: 0;">
-      <div class="custom-carousel-inner" style="background-color: #efefef; max-width: 3440px;">
+    <div class="custom-carousel" style="margin-top: 0">
+      <div
+        class="custom-carousel-inner"
+        style="background-color: #efefef; max-width: 3440px"
+      >
         <input
           class="custom-carousel-open"
           type="radio"
@@ -387,7 +396,7 @@
         </ol>
       </div>
     </div>
-
+    <!--
     <div class="air-journey-section">
       <div class="air-journey-word-wrapper">
         <h1 class="air-journey-title">
@@ -457,6 +466,7 @@
         var airCDescription = document.getElementById("air-c-description");
         var airOmniDescription = document.getElementById("air-omni-d");
         var radiusDescription = document.getElementById("radius-descsription");
+        var airAppD = document.getElementById("air-app-d");
 
         var windowWidth =
           window.innerWidth ||
@@ -469,11 +479,15 @@
           airOmniDescription.innerHTML =
             "Omni wheels enhance electric wheelchair maneuverability for increased accessibility and independence.";
           radiusDescription.innerHTML = `Libpet Air wheelchair maneuvers <br class="radius-breakline-sm"> easily in tight spaces thanks to a 66cm turning radius.`;
+          airAppD.innerHTML =
+            "Libpet app lets you control your AIR wheelchair from your phone and keep emergency contacts informed of your location.";
         } else {
           airCTitle.textContent = "Central Control";
           airCDescription.innerHTML = `The Libpet Air controller offers comfortable, intuitive use through its ergonomic joystick grip and series of LED indicators. <br class="air-control-breakline" /> Its angled design and helpful lights display speed, <br class="air-control-breakline" /> battery life and more for seamless wheelchair navigation. <br class="air-control-breakline" /> With Bluetooth for updates, the Libpet Air empowers independent mobility through simple, reliable control.`;
           airOmniDescription.innerHTML = `Omni wheels give electric wheelchairs unparalleled maneuverability through <br class="air-omni-breakline"/> their 360-degree pivot for easy navigation in tight spaces. <br class="air-omni-breakline"/> This simplified movement delivers enhanced accessibility, <br class="air-omni-breakline"/> control and independence for wheelchair users.`;
           radiusDescription.innerHTML = `With a tight turning radius of only 66cm, <br class="radius-breakline" /> the Libpet Air wheelchair can smoothly maneuver around furniture and through tight spaces, <br class="radius-breakline" /> allowing users to easily make U-turns and fit through narrow doors where other chairs may struggle.`;
+          airAppD.innerHTML =
+            'Libpet app let you navigate AIR from your phone with just a few taps. <br class="air-app-description-breakline-1"/> Our onboard diagnostics constantly monitor your wheelchair\'s systems for optimal performance. <br class="air-app-description-breakline-2"/>And if an issue does arise, you have direct access to our technical support team at the touch of a button. <br class="air-app-description-breakline-2"/>Love ones can also stay close through our Family Care features, emergency contacts will always know your real-time <br class="air-app-description-breakline-2"/>location for added reassurance. Assistance is never far.';
         }
       }
 
