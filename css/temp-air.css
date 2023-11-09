@@ -2256,10 +2256,10 @@
   }
 }
 
-@media (max-width: 1023.5px){
+@media (max-width: 1023.5px) {
   .air-app-word-wrapper {
     margin-bottom: 25px;
-}
+  }
 }
 
 @media (max-width: 920px) {
@@ -2332,13 +2332,13 @@
   }
   .air-app-section {
     padding-top: 25px;
-}
+  }
 }
 
-@media (max-width: 375px){
+@media (max-width: 375px) {
   .air-app-word-wrapper {
     margin-bottom: 15px;
-}
+  }
 }
 
 @media (max-width: 300px) {
@@ -2347,7 +2347,7 @@
   }
   .air-app-word-wrapper {
     margin-bottom: 0px;
-}
+  }
 }
 
 @media (max-width: 280px) {
@@ -2358,7 +2358,7 @@
     font-size: 19px;
     padding-left: 3%;
     padding-right: 3%;
-}
+  }
 }
 /**************************************/
 
@@ -2600,3 +2600,265 @@
   font-weight: 400;
   text-align: left;
 }
+
+@media (max-width: 1500px) {
+  .air-journey-word-wrapper .air-journey-title {
+    padding-left: 2%;
+  }
+}
+
+@media (max-width: 1439.5px) {
+  .air-journey-word-wrapper .air-journey-title {
+    font-size: 190px;
+  }
+
+  .air-journey-image-wrapper .unit-air-journey {
+    height: 1648px;
+    background-size: 3121px auto;
+  }
+  .air-journey-section {
+    height: 1647px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .air-journey-word-wrapper .air-journey-title {
+    font-size: 180px;
+  }
+
+  .air-journey-image-wrapper .unit-air-journey {
+    height: 1495px;
+    background-size: 2835px auto;
+  }
+  .air-journey-section {
+    height: 1495px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .air-journey-word-wrapper .air-journey-title {
+    font-size: 160px;
+  }
+
+  .air-journey-image-wrapper .unit-air-journey {
+    height: 1391px;
+    background-size: 2635px auto;
+  }
+  .air-journey-section {
+    height: 1391px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .air-journey-word-wrapper .air-journey-title {
+    font-size: 140px;
+  }
+
+  .air-journey-image-wrapper .unit-air-journey {
+    height: 1286px;
+    background-size: 2435px auto;
+  }
+  .air-journey-section {
+    height: 1285px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .air-journey-word-wrapper .air-journey-title {
+    font-size: 130px;
+  }
+
+  .air-journey-image-wrapper .unit-air-journey {
+    height: 1127px;
+    background-size: 2135px auto;
+  }
+  .air-journey-section {
+    height: 1127px;
+  }
+}
+
+@media (max-width: 900px) {
+  .air-journey-word-wrapper .air-journey-title {
+    font-size: 115px;
+  }
+  .air-journey-image-wrapper .unit-air-journey {
+    height: 969px;
+    background-size: 1835px auto;
+  }
+  .air-journey-section {
+    height: 969px;
+  }
+}
+
+@media (max-width: 768.5px) {
+  .air-journey-word-wrapper .air-journey-title {
+    font-size: 110px;
+  }
+  .air-journey-image-wrapper .unit-air-journey {
+    height: 951px;
+    background-size: 1800px auto;
+  }
+  .air-journey-section {
+    height: 950px;
+  }
+}
+
+@media (max-width: 750px) {
+  .air-journey-word-wrapper .air-journey-title {
+    font-size: 100px;
+  }
+  .air-journey-image-wrapper .unit-air-journey {
+    height: 877px;
+    background-size: 1660px auto;
+  }
+  .air-journey-section {
+    height: 877px;
+  }
+}
+
+@media (max-width: 700px) {
+  .air-journey-word-wrapper .air-journey-title {
+    font-size: 90px;
+  }
+  .air-journey-image-wrapper .unit-air-journey {
+    height: 808px;
+    background-size: 1530px auto;
+  }
+  .air-journey-section {
+    height: 808px;
+  }
+}
+
+@media (max-width: 650px) {
+  .air-journey-word-wrapper .air-journey-title {
+    font-size: 85px;
+  }
+  .air-journey-image-wrapper .unit-air-journey {
+    height: 744px;
+    background-size: 1530px auto;
+  }
+  .air-journey-section {
+    height: 744px;
+  }
+}
+
+@media (max-width: 600px) {
+  .air-journey-word-wrapper .air-journey-title {
+    font-size: 80px;
+  }
+  .air-journey-image-wrapper .unit-air-journey {
+    height: 702px;
+    background-size: 1330px auto;
+  }
+  .air-journey-section {
+    height: 702px;
+  }
+}
+
+.air-journey-title-breakline{
+  display: none;
+}
+
+@media (max-width: 567.5px) {
+  .air-journey-image-wrapper .unit-air-journey {
+    background-image: url(../img/air/air-journey-background-sm.png);
+    width: 100%;
+    height: 700px;
+    background-size: 1140px auto;
+  }
+  .air-journey-section {
+    height: 700px;
+  }
+  .air-journey-title-breakline{
+    display: inline;
+  }
+  .air-journey-word-wrapper .air-journey-title {
+    font-size: 100px;
+    padding-left: 10%;
+}
+}
+
+@media (max-width: 550px){
+  .air-journey-image-wrapper .unit-air-journey {
+    height: 640px;
+    background-size: 1000px auto;
+  }
+  .air-journey-section {
+    height: 640px;
+  }
+  .air-journey-word-wrapper .air-journey-title {
+    font-size: 90px;
+    padding-left: 10%;
+}
+}
+
+@media (max-width: 500px){
+  .air-journey-image-wrapper .unit-air-journey {
+    height: 575px;
+    background-size: 900px auto;
+  }
+  .air-journey-section {
+    height: 575px;
+  }
+  .air-journey-word-wrapper .air-journey-title {
+    font-size: 80px;
+    padding-left: 10%;
+}
+}
+
+@media (max-width: 450px){
+  .air-journey-image-wrapper .unit-air-journey {
+    height: 515px;
+    background-size: 800px auto;
+  }
+  .air-journey-section {
+    height: 514px;
+  }
+  .air-journey-word-wrapper .air-journey-title {
+    font-size: 70px;
+    padding-left: 10%;
+}
+}
+
+@media (max-width: 400px){
+  .air-journey-image-wrapper .unit-air-journey {
+    height: 450px;
+    background-size: 700px auto;
+  }
+  .air-journey-section {
+    height: 449px;
+  }
+  .air-journey-word-wrapper .air-journey-title {
+    font-size: 65px;
+    padding-left: 10%;
+}
+}
+
+@media (max-width: 350px){
+  .air-journey-image-wrapper .unit-air-journey {
+    height: 382px;
+    background-size: 600px auto;
+  }
+  .air-journey-section {
+    height: 382px;
+  }
+  .air-journey-word-wrapper .air-journey-title {
+    font-size: 60px;
+    padding-left: 5%;
+}
+}
+
+@media (max-width: 300px){
+  .air-journey-image-wrapper .unit-air-journey {
+    height: 350px;
+    background-size: 550px auto;
+  }
+  .air-journey-section {
+    height: 350px;
+  }
+  .air-journey-word-wrapper .air-journey-title {
+    font-size: 55px;
+    padding-left: 2%;
+}
+}
+
