@@ -2385,7 +2385,7 @@
 .unit-air-app-showcase-2 {
   background-image: url(../img/air/air-hand-app-showcase-2.png);
   width: 100%; /* 将宽度设置为相对于父元素的百分比 */
-  height: 934px;
+  height: 940px;
   background-size: 3440px auto;
   background-repeat: no-repeat;
   background-position-x: center; /* 将背景图片在元素内居中显示 */
