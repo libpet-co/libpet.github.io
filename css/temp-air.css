@@ -2556,7 +2556,7 @@
   position: relative;
   max-width: 3440px;
   margin: 0 auto;
-  height: 1816px;
+  height: 1815px;
   background-color: #ffffff;
   display: flex;
   justify-content: center;
@@ -2574,7 +2574,7 @@
 .air-journey-image-wrapper .unit-air-journey {
   background-image: url(../img/air/air-journey-background.png);
   width: 100%; /* 将宽度设置为相对于父元素的百分比 */
-  height: 1816px;
+  height: 1815px;
   background-size: 3440px auto;
   background-repeat: no-repeat;
   background-position-x: center; /* 将背景图片在元素内居中显示 */
@@ -2621,11 +2621,11 @@
   }
 
   .air-journey-image-wrapper .unit-air-journey {
-    height: 1648px;
+    height: 1646px;
     background-size: 3121px auto;
   }
   .air-journey-section {
-    height: 1647px;
+    height: 1645px;
   }
 }
 
@@ -2649,11 +2649,11 @@
   }
 
   .air-journey-image-wrapper .unit-air-journey {
-    height: 1391px;
+    height: 1390px;
     background-size: 2635px auto;
   }
   .air-journey-section {
-    height: 1391px;
+    height: 1389px;
   }
 }
 
@@ -2663,11 +2663,11 @@
   }
 
   .air-journey-image-wrapper .unit-air-journey {
-    height: 1286px;
+    height: 1285px;
     background-size: 2435px auto;
   }
   .air-journey-section {
-    height: 1285px;
+    height: 1284px;
   }
 }
 
@@ -2677,11 +2677,11 @@
   }
 
   .air-journey-image-wrapper .unit-air-journey {
-    height: 1127px;
+    height: 1125px;
     background-size: 2135px auto;
   }
   .air-journey-section {
-    height: 1127px;
+    height: 1125px;
   }
 }
 
@@ -2690,11 +2690,11 @@
     font-size: 115px;
   }
   .air-journey-image-wrapper .unit-air-journey {
-    height: 969px;
+    height: 968px;
     background-size: 1835px auto;
   }
   .air-journey-section {
-    height: 969px;
+    height: 967px;
   }
 }
 
@@ -2703,11 +2703,11 @@
     font-size: 110px;
   }
   .air-journey-image-wrapper .unit-air-journey {
-    height: 951px;
+    height: 949px;
     background-size: 1800px auto;
   }
   .air-journey-section {
-    height: 950px;
+    height: 949px;
   }
 }
 
@@ -2716,11 +2716,11 @@
     font-size: 100px;
   }
   .air-journey-image-wrapper .unit-air-journey {
-    height: 877px;
+    height: 875px;
     background-size: 1660px auto;
   }
   .air-journey-section {
-    height: 877px;
+    height: 874px;
   }
 }
 
@@ -2729,11 +2729,11 @@
     font-size: 90px;
   }
   .air-journey-image-wrapper .unit-air-journey {
-    height: 808px;
+    height: 807px;
     background-size: 1530px auto;
   }
   .air-journey-section {
-    height: 808px;
+    height: 806px;
   }
 }
 
@@ -2755,11 +2755,11 @@
     font-size: 80px;
   }
   .air-journey-image-wrapper .unit-air-journey {
-    height: 702px;
+    height: 701px;
     background-size: 1330px auto;
   }
   .air-journey-section {
-    height: 702px;
+    height: 700px;
   }
 }
 
