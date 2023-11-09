@@ -38,7 +38,7 @@
     <link href="css/dropdown.css" rel="stylesheet" />
     <link href="css/footer.css" rel="stylesheet" />
     <link href="css/temp.css" rel="stylesheet" />
-    <link href="css/air.css" rel="stylesheet" />
+    <link href="css/temp-air.css" rel="stylesheet" />
 
     <link
       rel="icon"
@@ -91,10 +91,12 @@
                 />
               </a>
               <ul class="navbar-nav" style="margin-left: auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Power</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="../">Power</a>
                 </li>
-
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Air</a>
+                </li>
                 <li class="nav-item">
                   <a class="nav-link" href="tenk.html">TenK</a>
                 </li>
@@ -136,7 +138,7 @@
 
     <div class="air-stat-section">
       <div class="stat-first-row">
-        <div class="stat-item">
+        <div class="items stat-item">
           <h1>10<span class="f-small">km/h</span></h1>
           <div class="item-description">
             <img src="img/air/air-max-speed.svg" alt="" />
@@ -147,7 +149,7 @@
           </div>
         </div>
 
-        <div class="stat-small">
+        <div class="items stat-small">
           <div class="stat-small-item">
             <h1>23<span class="f-small">kg</span></h1>
             <div class="small-item-description">
@@ -166,10 +168,7 @@
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="stat-second-row">
-        <div class="stat-item">
+        <div class="items stat-item">
           <h1>20<span class="f-small">km</span></h1>
           <div class="item-description">
             <img src="img/air/air-range.svg" alt="" />
@@ -179,7 +178,7 @@
             </p>
           </div>
         </div>
-        <div class="stat-item">
+        <div class="items stat-item">
           <h1>7<span class="f-small">cm</span></h1>
           <div class="item-description">
             <img src="img/air/air-obstacle.svg" alt="" />
@@ -194,12 +193,15 @@
 
     <div class="air-control-section" style="transform: translateY(-1px)">
       <div class="air-control-word-wrapper">
-        <h1 class="air-control-title">Central Control</h1>
-        <p class="air-control-description">
+        <h1 class="air-control-title" id="air-c-title">Central Control</h1>
+        <p class="air-control-description" id="air-c-description">
           The Libpet Air controller offers comfortable, intuitive use through
-          its ergonomic joystick grip and series of LED indicators. <br />
-          Its angled design and helpful lights display speed, <br />
-          battery life and more for seamless wheelchair navigation. <br />
+          its ergonomic joystick grip and series of LED indicators.
+          <br class="air-control-breakline" />
+          Its angled design and helpful lights display speed,
+          <br class="air-control-breakline" />
+          battery life and more for seamless wheelchair navigation.
+          <br class="air-control-breakline" />
           With Bluetooth for updates, the Libpet Air empowers independent
           mobility through simple, reliable control.
         </p>
@@ -216,10 +218,12 @@
           Mobility Device.
         </h1>
         <br />
-        <br />
+        <br class="air-smart-para-breakline" />
         <p class="air-smart-description">
-          Air can handle any indoor or outdoor scene, <br />
-          thanks to its reasonable design and intelligent control mode.
+          Air can handle any indoor or outdoor scene,
+          <br class="air-smart-breakline-2" />
+          thanks to its reasonable design <br class="air-smart-breakline" />
+          and intelligent control mode.
         </p>
       </div>
       <div class="air-smart-image-wrapper">
@@ -242,11 +246,13 @@
           Omni <br />
           Wheel
         </h1>
-        <p class="air-omni-description">
+        <p class="air-omni-description" id="air-omni-d">
           Omni wheels give electric wheelchairs unparalleled maneuverability
-          through <br />
-          their 360-degree pivot for easy navigation in tight spaces. <br />
-          This simplified movement delivers enhanced accessibility, <br />
+          through <br class="air-omni-breakline" />
+          their 360-degree pivot for easy navigation in tight spaces.
+          <br class="air-omni-breakline" />
+          This simplified movement delivers enhanced accessibility,
+          <br class="air-omni-breakline" />
           control and independence for wheelchair users.
         </p>
       </div>
@@ -258,14 +264,19 @@
     <div class="air-radius-section">
       <div class="air-radius-word-wrapper">
         <p class="air-radius-subtitle">66cm</p>
-        <h1 class="air-radius-title">Turning Radius</h1>
-        <p class="air-radius-description">
-          With a tight turning radius of only 66 cm, <br />
+        <h1 class="air-radius-title">
+          Turning <br class="air-radius-title-breakline" />
+          Radius
+        </h1>
+        <p class="air-radius-description" id="radius-descsription">
+          With a tight turning radius of only 66cm,
+          <br class="radius-breakline" />
           the Libpet Air wheelchair can smoothly maneuver around furniture and
-          through tight spaces, <br />
+          through tight spaces, <br class="radius-breakline" />
           allowing users to easily make U-turns and fit through narrow doors
           where other chairs may struggle.
         </p>
+        <p class="air-radius-subtitle-sm">66cm</p>
       </div>
       <div class="air-radius-image-wrapper">
         <figure class="unit-air-radius"></figure>
@@ -274,24 +285,33 @@
 
     <div class="air-app-section">
       <div class="air-app-word-wrapper">
-        <h1 class="air-app-title">Libpet App</h1>
-        <br><br>
-        <p class="air-app-description">
+        <h1 class="air-app-title">
+          Libpet <br class="air-app-title-breakline" />
+          App
+        </h1>
+        <br /><br class="air-app-para-breakline" />
+        <p class="air-app-description" id="air-app-d">
           Libpet app let you navigate AIR from your phone with just a few taps.
-          <br />
+          <br class="air-app-description-breakline-1" />
           Our onboard diagnostics constantly monitor your wheelchair's systems
-          for optimal performance. <br />
+          for optimal performance.
+          <br class="air-app-description-breakline-2" />
           And if an issue does arise, you have direct access to our technical
-          support team at the touch of a button. <br />
+          support team at the touch of a button.
+          <br class="air-app-description-breakline-2" />
           Love ones can also stay close through our Family Care features,
-          emergency contacts will always know your real-time <br />
+          emergency contacts will always know your real-time
+          <br class="air-app-description-breakline-2" />
           location for added reassurance. Assistance is never far.
         </p>
       </div>
     </div>
 
-    <div class="custom-carousel" style=" margin-top: 0;">
-      <div class="custom-carousel-inner" style="background-color: #efefef; max-width: 3440px;">
+    <div class="custom-carousel" style="margin-top: 0">
+      <div
+        class="custom-carousel-inner"
+        style="background-color: #efefef; max-width: 3440px"
+      >
         <input
           class="custom-carousel-open"
           type="radio"
@@ -378,12 +398,12 @@
         </ol>
       </div>
     </div>
-
+    
     <div class="air-journey-section">
       <div class="air-journey-word-wrapper">
         <h1 class="air-journey-title">
           Your <br />
-          New Journey <br />
+          New <br class="air-journey-title-breakline"> Journey <br />
           In Life.
         </h1>
       </div>
@@ -444,49 +464,32 @@
     <script>
       // 檢查視窗寬度並更新標題內容
       function updateTitleContent() {
-        var titleElement = document.getElementById("control-title");
-        var descriptionElement = document.getElementById("control-description");
-        var stairDescription = document.getElementById("stair-description");
-        var terrainTitle = document.getElementById("terrain-title");
-        var terrainDescription = document.getElementById("terrain-description");
-        var appDescription = document.getElementById("app-description");
-        var comfortDescription = document.getElementById("comfort-description");
-        var storageDescription = document.getElementById("storage-description");
+        var airCTitle = document.getElementById("air-c-title");
+        var airCDescription = document.getElementById("air-c-description");
+        var airOmniDescription = document.getElementById("air-omni-d");
+        var radiusDescription = document.getElementById("radius-descsription");
+        var airAppD = document.getElementById("air-app-d");
+
         var windowWidth =
           window.innerWidth ||
           document.documentElement.clientWidth ||
           document.body.clientWidth;
 
         if (windowWidth < 568) {
-          titleElement.textContent = "Controller";
-          descriptionElement.innerHTML =
-            "New smart control center for easier use and better experience, no learning necessary.";
-          stairDescription.innerHTML =
-            "POWER has strong climbing ability (up to 36°) and is safe/reliable. Trustworthy companion.";
-          terrainTitle.innerHTML = "All <br />Terrain <br />Ada-<br />ptation";
-          terrainDescription.innerHTML =
-            'Our advanced technology enables POWER to take on any terrain with ease, including stairs and various surfaces. No limits to mobility.<br> <br><div class="terrain-added">Stairs  /  Beach  /  City Road  /  Grassland</div>';
-          appDescription.innerHTML =
-            '"Libpet app makes it easy to access <br class="remote-first-breakline"> all POWER functions. <br class="remote-sm-breakline"> We constantly monitor POWER\'s performance.<br > Stay connected with Family<br class="remote-sm-breakline"> Care and real-time location tracking. <br> We\'re here to help."';
-          comfortDescription.innerHTML =
-            "This wheelchair offers optimal comfort with flexible seating that can be adjusted to fit each user's dimensions, ensuring consistent spinal alignment and balanced pressure relief whether at home or on the go.";
-          storageDescription.innerHTML =
-            "Luxury Leather Backpack: <br> Stay organized and stylish. <br> Accommodates left or right handed users.";
+          airCTitle.textContent = "Controller";
+          airCDescription.innerHTML = `Comfortable, intuitive use with ergonomic joystick, <br class="air-control-breakline-sm"> LED indicators for speed and battery life. <br class="air-control-breakline-sm"> Bluetooth enabled for easy updates and reliable, independent mobility.`;
+          airOmniDescription.innerHTML =
+            "Omni wheels enhance electric wheelchair maneuverability for increased accessibility and independence.";
+          radiusDescription.innerHTML = `Libpet Air wheelchair maneuvers <br class="radius-breakline-sm"> easily in tight spaces thanks to a 66cm turning radius.`;
+          airAppD.innerHTML =
+            "Libpet app lets you control your AIR wheelchair from your phone and keep emergency contacts informed of your location.";
         } else {
-          titleElement.textContent = "Central Control";
-          descriptionElement.innerHTML =
-            'In order to provide you with a better control experience, <br id="remote-break-lg" /> we are offering you a brand new generation of intelligent control center. <br id="remote-break-lg" /> You can master it without any learning, <br id="remote-break" />and it provides you with a more user-friendly design for your control.';
-          stairDescription.innerHTML =
-            'The "Power" has a more powerful climbing ability, <br class="stair-section-breakline" /> and it is safe and reliable. <br class="stair-section-breakline" /> The maximum gradient reaches 36 degrees. It will be your most trusted friend.';
-          terrainTitle.innerHTML = "All <br />Terrain <br />Adaptation";
-          terrainDescription.innerHTML =
-            'We have employed various technologies, including an advanced <b style="font-weight: bold">mechanical design,</b> <b style="font-weight: bold">control algorithms,</b> and <b style="font-weight: bold">combinations of sensors,</b> to enable POWER to tackle various terrains with ease. <br class="terrain-breakline" /> In particular, its design allows for climbing stairs, as well as smoothly traversing <b style="font-weight: bold">urban roads, beaches, grasslands,</b> and more. <br class="terrain-breakline" /> POWER means mobility without boundaries.';
-          appDescription.innerHTML =
-            'Libpet app let you navigate all functions of POWER from your phone with just a few taps. <br class="app-breakline" /> Our onboard diagnostics constantly monitor your wheelchair\'s systems for optimal performance. <br class="app-breakline" /> And if an issue does arise, you have direct access to our technical support team at the touch of a button. <br class="app-breakline" /> Love ones can also stay close through our Family Care features, emergency contacts will always know your real-time <br class="app-breakline" /> location for added reassurance. Assistance is never far.';
-          comfortDescription.innerHTML =
-            'This wheelchair delivers maximum comfort through its flexible seating design. <br class="comfort-sm-breakline" /> The adjustable backrest and elevating footrest <br class="comfort-sm-breakline" /> can be precisely tailored to each user\'s dimensions, <br class="comfort-sm-breakline" /> enabling customized positioning for consistent spinal alignment <br class="comfort-sm-breakline" /> and balanced pressure relief whether at home or on the go.';
-          storageDescription.innerHTML =
-            "Elegantly store your essentials in the Luxury Leather Backpack. <br /> Side pockets and spacious compartments offer <br /> organized access from your chair. <br /> Its innovative design allows easy access for left and right handed users. <br /> This quality bag brings luxury and convenience for your daily needs.";
+          airCTitle.textContent = "Central Control";
+          airCDescription.innerHTML = `The Libpet Air controller offers comfortable, intuitive use through its ergonomic joystick grip and series of LED indicators. <br class="air-control-breakline" /> Its angled design and helpful lights display speed, <br class="air-control-breakline" /> battery life and more for seamless wheelchair navigation. <br class="air-control-breakline" /> With Bluetooth for updates, the Libpet Air empowers independent mobility through simple, reliable control.`;
+          airOmniDescription.innerHTML = `Omni wheels give electric wheelchairs unparalleled maneuverability through <br class="air-omni-breakline"/> their 360-degree pivot for easy navigation in tight spaces. <br class="air-omni-breakline"/> This simplified movement delivers enhanced accessibility, <br class="air-omni-breakline"/> control and independence for wheelchair users.`;
+          radiusDescription.innerHTML = `With a tight turning radius of only 66cm, <br class="radius-breakline" /> the Libpet Air wheelchair can smoothly maneuver around furniture and through tight spaces, <br class="radius-breakline" /> allowing users to easily make U-turns and fit through narrow doors where other chairs may struggle.`;
+          airAppD.innerHTML =
+            'Libpet app let you navigate AIR from your phone with just a few taps. <br class="air-app-description-breakline-1"/> Our onboard diagnostics constantly monitor your wheelchair\'s systems for optimal performance. <br class="air-app-description-breakline-2"/>And if an issue does arise, you have direct access to our technical support team at the touch of a button. <br class="air-app-description-breakline-2"/>Love ones can also stay close through our Family Care features, emergency contacts will always know your real-time <br class="air-app-description-breakline-2"/>location for added reassurance. Assistance is never far.';
         }
       }
 
