@@ -1,4 +1,4 @@
-var element = document.querySelector(".power-bg-light-modified");
+var element = document.querySelector(".power-bg-light");
 var exhibitionHome = document.getElementById("power-s");
 
 window.addEventListener("scroll", function () {
