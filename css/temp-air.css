@@ -1,3 +1,10 @@
+.bg-light-modified {
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  background: var(--localnav-background-stuck, rgba(238, 238, 238, 1));
+  border-color: transparent;
+}
+
 .air-section {
   position: relative;
   max-width: 3440px;
@@ -2755,7 +2762,7 @@
   }
 }
 
-.air-journey-title-breakline{
+.air-journey-title-breakline {
   display: none;
 }
 
@@ -2769,16 +2776,16 @@
   .air-journey-section {
     height: 700px;
   }
-  .air-journey-title-breakline{
+  .air-journey-title-breakline {
     display: inline;
   }
   .air-journey-word-wrapper .air-journey-title {
     font-size: 100px;
     padding-left: 10%;
-}
+  }
 }
 
-@media (max-width: 550px){
+@media (max-width: 550px) {
   .air-journey-image-wrapper .unit-air-journey {
     height: 640px;
     background-size: 1000px auto;
@@ -2789,10 +2796,10 @@
   .air-journey-word-wrapper .air-journey-title {
     font-size: 90px;
     padding-left: 10%;
-}
+  }
 }
 
-@media (max-width: 500px){
+@media (max-width: 500px) {
   .air-journey-image-wrapper .unit-air-journey {
     height: 575px;
     background-size: 900px auto;
@@ -2803,10 +2810,10 @@
   .air-journey-word-wrapper .air-journey-title {
     font-size: 80px;
     padding-left: 10%;
-}
+  }
 }
 
-@media (max-width: 450px){
+@media (max-width: 450px) {
   .air-journey-image-wrapper .unit-air-journey {
     height: 515px;
     background-size: 800px auto;
@@ -2817,10 +2824,10 @@
   .air-journey-word-wrapper .air-journey-title {
     font-size: 70px;
     padding-left: 10%;
-}
+  }
 }
 
-@media (max-width: 400px){
+@media (max-width: 400px) {
   .air-journey-image-wrapper .unit-air-journey {
     height: 450px;
     background-size: 700px auto;
@@ -2831,10 +2838,10 @@
   .air-journey-word-wrapper .air-journey-title {
     font-size: 65px;
     padding-left: 10%;
-}
+  }
 }
 
-@media (max-width: 350px){
+@media (max-width: 350px) {
   .air-journey-image-wrapper .unit-air-journey {
     height: 382px;
     background-size: 600px auto;
@@ -2845,10 +2852,10 @@
   .air-journey-word-wrapper .air-journey-title {
     font-size: 60px;
     padding-left: 5%;
-}
+  }
 }
 
-@media (max-width: 300px){
+@media (max-width: 300px) {
   .air-journey-image-wrapper .unit-air-journey {
     height: 350px;
     background-size: 550px auto;
@@ -2859,6 +2866,5 @@
   .air-journey-word-wrapper .air-journey-title {
     font-size: 55px;
     padding-left: 2%;
+  }
 }
-}
-

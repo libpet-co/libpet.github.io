@@ -10,11 +10,11 @@ window.addEventListener("scroll", function () {
   // 计算视口底部相对于文档顶部的距离
   var viewportBottom = window.scrollY;
 
-  console.log(elementBottom);
-  console.log(viewportBottom);
+  // console.log(elementBottom);
+  // console.log(viewportBottom);
 
-  console.log(elementBottom);
-  console.log(viewportBottom);
+  // console.log(elementBottom);
+  // console.log(viewportBottom);
   // 检查滚动位置是否已经达到了`exhibition-home`元素的底部
   if (viewportBottom >= elementBottom) {
     element.style.webkitBackdropFilter = "saturate(180%) blur(20px)";
