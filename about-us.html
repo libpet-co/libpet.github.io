@@ -16,16 +16,6 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Custom Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Varela:100,200,300,400,500,600,700,800,900"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Muli|Great+Vibes|Marmelad"
-      rel="stylesheet"
-    />
-
     <!-- Font Awesome CSS -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
@@ -42,6 +32,13 @@
     <link href="css/team-old-2.css" rel="stylesheet" />
     <link href="css/dropdown.css" rel="stylesheet" />
     <link href="css/footer.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
     <link
       rel="icon"
@@ -108,7 +105,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="exhibition.html">Exhibition</a>
                 </li>
-                
+
                 <li class="nav-item active">
                   <a class="nav-link" href="about-us.html">About Us</a>
                 </li>
@@ -411,95 +408,41 @@
       </form>
     </div>
 
-    <!-- Footer Start -->
-    <div style="background-color: #f2f2f2">
-      <footer style="min-height: 200px">
-        <div class="container py-3">
-          <div class="row">
-            <hr />
-            <div class="col-md-3 col-sm-12 dropdown1">
-              <u class="underline" style="color: #1d1d1f">
-                <h4
-                  style="color: #1d1d1f"
-                  id="footer-text-1"
-                  class="footer-text"
-                  ontouchstart="touchAvailable=true; change_1();"
-                  onclick="if(!touchAvailable) change_1();"
-                >
-                  CONTACT US <i id="icon_1" class="fa fa-plus"></i>
-                </h4>
-              </u>
-              <div
-                id="dropdown-content-1"
-                class="dropdown-content"
-                style="pointer-events: cursor"
-              >
-                <p class="footer-text no-bottom-pad no-top-pad">
-                  <i class="fa fa-phone-alt"></i> +852 5931 7389
-                </p>
-                <p class="footer-text no-bottom-pad no-top-pad">
-                  <i class="fa fa-envelope"></i> info@libpet.com
-                </p>
-              </div>
-            </div>
-            <hr />
-            <div class="col-md-6 col-sm-12 pl-5 dropdown2">
-              <u class="underline" style="color: #1d1d1f">
-                <h4
-                  style="color: #1d1d1f"
-                  id="footer-text-2"
-                  class="footer-text"
-                  ontouchstart="touchAvailable=true; change_2();"
-                  onclick="if(!touchAvailable) change_2();"
-                >
-                  LOCATION <i id="icon_2" class="fa fa-plus"></i>
-                </h4>
-              </u>
-
-              <div
-                id="dropdown-content-2"
-                class="dropdown-content"
-                style="pointer-events: cursor"
-              >
-                <p class="footer-text">
-                  <i class="fa fa-map-marker-alt"></i> InnoHub 4/F, Jockey Club
-                  Innovation Tower, The Hong Kong Polytechnic University
-                </p>
-                <p class="footer-text">
-                  <i class="fa fa-map-marker-alt"></i> Unit 659, 6/F, Building
-                  19W, No. 19 Science Park West Avenue, Hong Kong Science Park
-                </p>
-              </div>
-            </div>
-            <hr />
-            <div class="col-md-3 col-sm-12">
-              <div class="footer_cont">
-                <a href="#">
-                  <p style="color: #1d1d1f" class="footer-text no-bottom-pad">
-                    <i class="fa-solid fa-caret-right"></i> Privacy policy
-                  </p>
-                </a>
-                <a href="#">
-                  <p
-                    style="color: #1d1d1f"
-                    id="p_w_b"
-                    class="footer-text no-top-pad"
-                  >
-                    <i class="fa-solid fa-caret-right"></i> Terms of Use
-                  </p>
-                </a>
-              </div>
-            </div>
-            <!-- <hr> -->
+    <footer class="footer-section">
+      <div class="footer-text-wrapper">
+        <h1>CONTACT US</h1>
+        <div class="contact-us-info">
+          <div class="footer-description">
+            <i class="fa fa-envelope"></i>&nbsp;&nbsp;jojo@libpet.com
+          </div>
+          <div class="footer-description">
+            <i class="fa fa-phone-alt"></i>&nbsp;&nbsp;+852 5931 7389
+          </div>
+          <div class="footer-description">
+            <i class="fa fa-weixin"></i>&nbsp;&nbsp;jojo_libpet
           </div>
         </div>
-      </footer>
-      <!-- Footer End -->
-
-      <p class="text-center footer-text copyright">
-        Copyright © Libpet Tech Limited, All Right Reserved.
-      </p>
-    </div>
+        <hr />
+        <br />
+        <h1>LOCATION</h1>
+        <div class="location-info">
+          <div class="footer-description">
+            <i class="fa fa-map-marker-alt"></i> &nbsp;&nbsp;InnoHub 4/F, Jockey
+            Club Innovation Tower, The Hong Kong Polytechnic University
+          </div>
+          <div class="footer-description">
+            <i class="fa fa-map-marker-alt"></i> &nbsp;&nbsp;Unit 659, 6/F,
+            Building 19W, No. 19 Science Park West Avenue, Hong Kong Science
+            Park
+          </div>
+        </div>
+        <hr />
+        <br />
+        <div class="footer-description" style="line-height: 2">
+          Copyright © Libpet Tech Limited. All Right Reserved.
+        </div>
+      </div>
+    </footer>
 
     <!-- jQuery -->
 
@@ -540,8 +483,6 @@
       referrerpolicy="no-referrer"
     ></script>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script src="js/jquery.min.js"></script>
@@ -554,7 +495,6 @@
     <script src="js/nav.js"></script>
 
     <script src="js/validate.js"></script>
-    <script src="js/footer.js"></script>
 
     <script>
       function contact() {
