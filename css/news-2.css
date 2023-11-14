@@ -798,6 +798,14 @@ flex-direction: column;
     margin-bottom: 10%;
   }
 
+  .news-main{
+    margin-bottom: 2%;
+  }
+
+  .news-gallery{
+    margin-bottom: 10%;
+  }
+
   /*******************************/
 /******* Testimonial CSS *******/
 /*******************************/
