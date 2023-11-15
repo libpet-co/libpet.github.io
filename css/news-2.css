@@ -696,7 +696,7 @@ svg {
 .news .news-text h2 {
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.16;
   text-transform: capitalize;
 
   color: #518ef8;
@@ -711,7 +711,7 @@ svg {
 .news .news-text h1 {
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
 
   color: #000000;
 }
@@ -719,13 +719,21 @@ svg {
 .news .news-text h3 {
   font-weight: 700;
   font-size: 18px;
-  line-height: 23px;
+  line-height: 1.16;
   text-transform: capitalize;
 
   color: #979797;
 }
 
 .news .news-text p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16;
+
+  color: #000000;
+}
+
+.news-gallery p{
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
@@ -738,14 +746,19 @@ svg {
     font-size: 18px;
   }
   .news .news-text h1 {
-    font-size: 22px;
+    font-size: 26px;
     line-height: 1.2;
   }
   .news .news-text h3 {
-    font-size: 12px;
+    font-size: 16px;
   }
   .news .news-text p {
-    font-size: 12px;
+    font-size: 19px;
+    line-height: 1.2;
+    font-weight: 300;
+  }
+  .news-gallery p{
+    font-size: 19px;
     line-height: 1.2;
   }
 }
@@ -755,13 +768,16 @@ svg {
     font-size: 14px;
   }
   .news .news-text h1 {
-    font-size: 16px;
+    font-size: 24px;
   }
   .news .news-text h2 {
-    font-size: 14px;
+    font-size: 16px;
   }
   .news .news-text p {
-    font-size: 12px;
+    font-size: 16px;
+  }
+  .news-gallery p{
+    font-size: 16px;
   }
 }
 
@@ -800,6 +816,10 @@ svg {
 
 .news-gallery {
   margin-bottom: 10%;
+}
+
+.news-gallery img{
+    width: 100%;
 }
 
 /*******************************/
