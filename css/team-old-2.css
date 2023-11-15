@@ -449,7 +449,8 @@ flex-direction: column;
 
 .team .team-img img {
     position: relative;
-    margin-top: 20vh;
+    margin-top: 150px;
+    width: 280px;
 }
 
 /* .team .team-item:hover img {
@@ -523,12 +524,12 @@ flex-direction: column;
 
 .team .team-text {
     position: absolute;
-    padding: 25px 30px;
+    padding: 25px 15px;
     background: transparent;
     border-top: none;
     border-radius: 0 0 15px 15px;
     left: 0;
-    top: 30%;
+    top: 125px;
 }
 
 @media (max-width: 380px){
@@ -543,7 +544,7 @@ flex-direction: column;
 
 .team .team-nickname {
     position: absolute;
-    padding: 60px 30px;
+    padding: 60px 15px;
     background: transparent;
     border-top: none;
     border-radius: 0 0 15px 15px;
