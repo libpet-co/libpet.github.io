@@ -145,13 +145,13 @@ a {
     margin-right: 0;
   }
   .index-power-button-wrapper #power-btn-2 {
-    width: 203px;
-    height: 56px;
+    width: 150px;
+    height: 40px;
     border-radius: 38px;
     margin: 40px auto 0 auto;
   }
   .index-power-button-wrapper #power-btn-2 a {
-    font-size: 38px;
+    font-size: 25px;
     font-weight: 400;
   }
 }
@@ -173,19 +173,6 @@ a {
   .index-power .index-power-image-wrapper .unit-image-power {
     height: 700px;
     background-size: 600px auto;
-  }
-  .index-power-button-wrapper #power-btn-1 a {
-    font-size: 21px;
-  }
-  .index-power-button-wrapper #power-btn-2 a {
-    font-size: 28px;
-    font-weight: 400;
-  }
-  .index-power-button-wrapper #power-btn-2 {
-    width: 173px;
-    height: 45px;
-    border-radius: 38px;
-    margin: 40px auto 0 auto;
   }
 }
 
@@ -226,19 +213,6 @@ a {
   .index-power .index-power-image-wrapper .unit-image-power {
     height: 550px;
     background-size: 450px auto;
-  }
-  .index-power-button-wrapper #power-btn-1 a {
-    font-size: 19px;
-  }
-  .index-power-button-wrapper #power-btn-2 a {
-    font-size: 21px;
-    font-weight: 400;
-  }
-  .index-power-button-wrapper #power-btn-2 {
-    width: 130px;
-    height: 25px;
-    border-radius: 38px;
-    margin: 20px auto 0 auto;
   }
 }
 
@@ -723,7 +697,7 @@ a {
     margin-bottom: 30px;
   }
   .index-collection-button-wrapper .collection-btn-1 a {
-    font-size: 20px;
+    font-size: 22px;
     margin-right: 0;
     color: #ffffff;
   }
