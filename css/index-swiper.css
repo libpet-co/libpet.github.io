@@ -6,11 +6,11 @@
 .slide-content {
   margin: 0 40px;
   overflow: hidden;
-  border-radius: 25px;
+  border-radius: 25px 25px 0 0;
 }
 .card {
   width: 320px;
-  border-radius: 25px;
+  border-radius: 25px 25px 0 0;
   background-color: #fff;
 }
 .image-content,
@@ -72,7 +72,7 @@
   font-size: 19px;
   color: #000;
   padding: 10px 50px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 40px;
   border: #000 solid 1px;
   margin: 14px;
@@ -81,7 +81,7 @@
 }
 .button:hover {
   background: #000;
-  color:#FFFFFF;
+  color: #ffffff;
 }
 
 .swiper-navBtn {
@@ -109,11 +109,71 @@
   background-color: #000000;
 }
 
-@media screen and (max-width: 768px) {
-    .slide-content{
-        margin: 0 10px;
-    }
-    .swiper-navBtn{
-        display: none;
-    }
+@media screen and (max-width: 1000px) {
+  .button {
+    font-size: 19px;
+    color: #000;
+    padding: 5px 30px;
+  }
+}
+
+@media screen and (max-width: 768.5px) {
+  .index-event {
+    height: 840px;
+  }
+  .slide-content {
+    margin: 0 10px;
+  }
+  .swiper-navBtn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 599.5px) {
+  .index-event {
+    height: 800px;
+  }
+  .slider-container {
+    padding: 0 0 40px 0;
+  }
+  .slide-content {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0 4%;
+  }
+  .description {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .index-event {
+    height: 700px;
+  }
+  .index-event .index-event-word-wrapper {
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+}
+
+@media screen and (max-width: 350px) {
+  .index-event {
+    height: 650px;
+  }
+  .slide-content {
+    padding: 0 2%;
+  }
+  .slide-content {
+    border-radius: 25px 25px 0 0;
+  }
+  .button {
+    font-size: 19px;
+    color: #000;
+    padding: 5px 20px;
+  }
+  .description {
+    width: 100%;
+  }
 }
