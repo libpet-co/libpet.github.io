@@ -614,24 +614,120 @@ a {
   max-width: 3440px;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .mini-data-section .data {
   flex: 1;
+  text-align: center;
+  height: 200px;
 }
 
-.mini-data-section .data {
-  text-align: center;
+.mini-data-section .data-image {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mini-data-section .data .data-description {
-  margin-top: 33px;
   font-size: 22px;
   line-height: 1;
   color: #000000;
   font-weight: 400;
+}
+
+.data-breakline-lg {
+  display: none;
+}
+
+@media screen and (max-width: 1439.5px) {
+  .mini-data-section {
+    height: 600px;
+  }
+  .mini-data-section .data {
+    flex-basis: calc(100% / 3);
+  }
+  .mini-data-section{
+    margin: 100px auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .data-breakline-lg {
+    display: block;
+  }
+  .mini-data-section .data {
+    height: 250px;
+  }
+  .mini-data-section .data-image {
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .data .data-image img {
+    scale: 0.8;
+  }
+  .mini-data-section .data-image {
+    height: 55%;
+  }
+  .mini-data-section .data .data-description {
+    font-size: 19px;
+  }
+  .mini-data-section {
+    height: 550px;
+  }
+  .mini-data-section{
+    margin: 80px auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .data .data-image img {
+    scale: 0.7;
+  }
+  .mini-data-section .data-image {
+    height: 55%;
+  }
+  .mini-data-section{
+    margin: 60px auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .data .data-image img {
+    scale: 0.6;
+  }
+  .mini-data-section .data-image {
+    height: 55%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .mini-data-section {
+    height: 750px;
+  }
+  .mini-data-section .data {
+    flex-basis: calc(100% / 2 - 20px);
+  }
+  .mini-data-section{
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 275px) {
+  .mini-data-section {
+    height: 1500px;
+  }
+  .mini-data-section .data {
+    flex-basis: calc(100% / 1);
+  }
+  .data-breakline-lg {
+    display: none;
+  }
 }
 /*-----------------------Finish mini-data--------------------------------------*/
 
