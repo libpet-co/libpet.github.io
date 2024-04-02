@@ -256,7 +256,7 @@ a {
   border-radius: 16px;
   background-color: #232323;
   font-size: 22px;
-  line-height: 23px;
+  line-height: 1;
   color: #ffffff;
   font-weight: 400;
 }
@@ -297,12 +297,22 @@ a {
   margin-top: 50px;
 }
 
-.mini-index-container .breakline-lg{
+.mini-index-container .breakline-lg {
   display: block;
 }
 
+@media screen and (max-width: 768.5px) {
+  .mini-buy-button {
+    width: auto;
+    height: auto;
+    border-radius: 32px;
+    font-size: 25px;
+    padding: 1.5% 6%;
+}
+}
+
 @media screen and (max-width: 600px) {
-  .mini-index-container .breakline-lg{
+  .mini-index-container .breakline-lg {
     display: none;
   }
 }
