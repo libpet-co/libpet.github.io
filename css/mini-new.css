@@ -1207,6 +1207,20 @@ a {
   transform: none;
 }
 
+.mini-turning-breakline-lg{
+  display: block;
+}
+
+@media screen and (max-width: 950px) {
+  .mini-turning-breakline-lg{
+    display: none;
+  }
+  .mini-turning-section .mini-turning-word-wrapper p {
+    font-size: 20px;
+    padding: 5px 2%;
+}
+}
+
 @media screen and (max-width: 450px) {
   .mini-turning-section .mini-turning-word-wrapper h1 {
     font-size: 50px;
@@ -1215,6 +1229,9 @@ a {
 @media screen and (max-width: 300px) {
   .mini-turning-section .mini-turning-word-wrapper h1 {
     font-size: 15vw;
+  }
+  .mini-turning-section .mini-turning-word-wrapper p {
+    font-size: 6vw;
   }
 }
 /*-----------------------Finish mini-turning-radius--------------------------------------*/
