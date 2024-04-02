@@ -302,18 +302,73 @@ a {
 }
 
 @media screen and (max-width: 768.5px) {
+  .mini-index-container {
+    height: auto;
+  }
+  .mini-index-container .mini-index-container-image-wrapper {
+    margin: 150px auto 120px auto;
+  }
   .mini-buy-button {
     width: auto;
     height: auto;
     border-radius: 32px;
     font-size: 25px;
     padding: 1.5% 6%;
-}
+  }
+  .mini-index-container .mini-index-container-image-wrapper .mini-95deg img {
+    width: 200px;
+    height: auto;
+  }
+  .mini-95deg p {
+    margin-top: 25px;
+  }
+  .mini-index-container .mini-index-container-image-wrapper .mini-120deg img {
+    width: 232px;
+  }
+  .mini-120deg p {
+    margin-top: 25px;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .mini-index-container .breakline-lg {
     display: none;
+  }
+  .mini-index-container .mini-index-container-image-wrapper .mini-95deg img {
+    width: 150px;
+  }
+  .mini-index-container .mini-index-container-image-wrapper .mini-120deg img {
+    width: 174px;
+  }
+  .mini-index-container .mini-index-container-image-wrapper {
+    margin: 120px auto 90px auto;
+  }
+  .mini-95deg p {
+    font-size: 19px;
+  }
+  .mini-120deg p {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mini-index-container .mini-index-container-image-wrapper .mini-95deg {
+    width: 48%;
+  }
+  .mini-index-container .mini-index-container-image-wrapper .mini-120deg {
+    width: 48%;
+  }
+  .mini-index-container .mini-index-container-image-wrapper .mini-95deg img {
+    width: 120px;
+  }
+  .mini-index-container .mini-index-container-image-wrapper .mini-120deg img {
+    width: 140px;
+  }
+  .mini-95deg p {
+    font-size: 17px;
+  }
+  .mini-120deg p {
+    font-size: 17px;
   }
 }
 
@@ -324,6 +379,18 @@ a {
     color: #000000;
     font-weight: 300;
     text-align: center;
+  }
+  .mini-index-container .mini-index-container-image-wrapper .mini-95deg img {
+    width: 85%;
+  }
+  .mini-index-container .mini-index-container-image-wrapper .mini-120deg img {
+    width: 100%;
+  }
+  .mini-95deg p {
+    font-size: 5vw;
+  }
+  .mini-120deg p {
+    font-size: 5vw;
   }
 }
 /*-----------------------Finish mini-index-container--------------------------------------*/
