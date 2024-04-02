@@ -21,6 +21,7 @@ a {
   text-decoration: none;
 }
 
+/*-----------------------Start mini-index--------------------------------------*/
 .mini-index {
   background-color: #ffffff;
   height: 1330px;
@@ -56,9 +57,170 @@ a {
   -webkit-transform: none;
   transform: none;
 }
+
+@media screen and (max-width: 1260px) {
+  .mini-index {
+    height: 1330px;
+  }
+  .mini-index .mini-index-image-wrapper .unit-image-mini {
+    height: 1230px;
+    background-size: 3340px auto;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .mini-index {
+    height: 1330px;
+  }
+  .mini-index .mini-index-image-wrapper .unit-image-mini {
+    height: 1230px;
+    background-size: 3240px auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .mini-index {
+    height: 1230px;
+  }
+  .mini-index .mini-index-image-wrapper .unit-image-mini {
+    height: 1230px;
+    background-size: 3040px auto;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .mini-index {
+    height: 1230px;
+  }
+  .mini-index .mini-index-image-wrapper .unit-image-mini {
+    height: 1130px;
+    background-size: 2840px auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .mini-index {
+    height: 1130px;
+  }
+  .mini-index .mini-index-image-wrapper .unit-image-mini {
+    height: 1030px;
+    background-size: 2640px auto;
+  }
+}
+
+@media screen and (max-width: 768.5px) {
+  .mini-index {
+    height: 930px;
+  }
+  .mini-index .mini-index-image-wrapper .unit-image-mini {
+    background-image: url(../img/mini-new/mini-index-s.png);
+    height: 930px;
+    background-size: 768px auto;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .mini-index {
+    height: 900px;
+  }
+  .mini-index .mini-index-image-wrapper .unit-image-mini {
+    height: 900px;
+    background-size: 700px auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .mini-index {
+    height: 800px;
+  }
+  .mini-index .mini-index-image-wrapper .unit-image-mini {
+    height: 800px;
+    background-size: 650px auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .mini-index {
+    height: 800px;
+  }
+  .mini-index .mini-index-image-wrapper .unit-image-mini {
+    height: 800px;
+    background-size: 600px auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mini-index {
+    height: 700px;
+  }
+  .mini-index .mini-index-image-wrapper .unit-image-mini {
+    height: 700px;
+    background-size: 550px auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .mini-index {
+    height: 650px;
+  }
+  .mini-index .mini-index-image-wrapper .unit-image-mini {
+    height: 650px;
+    background-size: 500px auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mini-index {
+    height: 600px;
+  }
+  .mini-index .mini-index-image-wrapper .unit-image-mini {
+    height: 600px;
+    background-size: 450px auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .mini-index {
+    height: 550px;
+  }
+  .mini-index .mini-index-image-wrapper .unit-image-mini {
+    height: 550px;
+    background-size: 400px auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mini-index {
+    height: 500px;
+  }
+  .mini-index .mini-index-image-wrapper .unit-image-mini {
+    height: 500px;
+    background-size: 350px auto;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .mini-index {
+    height: 450px;
+  }
+  .mini-index .mini-index-image-wrapper .unit-image-mini {
+    height: 450px;
+    background-size: 300px auto;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .mini-index {
+    height: 400px;
+  }
+  .mini-index .mini-index-image-wrapper .unit-image-mini {
+    height: 400px;
+    background-size: 100% auto;
+  }
+}
 /*-------------------------------------------------------------*/
 
-/*-----------------------Start mini-index--------------------------------------*/
+/*-----------------------Start mini-index-container--------------------------------------*/
 .mini-index-container {
   background-color: #ffffff;
   height: 850px;
@@ -68,7 +230,8 @@ a {
 }
 
 .mini-index-container .mini-index-container-word-wrapper {
-  max-width: 1114px;
+  max-width: calc(1114px + 4%);
+  padding: 0 2%;
   width: 100%;
   height: min-content;
   margin: 0 auto;
@@ -87,7 +250,7 @@ a {
   margin-top: 50px;
 }
 
-.mini-index-container .mini-index-container-button-wrapper .mini-buy-button {
+.mini-buy-button {
   width: 107px;
   height: 32px;
   border-radius: 16px;
@@ -133,7 +296,27 @@ a {
   font-weight: 400;
   margin-top: 50px;
 }
-/*-----------------------Finish mini-index--------------------------------------*/
+
+.mini-index-container .breakline-lg{
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .mini-index-container .breakline-lg{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .mini-index-container .mini-index-container-word-wrapper p {
+    font-size: 18px;
+    line-height: 1.2;
+    color: #000000;
+    font-weight: 300;
+    text-align: center;
+  }
+}
+/*-----------------------Finish mini-index-container--------------------------------------*/
 
 /*-----------------------Start mini-smart--------------------------------------*/
 .mini-smart-section {
@@ -593,11 +776,36 @@ a {
 
 /*-----------------------Start mini-app--------------------------------------*/
 .mini-app-section {
-    background-color: #ededed;
-    height: 1400px;
-    position: relative;
-    max-width: 3440px;
-  }
+  background-color: #ededed;
+  height: 1400px;
+  position: relative;
+  max-width: 3440px;
+}
+
+.mini-app-section .mini-app-word-wrapper {
+  padding-top: 186px;
+  width: 100%;
+  text-align: center;
+}
+
+.mini-app-section .mini-app-word-wrapper h1 {
+  font-size: 78px;
+  letter-spacing: -2px;
+  line-height: 1.1;
+  color: #000000;
+  font-weight: 400;
+}
+
+.mini-app-section .mini-app-word-wrapper p {
+  max-width: 1114px;
+  height: min-content;
+  font-size: 20px;
+  line-height: 1.3;
+  color: #000000;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 auto;
+}
 /*-----------------------Finish mini-app--------------------------------------*/
 
 /*-----------------------Start mini-removable--------------------------------------*/
@@ -662,6 +870,127 @@ a {
   transform: none;
 }
 /*-----------------------Finish mini-removable--------------------------------------*/
+
+/*-----------------------Start mini-components--------------------------------------*/
+.mini-components-section {
+  background-color: #ffffff;
+  height: 1865px;
+  position: relative;
+  max-width: 3440px;
+}
+
+.mini-components-section .mini-components-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.mini-components-section .mini-components-image-wrapper .unit-image-components {
+  background-image: url(../img/mini-new/mini-components.png);
+  width: 100%;
+  height: 1865px;
+  background-size: 3440px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+  position: absolute;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  -webkit-transform: none;
+  transform: none;
+}
+
+.mini-components-section .mini-components-word-wrapper {
+  position: absolute;
+  bottom: 150px;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+.mini-components-section .mini-components-word-wrapper h1 {
+  margin-bottom: 39px;
+  font-size: 78px;
+  letter-spacing: -2px;
+  line-height: 1.1;
+  color: #000000;
+  font-weight: 400;
+}
+
+.mini-components-section .mini-components-word-wrapper a {
+  font-size: 22px;
+  line-height: 1;
+  color: #000000;
+  font-weight: 400;
+}
+/*-----------------------Finish mini-components--------------------------------------*/
+
+/*-----------------------Start mini-stat--------------------------------------*/
+.mini-stat-section {
+  background-color: #ededed;
+  height: 580px;
+  position: relative;
+  max-width: 3440px;
+}
+
+.mini-stat-section #mini-stat-hr {
+  background-color: #ededed;
+  border: 1px solid #000000;
+  margin: 0;
+  opacity: 1;
+  width: 1240px;
+  margin: 0 auto;
+}
+
+.mini-stat-section .stat-detail {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 12px;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.mini-stat-section .stat-detail .stat-container {
+  height: 580px;
+  display: flex;
+  margin-top: 120px;
+  flex-direction: column;
+}
+
+.stat-container p {
+  font-size: 54px;
+  letter-spacing: -1px;
+  line-height: 1;
+  color: #000000;
+  font-weight: 700;
+}
+
+.stat-container .stat-container-light {
+  color: #cccccc;
+}
+
+.stat-container ul li {
+  font-size: 20px;
+  line-height: 1.4;
+  color: #000000;
+}
+
+.mini-stat-section .mini-stat-container-button-wrapper {
+  position: absolute;
+  text-align: center;
+  bottom: 120px;
+  width: 100%;
+}
+/*-----------------------Start mini-stat--------------------------------------*/
 
 /*-------------------------------------------------------------*/
 
