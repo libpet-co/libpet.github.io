@@ -26,9 +26,10 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
 
     <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/glide.core.min.css" />
+    <link rel="stylesheet" href="css/glide.theme.min.css" />
     <link rel="stylesheet" href="css/mini-new.css" />
     <link href="css/footer.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/mini-swiper.css" />
 
     <link
       rel="icon"
@@ -286,66 +287,35 @@
         <figure class="unit-image-turning"></figure>
       </div>
     </div>
-    <!--
-    <div class="mini-app-section">
-      <div class="mini-app-word-wrapper">
-        <h1>APP Control</h1>
-        <p>Can be controlled by hone or pad</p>
-      </div>
-      <div class="slider-container swiper">
-        <div class="slide-content">
-          <div class="card-wrapper swiper-wrapper">
-            <div class="card swiper-slide">
-              <div class="image-content">
-                <span class="overlay"></span>
 
-                <div class="card-image">
-                  <img
-                    src="img/mini-new/mini-app-1.png"
-                    alt=""
-                    class="card-img"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div class="card swiper-slide">
-              <div class="image-content">
-                <span class="overlay"></span>
-
-                <div class="card-image">
-                  <img
-                    src="img/mini-new/mini-app-2.png"
-                    alt=""
-                    class="card-img"
-                  />
-                </div>
-              </div>
-
-            </div>
-
-            <div class="card swiper-slide">
-              <div class="image-content">
-                <span class="overlay"></span>
-
-                <div class="card-image">
-                  <img
-                    src="img/mini-new/mini-app-1.png"
-                    alt=""
-                    class="card-img"
-                  />
-                </div>
-              </div>
-
-            </div>
-          </div>
+    <div class="mini-app-word-wrapper">
+      <h1>APP Control</h1>
+      <p>Can be controlled by <br class="mini-app-breakline-lg"> phone or pad</p>
+    </div>
+    <div class="mini-app-showcase-section">
+      <div class="images glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <img src="img/mini-new/mini-app-1.png" />
+            </li>
+            <li class="glide__slide">
+              <img src="img/mini-new/mini-app-1.png" />
+            </li>
+            <li class="glide__slide">
+              <img src="img/mini-new/mini-app-1.png" />
+            </li>
+          </ul>
         </div>
-        <div class="swiper-button-next swiper-navBtn"></div>
-        <div class="swiper-button-prev swiper-navBtn"></div>
-        <div class="swiper-pagination"></div>
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+          <button class="glide__bullet" data-glide-dir="=2"></button>
+        </div>
       </div>
     </div>
 
+    <!--
     <div class="mini-removable-section">
       <div class="mini-removable-word-wrapper">
         <h1>Removable Battery</h1>
@@ -456,6 +426,23 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/nav.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/mini-swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+      new Glide(".images", {
+        type: "carousel",
+        perView: 2,
+        focusAt: "center",
+        gap: 40,
+        breakpoints: {
+          1200: {
+            perView: 2,
+            gap: 20,
+          },
+          800: {
+            perView: 1,
+          },
+        },
+      }).mount();
+    </script>
   </body>
 </html>

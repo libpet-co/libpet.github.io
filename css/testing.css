@@ -1,0 +1,46 @@
+.mini-app-showcase-section {
+    height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glide__slide img {
+  width: 100%;
+}
+
+.glide__bullet {
+  width: 40px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  opacity: 1;
+  min-width: 25px;
+  margin: 0 5px;
+}
+
+.glide__bullet--active {
+  width: 40px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #000000;
+  min-width: 25px;
+  margin: 0 5px;
+}
+
+.glide__bullets {
+    bottom: 0;
+    top: -2em;
+  }
+  
+@media screen and (max-width: 1200px) {
+  .glide__bullet {
+    width: 4vw;
+  }
+
+  .glide__bullet--active {
+    width: 4vw;
+  }
+}
+
+

@@ -1338,20 +1338,28 @@ a {
 /*-----------------------Finish mini-turning-radius--------------------------------------*/
 
 /*-----------------------Start mini-app--------------------------------------*/
-.mini-app-section {
-  background-color: #ededed;
-  height: 1400px;
+.mini-app-showcase-section {
   position: relative;
   max-width: 3440px;
+  margin: 0 auto;
+  background-color: #ededed;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
 }
 
-.mini-app-section .mini-app-word-wrapper {
+.mini-app-word-wrapper {
+  background-color: #ededed;
   padding-top: 186px;
   width: 100%;
   text-align: center;
+  max-width: 3440px;
+  margin: 0 auto;
+  padding: 80px 0 80px 0;
 }
 
-.mini-app-section .mini-app-word-wrapper h1 {
+.mini-app-word-wrapper h1 {
   font-size: 70px;
   letter-spacing: -2px;
   line-height: 1.1;
@@ -1359,7 +1367,7 @@ a {
   font-weight: 400;
 }
 
-.mini-app-section .mini-app-word-wrapper p {
+.mini-app-word-wrapper p {
   max-width: 1114px;
   height: min-content;
   font-size: 20px;
@@ -1369,6 +1377,76 @@ a {
   text-align: center;
   margin: 0 auto;
 }
+
+.glide__slide img {
+  width: 100%;
+}
+
+.glide__bullet {
+  width: 40px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  opacity: 1;
+  min-width: 25px;
+  margin: 0 5px;
+}
+
+.glide__bullet--active {
+  width: 40px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #000000;
+  min-width: 25px;
+  margin: 0 5px;
+}
+
+.glide__bullets {
+  bottom: 0;
+  top: -2em;
+}
+
+.mini-app-breakline-lg{
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .glide__bullet {
+    width: 4vw;
+  }
+
+  .glide__bullet--active {
+    width: 4vw;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .mini-app-word-wrapper p {
+    font-size: 20px;
+}
+}
+
+@media screen and (max-width: 550px) {
+  .mini-app-breakline-lg{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .mini-app-word-wrapper h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .mini-app-word-wrapper h1 {
+    font-size: 15vw;
+  }
+  .mini-app-word-wrapper p {
+    font-size: 7vw;
+}
+}
+
 /*-----------------------Finish mini-app--------------------------------------*/
 
 /*-----------------------Start mini-removable--------------------------------------*/
