@@ -1406,7 +1406,7 @@ a {
   top: -2em;
 }
 
-.mini-app-breakline-lg{
+.mini-app-breakline-lg {
   display: none;
 }
 
@@ -1423,12 +1423,15 @@ a {
 @media screen and (max-width: 950px) {
   .mini-app-word-wrapper p {
     font-size: 20px;
-}
+  }
 }
 
 @media screen and (max-width: 550px) {
-  .mini-app-breakline-lg{
+  .mini-app-breakline-lg {
     display: block;
+  }
+  .mini-app-word-wrapper {
+    padding: 40px 0 80px 0;
   }
 }
 
@@ -1444,7 +1447,7 @@ a {
   }
   .mini-app-word-wrapper p {
     font-size: 7vw;
-}
+  }
 }
 
 /*-----------------------Finish mini-app--------------------------------------*/
@@ -1455,13 +1458,15 @@ a {
   height: 1540px;
   position: relative;
   max-width: 3440px;
+  margin: 0 auto;
 }
 
 .mini-removable-section .mini-removable-word-wrapper {
-  margin-top: 186px;
+  margin-top: 80px;
   position: absolute;
   width: 100%;
   text-align: center;
+  padding: 0 2%;
 }
 
 .mini-removable-section .mini-removable-word-wrapper h1 {
@@ -1494,7 +1499,7 @@ a {
 .mini-removable-section .mini-removable-image-wrapper .unit-image-removable {
   background-image: url(../img/mini-new/mini-removable.png);
   width: 100%;
-  height: 1540px;
+  height: 1350px;
   background-size: 3440px auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -1509,6 +1514,181 @@ a {
   top: 0;
   -webkit-transform: none;
   transform: none;
+}
+
+.mini-removable-breakline-lg {
+  display: none;
+}
+
+@media screen and (max-width: 1300px) {
+  .mini-removable-section {
+    height: 1400px;
+  }
+  .mini-removable-section .mini-removable-image-wrapper .unit-image-removable {
+    height: 1250px;
+    background-size: 3040px auto;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .mini-removable-section {
+    height: 1250px;
+  }
+  .mini-removable-section .mini-removable-image-wrapper .unit-image-removable {
+    height: 1150px;
+    background-size: 2640px auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .mini-removable-section {
+    height: 1200px;
+  }
+  .mini-removable-section .mini-removable-image-wrapper .unit-image-removable {
+    height: 1100px;
+    background-size: 2440px auto;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .mini-removable-section .mini-removable-word-wrapper p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .mini-removable-section {
+    height: 1100px;
+  }
+  .mini-removable-section .mini-removable-image-wrapper .unit-image-removable {
+    height: 1000px;
+    background-size: 2240px auto;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .mini-removable-section {
+    height: 1000px;
+  }
+  .mini-removable-section .mini-removable-image-wrapper .unit-image-removable {
+    height: 900px;
+    background-size: 2040px auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .mini-removable-section {
+    height: 900px;
+  }
+  .mini-removable-section .mini-removable-image-wrapper .unit-image-removable {
+    height: 900px;
+    background-size: 1840px auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .mini-removable-section {
+    height: 900px;
+  }
+  .mini-removable-section .mini-removable-image-wrapper .unit-image-removable {
+    height: 900px;
+    background-size: 1740px auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .mini-removable-section {
+    height: 850px;
+  }
+  .mini-removable-section .mini-removable-image-wrapper .unit-image-removable {
+    height: 850px;
+    background-size: 1540px auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mini-removable-breakline-lg {
+    display: block;
+  }
+  .mini-removable-section {
+    height: 900px;
+  }
+  .mini-removable-section .mini-removable-image-wrapper .unit-image-removable {
+    height: 1000px;
+    background-size: 1540px auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .mini-removable-section .mini-removable-word-wrapper {
+    margin-top: 40px;
+  }
+  .mini-removable-section {
+    height: 750px;
+  }
+  .mini-removable-section .mini-removable-image-wrapper .unit-image-removable {
+    height: 850px;
+    background-size: 1340px auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mini-removable-section {
+    height: 700px;
+  }
+  .mini-removable-section .mini-removable-image-wrapper .unit-image-removable {
+    height: 800px;
+    background-size: 1140px auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .mini-removable-section .mini-removable-word-wrapper h1 {
+    font-size: 50px;
+  }
+  .mini-removable-section {
+    height: 600px;
+  }
+  .mini-removable-section .mini-removable-image-wrapper .unit-image-removable {
+    height: 700px;
+    background-size: 1040px auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mini-removable-section {
+    height: 550px;
+  }
+  .mini-removable-section .mini-removable-image-wrapper .unit-image-removable {
+    height: 650px;
+    background-size: 940px auto;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .mini-removable-section {
+    height: 550px;
+  }
+  .mini-removable-section .mini-removable-image-wrapper .unit-image-removable {
+    height: 650px;
+    background-size: 840px auto;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .mini-removable-section .mini-removable-word-wrapper h1 {
+    font-size: 15vw;
+  }
+  .mini-removable-section .mini-removable-word-wrapper p {
+    font-size: 7vw;
+  }
+  .mini-removable-section {
+    height: 180vw;
+  }
+  .mini-removable-section .mini-removable-image-wrapper .unit-image-removable {
+    height: 210vw;
+    background-size: 270vw auto;
+  }
 }
 /*-----------------------Finish mini-removable--------------------------------------*/
 
