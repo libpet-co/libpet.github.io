@@ -1522,7 +1522,7 @@ a {
 
 @media screen and (max-width: 1300px) {
   .mini-removable-section {
-    height: 1400px;
+    height: 1200px;
   }
   .mini-removable-section .mini-removable-image-wrapper .unit-image-removable {
     height: 1250px;
@@ -1532,7 +1532,7 @@ a {
 
 @media screen and (max-width: 1150px) {
   .mini-removable-section {
-    height: 1250px;
+    height: 1100px;
   }
   .mini-removable-section .mini-removable-image-wrapper .unit-image-removable {
     height: 1150px;
@@ -1542,10 +1542,10 @@ a {
 
 @media screen and (max-width: 1000px) {
   .mini-removable-section {
-    height: 1200px;
+    height: 1000px;
   }
   .mini-removable-section .mini-removable-image-wrapper .unit-image-removable {
-    height: 1100px;
+    height: 1050px;
     background-size: 2440px auto;
   }
 }
@@ -1558,27 +1558,27 @@ a {
 
 @media screen and (max-width: 900px) {
   .mini-removable-section {
-    height: 1100px;
+    height: 900px;
   }
   .mini-removable-section .mini-removable-image-wrapper .unit-image-removable {
-    height: 1000px;
+    height: 950px;
     background-size: 2240px auto;
   }
 }
 
 @media screen and (max-width: 850px) {
   .mini-removable-section {
-    height: 1000px;
+    height: 850px;
   }
   .mini-removable-section .mini-removable-image-wrapper .unit-image-removable {
-    height: 900px;
+    height: 950px;
     background-size: 2040px auto;
   }
 }
 
 @media screen and (max-width: 800px) {
   .mini-removable-section {
-    height: 900px;
+    height: 850px;
   }
   .mini-removable-section .mini-removable-image-wrapper .unit-image-removable {
     height: 900px;
@@ -1588,7 +1588,7 @@ a {
 
 @media screen and (max-width: 700px) {
   .mini-removable-section {
-    height: 900px;
+    height: 850px;
   }
   .mini-removable-section .mini-removable-image-wrapper .unit-image-removable {
     height: 900px;
@@ -1598,7 +1598,7 @@ a {
 
 @media screen and (max-width: 650px) {
   .mini-removable-section {
-    height: 850px;
+    height: 700px;
   }
   .mini-removable-section .mini-removable-image-wrapper .unit-image-removable {
     height: 850px;
@@ -1624,7 +1624,7 @@ a {
     margin-top: 40px;
   }
   .mini-removable-section {
-    height: 750px;
+    height: 725px;
   }
   .mini-removable-section .mini-removable-image-wrapper .unit-image-removable {
     height: 850px;
@@ -1667,7 +1667,7 @@ a {
 
 @media screen and (max-width: 350px) {
   .mini-removable-section {
-    height: 550px;
+    height: 525px;
   }
   .mini-removable-section .mini-removable-image-wrapper .unit-image-removable {
     height: 650px;
@@ -1683,7 +1683,7 @@ a {
     font-size: 7vw;
   }
   .mini-removable-section {
-    height: 180vw;
+    height: 170vw;
   }
   .mini-removable-section .mini-removable-image-wrapper .unit-image-removable {
     height: 210vw;
@@ -1707,6 +1707,7 @@ a {
   height: 100%;
   width: 100%;
   z-index: 1;
+  background-color: #ededed;
 }
 
 .mini-components-section .mini-components-image-wrapper .unit-image-components {
@@ -1752,6 +1753,204 @@ a {
   color: #000000;
   font-weight: 400;
 }
+
+.mini-components-breakline-lg {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .mini-components-section {
+    height: 1650px;
+  }
+  .mini-components-section
+    .mini-components-image-wrapper
+    .unit-image-components {
+    height: 1640px;
+    background-size: 3040px auto;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .mini-components-section {
+    height: 1500px;
+  }
+  .mini-components-section
+    .mini-components-image-wrapper
+    .unit-image-components {
+    height: 1500px;
+    background-size: 2840px auto;
+  }
+  .mini-components-section .mini-components-word-wrapper {
+    bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .mini-components-section .mini-components-word-wrapper a {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .mini-components-section {
+    height: 1440px;
+  }
+  .mini-components-section
+    .mini-components-image-wrapper
+    .unit-image-components {
+    height: 1450px;
+    background-size: 2640px auto;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .mini-components-section {
+    height: 1370px;
+  }
+  .mini-components-section
+    .mini-components-image-wrapper
+    .unit-image-components {
+    height: 1400px;
+    background-size: 2440px auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .mini-components-section {
+    height: 1200px;
+  }
+  .mini-components-section
+    .mini-components-image-wrapper
+    .unit-image-components {
+    height: 1100px;
+    background-size: 2240px auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .mini-components-section {
+    height: 1200px;
+  }
+  .mini-components-section
+    .mini-components-image-wrapper
+    .unit-image-components {
+    height: 1100px;
+    background-size: 2240px auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .mini-components-section {
+    height: 1200px;
+  }
+  .mini-components-section
+    .mini-components-image-wrapper
+    .unit-image-components {
+    height: 1100px;
+    background-size: 2040px auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mini-components-section {
+    height: 1080px;
+  }
+  .mini-components-section
+    .mini-components-image-wrapper
+    .unit-image-components {
+    height: 900px;
+    background-size: 1840px auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .mini-components-breakline-lg {
+    font-size: 65px;
+    display: block;
+  }
+  .mini-components-section {
+    height: 1050px;
+  }
+  .mini-components-section
+    .mini-components-image-wrapper
+    .unit-image-components {
+    height: 800px;
+    background-size: 1640px auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mini-components-section {
+    height: 950px;
+  }
+  .mini-components-section
+    .mini-components-image-wrapper
+    .unit-image-components {
+    height: 700px;
+    background-size: 1440px auto;
+  }
+  .mini-components-section .mini-components-word-wrapper {
+    bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .mini-components-section .mini-components-word-wrapper h1 {
+    font-size: 50px;
+  }
+  .mini-components-section {
+    height: 800px;
+  }
+  .mini-components-section
+    .mini-components-image-wrapper
+    .unit-image-components {
+    height: 650px;
+    background-size: 1340px auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mini-components-section {
+    height: 750px;
+  }
+  .mini-components-section
+    .mini-components-image-wrapper
+    .unit-image-components {
+    height: 550px;
+    background-size: 1140px auto;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .mini-components-section {
+    height: 680px;
+  }
+  .mini-components-section
+    .mini-components-image-wrapper
+    .unit-image-components {
+    height: 450px;
+    background-size: 940px auto;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .mini-components-section .mini-components-word-wrapper h1 {
+    font-size: 15vw;
+  }
+  .mini-components-section .mini-components-word-wrapper a {
+    font-size: 7vw;
+  }
+  .mini-components-section {
+    height: 230vw;
+  }
+  .mini-components-section
+    .mini-components-image-wrapper
+    .unit-image-components {
+    height: 160vw;
+    background-size: 330vw auto;
+  }
+}
+
 /*-----------------------Finish mini-components--------------------------------------*/
 
 /*-----------------------Start mini-stat--------------------------------------*/
