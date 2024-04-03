@@ -1,5 +1,5 @@
 .slider-container {
-  max-width: 3440px;
+  max-width: 2560px;
   width: 100%;
   padding: 100px 0;
 }
@@ -117,7 +117,7 @@
   background-color: #000000;
 }
 
-#mini-swiper-pagination {
+.swiper-pagination {
   top: 2%;
   height: 20px;
 }
