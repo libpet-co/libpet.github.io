@@ -1077,7 +1077,7 @@ a {
 
 @media screen and (max-width: 500px) {
   .mini-control-section {
-    height: 1000px;
+    height: 950px;
   }
   .mini-control-section .mini-control-image-wrapper .unit-image-control {
     height: 1000px;
@@ -1090,7 +1090,7 @@ a {
     font-size: 50px;
   }
   .mini-control-section {
-    height: 950px;
+    height: 850px;
   }
   .mini-control-section .mini-control-image-wrapper .unit-image-control {
     height: 900px;
@@ -1103,7 +1103,7 @@ a {
 
 @media screen and (max-width: 400px) {
   .mini-control-section {
-    height: 900px;
+    height: 800px;
   }
   .mini-control-section .mini-control-image-wrapper .unit-image-control {
     height: 800px;
@@ -1116,7 +1116,7 @@ a {
     font-size: 50px;
   }
   .mini-control-section {
-    height: 900px;
+    height: 800px;
   }
   .mini-control-section .mini-control-image-wrapper .unit-image-control {
     height: 800px;
@@ -1132,7 +1132,7 @@ a {
     font-size: 7vw;
   }
   .mini-control-section {
-    height: 300vw;
+    height: 240vw;
   }
   .mini-control-section .mini-control-image-wrapper .unit-image-control {
     height: 240vw;
@@ -1151,7 +1151,7 @@ a {
   height: 1770px;
   position: relative;
   max-width: 3440px;
-  margin: -300px auto 0 auto;
+  margin: -200px auto 0 auto;
 }
 
 .mini-turning-section .mini-turning-word-wrapper {
@@ -1207,91 +1207,18 @@ a {
   transform: none;
 }
 
-.mini-turning-breakline-lg {
+.mini-turning-breakline-lg{
   display: block;
 }
 
-@media screen and (max-width: 1250px) {
-  .mini-turning-section .mini-turning-image-wrapper .unit-image-turning {
-    height: 1470px;
-    background-size: 3040px auto;
-  }
-  .mini-turning-section {
-    height: 1470px;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  .mini-turning-section .mini-turning-image-wrapper .unit-image-turning {
-    height: 1270px;
-    background-size: 2640px auto;
-  }
-  .mini-turning-section {
-    height: 1270px;
-  }
-}
-
 @media screen and (max-width: 950px) {
-  .mini-turning-breakline-lg {
+  .mini-turning-breakline-lg{
     display: none;
   }
   .mini-turning-section .mini-turning-word-wrapper p {
     font-size: 20px;
     padding: 5px 2%;
-  }
 }
-
-@media screen and (max-width: 900px) {
-  .mini-turning-section .mini-turning-image-wrapper .unit-image-turning {
-    height: 1170px;
-    background-size: 2240px auto;
-  }
-  .mini-turning-section {
-    height: 1170px;
-  }
-}
-
-@media screen and (max-width: 768.5px) {
-  .mini-turning-section .mini-turning-image-wrapper .unit-image-turning {
-    height: 1170px;
-    background-size: 1840px auto;
-  }
-  .mini-turning-section {
-    height: 1050px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .mini-turning-section .mini-turning-image-wrapper .unit-image-turning {
-    height: 1100px;
-    background-size: 1640px auto;
-  }
-  .mini-turning-section {
-    height: 1000px;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .mini-turning-section .mini-turning-image-wrapper .unit-image-turning {
-    height: 1100px;
-    background-size: 1440px auto;
-  }
-  .mini-turning-section {
-    height: 950px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .mini-turning-section .mini-turning-image-wrapper .unit-image-turning {
-    height: 1000px;
-    background-size: 1240px auto;
-  }
-  .mini-turning-section {
-    height: 850px;
-  }
-  .mini-turning-section .mini-turning-word-wrapper p {
-    line-height: 1.2;
-  }
 }
 
 @media screen and (max-width: 450px) {
@@ -1299,40 +1226,12 @@ a {
     font-size: 50px;
   }
 }
-
-@media screen and (max-width: 400px) {
-  .mini-turning-section .mini-turning-image-wrapper .unit-image-turning {
-    height: 950px;
-    background-size: 1040px auto;
-  }
-  .mini-turning-section {
-    height: 800px;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .mini-turning-section .mini-turning-image-wrapper .unit-image-turning {
-    height: 950px;
-    background-size: 900px auto;
-  }
-  .mini-turning-section {
-    height: 750px;
-  }
-}
-
 @media screen and (max-width: 300px) {
   .mini-turning-section .mini-turning-word-wrapper h1 {
     font-size: 15vw;
   }
   .mini-turning-section .mini-turning-word-wrapper p {
     font-size: 6vw;
-  }
-  .mini-turning-section .mini-turning-image-wrapper .unit-image-turning {
-    height: 285vw;
-    background-size: 300vw auto;
-  }
-  .mini-turning-section {
-    height: 225vw;
   }
 }
 /*-----------------------Finish mini-turning-radius--------------------------------------*/
