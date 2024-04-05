@@ -151,12 +151,12 @@
           </p>
         </div>
         <div class="power-145deg">
-            <img src="img/power-new/power-degree-80.png" alt="" />
-            <p>
-              Footrest <br />
-              Adjustment
-            </p>
-          </div>
+          <img src="img/power-new/power-degree-80.png" alt="" />
+          <p>
+            Footrest <br />
+            Adjustment
+          </p>
+        </div>
       </div>
     </div>
 
@@ -233,36 +233,16 @@
       </div>
     </div>
 
-    <div class="mini-control-section">
-      <div class="mini-control-word-wrapper">
-        <h1>Control Panel</h1>
+    <div class="power-control-section">
+      <div class="power-control-word-wrapper">
+        <h1 id="power-control-title">Module Control Panel</h1>
         <p>
           Navigate with no delays and
-          <br class="mini-control-breakline-lg" />experience instant eactions.
+          <br class="power-control-breakline-lg" />experience instant eactions.
         </p>
       </div>
-      <div class="mini-control-image-wrapper">
+      <div class="power-control-image-wrapper">
         <figure class="unit-image-control"></figure>
-      </div>
-    </div>
-
-    <div class="mini-turning-section">
-      <div class="mini-turning-word-wrapper">
-        <h1>
-          Turning Radius <br />
-          720mm
-        </h1>
-        <p>
-          With a tight turning radius of only 720mm,
-          <br class="mini-turning-breakline-lg" />
-          the Libpet MINI wheelchair can smoothly maneuver around furniture and
-          through tight spaces, <br class="mini-turning-breakline-lg" />
-          allowing users to easily make U-turns and fit through narrow doors
-          where other chairs may struggle.
-        </p>
-      </div>
-      <div class="mini-turning-image-wrapper">
-        <figure class="unit-image-turning"></figure>
       </div>
     </div>
 
@@ -464,6 +444,29 @@
           },
         },
       }).mount();
+
+      // 檢查視窗寬度並更新標題內容
+      function updateTitleContent() {
+        var titleElement = document.getElementById(
+          "power-control-title"
+        );
+        var windowWidth =
+          window.innerWidth ||
+          document.documentElement.clientWidth ||
+          document.body.clientWidth;
+
+        if (windowWidth < 700) {
+          titleElement.innerHTML =
+            "Control Panel"
+        } else {
+          titleElement.innerHTML =
+            "Module Control Panel"
+        }
+      }
+
+      // 在頁面載入時和視窗大小改變時觸發更新
+      window.addEventListener("DOMContentLoaded", updateTitleContent);
+      window.addEventListener("resize", updateTitleContent);
     </script>
   </body>
 </html>

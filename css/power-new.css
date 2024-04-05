@@ -565,248 +565,250 @@ a {
 
 /*-----------------------Start power-ultrasonic--------------------------------------*/
 .power-ultrasonic-section {
-    background-color: #ffffff;
-    height: 1714px;
-    position: relative;
-    max-width: 3440px;
-    margin: 0 auto;
-  }
-  
-  .power-ultrasonic-section .power-ultrasonic-image-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-  }
-  
-  .power-ultrasonic-section .power-ultrasonic-image-wrapper .unit-image-ultrasonic {
-    background-image: url(../img/power-new/power-ultrasonic.png);
-    width: 100%;
-    height: 1714px;
-    background-size: 3440px auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 1;
-    position: absolute;
-    border: 0;
-    margin: 0;
-    padding: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    -webkit-transform: none;
-    transform: none;
-  }
-  
-  .power-ultrasonic-section .power-ultrasonic-word-wrapper {
-    z-index: 5;
-    position: absolute;
-    bottom: 6%;
-    width: 100%;
-  }
-  
-  .power-ultrasonic-section .power-ultrasonic-word-wrapper h1 {
-    font-size: 70px;
-    letter-spacing: -2px;
-    line-height: 1.1;
-    color: #000000;
-    font-weight: 400;
-    text-align: center;
-  }
-  
-  .power-ultrasonic-section .power-ultrasonic-word-wrapper p {
-    max-width: 1114px;
-    height: min-content;
-    font-size: 20px;
-    line-height: 1.3;
-    color: #000000;
-    font-weight: 300;
-    text-align: center;
-    margin: 0 auto;
-  }
-  
-  @media screen and (max-width: 1023.5px) {
-    .power-ultrasonic-section {
-      height: 1514px;
-    }
-    .power-ultrasonic-section
-      .power-ultrasonic-image-wrapper
-      .unit-image-ultrasonic {
-      height: 1514px;
-      background-size: 3040px auto;
-    }
-    .power-ultrasonic-section .power-ultrasonic-word-wrapper {
-      bottom: 3%;
-    }
-  }
-  
-  @media screen and (max-width: 950px) {
-    .power-ultrasonic-section {
-      height: 1314px;
-    }
-    .power-ultrasonic-section
-      .power-ultrasonic-image-wrapper
-      .unit-image-ultrasonic {
-      height: 1314px;
-      background-size: 2640px auto;
-    }
-    .power-ultrasonic-section .power-ultrasonic-word-wrapper {
-      bottom: 0%;
-    }
-  }
-  
-  @media screen and (max-width: 800px) {
-    .power-ultrasonic-section {
-      height: 1214px;
-    }
-    .power-ultrasonic-section
-      .power-ultrasonic-image-wrapper
-      .unit-image-ultrasonic {
-      height: 1214px;
-      background-size: 2240px auto;
-    }
-  }
-  
-  @media screen and (max-width: 768.5px) {
-    .power-ultrasonic-section .power-ultrasonic-word-wrapper {
-      bottom: 5%;
-    }
-    .power-ultrasonic-section {
-      height: 1275px;
-    }
-  }
-  
-  @media screen and (max-width: 700px) {
-    .power-ultrasonic-section {
-      height: 1214px;
-    }
-    .power-ultrasonic-section
-      .power-ultrasonic-image-wrapper
-      .unit-image-ultrasonic {
-      height: 1214px;
-      background-size: 2140px auto;
-    }
-  }
-  
-  @media screen and (max-width: 650px) {
-    .power-ultrasonic-section {
-      height: 1114px;
-    }
-    .power-ultrasonic-section
-      .power-ultrasonic-image-wrapper
-      .unit-image-ultrasonic {
-      height: 1114px;
-      background-size: 2040px auto;
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .power-ultrasonic-section {
-      height: 1200px;
-    }
-    .power-ultrasonic-section
-      .power-ultrasonic-image-wrapper
-      .unit-image-ultrasonic {
-      height: 1050px;
-      background-size: 1940px auto;
-    }
-    .power-ultrasonic-section .power-ultrasonic-word-wrapper {
-      bottom: 10%;
-  }
-  }
-  
-  @media screen and (max-width: 550px) {
-    .power-ultrasonic-section {
-      height: 1150px;
-    }
-    .power-ultrasonic-section
-      .power-ultrasonic-image-wrapper
-      .unit-image-ultrasonic {
-      height: 950px;
-      background-size: 1740px auto;
-    }
-  }
-  
-  @media screen and (max-width: 450px) {
-    .power-ultrasonic-section {
-      height: 1050px;
-    }
-    .power-ultrasonic-section
-      .power-ultrasonic-image-wrapper
-      .unit-image-ultrasonic {
-      height: 950px;
-      background-size: 1640px auto;
-    }
-    .power-ultrasonic-section .power-ultrasonic-word-wrapper h1 {
-      font-size: 50px;
-    }
-  }
-  
-  @media screen and (max-width: 400px) {
-    .power-ultrasonic-section {
-      height: 1000px;
-    }
-    .power-ultrasonic-section
-      .power-ultrasonic-image-wrapper
-      .unit-image-ultrasonic {
-      height: 900px;
-      background-size: 1540px auto;
-    }
-  }
-  
-  @media screen and (max-width: 350px) {
-    .power-ultrasonic-section {
-      height: 900px;
-    }
-    .power-ultrasonic-section
-      .power-ultrasonic-image-wrapper
-      .unit-image-ultrasonic {
-      height: 800px;
-      background-size: 1340px auto;
-    }
-    .power-ultrasonic-section .power-ultrasonic-word-wrapper h1 {
-      font-size: 50px;
-    }
-  }
-  
-  @media screen and (max-width: 300px) {
-    .power-ultrasonic-section {
-      height: 285vw;
-    }
-    .power-ultrasonic-section
-      .power-ultrasonic-image-wrapper
-      .unit-image-ultrasonic {
-      height: 250vw;
-      background-size: 450vw auto;
-    }
-    .power-ultrasonic-section .power-ultrasonic-word-wrapper h1 {
-      font-size: 15vw;
-    }
-    .power-ultrasonic-section .power-ultrasonic-word-wrapper p {
-      font-size: 7vw;
-    }
-  }
-/*-----------------------Finish power-ultrasonic--------------------------------------*/
-
-/*-----------------------Start mini-control--------------------------------------*/
-.mini-control-section {
   background-color: #ffffff;
-  height: 2000px;
+  height: 1714px;
   position: relative;
   max-width: 3440px;
   margin: 0 auto;
 }
 
-.mini-control-section .mini-control-word-wrapper {
+.power-ultrasonic-section .power-ultrasonic-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.power-ultrasonic-section
+  .power-ultrasonic-image-wrapper
+  .unit-image-ultrasonic {
+  background-image: url(../img/power-new/power-ultrasonic.png);
+  width: 100%;
+  height: 1714px;
+  background-size: 3440px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+  position: absolute;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  -webkit-transform: none;
+  transform: none;
+}
+
+.power-ultrasonic-section .power-ultrasonic-word-wrapper {
+  z-index: 5;
+  position: absolute;
+  bottom: 6%;
+  width: 100%;
+}
+
+.power-ultrasonic-section .power-ultrasonic-word-wrapper h1 {
+  font-size: 70px;
+  letter-spacing: -2px;
+  line-height: 1.1;
+  color: #000000;
+  font-weight: 400;
+  text-align: center;
+}
+
+.power-ultrasonic-section .power-ultrasonic-word-wrapper p {
+  max-width: 1114px;
+  height: min-content;
+  font-size: 20px;
+  line-height: 1.3;
+  color: #000000;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1023.5px) {
+  .power-ultrasonic-section {
+    height: 1514px;
+  }
+  .power-ultrasonic-section
+    .power-ultrasonic-image-wrapper
+    .unit-image-ultrasonic {
+    height: 1514px;
+    background-size: 3040px auto;
+  }
+  .power-ultrasonic-section .power-ultrasonic-word-wrapper {
+    bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .power-ultrasonic-section {
+    height: 1314px;
+  }
+  .power-ultrasonic-section
+    .power-ultrasonic-image-wrapper
+    .unit-image-ultrasonic {
+    height: 1314px;
+    background-size: 2640px auto;
+  }
+  .power-ultrasonic-section .power-ultrasonic-word-wrapper {
+    bottom: 0%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .power-ultrasonic-section {
+    height: 1214px;
+  }
+  .power-ultrasonic-section
+    .power-ultrasonic-image-wrapper
+    .unit-image-ultrasonic {
+    height: 1214px;
+    background-size: 2240px auto;
+  }
+}
+
+@media screen and (max-width: 768.5px) {
+  .power-ultrasonic-section .power-ultrasonic-word-wrapper {
+    bottom: 5%;
+  }
+  .power-ultrasonic-section {
+    height: 1275px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .power-ultrasonic-section {
+    height: 1214px;
+  }
+  .power-ultrasonic-section
+    .power-ultrasonic-image-wrapper
+    .unit-image-ultrasonic {
+    height: 1214px;
+    background-size: 2140px auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .power-ultrasonic-section {
+    height: 1114px;
+  }
+  .power-ultrasonic-section
+    .power-ultrasonic-image-wrapper
+    .unit-image-ultrasonic {
+    height: 1114px;
+    background-size: 2040px auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .power-ultrasonic-section {
+    height: 1200px;
+  }
+  .power-ultrasonic-section
+    .power-ultrasonic-image-wrapper
+    .unit-image-ultrasonic {
+    height: 1050px;
+    background-size: 1940px auto;
+  }
+  .power-ultrasonic-section .power-ultrasonic-word-wrapper {
+    bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .power-ultrasonic-section {
+    height: 1150px;
+  }
+  .power-ultrasonic-section
+    .power-ultrasonic-image-wrapper
+    .unit-image-ultrasonic {
+    height: 950px;
+    background-size: 1740px auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .power-ultrasonic-section {
+    height: 1050px;
+  }
+  .power-ultrasonic-section
+    .power-ultrasonic-image-wrapper
+    .unit-image-ultrasonic {
+    height: 950px;
+    background-size: 1640px auto;
+  }
+  .power-ultrasonic-section .power-ultrasonic-word-wrapper h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .power-ultrasonic-section {
+    height: 1000px;
+  }
+  .power-ultrasonic-section
+    .power-ultrasonic-image-wrapper
+    .unit-image-ultrasonic {
+    height: 900px;
+    background-size: 1540px auto;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .power-ultrasonic-section {
+    height: 900px;
+  }
+  .power-ultrasonic-section
+    .power-ultrasonic-image-wrapper
+    .unit-image-ultrasonic {
+    height: 800px;
+    background-size: 1340px auto;
+  }
+  .power-ultrasonic-section .power-ultrasonic-word-wrapper h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .power-ultrasonic-section {
+    height: 285vw;
+  }
+  .power-ultrasonic-section
+    .power-ultrasonic-image-wrapper
+    .unit-image-ultrasonic {
+    height: 250vw;
+    background-size: 450vw auto;
+  }
+  .power-ultrasonic-section .power-ultrasonic-word-wrapper h1 {
+    font-size: 15vw;
+  }
+  .power-ultrasonic-section .power-ultrasonic-word-wrapper p {
+    font-size: 7vw;
+  }
+}
+/*-----------------------Finish power-ultrasonic--------------------------------------*/
+
+/*-----------------------Start power-control--------------------------------------*/
+.power-control-section {
+  background-color: #ffffff;
+  height: 1394px;
+  position: relative;
+  max-width: 3440px;
+  margin: 0 auto;
+}
+
+.power-control-section .power-control-word-wrapper {
   position: absolute;
   top: 200px;
   width: 100%;
   text-align: center;
 }
 
-.mini-control-section .mini-control-word-wrapper h1 {
+.power-control-section .power-control-word-wrapper h1 {
   font-size: 70px;
   letter-spacing: -2px;
   line-height: 1.1;
@@ -814,7 +816,7 @@ a {
   font-weight: 400;
 }
 
-.mini-control-section .mini-control-word-wrapper p {
+.power-control-section .power-control-word-wrapper p {
   max-width: 1114px;
   height: min-content;
   font-size: 20px;
@@ -825,7 +827,7 @@ a {
   margin: 0 auto;
 }
 
-.mini-control-section .mini-control-image-wrapper {
+.power-control-section .power-control-image-wrapper {
   position: absolute;
   top: 0;
   left: 0;
@@ -833,10 +835,10 @@ a {
   width: 100%;
 }
 
-.mini-control-section .mini-control-image-wrapper .unit-image-control {
-  background-image: url(../img/mini-new/mini-control-panel.png);
+.power-control-section .power-control-image-wrapper .unit-image-control {
+  background-image: url(../img/power-new/power-control-panel.png);
   width: 100%;
-  height: 2000px;
+  height: 1400px;
   background-size: 3440px auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -853,340 +855,148 @@ a {
   transform: none;
 }
 
-.mini-control-breakline-lg {
+.power-control-breakline-lg {
   display: none;
 }
 
 @media screen and (max-width: 1250px) {
-  .mini-control-section {
-    height: 1600px;
+  .power-control-section {
+    height: 1313px;
   }
-  .mini-control-section .mini-control-image-wrapper .unit-image-control {
-    height: 2000px;
+  .power-control-section .power-control-image-wrapper .unit-image-control {
+    height: 1400px;
     background-size: 3040px auto;
   }
 }
 
 @media screen and (max-width: 1150px) {
-  .mini-control-section {
-    height: 1600px;
+  .power-control-section {
+    height: 1132px;
   }
-  .mini-control-section .mini-control-image-wrapper .unit-image-control {
-    height: 1800px;
+  .power-control-section .power-control-image-wrapper .unit-image-control {
+    height: 1200px;
     background-size: 2640px auto;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .mini-control-section {
-    height: 1400px;
+  .power-control-section {
+    height: 1003px;
   }
-  .mini-control-section .mini-control-image-wrapper .unit-image-control {
-    height: 1600px;
+  .power-control-section .power-control-image-wrapper .unit-image-control {
+    height: 1100px;
     background-size: 2240px auto;
   }
 }
 
 @media screen and (max-width: 768.5px) {
-  .mini-control-section {
-    height: 1100px;
+  .power-control-section {
+    height: 772px;
   }
-  .mini-control-section .mini-control-image-wrapper .unit-image-control {
-    height: 1200px;
+  .power-control-section .power-control-image-wrapper .unit-image-control {
+    height: 800px;
     background-size: 1840px auto;
   }
-  .mini-control-section .mini-control-word-wrapper {
+  .power-control-section .power-control-word-wrapper {
     top: 100px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .mini-control-section {
-    height: 1050px;
+  .power-control-section {
+    height: 686px;
   }
-  .mini-control-section .mini-control-image-wrapper .unit-image-control {
-    height: 1100px;
+  .power-control-section .power-control-image-wrapper .unit-image-control {
+    height: 750px;
     background-size: 1540px auto;
   }
-  .mini-control-section .mini-control-word-wrapper {
+  .power-control-section .power-control-word-wrapper {
     top: 70px;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .mini-control-section {
-    height: 1000px;
+  .power-control-section {
+    height: 646px;
   }
-  .mini-control-section .mini-control-image-wrapper .unit-image-control {
-    height: 1000px;
+  .power-control-section .power-control-image-wrapper .unit-image-control {
+    height: 750px;
     background-size: 1340px auto;
   }
-  .mini-control-breakline-lg {
+  .power-control-breakline-lg {
     display: block;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .mini-control-section {
-    height: 1000px;
+  .power-control-section {
+    height: 646px;
   }
-  .mini-control-section .mini-control-image-wrapper .unit-image-control {
-    height: 1000px;
+  .power-control-section .power-control-image-wrapper .unit-image-control {
+    height: 750px;
     background-size: 1340px auto;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .mini-control-section .mini-control-word-wrapper h1 {
+  .power-control-section .power-control-word-wrapper h1 {
     font-size: 50px;
   }
-  .mini-control-section {
-    height: 950px;
+  .power-control-section {
+    height: 556px;
   }
-  .mini-control-section .mini-control-image-wrapper .unit-image-control {
-    height: 900px;
+  .power-control-section .power-control-image-wrapper .unit-image-control {
+    height: 650px;
     background-size: 1140px auto;
   }
-  .mini-control-section .mini-control-word-wrapper {
+  .power-control-section .power-control-word-wrapper {
     top: 50px;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .mini-control-section {
-    height: 900px;
+  .power-control-section {
+    height: 511px;
   }
-  .mini-control-section .mini-control-image-wrapper .unit-image-control {
-    height: 800px;
+  .power-control-section .power-control-image-wrapper .unit-image-control {
+    height: 600px;
     background-size: 1040px auto;
   }
 }
 
 @media screen and (max-width: 350px) {
-  .mini-control-section .mini-control-word-wrapper h1 {
+  .power-control-section .power-control-word-wrapper h1 {
     font-size: 50px;
   }
-  .mini-control-section {
-    height: 900px;
+  .power-control-section {
+    height: 490px;
   }
-  .mini-control-section .mini-control-image-wrapper .unit-image-control {
-    height: 800px;
+  .power-control-section .power-control-image-wrapper .unit-image-control {
+    height: 600px;
     background-size: 940px auto;
   }
 }
 
 @media screen and (max-width: 300px) {
-  .mini-control-section .mini-control-word-wrapper h1 {
+  .power-control-section .power-control-word-wrapper h1 {
     font-size: 15vw;
   }
-  .mini-control-section .mini-control-word-wrapper p {
+  .power-control-section .power-control-word-wrapper p {
     font-size: 7vw;
   }
-  .mini-control-section {
-    height: 300vw;
+  .power-control-section {
+    height: 149vw;
   }
-  .mini-control-section .mini-control-image-wrapper .unit-image-control {
-    height: 240vw;
+  .power-control-section .power-control-image-wrapper .unit-image-control {
+    height: 185vw;
     background-size: 280vw auto;
   }
-  .mini-control-section .mini-control-word-wrapper {
+  .power-control-section .power-control-word-wrapper {
     top: 30px;
   }
 }
 
-/*-----------------------Finish mini-control--------------------------------------*/
-
-/*-----------------------Start mini-turning-radius--------------------------------------*/
-.mini-turning-section {
-  background-color: #ffffff;
-  height: 1770px;
-  position: relative;
-  max-width: 3440px;
-  margin: -300px auto 0 auto;
-}
-
-.mini-turning-section .mini-turning-word-wrapper {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-}
-
-.mini-turning-section .mini-turning-word-wrapper h1 {
-  font-size: 70px;
-  letter-spacing: -2px;
-  line-height: 1.1;
-  color: #000000;
-  font-weight: 400;
-}
-
-.mini-turning-section .mini-turning-word-wrapper p {
-  max-width: 1114px;
-  height: min-content;
-  font-size: 20px;
-  line-height: 1.3;
-  color: #000000;
-  font-weight: 300;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.mini-turning-section .mini-turning-image-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.mini-turning-section .mini-turning-image-wrapper .unit-image-turning {
-  background-image: url(../img/mini-new/mini-turning.png);
-  width: 100%;
-  height: 1770px;
-  background-size: 3440px auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 1;
-  position: absolute;
-  border: 0;
-  margin: 0;
-  padding: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  -webkit-transform: none;
-  transform: none;
-}
-
-.mini-turning-breakline-lg {
-  display: block;
-}
-
-@media screen and (max-width: 1250px) {
-  .mini-turning-section .mini-turning-image-wrapper .unit-image-turning {
-    height: 1470px;
-    background-size: 3040px auto;
-  }
-  .mini-turning-section {
-    height: 1470px;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  .mini-turning-section .mini-turning-image-wrapper .unit-image-turning {
-    height: 1270px;
-    background-size: 2640px auto;
-  }
-  .mini-turning-section {
-    height: 1270px;
-  }
-}
-
-@media screen and (max-width: 950px) {
-  .mini-turning-breakline-lg {
-    display: none;
-  }
-  .mini-turning-section .mini-turning-word-wrapper p {
-    font-size: 20px;
-    padding: 5px 2%;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .mini-turning-section .mini-turning-image-wrapper .unit-image-turning {
-    height: 1170px;
-    background-size: 2240px auto;
-  }
-  .mini-turning-section {
-    height: 1170px;
-  }
-}
-
-@media screen and (max-width: 768.5px) {
-  .mini-turning-section .mini-turning-image-wrapper .unit-image-turning {
-    height: 1170px;
-    background-size: 1840px auto;
-  }
-  .mini-turning-section {
-    height: 1050px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .mini-turning-section .mini-turning-image-wrapper .unit-image-turning {
-    height: 1100px;
-    background-size: 1640px auto;
-  }
-  .mini-turning-section {
-    height: 1000px;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .mini-turning-section .mini-turning-image-wrapper .unit-image-turning {
-    height: 1100px;
-    background-size: 1440px auto;
-  }
-  .mini-turning-section {
-    height: 950px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .mini-turning-section .mini-turning-image-wrapper .unit-image-turning {
-    height: 1000px;
-    background-size: 1240px auto;
-  }
-  .mini-turning-section {
-    height: 850px;
-  }
-  .mini-turning-section .mini-turning-word-wrapper p {
-    line-height: 1.2;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .mini-turning-section .mini-turning-word-wrapper h1 {
-    font-size: 50px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .mini-turning-section .mini-turning-image-wrapper .unit-image-turning {
-    height: 950px;
-    background-size: 1040px auto;
-  }
-  .mini-turning-section {
-    height: 800px;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .mini-turning-section .mini-turning-image-wrapper .unit-image-turning {
-    height: 950px;
-    background-size: 900px auto;
-  }
-  .mini-turning-section {
-    height: 750px;
-  }
-}
-
-@media screen and (max-width: 300px) {
-  .mini-turning-section .mini-turning-word-wrapper h1 {
-    font-size: 15vw;
-  }
-  .mini-turning-section .mini-turning-word-wrapper p {
-    font-size: 6vw;
-  }
-  .mini-turning-section .mini-turning-image-wrapper .unit-image-turning {
-    height: 285vw;
-    background-size: 300vw auto;
-  }
-  .mini-turning-section {
-    height: 225vw;
-  }
-}
-/*-----------------------Finish mini-turning-radius--------------------------------------*/
+/*-----------------------Finish power-control--------------------------------------*/
 
 /*-----------------------Start mini-app--------------------------------------*/
 .mini-app-showcase-section {
