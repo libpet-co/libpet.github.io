@@ -1115,254 +1115,285 @@ a {
 
 /*-----------------------Start power-removable--------------------------------------*/
 .power-removable-section {
-    background-color: #ffffff;
-    height: 1540px;
-    position: relative;
-    max-width: 3440px;
-    margin: 0 auto;
-  }
-  
-  .power-removable-section .power-removable-word-wrapper {
-    margin-top: 80px;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    padding: 0 2%;
-  }
-  
-  .power-removable-section .power-removable-word-wrapper h1 {
-    font-size: 70px;
-    letter-spacing: -2px;
-    line-height: 1.1;
-    color: #000000;
-    font-weight: 400;
-  }
-  
-  .power-removable-section .power-removable-word-wrapper p {
-    max-width: 1114px;
-    height: min-content;
-    font-size: 20px;
-    line-height: 1.3;
-    color: #000000;
-    font-weight: 300;
-    text-align: center;
-    margin: 0 auto;
-  }
-  
-  .power-removable-section .power-removable-image-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-  }
-  
-  .power-removable-section .power-removable-image-wrapper .unit-image-removable {
-    background-image: url(../img/power-new/power-removable.png);
-    width: 100%;
+  background-color: #ffffff;
+  height: 1540px;
+  position: relative;
+  max-width: 3440px;
+  margin: 0 auto;
+}
+
+.power-removable-section .power-removable-word-wrapper {
+  margin-top: 80px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding: 0 2%;
+}
+
+.power-removable-section .power-removable-word-wrapper h1 {
+  font-size: 70px;
+  letter-spacing: -2px;
+  line-height: 1.1;
+  color: #000000;
+  font-weight: 400;
+}
+
+.power-removable-section .power-removable-word-wrapper p {
+  max-width: 1114px;
+  height: min-content;
+  font-size: 20px;
+  line-height: 1.3;
+  color: #000000;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.power-removable-section .power-removable-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.power-removable-section .power-removable-image-wrapper .unit-image-removable {
+  background-image: url(../img/power-new/power-removable.png);
+  width: 100%;
+  height: 1350px;
+  background-size: 3440px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+  position: absolute;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  -webkit-transform: none;
+  transform: none;
+}
+
+.power-removable-breakline-lg {
+  display: none;
+}
+
+@media screen and (max-width: 1300px) {
+  .power-removable-section {
     height: 1350px;
-    background-size: 3440px auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 1;
-    position: absolute;
-    border: 0;
-    margin: 0;
-    padding: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    -webkit-transform: none;
-    transform: none;
   }
-  
+  .power-removable-section
+    .power-removable-image-wrapper
+    .unit-image-removable {
+    height: 1250px;
+    background-size: 3040px auto;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .power-removable-section {
+    height: 1100px;
+  }
+  .power-removable-section
+    .power-removable-image-wrapper
+    .unit-image-removable {
+    height: 1150px;
+    background-size: 2640px auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .power-removable-section {
+    height: 1000px;
+  }
+  .power-removable-section
+    .power-removable-image-wrapper
+    .unit-image-removable {
+    height: 1050px;
+    background-size: 2440px auto;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .power-removable-section .power-removable-word-wrapper p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .power-removable-section {
+    height: 925px;
+  }
+  .power-removable-section
+    .power-removable-image-wrapper
+    .unit-image-removable {
+    height: 950px;
+    background-size: 2240px auto;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .power-removable-section {
+    height: 900px;
+  }
+  .power-removable-section
+    .power-removable-image-wrapper
+    .unit-image-removable {
+    height: 950px;
+    background-size: 2040px auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .power-removable-section {
+    height: 850px;
+  }
+  .power-removable-section
+    .power-removable-image-wrapper
+    .unit-image-removable {
+    height: 900px;
+    background-size: 1840px auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .power-removable-section {
+    height: 850px;
+  }
+  .power-removable-section
+    .power-removable-image-wrapper
+    .unit-image-removable {
+    height: 900px;
+    background-size: 1740px auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .power-removable-section {
+    height: 750px;
+  }
+  .power-removable-section
+    .power-removable-image-wrapper
+    .unit-image-removable {
+    height: 850px;
+    background-size: 1540px auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
   .power-removable-breakline-lg {
-    display: none;
+    display: block;
   }
-  
-  @media screen and (max-width: 1300px) {
-    .power-removable-section {
-      height: 1350px;
-    }
-    .power-removable-section .power-removable-image-wrapper .unit-image-removable {
-      height: 1250px;
-      background-size: 3040px auto;
-    }
+  .power-removable-section {
+    height: 800px;
   }
-  
-  @media screen and (max-width: 1150px) {
-    .power-removable-section {
-      height: 1100px;
-    }
-    .power-removable-section .power-removable-image-wrapper .unit-image-removable {
-      height: 1150px;
-      background-size: 2640px auto;
-    }
+  .power-removable-section
+    .power-removable-image-wrapper
+    .unit-image-removable {
+    height: 1000px;
+    background-size: 1540px auto;
   }
-  
-  @media screen and (max-width: 1000px) {
-    .power-removable-section {
-      height: 1000px;
-    }
-    .power-removable-section .power-removable-image-wrapper .unit-image-removable {
-      height: 1050px;
-      background-size: 2440px auto;
-    }
+}
+
+@media screen and (max-width: 550px) {
+  .power-removable-section .power-removable-word-wrapper {
+    margin-top: 40px;
   }
-  
-  @media screen and (max-width: 950px) {
-    .power-removable-section .power-removable-word-wrapper p {
-      font-size: 20px;
-    }
+  .power-removable-section {
+    height: 725px;
   }
-  
-  @media screen and (max-width: 900px) {
-    .power-removable-section {
-      height: 925px;
-    }
-    .power-removable-section .power-removable-image-wrapper .unit-image-removable {
-      height: 950px;
-      background-size: 2240px auto;
-    }
+  .power-removable-section
+    .power-removable-image-wrapper
+    .unit-image-removable {
+    height: 850px;
+    background-size: 1340px auto;
   }
-  
-  @media screen and (max-width: 850px) {
-    .power-removable-section {
-      height: 900px;
-    }
-    .power-removable-section .power-removable-image-wrapper .unit-image-removable {
-      height: 950px;
-      background-size: 2040px auto;
-    }
+}
+
+@media screen and (max-width: 500px) {
+  .power-removable-section {
+    height: 700px;
   }
-  
-  @media screen and (max-width: 800px) {
-    .power-removable-section {
-      height: 850px;
-    }
-    .power-removable-section .power-removable-image-wrapper .unit-image-removable {
-      height: 900px;
-      background-size: 1840px auto;
-    }
+  .power-removable-section
+    .power-removable-image-wrapper
+    .unit-image-removable {
+    height: 800px;
+    background-size: 1140px auto;
   }
-  
-  @media screen and (max-width: 700px) {
-    .power-removable-section {
-      height: 850px;
-    }
-    .power-removable-section .power-removable-image-wrapper .unit-image-removable {
-      height: 900px;
-      background-size: 1740px auto;
-    }
+}
+
+@media screen and (max-width: 450px) {
+  .power-removable-section .power-removable-word-wrapper h1 {
+    font-size: 50px;
   }
-  
-  @media screen and (max-width: 650px) {
-    .power-removable-section {
-      height: 750px;
-    }
-    .power-removable-section .power-removable-image-wrapper .unit-image-removable {
-      height: 850px;
-      background-size: 1540px auto;
-    }
+  .power-removable-section {
+    height: 600px;
   }
-  
-  @media screen and (max-width: 600px) {
-    .power-removable-breakline-lg {
-      display: block;
-    }
-    .power-removable-section {
-      height: 800px;
-    }
-    .power-removable-section .power-removable-image-wrapper .unit-image-removable {
-      height: 1000px;
-      background-size: 1540px auto;
-    }
+  .power-removable-section
+    .power-removable-image-wrapper
+    .unit-image-removable {
+    height: 700px;
+    background-size: 1040px auto;
   }
-  
-  @media screen and (max-width: 550px) {
-    .power-removable-section .power-removable-word-wrapper {
-      margin-top: 40px;
-    }
-    .power-removable-section {
-      height: 725px;
-    }
-    .power-removable-section .power-removable-image-wrapper .unit-image-removable {
-      height: 850px;
-      background-size: 1340px auto;
-    }
+}
+
+@media screen and (max-width: 400px) {
+  .power-removable-section {
+    height: 550px;
   }
-  
-  @media screen and (max-width: 500px) {
-    .power-removable-section {
-      height: 700px;
-    }
-    .power-removable-section .power-removable-image-wrapper .unit-image-removable {
-      height: 800px;
-      background-size: 1140px auto;
-    }
+  .power-removable-section
+    .power-removable-image-wrapper
+    .unit-image-removable {
+    height: 650px;
+    background-size: 940px auto;
   }
-  
-  @media screen and (max-width: 450px) {
-    .power-removable-section .power-removable-word-wrapper h1 {
-      font-size: 50px;
-    }
-    .power-removable-section {
-      height: 600px;
-    }
-    .power-removable-section .power-removable-image-wrapper .unit-image-removable {
-      height: 700px;
-      background-size: 1040px auto;
-    }
+}
+
+@media screen and (max-width: 350px) {
+  .power-removable-section {
+    height: 525px;
   }
-  
-  @media screen and (max-width: 400px) {
-    .power-removable-section {
-      height: 550px;
-    }
-    .power-removable-section .power-removable-image-wrapper .unit-image-removable {
-      height: 650px;
-      background-size: 940px auto;
-    }
+  .power-removable-section
+    .power-removable-image-wrapper
+    .unit-image-removable {
+    height: 650px;
+    background-size: 840px auto;
   }
-  
-  @media screen and (max-width: 350px) {
-    .power-removable-section {
-      height: 525px;
-    }
-    .power-removable-section .power-removable-image-wrapper .unit-image-removable {
-      height: 650px;
-      background-size: 840px auto;
-    }
+}
+
+@media screen and (max-width: 300px) {
+  .power-removable-section .power-removable-word-wrapper h1 {
+    font-size: 15vw;
   }
-  
-  @media screen and (max-width: 300px) {
-    .power-removable-section .power-removable-word-wrapper h1 {
-      font-size: 15vw;
-    }
-    .power-removable-section .power-removable-word-wrapper p {
-      font-size: 7vw;
-    }
-    .power-removable-section {
-      height: 170vw;
-    }
-    .power-removable-section .power-removable-image-wrapper .unit-image-removable {
-      height: 210vw;
-      background-size: 270vw auto;
-    }
+  .power-removable-section .power-removable-word-wrapper p {
+    font-size: 7vw;
   }
-  
+  .power-removable-section {
+    height: 170vw;
+  }
+  .power-removable-section
+    .power-removable-image-wrapper
+    .unit-image-removable {
+    height: 210vw;
+    background-size: 270vw auto;
+  }
+}
+
 /*-----------------------Finish power-removable--------------------------------------*/
 
 /*-----------------------Start power-components--------------------------------------*/
-.mini-components-section {
+.power-components-section {
   background-color: #ffffff;
   height: 1565px;
   position: relative;
   max-width: 3440px;
+  margin: 0 auto;
 }
 
-.mini-components-section .mini-components-image-wrapper {
+.power-components-section .power-components-image-wrapper {
   position: absolute;
   top: 0;
   left: 0;
@@ -1372,7 +1403,9 @@ a {
   background-color: #ededed;
 }
 
-.mini-components-section .mini-components-image-wrapper .unit-image-components {
+.power-components-section
+  .power-components-image-wrapper
+  .unit-image-components {
   background-image: url(../img/power-new/power-components.png);
   width: 100%;
   height: 1365px;
@@ -1392,7 +1425,7 @@ a {
   transform: none;
 }
 
-.mini-components-section .mini-components-word-wrapper {
+.power-components-section .power-components-word-wrapper {
   position: absolute;
   bottom: 150px;
   width: 100%;
@@ -1400,7 +1433,7 @@ a {
   z-index: 2;
 }
 
-.mini-components-section .mini-components-word-wrapper h1 {
+.power-components-section .power-components-word-wrapper h1 {
   margin-bottom: 39px;
   font-size: 70px;
   letter-spacing: -2px;
@@ -1409,23 +1442,23 @@ a {
   font-weight: 400;
 }
 
-.mini-components-section .mini-components-word-wrapper a {
+.power-components-section .power-components-word-wrapper a {
   font-size: 22px;
   line-height: 1;
   color: #000000;
   font-weight: 400;
 }
 
-.mini-components-breakline-lg {
+.power-components-breakline-lg {
   display: none;
 }
 
 @media screen and (max-width: 1200px) {
-  .mini-components-section {
+  .power-components-section {
     height: 1500px;
   }
-  .mini-components-section
-    .mini-components-image-wrapper
+  .power-components-section
+    .power-components-image-wrapper
     .unit-image-components {
     height: 1300px;
     background-size: 3040px auto;
@@ -1433,32 +1466,32 @@ a {
 }
 
 @media screen and (max-width: 1100px) {
-  .mini-components-section {
+  .power-components-section {
     height: 1400px;
   }
-  .mini-components-section
-    .mini-components-image-wrapper
+  .power-components-section
+    .power-components-image-wrapper
     .unit-image-components {
     height: 1300px;
     background-size: 2840px auto;
   }
-  .mini-components-section .mini-components-word-wrapper {
+  .power-components-section .power-components-word-wrapper {
     bottom: 100px;
   }
 }
 
 @media screen and (max-width: 950px) {
-  .mini-components-section .mini-components-word-wrapper a {
+  .power-components-section .power-components-word-wrapper a {
     font-size: 20px;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .mini-components-section {
+  .power-components-section {
     height: 1350px;
   }
-  .mini-components-section
-    .mini-components-image-wrapper
+  .power-components-section
+    .power-components-image-wrapper
     .unit-image-components {
     height: 1200px;
     background-size: 2640px auto;
@@ -1466,11 +1499,11 @@ a {
 }
 
 @media screen and (max-width: 850px) {
-  .mini-components-section {
+  .power-components-section {
     height: 1250px;
   }
-  .mini-components-section
-    .mini-components-image-wrapper
+  .power-components-section
+    .power-components-image-wrapper
     .unit-image-components {
     height: 1100px;
     background-size: 2440px auto;
@@ -1478,11 +1511,11 @@ a {
 }
 
 @media screen and (max-width: 800px) {
-  .mini-components-section {
+  .power-components-section {
     height: 1150px;
   }
-  .mini-components-section
-    .mini-components-image-wrapper
+  .power-components-section
+    .power-components-image-wrapper
     .unit-image-components {
     height: 900px;
     background-size: 2240px auto;
@@ -1490,11 +1523,11 @@ a {
 }
 
 @media screen and (max-width: 700px) {
-  .mini-components-section {
+  .power-components-section {
     height: 1150px;
   }
-  .mini-components-section
-    .mini-components-image-wrapper
+  .power-components-section
+    .power-components-image-wrapper
     .unit-image-components {
     height: 900px;
     background-size: 2140px auto;
@@ -1502,11 +1535,11 @@ a {
 }
 
 @media screen and (max-width: 650px) {
-  .mini-components-section {
+  .power-components-section {
     height: 1100px;
   }
-  .mini-components-section
-    .mini-components-image-wrapper
+  .power-components-section
+    .power-components-image-wrapper
     .unit-image-components {
     height: 900px;
     background-size: 1940px auto;
@@ -1514,11 +1547,11 @@ a {
 }
 
 @media screen and (max-width: 600px) {
-  .mini-components-section {
+  .power-components-section {
     height: 1000px;
   }
-  .mini-components-section
-    .mini-components-image-wrapper
+  .power-components-section
+    .power-components-image-wrapper
     .unit-image-components {
     height: 800px;
     background-size: 1740px auto;
@@ -1526,15 +1559,15 @@ a {
 }
 
 @media screen and (max-width: 570px) {
-  .mini-components-breakline-lg {
+  .power-components-breakline-lg {
     font-size: 65px;
     display: block;
   }
-  .mini-components-section {
+  .power-components-section {
     height: 1050px;
   }
-  .mini-components-section
-    .mini-components-image-wrapper
+  .power-components-section
+    .power-components-image-wrapper
     .unit-image-components {
     height: 750px;
     background-size: 1640px auto;
@@ -1542,29 +1575,29 @@ a {
 }
 
 @media screen and (max-width: 500px) {
-  .mini-components-section {
+  .power-components-section {
     height: 900px;
   }
-  .mini-components-section
-    .mini-components-image-wrapper
+  .power-components-section
+    .power-components-image-wrapper
     .unit-image-components {
     height: 600px;
     background-size: 1440px auto;
   }
-  .mini-components-section .mini-components-word-wrapper {
+  .power-components-section .power-components-word-wrapper {
     bottom: 50px;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .mini-components-section .mini-components-word-wrapper h1 {
+  .power-components-section .power-components-word-wrapper h1 {
     font-size: 50px;
   }
-  .mini-components-section {
+  .power-components-section {
     height: 800px;
   }
-  .mini-components-section
-    .mini-components-image-wrapper
+  .power-components-section
+    .power-components-image-wrapper
     .unit-image-components {
     height: 650px;
     background-size: 1340px auto;
@@ -1572,11 +1605,11 @@ a {
 }
 
 @media screen and (max-width: 400px) {
-  .mini-components-section {
+  .power-components-section {
     height: 750px;
   }
-  .mini-components-section
-    .mini-components-image-wrapper
+  .power-components-section
+    .power-components-image-wrapper
     .unit-image-components {
     height: 550px;
     background-size: 1140px auto;
@@ -1584,11 +1617,11 @@ a {
 }
 
 @media screen and (max-width: 350px) {
-  .mini-components-section {
+  .power-components-section {
     height: 680px;
   }
-  .mini-components-section
-    .mini-components-image-wrapper
+  .power-components-section
+    .power-components-image-wrapper
     .unit-image-components {
     height: 450px;
     background-size: 940px auto;
@@ -1596,34 +1629,35 @@ a {
 }
 
 @media screen and (max-width: 300px) {
-  .mini-components-section .mini-components-word-wrapper h1 {
+  .power-components-section .power-components-word-wrapper h1 {
     font-size: 15vw;
   }
-  .mini-components-section .mini-components-word-wrapper a {
+  .power-components-section .power-components-word-wrapper a {
     font-size: 7vw;
   }
-  .mini-components-section {
+  .power-components-section {
     height: 220vw;
   }
-  .mini-components-section
-    .mini-components-image-wrapper
+  .power-components-section
+    .power-components-image-wrapper
     .unit-image-components {
     height: 150vw;
     background-size: 330vw auto;
   }
 }
 
-/*-----------------------Finish mini-components--------------------------------------*/
+/*-----------------------Finish power-components--------------------------------------*/
 
-/*-----------------------Start mini-stat--------------------------------------*/
-.mini-stat-section {
+/*-----------------------Start power-stat--------------------------------------*/
+.power-stat-section {
   background-color: #ededed;
   height: 580px;
   position: relative;
   max-width: 3440px;
+  margin: 0 auto;
 }
 
-.mini-stat-section #mini-stat-hr {
+.power-stat-section #power-stat-hr {
   background-color: #ededed;
   border: 1px solid #000000;
   margin: 0;
@@ -1632,7 +1666,7 @@ a {
   margin: 0 auto;
 }
 
-.mini-stat-section .stat-detail {
+.power-stat-section .stat-detail {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 12px;
@@ -1642,7 +1676,7 @@ a {
   margin-top: 120px;
 }
 
-.mini-stat-section .stat-detail .stat-container {
+.power-stat-section .stat-detail .stat-container {
   height: auto;
   display: flex;
   flex-direction: column;
@@ -1667,7 +1701,7 @@ a {
   color: #000000;
 }
 
-.mini-stat-section .mini-stat-container-button-wrapper {
+.power-stat-section .power-stat-container-button-wrapper {
   position: absolute;
   text-align: center;
   bottom: 120px;
@@ -1678,7 +1712,7 @@ a {
   display: none;
 }
 
-.mini-stat-section .stat-detail-sm {
+.power-stat-section .stat-detail-sm {
   display: none;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 12px;
@@ -1689,13 +1723,13 @@ a {
 }
 
 @media screen and (max-width: 1300px) {
-  .mini-stat-section #mini-stat-hr {
+  .power-stat-section #power-stat-hr {
     width: 90vw;
   }
-  .mini-stat-section .stat-detail {
+  .power-stat-section .stat-detail {
     display: none;
   }
-  .mini-stat-section .mini-stat-container-button-wrapper {
+  .power-stat-section .power-stat-container-button-wrapper {
     position: relative;
     text-align: start;
     bottom: 0;
@@ -1706,12 +1740,12 @@ a {
   #stat-button-sm {
     display: block;
   }
-  .mini-stat-section .stat-detail-sm {
+  .power-stat-section .stat-detail-sm {
     display: grid;
     padding: 0 65px;
     margin-top: 80px;
   }
-  .mini-buy-button {
+  .power-buy-button {
     width: auto;
     height: auto;
     padding: 10px 30px;
@@ -1722,7 +1756,7 @@ a {
     color: #ffffff;
     font-weight: 400;
   }
-  .mini-stat-section .mini-stat-container-button-wrapper {
+  .power-stat-section .power-stat-container-button-wrapper {
     margin-top: 30px;
   }
   .stat-container p {
@@ -1735,7 +1769,7 @@ a {
 }
 
 @media screen and (max-width: 1000px) {
-  .mini-stat-section .stat-detail-sm {
+  .power-stat-section .stat-detail-sm {
     grid-template-columns: 1fr 3fr;
   }
   #text-container-sm {
@@ -1744,7 +1778,7 @@ a {
 }
 
 @media screen and (max-width: 768.5px) {
-  .mini-stat-section {
+  .power-stat-section {
     height: 480px;
   }
   .stat-container ul li {
@@ -1753,7 +1787,7 @@ a {
   .stat-container p {
     font-size: 32px;
   }
-  .mini-buy-button {
+  .power-buy-button {
     padding: 5px 15px;
     border-radius: 50px;
     font-size: 24px;
@@ -1761,7 +1795,7 @@ a {
   #text-container-sm {
     align-items: flex-end;
   }
-  .mini-stat-section .mini-stat-container-button-wrapper {
+  .power-stat-section .power-stat-container-button-wrapper {
     margin-top: 15px;
   }
   .stat-container ul li {
@@ -1770,16 +1804,16 @@ a {
 }
 
 @media screen and (max-width: 650px) {
-  .mini-stat-section .stat-detail-sm {
+  .power-stat-section .stat-detail-sm {
     padding: 0 20px 0 40px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .mini-stat-section {
+  .power-stat-section {
     height: 800px;
   }
-  .mini-stat-section .stat-detail-sm {
+  .power-stat-section .stat-detail-sm {
     grid-template-columns: repeat(1, 1fr);
     margin-top: 40px;
     grid-gap: 50px;
@@ -1797,7 +1831,7 @@ a {
   .stat-container p {
     font-size: 50px;
   }
-  .mini-buy-button {
+  .power-buy-button {
     padding: 10px 30px;
     border-radius: 50px;
     font-size: 32px;
@@ -1817,10 +1851,10 @@ a {
   .stat-container ul li {
     font-size: 16px;
   }
-  .mini-stat-section .stat-detail-sm {
+  .power-stat-section .stat-detail-sm {
     padding: 0 10px 0 10px;
   }
-  .mini-buy-button {
+  .power-buy-button {
     padding: 5px 15px;
     border-radius: 50px;
     font-size: 24px;
@@ -1828,13 +1862,13 @@ a {
 }
 
 @media screen and (max-width: 350px) {
-  .mini-stat-section .stat-detail-sm {
+  .power-stat-section .stat-detail-sm {
     padding: 0 5px 0 5px;
   }
   .stat-container ul li {
     font-size: 14px;
   }
-  .mini-stat-section {
+  .power-stat-section {
     height: 700px;
   }
   .stat-container p {
@@ -1849,17 +1883,17 @@ a {
   .stat-container p {
     font-size: 14vw;
   }
-  .mini-stat-section .stat-detail-sm {
+  .power-stat-section .stat-detail-sm {
     padding: 0;
     grid-gap: 13vw;
   }
   .stat-container ul li {
     font-size: 4.5vw;
   }
-  .mini-stat-section {
+  .power-stat-section {
     height: 220vw;
   }
-  .mini-buy-button {
+  .power-buy-button {
     padding: 2vw 5vw;
     border-radius: 10vw;
     font-size: 7vw;
@@ -1873,12 +1907,13 @@ a {
   }
 }
 
-.mini-stat-section .stat-detail-sm .stat-container {
+.power-stat-section .stat-detail-sm .stat-container {
   height: auto;
   display: flex;
   flex-direction: column;
 }
-/*-----------------------Start mini-stat--------------------------------------*/
+
+/*-----------------------Finish power-stat--------------------------------------*/
 
 /*-------------------------------------------------------------*/
 

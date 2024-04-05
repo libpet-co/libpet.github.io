@@ -1701,6 +1701,7 @@ a {
   height: 1865px;
   position: relative;
   max-width: 3440px;
+  margin: 0 auto;
 }
 
 .mini-components-section .mini-components-image-wrapper {
@@ -1962,6 +1963,7 @@ a {
   height: 580px;
   position: relative;
   max-width: 3440px;
+  margin: 0 auto;
 }
 
 .mini-stat-section #mini-stat-hr {
