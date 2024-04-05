@@ -998,8 +998,8 @@ a {
 
 /*-----------------------Finish power-control--------------------------------------*/
 
-/*-----------------------Start mini-app--------------------------------------*/
-.mini-app-showcase-section {
+/*-----------------------Start power-app--------------------------------------*/
+.power-app-showcase-section {
   position: relative;
   max-width: 3440px;
   margin: 0 auto;
@@ -1010,7 +1010,7 @@ a {
   padding-bottom: 100px;
 }
 
-.mini-app-word-wrapper {
+.power-app-word-wrapper {
   background-color: #ededed;
   padding-top: 186px;
   width: 100%;
@@ -1020,7 +1020,7 @@ a {
   padding: 80px 0 80px 0;
 }
 
-.mini-app-word-wrapper h1 {
+.power-app-word-wrapper h1 {
   font-size: 70px;
   letter-spacing: -2px;
   line-height: 1.1;
@@ -1028,7 +1028,7 @@ a {
   font-weight: 400;
 }
 
-.mini-app-word-wrapper p {
+.power-app-word-wrapper p {
   max-width: 1114px;
   height: min-content;
   font-size: 20px;
@@ -1067,7 +1067,7 @@ a {
   top: -2em;
 }
 
-.mini-app-breakline-lg {
+.power-app-breakline-lg {
   display: none;
 }
 
@@ -1082,36 +1082,36 @@ a {
 }
 
 @media screen and (max-width: 950px) {
-  .mini-app-word-wrapper p {
+  .power-app-word-wrapper p {
     font-size: 20px;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .mini-app-breakline-lg {
+  .power-app-breakline-lg {
     display: block;
   }
-  .mini-app-word-wrapper {
+  .power-app-word-wrapper {
     padding: 40px 0 80px 0;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .mini-app-word-wrapper h1 {
+  .power-app-word-wrapper h1 {
     font-size: 50px;
   }
 }
 
 @media screen and (max-width: 300px) {
-  .mini-app-word-wrapper h1 {
+  .power-app-word-wrapper h1 {
     font-size: 15vw;
   }
-  .mini-app-word-wrapper p {
+  .power-app-word-wrapper p {
     font-size: 7vw;
   }
 }
 
-/*-----------------------Finish mini-app--------------------------------------*/
+/*-----------------------Finish power-app--------------------------------------*/
 
 /*-----------------------Start mini-removable--------------------------------------*/
 .mini-removable-section {
