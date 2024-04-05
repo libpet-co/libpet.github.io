@@ -414,7 +414,7 @@ a {
 }
 /*-----------------------Finish power-index-container--------------------------------------*/
 
-/*-----------------------Start mini-data--------------------------------------*/
+/*-----------------------Start power-data--------------------------------------*/
 .power-data-section {
   background-color: #ededed;
   height: 400px;
@@ -561,215 +561,234 @@ a {
     height: auto;
   }
 }
-/*-----------------------Finish mini-data--------------------------------------*/
+/*-----------------------Finish power-data--------------------------------------*/
 
-/*-----------------------Start mini-ultrasonic--------------------------------------*/
-.mini-ultrasonic-section {
-  background-color: #ffffff;
-  height: 1714px;
-  position: relative;
-  max-width: 3440px;
-  margin: 0 auto;
-}
-
-.mini-ultrasonic-section .mini-ultrasonic-image-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.mini-ultrasonic-section .mini-ultrasonic-image-wrapper .unit-image-ultrasonic {
-  background-image: url(../img/mini-new/mini-ultrasonic.png);
-  width: 100%;
-  height: 1714px;
-  background-size: 3440px auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 1;
-  position: absolute;
-  border: 0;
-  margin: 0;
-  padding: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  -webkit-transform: none;
-  transform: none;
-}
-
-.mini-ultrasonic-section .mini-ultrasonic-word-wrapper {
-  position: absolute;
-  bottom: 10%;
-  width: 100%;
-}
-
-.mini-ultrasonic-section .mini-ultrasonic-word-wrapper h1 {
-  font-size: 70px;
-  letter-spacing: -2px;
-  line-height: 1.1;
-  color: #000000;
-  font-weight: 400;
-  text-align: center;
-}
-
-.mini-ultrasonic-section .mini-ultrasonic-word-wrapper p {
-  max-width: 1114px;
-  height: min-content;
-  font-size: 20px;
-  line-height: 1.3;
-  color: #000000;
-  font-weight: 300;
-  text-align: center;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 1023.5px) {
-  .mini-ultrasonic-section {
-    height: 1514px;
+/*-----------------------Start power-ultrasonic--------------------------------------*/
+.power-ultrasonic-section {
+    background-color: #ffffff;
+    height: 1714px;
+    position: relative;
+    max-width: 3440px;
+    margin: 0 auto;
   }
-  .mini-ultrasonic-section
-    .mini-ultrasonic-image-wrapper
-    .unit-image-ultrasonic {
-    height: 1514px;
-    background-size: 3040px auto;
+  
+  .power-ultrasonic-section .power-ultrasonic-image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
   }
-}
-
-@media screen and (max-width: 950px) {
-  .mini-ultrasonic-section {
-    height: 1314px;
+  
+  .power-ultrasonic-section .power-ultrasonic-image-wrapper .unit-image-ultrasonic {
+    background-image: url(../img/power-new/power-ultrasonic.png);
+    width: 100%;
+    height: 1714px;
+    background-size: 3440px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    position: absolute;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    -webkit-transform: none;
+    transform: none;
   }
-  .mini-ultrasonic-section
-    .mini-ultrasonic-image-wrapper
-    .unit-image-ultrasonic {
-    height: 1314px;
-    background-size: 2640px auto;
+  
+  .power-ultrasonic-section .power-ultrasonic-word-wrapper {
+    z-index: 5;
+    position: absolute;
+    bottom: 6%;
+    width: 100%;
   }
-}
-
-@media screen and (max-width: 800px) {
-  .mini-ultrasonic-section {
-    height: 1214px;
+  
+  .power-ultrasonic-section .power-ultrasonic-word-wrapper h1 {
+    font-size: 70px;
+    letter-spacing: -2px;
+    line-height: 1.1;
+    color: #000000;
+    font-weight: 400;
+    text-align: center;
   }
-  .mini-ultrasonic-section
-    .mini-ultrasonic-image-wrapper
-    .unit-image-ultrasonic {
-    height: 1214px;
-    background-size: 2240px auto;
+  
+  .power-ultrasonic-section .power-ultrasonic-word-wrapper p {
+    max-width: 1114px;
+    height: min-content;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #000000;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 auto;
   }
-}
-
-@media screen and (max-width: 700px) {
-  .mini-ultrasonic-section {
-    height: 1214px;
+  
+  @media screen and (max-width: 1023.5px) {
+    .power-ultrasonic-section {
+      height: 1514px;
+    }
+    .power-ultrasonic-section
+      .power-ultrasonic-image-wrapper
+      .unit-image-ultrasonic {
+      height: 1514px;
+      background-size: 3040px auto;
+    }
+    .power-ultrasonic-section .power-ultrasonic-word-wrapper {
+      bottom: 3%;
+    }
   }
-  .mini-ultrasonic-section
-    .mini-ultrasonic-image-wrapper
-    .unit-image-ultrasonic {
-    height: 1214px;
-    background-size: 2140px auto;
+  
+  @media screen and (max-width: 950px) {
+    .power-ultrasonic-section {
+      height: 1314px;
+    }
+    .power-ultrasonic-section
+      .power-ultrasonic-image-wrapper
+      .unit-image-ultrasonic {
+      height: 1314px;
+      background-size: 2640px auto;
+    }
+    .power-ultrasonic-section .power-ultrasonic-word-wrapper {
+      bottom: 0%;
+    }
   }
-}
-
-@media screen and (max-width: 650px) {
-  .mini-ultrasonic-section {
-    height: 1114px;
+  
+  @media screen and (max-width: 800px) {
+    .power-ultrasonic-section {
+      height: 1214px;
+    }
+    .power-ultrasonic-section
+      .power-ultrasonic-image-wrapper
+      .unit-image-ultrasonic {
+      height: 1214px;
+      background-size: 2240px auto;
+    }
   }
-  .mini-ultrasonic-section
-    .mini-ultrasonic-image-wrapper
-    .unit-image-ultrasonic {
-    height: 1114px;
-    background-size: 2040px auto;
+  
+  @media screen and (max-width: 768.5px) {
+    .power-ultrasonic-section .power-ultrasonic-word-wrapper {
+      bottom: 5%;
+    }
+    .power-ultrasonic-section {
+      height: 1275px;
+    }
   }
-}
-
-@media screen and (max-width: 600px) {
-  .mini-ultrasonic-section {
-    height: 1150px;
+  
+  @media screen and (max-width: 700px) {
+    .power-ultrasonic-section {
+      height: 1214px;
+    }
+    .power-ultrasonic-section
+      .power-ultrasonic-image-wrapper
+      .unit-image-ultrasonic {
+      height: 1214px;
+      background-size: 2140px auto;
+    }
   }
-  .mini-ultrasonic-section
-    .mini-ultrasonic-image-wrapper
-    .unit-image-ultrasonic {
-    height: 1050px;
-    background-size: 1940px auto;
+  
+  @media screen and (max-width: 650px) {
+    .power-ultrasonic-section {
+      height: 1114px;
+    }
+    .power-ultrasonic-section
+      .power-ultrasonic-image-wrapper
+      .unit-image-ultrasonic {
+      height: 1114px;
+      background-size: 2040px auto;
+    }
   }
-}
-
-@media screen and (max-width: 550px) {
-  .mini-ultrasonic-section {
-    height: 1150px;
+  
+  @media screen and (max-width: 600px) {
+    .power-ultrasonic-section {
+      height: 1200px;
+    }
+    .power-ultrasonic-section
+      .power-ultrasonic-image-wrapper
+      .unit-image-ultrasonic {
+      height: 1050px;
+      background-size: 1940px auto;
+    }
+    .power-ultrasonic-section .power-ultrasonic-word-wrapper {
+      bottom: 10%;
   }
-  .mini-ultrasonic-section
-    .mini-ultrasonic-image-wrapper
-    .unit-image-ultrasonic {
-    height: 950px;
-    background-size: 1740px auto;
   }
-}
-
-@media screen and (max-width: 450px) {
-  .mini-ultrasonic-section {
-    height: 1050px;
+  
+  @media screen and (max-width: 550px) {
+    .power-ultrasonic-section {
+      height: 1150px;
+    }
+    .power-ultrasonic-section
+      .power-ultrasonic-image-wrapper
+      .unit-image-ultrasonic {
+      height: 950px;
+      background-size: 1740px auto;
+    }
   }
-  .mini-ultrasonic-section
-    .mini-ultrasonic-image-wrapper
-    .unit-image-ultrasonic {
-    height: 950px;
-    background-size: 1640px auto;
+  
+  @media screen and (max-width: 450px) {
+    .power-ultrasonic-section {
+      height: 1050px;
+    }
+    .power-ultrasonic-section
+      .power-ultrasonic-image-wrapper
+      .unit-image-ultrasonic {
+      height: 950px;
+      background-size: 1640px auto;
+    }
+    .power-ultrasonic-section .power-ultrasonic-word-wrapper h1 {
+      font-size: 50px;
+    }
   }
-  .mini-ultrasonic-section .mini-ultrasonic-word-wrapper h1 {
-    font-size: 50px;
+  
+  @media screen and (max-width: 400px) {
+    .power-ultrasonic-section {
+      height: 1000px;
+    }
+    .power-ultrasonic-section
+      .power-ultrasonic-image-wrapper
+      .unit-image-ultrasonic {
+      height: 900px;
+      background-size: 1540px auto;
+    }
   }
-}
-
-@media screen and (max-width: 400px) {
-  .mini-ultrasonic-section {
-    height: 1000px;
+  
+  @media screen and (max-width: 350px) {
+    .power-ultrasonic-section {
+      height: 900px;
+    }
+    .power-ultrasonic-section
+      .power-ultrasonic-image-wrapper
+      .unit-image-ultrasonic {
+      height: 800px;
+      background-size: 1340px auto;
+    }
+    .power-ultrasonic-section .power-ultrasonic-word-wrapper h1 {
+      font-size: 50px;
+    }
   }
-  .mini-ultrasonic-section
-    .mini-ultrasonic-image-wrapper
-    .unit-image-ultrasonic {
-    height: 900px;
-    background-size: 1540px auto;
+  
+  @media screen and (max-width: 300px) {
+    .power-ultrasonic-section {
+      height: 285vw;
+    }
+    .power-ultrasonic-section
+      .power-ultrasonic-image-wrapper
+      .unit-image-ultrasonic {
+      height: 250vw;
+      background-size: 450vw auto;
+    }
+    .power-ultrasonic-section .power-ultrasonic-word-wrapper h1 {
+      font-size: 15vw;
+    }
+    .power-ultrasonic-section .power-ultrasonic-word-wrapper p {
+      font-size: 7vw;
+    }
   }
-}
-
-@media screen and (max-width: 350px) {
-  .mini-ultrasonic-section {
-    height: 900px;
-  }
-  .mini-ultrasonic-section
-    .mini-ultrasonic-image-wrapper
-    .unit-image-ultrasonic {
-    height: 800px;
-    background-size: 1340px auto;
-  }
-  .mini-ultrasonic-section .mini-ultrasonic-word-wrapper h1 {
-    font-size: 50px;
-  }
-}
-
-@media screen and (max-width: 300px) {
-  .mini-ultrasonic-section {
-    height: 285vw;
-  }
-  .mini-ultrasonic-section
-    .mini-ultrasonic-image-wrapper
-    .unit-image-ultrasonic {
-    height: 250vw;
-    background-size: 450vw auto;
-  }
-  .mini-ultrasonic-section .mini-ultrasonic-word-wrapper h1 {
-    font-size: 15vw;
-  }
-  .mini-ultrasonic-section .mini-ultrasonic-word-wrapper p {
-    font-size: 7vw;
-  }
-}
-/*-----------------------Finish mini-ultrasonic--------------------------------------*/
+/*-----------------------Finish power-ultrasonic--------------------------------------*/
 
 /*-----------------------Start mini-control--------------------------------------*/
 .mini-control-section {
