@@ -1183,7 +1183,7 @@ a {
   
   @media screen and (max-width: 1300px) {
     .power-removable-section {
-      height: 1200px;
+      height: 1350px;
     }
     .power-removable-section .power-removable-image-wrapper .unit-image-removable {
       height: 1250px;
@@ -1272,7 +1272,7 @@ a {
       display: block;
     }
     .power-removable-section {
-      height: 900px;
+      height: 800px;
     }
     .power-removable-section .power-removable-image-wrapper .unit-image-removable {
       height: 1000px;
@@ -1354,10 +1354,10 @@ a {
   
 /*-----------------------Finish power-removable--------------------------------------*/
 
-/*-----------------------Start mini-components--------------------------------------*/
+/*-----------------------Start power-components--------------------------------------*/
 .mini-components-section {
   background-color: #ffffff;
-  height: 1865px;
+  height: 1565px;
   position: relative;
   max-width: 3440px;
 }
@@ -1373,9 +1373,9 @@ a {
 }
 
 .mini-components-section .mini-components-image-wrapper .unit-image-components {
-  background-image: url(../img/mini-new/mini-components.png);
+  background-image: url(../img/power-new/power-components.png);
   width: 100%;
-  height: 1865px;
+  height: 1365px;
   background-size: 3440px auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -1422,24 +1422,24 @@ a {
 
 @media screen and (max-width: 1200px) {
   .mini-components-section {
-    height: 1650px;
+    height: 1500px;
   }
   .mini-components-section
     .mini-components-image-wrapper
     .unit-image-components {
-    height: 1640px;
+    height: 1300px;
     background-size: 3040px auto;
   }
 }
 
 @media screen and (max-width: 1100px) {
   .mini-components-section {
-    height: 1500px;
+    height: 1400px;
   }
   .mini-components-section
     .mini-components-image-wrapper
     .unit-image-components {
-    height: 1500px;
+    height: 1300px;
     background-size: 2840px auto;
   }
   .mini-components-section .mini-components-word-wrapper {
@@ -1460,72 +1460,72 @@ a {
   .mini-components-section
     .mini-components-image-wrapper
     .unit-image-components {
-    height: 1425px;
+    height: 1200px;
     background-size: 2640px auto;
   }
 }
 
 @media screen and (max-width: 850px) {
   .mini-components-section {
-    height: 1370px;
+    height: 1250px;
   }
   .mini-components-section
     .mini-components-image-wrapper
     .unit-image-components {
-    height: 1300px;
+    height: 1100px;
     background-size: 2440px auto;
   }
 }
 
 @media screen and (max-width: 800px) {
   .mini-components-section {
-    height: 1200px;
+    height: 1150px;
   }
   .mini-components-section
     .mini-components-image-wrapper
     .unit-image-components {
-    height: 1100px;
+    height: 900px;
     background-size: 2240px auto;
   }
 }
 
 @media screen and (max-width: 700px) {
   .mini-components-section {
-    height: 1200px;
-  }
-  .mini-components-section
-    .mini-components-image-wrapper
-    .unit-image-components {
-    height: 1100px;
-    background-size: 2240px auto;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .mini-components-section {
-    height: 1200px;
-  }
-  .mini-components-section
-    .mini-components-image-wrapper
-    .unit-image-components {
-    height: 1100px;
-    background-size: 2040px auto;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .mini-components-section {
-    height: 1080px;
+    height: 1150px;
   }
   .mini-components-section
     .mini-components-image-wrapper
     .unit-image-components {
     height: 900px;
-    background-size: 1840px auto;
+    background-size: 2140px auto;
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
+  .mini-components-section {
+    height: 1100px;
+  }
+  .mini-components-section
+    .mini-components-image-wrapper
+    .unit-image-components {
+    height: 900px;
+    background-size: 1940px auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mini-components-section {
+    height: 1000px;
+  }
+  .mini-components-section
+    .mini-components-image-wrapper
+    .unit-image-components {
+    height: 800px;
+    background-size: 1740px auto;
+  }
+}
+
+@media screen and (max-width: 570px) {
   .mini-components-breakline-lg {
     font-size: 65px;
     display: block;
@@ -1536,19 +1536,19 @@ a {
   .mini-components-section
     .mini-components-image-wrapper
     .unit-image-components {
-    height: 800px;
+    height: 750px;
     background-size: 1640px auto;
   }
 }
 
 @media screen and (max-width: 500px) {
   .mini-components-section {
-    height: 950px;
+    height: 900px;
   }
   .mini-components-section
     .mini-components-image-wrapper
     .unit-image-components {
-    height: 700px;
+    height: 600px;
     background-size: 1440px auto;
   }
   .mini-components-section .mini-components-word-wrapper {
@@ -1603,12 +1603,12 @@ a {
     font-size: 7vw;
   }
   .mini-components-section {
-    height: 230vw;
+    height: 220vw;
   }
   .mini-components-section
     .mini-components-image-wrapper
     .unit-image-components {
-    height: 160vw;
+    height: 150vw;
     background-size: 330vw auto;
   }
 }
