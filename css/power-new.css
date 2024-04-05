@@ -511,7 +511,7 @@ a {
   }
   .power-data-section .data {
     flex-basis: calc(90% / 3);
-}
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -528,7 +528,7 @@ a {
     height: 650px;
   }
   .power-data-section .data {
-    height: auto;
+    height: 200px;
   }
   .power-data-section .data {
     flex-basis: calc(100% / 2 - 20px);
@@ -544,7 +544,7 @@ a {
   }
   .power-data-section .data {
     width: 50%;
-}
+  }
 }
 
 @media screen and (max-width: 275px) {
@@ -556,6 +556,9 @@ a {
   }
   .data-breakline-lg {
     display: none;
+  }
+  .power-data-section .data {
+    height: auto;
   }
 }
 /*-----------------------Finish mini-data--------------------------------------*/
