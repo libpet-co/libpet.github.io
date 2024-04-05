@@ -1561,7 +1561,7 @@ a {
 
 @media screen and (max-width: 900px) {
   .mini-removable-section {
-    height: 900px;
+    height: 925px;
   }
   .mini-removable-section .mini-removable-image-wrapper .unit-image-removable {
     height: 950px;
@@ -1571,7 +1571,7 @@ a {
 
 @media screen and (max-width: 850px) {
   .mini-removable-section {
-    height: 850px;
+    height: 900px;
   }
   .mini-removable-section .mini-removable-image-wrapper .unit-image-removable {
     height: 950px;
@@ -1601,7 +1601,7 @@ a {
 
 @media screen and (max-width: 650px) {
   .mini-removable-section {
-    height: 700px;
+    height: 750px;
   }
   .mini-removable-section .mini-removable-image-wrapper .unit-image-removable {
     height: 850px;
@@ -1801,7 +1801,7 @@ a {
   .mini-components-section
     .mini-components-image-wrapper
     .unit-image-components {
-    height: 1450px;
+    height: 1350px;
     background-size: 2640px auto;
   }
 }
@@ -1813,7 +1813,7 @@ a {
   .mini-components-section
     .mini-components-image-wrapper
     .unit-image-components {
-    height: 1400px;
+    height: 1300px;
     background-size: 2440px auto;
   }
 }
