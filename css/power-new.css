@@ -200,7 +200,7 @@ a {
 /*-------------------------------------------------------------*/
 
 /*-----------------------Start mini-index-container--------------------------------------*/
-.mini-index-container {
+.power-index-container {
   background-color: #ffffff;
   height: 850px;
   position: relative;
@@ -208,7 +208,7 @@ a {
   margin: 0 auto;
 }
 
-.mini-index-container .mini-index-container-word-wrapper {
+.power-index-container .power-index-container-word-wrapper {
   max-width: calc(1114px + 4%);
   padding: 0 2%;
   width: 100%;
@@ -216,7 +216,7 @@ a {
   margin: 0 auto;
 }
 
-.mini-index-container .mini-index-container-word-wrapper p {
+.power-index-container .power-index-container-word-wrapper p {
   font-size: 20px;
   line-height: 1.3;
   color: #000000;
@@ -224,12 +224,12 @@ a {
   text-align: center;
 }
 
-.mini-index-container .mini-index-container-button-wrapper {
+.power-index-container .power-index-container-button-wrapper {
   text-align: center;
   margin-top: 50px;
 }
 
-.mini-buy-button {
+.power-buy-button {
   width: 107px;
   height: 32px;
   border-radius: 16px;
@@ -240,27 +240,27 @@ a {
   font-weight: 400;
 }
 
-.mini-index-container .mini-index-container-image-wrapper {
+.power-index-container .power-index-container-image-wrapper {
   max-width: 1312px;
   margin: 150px auto;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 
-.mini-index-container .mini-index-container-image-wrapper .mini-95deg {
+.power-index-container .power-index-container-image-wrapper .power-95deg {
   width: 45%;
   display: inline-block;
   text-align: center;
 }
 
-.mini-index-container .mini-index-container-image-wrapper .mini-120deg {
+.power-index-container .power-index-container-image-wrapper .power-145deg {
   width: 45%;
   display: inline-block;
   text-align: center;
 }
 
-.mini-95deg p {
+.power-95deg p {
   font-size: 22px;
   line-height: 1;
   color: #000000;
@@ -268,7 +268,7 @@ a {
   margin-top: 50px;
 }
 
-.mini-120deg p {
+.power-145deg p {
   font-size: 22px;
   line-height: 1;
   color: #000000;
@@ -276,102 +276,139 @@ a {
   margin-top: 50px;
 }
 
-.mini-index-container .breakline-lg {
+.power-index-container .breakline-lg {
   display: block;
 }
 
-@media screen and (max-width: 768.5px) {
-  .mini-index-container {
+@media screen and (max-width: 1000px) {
+  .power-index-container .power-index-container-image-wrapper .power-95deg img {
+    width: 200px;
     height: auto;
   }
-  .mini-index-container .mini-index-container-image-wrapper {
+  .power-95deg p {
+    margin-top: 25px;
+  }
+  .power-index-container
+    .power-index-container-image-wrapper
+    .power-145deg
+    img {
+    width: 232px;
+  }
+  .power-145deg p {
+    margin-top: 25px;
+  }
+  .power-index-container {
+    height: auto;
+  }
+  .power-index-container .power-index-container-image-wrapper {
     margin: 100px auto 100px auto;
   }
-  .mini-buy-button {
+}
+
+@media screen and (max-width: 768.5px) {
+  .power-buy-button {
     width: auto;
     height: auto;
     border-radius: 32px;
     font-size: 25px;
     padding: 1.5% 6%;
   }
-  .mini-index-container .mini-index-container-image-wrapper .mini-95deg img {
-    width: 200px;
+  .power-index-container .power-index-container-image-wrapper .power-95deg img {
+    width: 160px;
     height: auto;
   }
-  .mini-95deg p {
-    margin-top: 25px;
-  }
-  .mini-index-container .mini-index-container-image-wrapper .mini-120deg img {
-    width: 232px;
-  }
-  .mini-120deg p {
-    margin-top: 25px;
+  .power-index-container
+    .power-index-container-image-wrapper
+    .power-145deg
+    img {
+    width: 192px;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .mini-index-container .breakline-lg {
+@media screen and (max-width: 620px) {
+  .power-index-container .breakline-lg {
     display: none;
   }
-  .mini-index-container .mini-index-container-image-wrapper .mini-95deg img {
-    width: 150px;
+  .power-index-container .power-index-container-image-wrapper .power-95deg img {
+    width: 130px;
   }
-  .mini-index-container .mini-index-container-image-wrapper .mini-120deg img {
-    width: 174px;
+  .power-index-container
+    .power-index-container-image-wrapper
+    .power-145deg
+    img {
+    width: 144px;
   }
-  .mini-index-container .mini-index-container-image-wrapper {
+  .power-index-container .power-index-container-image-wrapper {
     margin: 100px auto 100px auto;
   }
-  .mini-95deg p {
+  .power-95deg p {
     font-size: 19px;
   }
-  .mini-120deg p {
+  .power-145deg p {
     font-size: 19px;
   }
 }
 
-@media screen and (max-width: 400px) {
-  .mini-index-container .mini-index-container-image-wrapper .mini-95deg {
-    width: 48%;
+@media screen and (max-width: 500px) {
+  .power-index-container .power-index-container-image-wrapper {
+    flex-wrap: wrap;
+    row-gap: 5vw;
   }
-  .mini-index-container .mini-index-container-image-wrapper .mini-120deg {
-    width: 48%;
+  .power-index-container .power-index-container-image-wrapper .power-95deg {
+    width: 100%;
   }
-  .mini-index-container .mini-index-container-image-wrapper .mini-95deg img {
+}
+
+@media screen and (max-width: 350px) {
+  .power-index-container .power-index-container-image-wrapper .power-95deg img {
+    width: 100px;
+  }
+  .power-index-container
+    .power-index-container-image-wrapper
+    .power-145deg
+    img {
     width: 120px;
   }
-  .mini-index-container .mini-index-container-image-wrapper .mini-120deg img {
-    width: 140px;
-  }
-  .mini-95deg p {
+  .power-95deg p {
     font-size: 17px;
   }
-  .mini-120deg p {
+  .power-145deg p {
     font-size: 17px;
+  }
+  .power-index-container .power-index-container-image-wrapper {
+    margin: 70px auto 70px auto;
   }
 }
 
 @media screen and (max-width: 300px) {
-  .mini-index-container .mini-index-container-word-wrapper p {
+  .power-index-container .power-index-container-image-wrapper {
+    column-gap: 5vw;
+  }
+  .power-index-container .power-index-container-word-wrapper p {
     font-size: 6vw;
     line-height: 1.2;
     color: #000000;
     font-weight: 300;
     text-align: center;
   }
-  .mini-index-container .mini-index-container-image-wrapper .mini-95deg img {
-    width: 85%;
+  .power-index-container .power-index-container-image-wrapper .power-95deg img {
+    width: 40vw;
   }
-  .mini-index-container .mini-index-container-image-wrapper .mini-120deg img {
-    width: 100%;
+  .power-index-container
+    .power-index-container-image-wrapper
+    .power-145deg
+    img {
+    width: 40vw;
   }
-  .mini-95deg p {
+  .power-95deg p {
+    margin-top: 5vw;
     font-size: 5vw;
   }
-  .mini-120deg p {
+  .power-145deg p {
+    margin-top: 5vw;
     font-size: 5vw;
   }
-  .mini-index-container .mini-index-container-image-wrapper {
+  .power-index-container .power-index-container-image-wrapper {
     margin: 30vw auto 30vw auto;
   }
 }
