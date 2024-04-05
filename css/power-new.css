@@ -22,15 +22,15 @@ a {
 }
 
 /*-----------------------Start mini-index--------------------------------------*/
-.mini-index {
-  background-color: #ffffff;
+.power-index {
+  background-image: linear-gradient(#ededed, #ffffff);
   height: 1330px;
   position: relative;
   max-width: 3440px;
   margin: 0 auto;
 }
 
-.mini-index .mini-index-image-wrapper {
+.power-index .power-index-image-wrapper {
   position: absolute;
   top: 0;
   left: 0;
@@ -38,8 +38,8 @@ a {
   width: 100%;
 }
 
-.mini-index .mini-index-image-wrapper .unit-image-mini {
-  background-image: url(../img/mini-new/mini-index.png);
+.power-index .power-index-image-wrapper .unit-image-power {
+  background-image: url(../img/power-new/power-index.png);
   width: 100%;
   height: 1230px;
   background-size: 3440px auto;
@@ -59,163 +59,142 @@ a {
 }
 
 @media screen and (max-width: 1260px) {
-  .mini-index {
+  .power-index {
     height: 1330px;
   }
-  .mini-index .mini-index-image-wrapper .unit-image-mini {
+  .power-index .power-index-image-wrapper .unit-image-power {
     height: 1230px;
     background-size: 3340px auto;
   }
 }
 
 @media screen and (max-width: 1025px) {
-  .mini-index {
+  .power-index {
     height: 1330px;
   }
-  .mini-index .mini-index-image-wrapper .unit-image-mini {
+  .power-index .power-index-image-wrapper .unit-image-power {
     height: 1230px;
     background-size: 3240px auto;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .mini-index {
+  .power-index {
     height: 1230px;
   }
-  .mini-index .mini-index-image-wrapper .unit-image-mini {
+  .power-index .power-index-image-wrapper .unit-image-power {
     height: 1230px;
     background-size: 3040px auto;
   }
 }
 
 @media screen and (max-width: 850px) {
-  .mini-index {
+  .power-index {
     height: 1230px;
   }
-  .mini-index .mini-index-image-wrapper .unit-image-mini {
+  .power-index .power-index-image-wrapper .unit-image-power {
     height: 1130px;
     background-size: 2840px auto;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .mini-index {
+  .power-index {
     height: 1130px;
   }
-  .mini-index .mini-index-image-wrapper .unit-image-mini {
+  .power-index .power-index-image-wrapper .unit-image-power {
     height: 1030px;
     background-size: 2640px auto;
   }
 }
 
 @media screen and (max-width: 768.5px) {
-  .mini-index {
+  .power-index {
     height: 930px;
   }
-  .mini-index .mini-index-image-wrapper .unit-image-mini {
-    background-image: url(../img/mini-new/mini-index-s.png);
+  .power-index .power-index-image-wrapper .unit-image-power {
     height: 930px;
-    background-size: 768px auto;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .mini-index {
-    height: 900px;
-  }
-  .mini-index .mini-index-image-wrapper .unit-image-mini {
-    height: 900px;
-    background-size: 700px auto;
+    background-size: 2240px auto;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .mini-index {
-    height: 800px;
+  .power-index {
+    height: 880px;
   }
-  .mini-index .mini-index-image-wrapper .unit-image-mini {
-    height: 800px;
-    background-size: 650px auto;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .mini-index {
-    height: 800px;
-  }
-  .mini-index .mini-index-image-wrapper .unit-image-mini {
-    height: 800px;
-    background-size: 600px auto;
+  .power-index .power-index-image-wrapper .unit-image-power {
+    height: 880px;
+    background-size: 2040px auto;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .mini-index {
-    height: 700px;
+  .power-index {
+    height: 750px;
   }
-  .mini-index .mini-index-image-wrapper .unit-image-mini {
-    height: 700px;
-    background-size: 550px auto;
+  .power-index .power-index-image-wrapper .unit-image-power {
+    height: 750px;
+    background-size: 1840px auto;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .mini-index {
+  .power-index {
     height: 650px;
   }
-  .mini-index .mini-index-image-wrapper .unit-image-mini {
+  .power-index .power-index-image-wrapper .unit-image-power {
     height: 650px;
-    background-size: 500px auto;
+    background-size: 1740px auto;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .mini-index {
+  .power-index {
     height: 600px;
   }
-  .mini-index .mini-index-image-wrapper .unit-image-mini {
+  .power-index .power-index-image-wrapper .unit-image-power {
     height: 600px;
-    background-size: 450px auto;
+    background-size: 1540px auto;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .mini-index {
+  .power-index {
     height: 550px;
   }
-  .mini-index .mini-index-image-wrapper .unit-image-mini {
+  .power-index .power-index-image-wrapper .unit-image-power {
     height: 550px;
-    background-size: 400px auto;
+    background-size: 1340px auto;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .mini-index {
-    height: 500px;
+  .power-index {
+    height: 450px;
   }
-  .mini-index .mini-index-image-wrapper .unit-image-mini {
-    height: 500px;
-    background-size: 350px auto;
+  .power-index .power-index-image-wrapper .unit-image-power {
+    height: 450px;
+    background-size: 1140px auto;
   }
 }
 
 @media screen and (max-width: 350px) {
-  .mini-index {
+  .power-index {
     height: 450px;
   }
-  .mini-index .mini-index-image-wrapper .unit-image-mini {
+  .power-index .power-index-image-wrapper .unit-image-power {
     height: 450px;
-    background-size: 300px auto;
+    background-size: 1040px auto;
   }
 }
 
 @media screen and (max-width: 300px) {
-  .mini-index {
-    height: 400px;
+  .power-index {
+    height: 160vw;
   }
-  .mini-index .mini-index-image-wrapper .unit-image-mini {
-    height: 400px;
-    background-size: 100% auto;
+  .power-index .power-index-image-wrapper .unit-image-power {
+    height: 150vw;
+    background-size: 350vw auto;
   }
 }
 /*-------------------------------------------------------------*/
@@ -374,7 +353,7 @@ a {
 
 @media screen and (max-width: 300px) {
   .mini-index-container .mini-index-container-word-wrapper p {
-    font-size: 18px;
+    font-size: 6vw;
     line-height: 1.2;
     color: #000000;
     font-weight: 300;
@@ -2323,8 +2302,8 @@ section {
 }
 
 /*---------------------------------------
-    NAVIGATION              
-  -----------------------------------------*/
+      NAVIGATION              
+    -----------------------------------------*/
 .nav-container {
   min-height: 55px;
   height: 55px;
@@ -2378,7 +2357,7 @@ section {
   font-weight: var(--font-weight-semibold);
   font-size: var(--menu-font-size);
   /* padding-top: 15px;
-      padding-bottom: 15px; */
+        padding-bottom: 15px; */
 }
 
 .navbar-nav .nav-item.active .nav-link,
