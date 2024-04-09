@@ -1075,7 +1075,7 @@ a {
   .index-elderly-community
     .index-elderly-community-image-wrapper
     .unit-elderly-community {
-    height: 1150px;
+    height: 1200px;
     background-size: 3040px auto;
   }
   .index-elderly-community .index-elderly-community-word-wrapper p {
@@ -1091,7 +1091,7 @@ a {
   .index-elderly-community
     .index-elderly-community-image-wrapper
     .unit-elderly-community {
-    height: 1150px;
+    height: 1200px;
     background-size: 2840px auto;
   }
 }
@@ -1100,7 +1100,7 @@ a {
   .index-elderly-community
     .index-elderly-community-image-wrapper
     .unit-elderly-community {
-    height: 1150px;
+    height: 1200px;
     background-size: 2640px auto;
   }
 }
@@ -1109,7 +1109,7 @@ a {
   .index-elderly-community
     .index-elderly-community-image-wrapper
     .unit-elderly-community {
-    height: 1150px;
+    height: 1200px;
     background-size: 2440px auto;
   }
 }
@@ -1121,7 +1121,7 @@ a {
   .index-elderly-community
     .index-elderly-community-image-wrapper
     .unit-elderly-community {
-    height: 1150px;
+    height: 1200px;
     background-size: 2240px auto;
   }
 }
@@ -1136,7 +1136,7 @@ a {
   .index-elderly-community
     .index-elderly-community-image-wrapper
     .unit-elderly-community {
-    height: 1150px;
+    height: 1200px;
     background-size: 2240px auto;
   }
 }
@@ -1148,7 +1148,7 @@ a {
   .index-elderly-community
     .index-elderly-community-image-wrapper
     .unit-elderly-community {
-    height: 1150px;
+    height: 1200px;
     background-size: 2040px auto;
   }
 }
@@ -1160,31 +1160,31 @@ a {
   .index-elderly-community
     .index-elderly-community-image-wrapper
     .unit-elderly-community {
-    height: 1150px;
+    height: 1200px;
     background-size: 1940px auto;
   }
 }
 
 @media screen and (max-width: 650px) {
   .index-elderly-community {
-    height: 950px;
+    height: 1000px;
   }
   .index-elderly-community
     .index-elderly-community-image-wrapper
     .unit-elderly-community {
-    height: 1150px;
+    height: 1250px;
     background-size: 1840px auto;
   }
 }
 
 @media screen and (max-width: 600px) {
   .index-elderly-community {
-    height: 950px;
+    height: 1000px;
   }
   .index-elderly-community
     .index-elderly-community-image-wrapper
     .unit-elderly-community {
-    height: 1200px;
+    height: 1300px;
     background-size: 1740px auto;
   }
 }
@@ -1206,12 +1206,12 @@ a {
 
 @media screen and (max-width: 500px) {
   .index-elderly-community {
-    height: 800px;
+    height: 750px;
   }
   .index-elderly-community
     .index-elderly-community-image-wrapper
     .unit-elderly-community {
-    height: 1000px;
+    height: 900px;
     background-size: 1340px auto;
   }
   .index-elderly-community .index-elderly-community-word-wrapper p {
@@ -1221,12 +1221,12 @@ a {
 
 @media screen and (max-width: 450px) {
   .index-elderly-community {
-    height: 800px;
+    height: 650px;
   }
   .index-elderly-community
     .index-elderly-community-image-wrapper
     .unit-elderly-community {
-    height: 1000px;
+    height: 800px;
     background-size: 1140px auto;
   }
   .index-elderly-community .index-elderly-community-word-wrapper p {
@@ -1243,25 +1243,25 @@ a {
 
 @media screen and (max-width: 350px) {
   .index-elderly-community {
-    height: 700px;
+    height: 650px;
   }
   .index-elderly-community
     .index-elderly-community-image-wrapper
     .unit-elderly-community {
-    height: 970px;
+    height: 800px;
     background-size: 940px auto;
   }
 }
 
 @media screen and (max-width: 300px) {
   .index-elderly-community {
-    height: 550px;
+    height: 180vw;
   }
   .index-elderly-community
     .index-elderly-community-image-wrapper
     .unit-elderly-community {
-    height: 750px;
-    background-size: 740px auto;
+    height: 220vw;
+    background-size: 280vw auto;
   }
   .index-elderly-community .index-elderly-community-word-wrapper p {
     font-size: 5vw;
