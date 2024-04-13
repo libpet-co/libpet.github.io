@@ -58,13 +58,104 @@ a {
   transform: none;
 }
 
-@media screen and (max-width: 1260px) {
+@media screen and (min-width: 1260px) and (max-height: 1300px) {
+  .mini-index {
+    height: 1300px;
+  }
+  .mini-index .mini-index-image-wrapper .unit-image-mini {
+    height: 1200px;
+    background-size: 3100px auto;
+  }
+}
+@media screen and (min-width: 1260px) and (max-height: 1200px) {
+  .mini-index {
+    height: 1200px;
+  }
+  .mini-index .mini-index-image-wrapper .unit-image-mini {
+    height: 1100px;
+    background-size: 2900px auto;
+  }
+}
+@media screen and (min-width: 1260px) and (max-height: 1100px) {
+  .mini-index {
+    height: 1100px;
+  }
+  .mini-index .mini-index-image-wrapper .unit-image-mini {
+    height: 1000px;
+    background-size: 2700px auto;
+  }
+}
+@media screen and (min-width: 1260px) and (max-height: 1000px) {
+  .mini-index {
+    height: 1000px;
+  }
+  .mini-index .mini-index-image-wrapper .unit-image-mini {
+    height: 900px;
+    background-size: 2500px auto;
+  }
+}
+@media screen and (min-width: 1260px) and (max-height: 950px) {
+  .mini-index {
+    height: 900px;
+  }
+  .mini-index .mini-index-image-wrapper .unit-image-mini {
+    height: 850px;
+    background-size: 2250px auto;
+  }
+}
+@media screen and (min-width: 1260px) and (max-height: 900px) {
+  .mini-index {
+    height: 850px;
+  }
+  .mini-index .mini-index-image-wrapper .unit-image-mini {
+    height: 800px;
+    background-size: 2000px auto;
+  }
+}
+@media screen and (min-width: 1260px) and (max-height: 800px) {
+  .mini-index {
+    height: 750px;
+  }
+  .mini-index .mini-index-image-wrapper .unit-image-mini {
+    height: 700px;
+    background-size: 1800px auto;
+  }
+}
+@media screen and (min-width: 1260px) and (max-height: 725px) {
+  .mini-index {
+    height: 750px;
+  }
+  .mini-index .mini-index-image-wrapper .unit-image-mini {
+    height: 700px;
+    background-size: 1550px auto;
+  }
+}
+
+@media screen and (max-width: 1260px) and (min-height: 1250px){
   .mini-index {
     height: 1330px;
   }
   .mini-index .mini-index-image-wrapper .unit-image-mini {
     height: 1230px;
     background-size: 3340px auto;
+  }
+}
+@media screen and (max-width: 1260px) and (max-height: 1250px){
+  .mini-index {
+    height: 1200px;
+  }
+  .mini-index .mini-index-image-wrapper .unit-image-mini {
+    height: 1150px;
+    background-size: 3100px auto;
+  }
+}
+@media screen and (max-width: 1260px) and (max-height: 1200px){
+  .mini-index {
+    height: 1150px;
+  }
+  .mini-index .mini-index-image-wrapper .unit-image-mini {
+    height: 1100px;
+    background-size: 2900px auto;
   }
 }
 
