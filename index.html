@@ -116,7 +116,10 @@
 
     <div class="power-index">
       <div class="power-index-image-wrapper">
-        <figure class="unit-image-power"></figure>
+        <figure
+          class="unit-image-power header-container"
+          data-bgimage="img/power-new/power-index.png"
+        ></figure>
       </div>
     </div>
 
@@ -172,7 +175,11 @@
       </div>
       <div class="data">
         <div class="data-image">
-          <img loading="lazy" src="img/power-new/data-ground-clearance.png" alt="" />
+          <img
+            loading="lazy"
+            src="img/power-new/data-ground-clearance.png"
+            alt=""
+          />
         </div>
         <p class="data-description">
           Ground <br class="data-breakline-lg" />
@@ -190,7 +197,11 @@
       </div>
       <div class="data">
         <div class="data-image">
-          <img loading="lazy" src="img/power-new/data-obstacle-clearance.png" alt="" />
+          <img
+            loading="lazy"
+            src="img/power-new/data-obstacle-clearance.png"
+            alt=""
+          />
         </div>
         <p class="data-description">
           Obstacle <br class="data-breakline-lg" />
@@ -199,7 +210,11 @@
       </div>
       <div class="data">
         <div class="data-image">
-          <img loading="lazy" src="img/power-new/data-driving-range.png" alt="" />
+          <img
+            loading="lazy"
+            src="img/power-new/data-driving-range.png"
+            alt=""
+          />
         </div>
         <p class="data-description">
           Driving <br class="data-breakline-lg" />
@@ -219,7 +234,10 @@
 
     <div class="power-ultrasonic-section">
       <div class="power-ultrasonic-image-wrapper">
-        <figure class="unit-image-ultrasonic"></figure>
+        <figure
+          class="unit-image-ultrasonic header-container"
+          data-bgimage="img/power-new/power-ultrasonic.png"
+        ></figure>
       </div>
       <div class="power-ultrasonic-word-wrapper">
         <h1>
@@ -242,7 +260,10 @@
         </p>
       </div>
       <div class="power-control-image-wrapper">
-        <figure class="unit-image-control"></figure>
+        <figure
+          class="unit-image-control header-container"
+          data-bgimage="img/power-new/power-control-panel.png"
+        ></figure>
       </div>
     </div>
 
@@ -285,13 +306,19 @@
         <p>Super easy to swap</p>
       </div>
       <div class="power-removable-image-wrapper">
-        <figure class="unit-image-removable"></figure>
+        <figure
+          class="unit-image-removable header-container"
+          data-bgimage="img/power-new/power-removable.png"
+        ></figure>
       </div>
     </div>
 
     <div class="power-components-section">
       <div class="power-components-image-wrapper">
-        <figure class="unit-image-components"></figure>
+        <figure
+          class="unit-image-components header-container"
+          data-bgimage="img/power-new/power-components.png"
+        ></figure>
       </div>
       <div class="power-components-word-wrapper">
         <h1>
@@ -352,7 +379,9 @@
             </span>
           </p>
           <div class="power-stat-container-button-wrapper" id="stat-button-sm">
-            <button class="power-buy-button" onclick="togglePop()">Buy Now</button>
+            <button class="power-buy-button" onclick="togglePop()">
+              Buy Now
+            </button>
           </div>
         </div>
         <div class="stat-container" id="text-container-sm">
@@ -387,12 +416,15 @@
       <aside>
         <div class="popAlert-first-row">
           <h2>Pre-order Now</h2>
-          <button type="button" onclick="togglePop()" id="closeButton">X</button>  
+          <button type="button" onclick="togglePop()" id="closeButton">
+            X
+          </button>
         </div>
-        <p>If you are interested in Libet Power, please contact our Marketing Manager for more details.
-          <br><br>
+        <p>
+          If you are interested in Libet Power, please contact our Marketing
+          Manager for more details. <br /><br />
           <i class="fa fa-phone-alt"></i>&nbsp;&nbsp; +852 6990 6913
-          <br>
+          <br />
           <i class="fa fa-envelope"></i>&nbsp;&nbsp; Marketing@libpet.com
         </p>
       </aside>
@@ -444,9 +476,9 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script>
-      function togglePop(){
-        let popup = document.getElementById('popAlert');
-        popup.classList.toggle('active');
+      function togglePop() {
+        let popup = document.getElementById("popAlert");
+        popup.classList.toggle("active");
       }
 
       new Glide(".images", {
@@ -467,26 +499,53 @@
 
       // 檢查視窗寬度並更新標題內容
       function updateTitleContent() {
-        var titleElement = document.getElementById(
-          "power-control-title"
-        );
+        var titleElement = document.getElementById("power-control-title");
         var windowWidth =
           window.innerWidth ||
           document.documentElement.clientWidth ||
           document.body.clientWidth;
 
         if (windowWidth < 700) {
-          titleElement.innerHTML =
-            "Control Panel"
+          titleElement.innerHTML = "Control Panel";
         } else {
-          titleElement.innerHTML =
-            "Module Control Panel"
+          titleElement.innerHTML = "Module Control Panel";
         }
       }
 
       // 在頁面載入時和視窗大小改變時觸發更新
       window.addEventListener("DOMContentLoaded", updateTitleContent);
       window.addEventListener("resize", updateTitleContent);
+
+      // Check for IntersectionObserver support
+      if ("IntersectionObserver" in window) {
+        document.addEventListener("DOMContentLoaded", function () {
+          function handleIntersection(entries) {
+            entries.map((entry) => {
+              if (entry.isIntersecting) {
+                // Item has crossed our observation
+                // threshold - load src from data-src
+                entry.target.style.backgroundImage =
+                  "url('" + entry.target.dataset.bgimage + "')";
+                // Job done for this item - no need to watch it!
+                observer.unobserve(entry.target);
+              }
+            });
+          }
+
+          const headers = document.querySelectorAll(".header-container");
+          const observer = new IntersectionObserver(handleIntersection, {
+            rootMargin: "100px",
+          });
+          headers.forEach((header) => observer.observe(header));
+        });
+      } else {
+        // No interaction support? Load all background images automatically
+        const headers = document.querySelectorAll(".header-container");
+        headers.forEach((header) => {
+          header.style.backgroundImage =
+            "url('" + header.dataset.bgimage + "')";
+        });
+      }
     </script>
   </body>
 </html>

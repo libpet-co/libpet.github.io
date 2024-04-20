@@ -39,7 +39,6 @@ a {
 }
 
 .power-index .power-index-image-wrapper .unit-image-power {
-  background-image: url(../img/power-new/power-index.png);
   width: 100%;
   height: 1230px;
   background-size: 3440px auto;
@@ -999,7 +998,6 @@ a {
 .power-ultrasonic-section
   .power-ultrasonic-image-wrapper
   .unit-image-ultrasonic {
-  background-image: url(../img/power-new/power-ultrasonic.png);
   width: 100%;
   height: 2214px;
   background-size: 3440px auto;
@@ -1560,7 +1558,6 @@ a {
 }
 
 .power-control-section .power-control-image-wrapper .unit-image-control {
-  background-image: url(../img/power-new/power-control-panel.png);
   width: 100%;
   height: 1400px;
   background-size: 3440px auto;
@@ -1882,7 +1879,6 @@ a {
 }
 
 .power-removable-section .power-removable-image-wrapper .unit-image-removable {
-  background-image: url(../img/power-new/power-removable.png);
   width: 100%;
   height: 1350px;
   background-size: 3440px auto;
@@ -2505,7 +2501,6 @@ a {
 .power-components-section
   .power-components-image-wrapper
   .unit-image-components {
-  background-image: url(../img/power-new/power-components.png);
   width: 100%;
   height: 1365px;
   background-size: 3440px auto;
