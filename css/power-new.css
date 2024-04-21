@@ -2569,7 +2569,7 @@ a {
     background-size: 2640px auto;
   }
 }
-@media screen and (min-width: 1200px) and (max-height: 1000px) {
+@media screen and (min-width: 1200px) and (max-height: 1100px) {
   .power-components-section {
     height: 1250px;
   }
@@ -2669,7 +2669,7 @@ a {
     background-size: 2400px auto;
   }
 }
-@media screen and (max-width: 1200px) and (max-height: 850px) {
+@media screen and (max-width: 1200px) and (max-height: 900px) {
   .power-components-section {
     height: 1200px;
   }
