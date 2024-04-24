@@ -536,10 +536,21 @@ flex-direction: column;
     .team .team-text{
         position: absolute;
         left:0;
-        bottom: 10%;
-        top: 60%;
+        top: 20%;
         z-index: 3;
     }
+    .team .team-img img {
+        margin-top: 200px;
+    }
+}
+@media (max-width: 340px){
+    .team .team-text{
+        top: 15%;
+    }
+    .team .team-img img {
+        margin-top: 180px;
+    }
+
 }
 
 .team .team-nickname {
@@ -579,9 +590,15 @@ flex-direction: column;
     width: 35px;
     position: absolute;
     top: 5%;
-    left: 10%;
+    left: 5%;
     z-index: 20;
     margin-top: 0;
+}
+
+@media screen and (max-width: 767.5px) {
+    .team .team-logo img {
+        left: 15px;
+    }
 }
 
 .team-image{
