@@ -481,22 +481,6 @@
         popup.classList.toggle("active");
       }
 
-      new Glide(".images", {
-        type: "carousel",
-        perView: 2,
-        focusAt: "center",
-        gap: 40,
-        breakpoints: {
-          1200: {
-            perView: 2,
-            gap: 20,
-          },
-          800: {
-            perView: 1,
-          },
-        },
-      }).mount();
-
       // 檢查視窗寬度並更新標題內容
       function updateTitleContent() {
         var titleElement = document.getElementById("power-control-title");
@@ -546,6 +530,22 @@
             "url('" + header.dataset.bgimage + "')";
         });
       }
+
+      new Glide(".images", {
+        type: "carousel",
+        perView: 2,
+        focusAt: "center",
+        gap: 40,
+        breakpoints: {
+          1200: {
+            perView: 2,
+            gap: 20,
+          },
+          800: {
+            perView: 1,
+          },
+        },
+      }).mount();
     </script>
   </body>
 </html>
