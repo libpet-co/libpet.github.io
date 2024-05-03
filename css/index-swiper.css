@@ -60,12 +60,12 @@
   padding-top: 10px;
 }
 .description {
-  font-size: 32px;
+  font-size: 28px;
   letter-spacing: -1px;
   line-height: 1.1;
   color: #000000;
   font-weight: 600;
-  width: 240px;
+  width: 95%;
 }
 .button {
   border: none;
