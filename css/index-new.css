@@ -1760,7 +1760,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0 5%;
 }
@@ -1772,7 +1772,6 @@ a {
 .index-news .index-news-container .index-news-text {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
@@ -2174,4 +2173,11 @@ section {
 
 .navbar-toggler .navbar-toggler-icon:after {
   top: 8px;
+}
+
+@media screen and (max-width: 768.5px) {
+  .navbar-toggler {
+    width: 75px;
+    padding-top: 5px;
+  }
 }
