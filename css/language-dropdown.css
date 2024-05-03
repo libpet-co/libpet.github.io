@@ -18,7 +18,7 @@
 
 .dropdown {
   position: absolute;
-  top: 50%;
+  top: 0%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: inline-block;
@@ -49,8 +49,12 @@
 
 .show {
     display: block;
-    top: 30px;
+    top: 55px;
     right: 25px;
+}
+
+.dropbtn{
+  margin-top: 25px;
 }
 
 @media screen and (max-width: 768.5px) {
