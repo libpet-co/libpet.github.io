@@ -1925,6 +1925,9 @@ a {
     height: 40px;
     line-height: 40px;
   }
+  .index-news .index-news-container .index-news-text {
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 568.5px) {
