@@ -784,7 +784,6 @@ a {
 }
 
 .index-collection .index-collection-image-wrapper .unit-collection-power {
-  background-image: url(../img/index-new/index-collection-power.png);
   width: 100%;
   height: 905px;
   background-size: 1256px auto;
@@ -803,7 +802,6 @@ a {
   transform: none;
 }
 .index-collection .index-collection-image-wrapper .unit-collection-air {
-  background-image: url(../img/index-new/index-collection-air.png);
   width: 100%;
   height: 905px;
   background-size: 1256px auto;
@@ -822,7 +820,6 @@ a {
   transform: none;
 }
 .index-collection .index-collection-image-wrapper .unit-collection-mini {
-  background-image: url(../img/index-new/index-collection-mini.png);
   width: 100%;
   height: 891px;
   background-size: 1256px auto;
@@ -841,7 +838,6 @@ a {
   transform: none;
 }
 .index-collection .index-collection-image-wrapper .unit-collection-accessories {
-  background-image: url(../img/index-new/index-collection-accessories.png);
   width: 100%;
   height: 891px;
   background-size: 1256px auto;
@@ -1467,7 +1463,6 @@ a {
 .index-elderly-community
   .index-elderly-community-image-wrapper
   .unit-elderly-community {
-  background-image: url(../img/index-new/index-elderly-community.png);
   width: 100%;
   height: 1150px;
   background-size: 3440px auto;

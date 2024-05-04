@@ -173,7 +173,10 @@
             </div>
           </div>
           <div class="index-collection-image-wrapper">
-            <figure class="unit-collection-power"></figure>
+            <figure
+              class="unit-collection-power header-container"
+              data-bgimage="img/index-new/index-collection-power.png"
+            ></figure>
           </div>
         </div>
         <div class="module-air collection">
@@ -201,7 +204,10 @@
             </div>
           </div>
           <div class="index-collection-image-wrapper">
-            <figure class="unit-collection-air"></figure>
+            <figure
+              class="unit-collection-air header-container"
+              data-bgimage="img/index-new/index-collection-air.png"
+            ></figure>
           </div>
         </div>
         <div class="module-mini collection">
@@ -231,7 +237,10 @@
             </div>
           </div>
           <div class="index-collection-image-wrapper">
-            <figure class="unit-collection-mini"></figure>
+            <figure
+              class="unit-collection-mini header-container"
+              data-bgimage="img/index-new/index-collection-mini.png"
+            ></figure>
           </div>
         </div>
         <div class="collection" id="module-accessories">
@@ -248,7 +257,10 @@
             </div>
           </div>
           <div class="index-collection-image-wrapper">
-            <figure class="unit-collection-accessories"></figure>
+            <figure
+              class="unit-collection-accessories header-container"
+              data-bgimage="img/index-new/index-collection-accessories.png"
+            ></figure>
           </div>
         </div>
       </section>
@@ -277,7 +289,10 @@
         </p>
       </div>
       <div class="index-elderly-community-image-wrapper">
-        <figure class="unit-elderly-community"></figure>
+        <figure
+          class="unit-elderly-community header-container"
+          data-bgimage="img/index-new/index-elderly-community.png"
+        ></figure>
       </div>
     </div>
 
@@ -287,7 +302,7 @@
       </div>
       <div class="index-news-container">
         <div class="index-news-image">
-          <img src="img/news/HKVCTPC.png" alt="" />
+          <img loading="lazy" src="img/news/HKVCTPC.png" alt="" />
         </div>
         <div class="index-news-text">
           <div class="index-news-text-container">
@@ -305,7 +320,11 @@
       <p class="line-x"></p>
       <div class="index-news-container">
         <div class="index-news-image">
-          <img src="img/index-new/index-news-image-2.png" alt="" />
+          <img
+            loading="lazy"
+            src="img/index-new/index-news-image-2.png"
+            alt=""
+          />
         </div>
         <div class="index-news-text">
           <div class="index-news-text-container">
@@ -320,7 +339,11 @@
       <p class="line-x"></p>
       <div class="index-news-container">
         <div class="index-news-image">
-          <img src="img/index-new/index-news-image-3.png" alt="" />
+          <img
+            loading="lazy"
+            src="img/index-new/index-news-image-3.png"
+            alt=""
+          />
         </div>
         <div class="index-news-text">
           <div class="index-news-text-container">
@@ -483,6 +506,37 @@
           }
         }
       };
+
+      // Check for IntersectionObserver support
+      if ("IntersectionObserver" in window) {
+        document.addEventListener("DOMContentLoaded", function () {
+          function handleIntersection(entries) {
+            entries.map((entry) => {
+              if (entry.isIntersecting) {
+                // Item has crossed our observation
+                // threshold - load src from data-src
+                entry.target.style.backgroundImage =
+                  "url('" + entry.target.dataset.bgimage + "')";
+                // Job done for this item - no need to watch it!
+                observer.unobserve(entry.target);
+              }
+            });
+          }
+
+          const headers = document.querySelectorAll(".header-container");
+          const observer = new IntersectionObserver(handleIntersection, {
+            rootMargin: "100px",
+          });
+          headers.forEach((header) => observer.observe(header));
+        });
+      } else {
+        // No interaction support? Load all background images automatically
+        const headers = document.querySelectorAll(".header-container");
+        headers.forEach((header) => {
+          header.style.backgroundImage =
+            "url('" + header.dataset.bgimage + "')";
+        });
+      }
     </script>
   </body>
 </html>
