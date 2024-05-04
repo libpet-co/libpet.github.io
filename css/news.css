@@ -134,10 +134,6 @@ p {
   right:0;
   z-index:9;
 }
-.container {
-  z-index: 2;
-  position: relative;
-}
 .i-large,
 .i-medium,
 .i-small {

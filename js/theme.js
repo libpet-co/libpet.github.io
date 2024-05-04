@@ -32,7 +32,7 @@ window.onload = function () {
         setTimeout(function () {
           const span = fancyText.querySelectorAll("span")[i];
           span.classList.add("faded");
-        }, i * 50);
+        }, i * 75);
       }
     })
     .addTo(controller);

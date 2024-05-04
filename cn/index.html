@@ -21,9 +21,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
       rel="stylesheet"
     />
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
 
     <!-- Theme CSS -->
     <link rel="stylesheet" href="../css/index-new.css" />
@@ -54,7 +53,7 @@
             class="container override-nav"
             style="max-width: 1600px; padding: 0 5%"
           >
-            <a class="navbar-brand mx-auto d-lg-none" href="#">
+            <a class="navbar-brand mx-auto d-lg-none" href="../cn/index.html">
               <img
                 class="iconlogo"
                 src="../img/logo-black-without-word.svg"
@@ -75,7 +74,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-              <a class="navbar-brand d-none d-lg-block" href="#">
+              <a class="navbar-brand d-none d-lg-block" href="../cn/index.html">
                 <img
                   class="iconlogo"
                   src="../img/logo-black-without-word.svg"
@@ -102,10 +101,6 @@
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="exhibition.html">展會資訊</a>
-                </li>
-
-                <li class="nav-item">
                   <a class="nav-link" href="about-us.html">關於我們</a>
                 </li>
               </ul>
@@ -121,7 +116,7 @@
             </button>
             <div id="myDropdown" class="dropdown-content">
               <a href="../index.html">English</a>
-              <a href="#">繁體中文</a>
+              <a href="../cn/index.html">繁體中文</a>
             </div>
           </div>
         </nav>
@@ -142,7 +137,7 @@
         </div>
       </div>
       <div class="index-power-image-wrapper">
-        <figure class="unit-image-power"></figure>
+        <figure class="unit-image-power unit-image-power-cn"></figure>
       </div>
     </div>
 
@@ -157,10 +152,14 @@
             </p>
           </div>
           <div class="index-collection-button-wrapper">
-            <div class="index-collection-button collection-btn-1">
+            <div
+              class="index-collection-button collection-btn-1 button-word-white"
+            >
               <a href="power.html">瞭解更多 ></a>
             </div>
-            <div class="index-collection-button collection-btn-2">
+            <div
+              class="index-collection-button collection-btn-2 button-word-black"
+            >
               <div class="btn-2-a">
                 <a href="#" onclick="event.preventDefault(); togglePop();"
                   >立即購買</a
@@ -169,7 +168,10 @@
             </div>
           </div>
           <div class="index-collection-image-wrapper">
-            <figure class="unit-collection-power"></figure>
+            <figure
+              class="unit-collection-power header-container"
+              data-bgimage="../img/index-new/index-collection-power.png"
+            ></figure>
           </div>
         </div>
         <div class="module-air collection">
@@ -194,13 +196,16 @@
             </div>
           </div>
           <div class="index-collection-image-wrapper">
-            <figure class="unit-collection-air"></figure>
+            <figure
+              class="unit-collection-air header-container"
+              data-bgimage="../img/index-new/index-collection-air.png"
+            ></figure>
           </div>
         </div>
         <div class="module-mini collection">
           <div class="index-collection-word-wrapper">
             <h1>LIBPET <span style="color: #ffffff">MINI</span></h1>
-            <p>城市穿梭， <br />流動自如</p>
+            <p>四處穿梭， <br />流動自如</p>
           </div>
           <div class="index-collection-button-wrapper">
             <div
@@ -221,12 +226,15 @@
             </div>
           </div>
           <div class="index-collection-image-wrapper">
-            <figure class="unit-collection-mini"></figure>
+            <figure
+              class="unit-collection-mini header-container"
+              data-bgimage="../img/index-new/index-collection-mini.png"
+            ></figure>
           </div>
         </div>
         <div class="collection" id="module-accessories">
           <div class="index-collection-word-wrapper">
-            <h1>配件</h1>
+            <h1>更多配件</h1>
           </div>
           <div class="index-collection-button-wrapper">
             <div
@@ -238,28 +246,34 @@
             </div>
           </div>
           <div class="index-collection-image-wrapper">
-            <figure class="unit-collection-accessories"></figure>
+            <figure
+              class="unit-collection-accessories header-container"
+              data-bgimage="../img/index-new/index-collection-accessories.png"
+            ></figure>
           </div>
         </div>
       </section>
     </div>
 
     <div class="index-sl">
-      <h1>創造非凡事物</h1>
+      <h1 class="hero-text">創造非凡事物</h1>
     </div>
 
     <div class="index-elderly-community">
       <div class="index-elderly-community-word-wrapper">
         <h1>
           途齡科技 <br class="breakline-md" />
-          智慧出行
+          智慧出行生態
         </h1>
         <p id="index-elderly-community-description">
           在途齡科技的智慧出行生態中，途齡科技的自動駕駛車輛穿梭於社區當中。它們在繁忙的機場候機廳、寧靜的醫院走廊和安寧的老人院中默默提供引導。它們的優雅延伸到繁華的商場，購物的喜悅因現代交通的便利而提升。科技與日常生活的無縫融合描繪出一個未來，每一次旅程都是在關懷、舒適和優雅的空間中輕鬆出行。
         </p>
       </div>
       <div class="index-elderly-community-image-wrapper">
-        <figure class="unit-elderly-community"></figure>
+        <figure
+          class="unit-elderly-community header-container"
+          data-bgimage="../img/index-new/index-elderly-community.png"
+        ></figure>
       </div>
     </div>
 
@@ -393,9 +407,20 @@
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/jquery.easing.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+      integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
     <script src="../js/nav.js"></script>
     <script src="../js/swiper-bundle.min.js"></script>
     <script src="../js/index-swiper.js"></script>
+    <script src="../js/theme.js"></script>
 
     <script>
       function togglePop() {
@@ -434,7 +459,6 @@
       function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
       }
-
       // Close the dropdown if the user clicks outside of it
       window.onclick = function (event) {
         if (!event.target.matches(".dropbtn")) {
@@ -448,6 +472,37 @@
           }
         }
       };
+
+      // Check for IntersectionObserver support
+      if ("IntersectionObserver" in window) {
+        document.addEventListener("DOMContentLoaded", function () {
+          function handleIntersection(entries) {
+            entries.map((entry) => {
+              if (entry.isIntersecting) {
+                // Item has crossed our observation
+                // threshold - load src from data-src
+                entry.target.style.backgroundImage =
+                  "url('" + entry.target.dataset.bgimage + "')";
+                // Job done for this item - no need to watch it!
+                observer.unobserve(entry.target);
+              }
+            });
+          }
+
+          const headers = document.querySelectorAll(".header-container");
+          const observer = new IntersectionObserver(handleIntersection, {
+            rootMargin: "100px",
+          });
+          headers.forEach((header) => observer.observe(header));
+        });
+      } else {
+        // No interaction support? Load all background images automatically
+        const headers = document.querySelectorAll(".header-container");
+        headers.forEach((header) => {
+          header.style.backgroundImage =
+            "url('" + header.dataset.bgimage + "')";
+        });
+      }
     </script>
   </body>
 </html>
