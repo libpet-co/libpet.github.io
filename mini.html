@@ -28,7 +28,9 @@
     <link rel="stylesheet" href="css/glide.core.min.css" />
     <link rel="stylesheet" href="css/glide.theme.min.css" />
     <link rel="stylesheet" href="css/mini-new.css" />
-    <link href="css/footer.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/pop-alert.css" />
+    <link rel="stylesheet" href="css/language-dropdown.css" />
 
     <link
       rel="icon"
@@ -52,7 +54,7 @@
             class="container override-nav"
             style="max-width: 1600px; padding: 0 5%"
           >
-            <a class="navbar-brand mx-auto d-lg-none" href="#">
+            <a class="navbar-brand mx-auto d-lg-none" href="index.html">
               <img
                 class="iconlogo"
                 src="img/logo-black-without-word.svg"
@@ -73,7 +75,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-              <a class="navbar-brand d-none d-lg-block" href="#">
+              <a class="navbar-brand d-none d-lg-block" href="index.html">
                 <img
                   class="iconlogo"
                   src="img/logo-black-without-word.svg"
@@ -81,8 +83,11 @@
                 />
               </a>
               <ul class="navbar-nav" style="margin-left: auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link" href="power.html">Power</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="mini.html">Mini</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="air.html">Air</a>
@@ -103,6 +108,19 @@
                   <a class="nav-link" href="about-us.html">About Us</a>
                 </li>
               </ul>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">
+              <i
+                class="fa fa-globe"
+                style="font-size: 24px; pointer-events: none"
+              ></i>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="mini.html">English</a>
+              <a href="cn/mini.html">繁體中文</a>
             </div>
           </div>
         </nav>
@@ -127,7 +145,12 @@
         </p>
       </div>
       <div class="mini-index-container-button-wrapper">
-        <button class="mini-buy-button">Buy Now</button>
+        <button
+          class="mini-buy-button"
+          onclick="event.preventDefault(); togglePop();"
+        >
+          Buy Now
+        </button>
       </div>
 
       <div class="mini-index-container-image-wrapper">
@@ -365,7 +388,7 @@
           Optional <br />
           Components
         </h1>
-        <a href="#">More Accessories ></a>
+        <!-- <a href="#">More Accessories ></a> -->
       </div>
     </div>
 
@@ -418,7 +441,12 @@
             </span>
           </p>
           <div class="mini-stat-container-button-wrapper" id="stat-button-sm">
-            <button class="mini-buy-button">Buy Now</button>
+            <button
+              class="mini-buy-button"
+              onclick="event.preventDefault(); togglePop();"
+            >
+              Buy Now
+            </button>
           </div>
         </div>
         <div class="stat-container" id="text-container-sm">
@@ -445,9 +473,32 @@
       </div>
 
       <div class="mini-stat-container-button-wrapper" id="stat-button-lg">
-        <button class="mini-buy-button">Buy Now</button>
+        <button
+          class="mini-buy-button"
+          onclick="event.preventDefault(); togglePop();"
+        >
+          Buy Now
+        </button>
       </div>
     </div>
+
+    <section id="popAlert">
+      <aside>
+        <div class="popAlert-first-row">
+          <h2>Pre-order Now</h2>
+          <button type="button" onclick="togglePop()" id="closeButton">
+            X
+          </button>
+        </div>
+        <p>
+          If you are interested in Libet Power, please contact our Marketing
+          Manager for more details. <br /><br />
+          <i class="fa fa-phone-alt"></i>&nbsp;&nbsp; +852 6990 6913
+          <br />
+          <i class="fa fa-envelope"></i>&nbsp;&nbsp; Marketing@libpet.com
+        </p>
+      </aside>
+    </section>
 
     <footer class="footer-section">
       <div class="footer-text-wrapper">
@@ -493,8 +544,13 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/nav.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="js/glide.js"></script>
     <script>
+      function togglePop() {
+        let popup = document.getElementById("popAlert");
+        popup.classList.toggle("active");
+      }
+
       new Glide(".images", {
         type: "carousel",
         perView: 2,
@@ -510,6 +566,24 @@
           },
         },
       }).mount();
+
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
 
       // Check for IntersectionObserver support
       if ("IntersectionObserver" in window) {
