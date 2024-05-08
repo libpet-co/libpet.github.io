@@ -1,5 +1,5 @@
 .mini-app-showcase-section {
-    height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,10 +35,10 @@
 }
 
 .glide__bullets {
-    bottom: 0;
-    top: -2em;
-  }
-  
+  bottom: 0;
+  top: -2em;
+}
+
 @media screen and (max-width: 1200px) {
   .glide__bullet {
     width: 4vw;
@@ -48,5 +48,3 @@
     width: 4vw;
   }
 }
-
-
