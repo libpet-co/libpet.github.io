@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+
+    <title>Libpet</title>
+
+    <link rel="stylesheet" href="css/glide.core.min.css" />
+    <link rel="stylesheet" href="css/glide.theme.min.css" />
+    <link rel="stylesheet" href="css/testing.css" />
+  </head>
+
+  <body>
+    <div class="mini-app-showcase-section">
+      <div class="images glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <iframe
+                src="https://www.youtube.com/embed/rAKf8Jbhl8A?si=LdDakefgEBsrqCYK"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </li>
+            <li class="glide__slide">
+              <iframe
+                src="https://www.youtube.com/embed/rAKf8Jbhl8A?si=LdDakefgEBsrqCYK"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </li>
+            <li class="glide__slide">
+              <iframe
+                src="https://www.youtube.com/embed/rAKf8Jbhl8A?si=LdDakefgEBsrqCYK"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </li>
+          </ul>
+        </div>
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+          <button class="glide__bullet" data-glide-dir="=2"></button>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script>
+    new Glide(".images", {
+      type: "carousel",
+      perView: 2,
+      focusAt: "center",
+      gap: 40,
+      breakpoints: {
+        1200: {
+          perView: 2,
+          gap: 20,
+        },
+        800: {
+          perView: 1,
+        },
+      },
+    }).mount();
+
+    function updateSlides() {
+      var slides = document.getElementsByClassName("glide__slide");
+
+      for (var i = 0; i < slides.length; i++) {
+        var slide = slides[i];
+        var width = slide.offsetWidth;
+        var height = (width * 9) / 16; // 計算高度
+        slide.style.height = height + "px"; // 將計算後的高度應用到元素的CSS中
+      }
+    }
+    window.addEventListener("DOMContentLoaded", updateSlides);
+    window.addEventListener("resize", updateSlides);
+  </script>
+</html>
