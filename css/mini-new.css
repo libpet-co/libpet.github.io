@@ -1835,7 +1835,7 @@ a {
 
 @media screen and (max-width: 1100px) and (min-height: 1000px) {
   .mini-turning-section .mini-turning-image-wrapper .unit-image-turning {
-    height: 1270px;
+    height: 1350px;
     background-size: 2640px auto;
   }
   .mini-turning-section {
@@ -1900,7 +1900,7 @@ a {
 
 @media screen and (max-width: 900px) and (min-height: 900px) {
   .mini-turning-section .mini-turning-image-wrapper .unit-image-turning {
-    height: 1170px;
+    height: 1300px;
     background-size: 2240px auto;
   }
   .mini-turning-section {
@@ -1973,7 +1973,7 @@ a {
 }
 @media screen and (max-width: 768.5px) and (max-height: 700px) {
   .mini-turning-section .mini-turning-image-wrapper .unit-image-turning {
-    height: 1000px;
+    height: 1100px;
     background-size: 1500px auto;
   }
   .mini-turning-section {
@@ -1983,7 +1983,7 @@ a {
 
 @media screen and (max-width: 600px) {
   .mini-turning-section .mini-turning-image-wrapper .unit-image-turning {
-    height: 1100px;
+    height: 1200px;
     background-size: 1640px auto;
   }
   .mini-turning-section {
@@ -1999,7 +1999,7 @@ a {
 
 @media screen and (max-width: 550px) {
   .mini-turning-section .mini-turning-image-wrapper .unit-image-turning {
-    height: 1100px;
+    height: 1200px;
     background-size: 1440px auto;
   }
   .mini-turning-section {
@@ -2013,7 +2013,7 @@ a {
     background-size: 1240px auto;
   }
   .mini-turning-section {
-    height: 850px;
+    height: 800px;
   }
   .mini-turning-section .mini-turning-word-wrapper p {
     line-height: 1.2;
@@ -2028,17 +2028,17 @@ a {
 
 @media screen and (max-width: 400px) {
   .mini-turning-section .mini-turning-image-wrapper .unit-image-turning {
-    height: 950px;
+    height: 1000px;
     background-size: 1040px auto;
   }
   .mini-turning-section {
-    height: 800px;
+    height: 750px;
   }
 }
 
 @media screen and (max-width: 350px) {
   .mini-turning-section .mini-turning-image-wrapper .unit-image-turning {
-    height: 950px;
+    height: 1000px;
     background-size: 900px auto;
   }
   .mini-turning-section {
@@ -2054,7 +2054,7 @@ a {
     font-size: 6vw;
   }
   .mini-turning-section .mini-turning-image-wrapper .unit-image-turning {
-    height: 285vw;
+    height: 300vw;
     background-size: 300vw auto;
   }
   .mini-turning-section {

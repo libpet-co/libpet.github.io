@@ -1335,6 +1335,7 @@ a {
   background-color: #ffffff;
   height: 100vh;
   min-height: 700px;
+  max-height: 2000px;
   position: relative;
   max-width: 3440px;
   margin: 0 auto;
