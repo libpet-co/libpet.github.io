@@ -1769,7 +1769,7 @@ a {
   background-color: #e4e4e4;
   height: auto;
   position: relative;
-  max-width: 3440px;
+  max-width: 2560px;
   margin: 0 auto;
   text-align: center;
 }
@@ -2262,18 +2262,18 @@ section {
 }
 
 .glide__bullets {
-  bottom: -2em;
+  bottom: -3em;
   left: 7em;
 }
 
 .glide__arrows {
   position: relative;
-  bottom: -2em;
-  right: 2em;
+  bottom: -3em;
+  right: 5em;
 }
 
 .glide__arrow {
-  background-color: rgba(210, 210, 215, 0.64);
+  background-color: rgba(199, 199, 202, 0.75);
   height: 36px;
   width: 36px;
   display: flex;
@@ -2283,22 +2283,22 @@ section {
   box-shadow: none;
   border-radius: 36px;
   padding: 0;
-  border: 2px solid rgba(210, 210, 215, 0.64);
+  border: 2px solid rgba(199, 199, 202, 0.75);
 }
 
 .glide__arrow:hover {
-  background: rgba(223, 223, 227, 0.6976);
+  background: rgba(210, 210, 215, 0.84);
   color: rgba(0, 0, 0, 0.64);
-  border: 2px solid rgba(223, 223, 227, 0.6976);
+  border: 2px solid rgba(210, 210, 215, 0.84);
 }
 
 .glide__arrow--left {
   left: auto;
-  right: 00;
+  right: 0;
 }
 
 .glide__arrow--right {
-  right: 50px;
+  right: 60px;
 }
 
 .glide__arrow svg {
