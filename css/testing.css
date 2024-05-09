@@ -19,7 +19,7 @@
   width: 40px;
   height: 5px;
   border-radius: 2px;
-  background-color: #ffffff;
+  background-color: #ededed;
   opacity: 1;
   min-width: 25px;
   margin: 0 5px;
@@ -35,8 +35,45 @@
 }
 
 .glide__bullets {
-  bottom: 0;
-  top: -2em;
+  bottom: -2em;
+  left: 5em;
+}
+
+.glide__arrows {
+  position: relative;
+  bottom: -2em;
+  right: 0em;
+}
+
+.glide__arrow {
+  background-color: rgba(210, 210, 215, 0.64);
+  height: 36px;
+  width: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  box-shadow: none;
+  border-radius: 36px;
+  padding: 0;
+}
+
+.glide__arrow--left {
+  left: auto;
+  right: 00;
+}
+
+.glide__arrow--right {
+  right: 50px;
+}
+
+.glide__arrow svg {
+  pointer-events: none;
+  width: 100%;
+}
+
+.glide__arrow svg path {
+  fill: rgba(0, 0, 0, 0.56);
 }
 
 @media screen and (max-width: 1200px) {
