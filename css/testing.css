@@ -1,4 +1,4 @@
-.mini-app-showcase-section {
+.index-video-section {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -56,6 +56,11 @@
   box-shadow: none;
   border-radius: 36px;
   padding: 0;
+}
+
+.glide__arrow:hover {
+  background: rgba(223, 223, 227, 0.6976);
+  color: rgba(0, 0, 0, 0.64);
 }
 
 .glide__arrow--left {
