@@ -11,6 +11,21 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-FDKG5TNYZZ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-FDKG5TNYZZ");
+    </script>
+
     <title>Libpet</title>
 
     <!-- Bootstrap Core CSS -->
@@ -56,7 +71,9 @@
   <body id="page-top">
     <main>
       <div class="nav-container">
-        <nav class="navbar navbar-expand-md bg-light-modified fixed-top shadow-md">
+        <nav
+          class="navbar navbar-expand-md bg-light-modified fixed-top shadow-md"
+        >
           <div
             class="container override-nav"
             style="max-width: 1600px; padding: 0 5%"
@@ -396,12 +413,13 @@
         </ol>
       </div>
     </div>
-    
+
     <div class="air-journey-section">
       <div class="air-journey-word-wrapper">
         <h1 class="air-journey-title">
           Your <br />
-          New <br class="air-journey-title-breakline"> Journey <br />
+          New <br class="air-journey-title-breakline" />
+          Journey <br />
           In Life.
         </h1>
       </div>
