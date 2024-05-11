@@ -2267,9 +2267,10 @@ section {
 }
 
 .glide__arrows {
+  display: flex;
+  justify-content: center;
   position: relative;
-  bottom: -3em;
-  right: 5em;
+  bottom: -2em;
 }
 
 .glide__arrow {
@@ -2294,11 +2295,12 @@ section {
 
 .glide__arrow--left {
   left: auto;
-  right: 0;
+  margin-left: 60px;
 }
 
 .glide__arrow--right {
-  right: 60px;
+  right: auto;
+  margin-right: 60px;
 }
 
 .glide__arrow svg {
