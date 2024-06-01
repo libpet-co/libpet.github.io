@@ -34,7 +34,7 @@ section#popAlert aside {
 
 section#popAlert aside h2 {
   font-size: 32px;
-  color: #ee2b2b;
+  color: #000;
   margin-left: auto;
   white-space: nowrap;
 }
@@ -57,6 +57,22 @@ section#popAlert aside button[type="button"] {
   transition: 0.3s all ease-in-out;
   color: #000;
 }
+
+section#popAlert i{
+  line-height: 2;
+}
+
+section#popAlert a{
+  color: #000000;
+  transition: 5s;
+}
+
+section#popAlert a:hover .pop-contact-text{
+  color: #000000;
+  text-decoration: underline;
+}
+
+
 
 .popAlert-first-row {
   display: flex;
