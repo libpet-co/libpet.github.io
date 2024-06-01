@@ -64,7 +64,6 @@ section#popAlert i{
 
 section#popAlert a{
   color: #000000;
-  transition: 5s;
 }
 
 section#popAlert a:hover .pop-contact-text{
@@ -72,6 +71,18 @@ section#popAlert a:hover .pop-contact-text{
   text-decoration: underline;
 }
 
+section#popAlert2 i{
+  line-height: 2;
+}
+
+section#popAlert2 a{
+  color: #000000;
+}
+
+section#popAlert2 a:hover .pop-contact-text{
+  color: #000000;
+  text-decoration: underline;
+}
 
 
 .popAlert-first-row {
@@ -165,7 +176,7 @@ section#popAlert2 {
 section#popAlert2.active {
   top: 0;
   background-color: rgba(255, 255, 255, 0.3);
-  transition: 0.6s top cubic-bezier(0.175, 0.885, 0.32, 1.275),
+  transition: 0.6s top cubic-bezier(0.175, 0.885, 0.32, 1),
     0.1s background-color linear 0.3s;
 }
 
@@ -181,7 +192,7 @@ section#popAlert2 aside {
 
 section#popAlert2 aside h2 {
   font-size: 32px;
-  color: #ee2b2b;
+  color: #000000;
   margin-left: auto;
   white-space: nowrap;
 }

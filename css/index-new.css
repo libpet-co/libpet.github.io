@@ -1839,6 +1839,7 @@ a {
   display: inline-block;
   position: relative;
   color: #000000;
+  line-height: 1.6;
 }
 
 .hover-underline-animation::after {
