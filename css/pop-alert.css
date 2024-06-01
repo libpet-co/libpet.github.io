@@ -11,14 +11,15 @@ section#popAlert {
   z-index: 20;
   background-color: rgba(255, 255, 255, 0);
 
-  transition: 1s top cubic-bezier(0.175, 0.885, 0.32, 1.3);
+  transition: 1s top cubic-bezier(0.175, 0.885, 0.32, 1.3),
+    0.1s background-color linear 0s;
 }
 
 section#popAlert.active {
   top: 0;
   background-color: rgba(255, 255, 255, 0.3);
   transition: 0.6s top cubic-bezier(0.175, 0.885, 0.32, 1.0),
-    0.1s background-color linear 0.3s;
+    0.3s background-color linear 0.3s;
 }
 
 section#popAlert aside {
@@ -169,13 +170,14 @@ section#popAlert2 {
   background-color: rgba(255, 255, 255, 0);
 
   transition: 1s top cubic-bezier(0.175, 0.885, 0.32, 1.3),
-    0.1s background-color linear 0s;
+    0.3s background-color linear 0.3s;
 }
 
 section#popAlert2.active {
   top: 0;
   background-color: rgba(255, 255, 255, 0.3);
-  transition: 0.6s top cubic-bezier(0.175, 0.885, 0.32, 1.0);
+  transition: 0.6s top cubic-bezier(0.175, 0.885, 0.32, 1.0),
+    0.1s background-color linear 0.3s;
 }
 
 section#popAlert2 aside {
