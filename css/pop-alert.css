@@ -17,7 +17,7 @@ section#popAlert {
 
 section#popAlert.active {
   top: 0;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color:#000;
   transition: 0.6s top cubic-bezier(0.175, 0.885, 0.32, 1.0),
     0.1s background-color linear 0.3s;
 }
