@@ -9,7 +9,7 @@ section#popAlert {
   height: 100vh;
   width: 100%;
   z-index: 20;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0);
 
   transition: 1s top cubic-bezier(0.175, 0.885, 0.32, 1.3),
     0.1s background-color linear 0s;
