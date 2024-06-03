@@ -29,7 +29,14 @@ form.addEventListener("click", (e) => {
     //call api
     fetch(
       "https://script.google.com/macros/s/AKfycbwthNb0fUXAzVKea_Ci4TehOBFPz33sHiLkl3bdd6IrQb_YFIa78ODTlDQchZ5xm6q4/exec",
-      config
+      {
+        redirect: "follow",
+        method: "POST",
+        body: JSON.stringify(formdata),
+        headers: {
+            "Content-Type": "text/plain;charset=utf-8",
+        },
+      }
     )
       .then((response) => response.text())
       .then((result) => {
