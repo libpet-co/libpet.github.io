@@ -28,7 +28,7 @@ form.addEventListener("click", (e) => {
     const config = { method: "POST", body: formdata, redirect: "follow" };
     //call api
     fetch(
-      "https://script.google.com/macros/s/AKfycbwthNb0fUXAzVKea_Ci4TehOBFPz33sHiLkl3bdd6IrQb_YFIa78ODTlDQchZ5xm6q4/exec",
+      "https://script.google.com/macros/s/AKfycbzZe2akWQmUTJ3UI_TFRv68dQLPkCLx_QXUMJcYD2lxqGj7c0cdL6SGef6oiQwEUx5L/exec",
       {
         redirect: "follow",
         method: "POST",
