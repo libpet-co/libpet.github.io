@@ -28,15 +28,8 @@ form.addEventListener("click", (e) => {
     const config = { method: "POST", body: formdata, redirect: "follow" };
     //call api
     fetch(
-      "https://script.google.com/macros/s/AKfycbzZe2akWQmUTJ3UI_TFRv68dQLPkCLx_QXUMJcYD2lxqGj7c0cdL6SGef6oiQwEUx5L/exec",
-      {
-        redirect: "follow",
-        method: "POST",
-        body: JSON.stringify(formdata),
-        headers: {
-            "Content-Type": "text/plain;charset=utf-8",
-        },
-      }
+      "https://script.google.com/macros/s/AKfycbzMTV6xEfu0pTaa_E4_Z7Mb1flt34s5EBlsEfY5UHygADc7BpPDeNNBGWi25bWkZfQ/exec",
+      config
     )
       .then((response) => response.text())
       .then((result) => {
