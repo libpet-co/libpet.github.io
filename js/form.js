@@ -64,10 +64,10 @@ form1.addEventListener("click", (e) => {
 
           const currentUrl = window.location.href;
           if (currentUrl.includes('/cn/')) {
-            window.alert("感謝您提供相關資料，我們會盡快聯絡您商量試駕細節。\n如有任何問題，歡迎隨時透過Whatsapp或電子郵件聯繫我們。");
+            window.alert("感謝您提供相關資料，我們會盡快聯絡您商量試駕細節。如有任何問題，歡迎隨時透過Whatsapp或電子郵件聯繫我們。");
           } else {
             window.alert(
-              "Thank you for providing your contact information. \n We will contact you as soon as possible! \n If you need further information, please feel free to contact us via Whatsapp or Email directly."
+              "Thank you for providing your contact information. We will contact you as soon as possible! If you need further information, please feel free to contact us via Whatsapp or Email directly."
             );
           }
 
@@ -75,10 +75,10 @@ form1.addEventListener("click", (e) => {
         } else{
           const currentUrl = window.location.href;
           if (currentUrl.includes('/cn/')) {
-            window.alert("發送失敗! 請重新嘗試。\n 如問題持續發生，請直接透過Whatsapp或電子郵件聯繫我們。\n 不便之處，敬請原諒！");
+            window.alert("發送失敗! 請重新嘗試。如問題持續發生，請直接透過Whatsapp或電子郵件聯繫我們。不便之處，敬請原諒！");
           } else {
             window.alert(
-              "Oops! There is some problems when sending your information. Please try again.\n If this keeps happen, please contact us via Whatsapp or Email directly."
+              "Oops! There is some problems when sending your information. Please try again. If this keeps happen, please contact us via Whatsapp or Email directly."
             );
           }
 
