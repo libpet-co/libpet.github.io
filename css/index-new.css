@@ -1848,7 +1848,7 @@ a {
   width: 100%;
   transform: scaleX(0);
   height: 2px;
-  bottom: -5px;
+  bottom: -3px;
   left: 0;
   background-color: #000000;
   transform-origin: bottom right;

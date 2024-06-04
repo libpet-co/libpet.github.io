@@ -162,7 +162,7 @@
       <div class="mini-index-container-button-wrapper">
         <button
           class="mini-buy-button"
-          onclick="event.preventDefault(); togglePop();"
+          onclick="event.preventDefault(); togglePop('Mini');"
         >
           Buy Now
         </button>
@@ -458,7 +458,7 @@
           <div class="mini-stat-container-button-wrapper" id="stat-button-sm">
             <button
               class="mini-buy-button"
-              onclick="event.preventDefault(); togglePop();"
+              onclick="event.preventDefault(); togglePop('Mini');"
             >
               Buy Now
             </button>
@@ -490,7 +490,7 @@
       <div class="mini-stat-container-button-wrapper" id="stat-button-lg">
         <button
           class="mini-buy-button"
-          onclick="event.preventDefault(); togglePop();"
+          onclick="event.preventDefault(); togglePop('Mini');"
         >
           Buy Now
         </button>
@@ -501,26 +501,48 @@
       <aside>
         <div class="popAlert-first-row">
           <h2>Pre-order Now</h2>
-          <button type="button" onclick="togglePop()" id="closeButton">
-            X
-          </button>
         </div>
-        <p>
-          If you are interested in Libpet Mini, please feel free to contact us for more details. <br /><br />
-          <a href="https://wa.me/85269906913" target="_blank"
-            ><i class="fa fa-whatsapp"></i>&nbsp;&nbsp;<span
-              class="hover-underline-animation"
-              >Whatsapp Us ></span
-            ></a
-          >
-          <br />
-          <a href="mailto:Marketing@libpet.com"
-            ><i class="fa fa-envelope"></i>&nbsp;&nbsp;<span
-              class="hover-underline-animation"
-              >Email Us ></span
-            ></a
-          >
+        <button type="button" onclick="togglePop('')" id="closeButton">X</button>
+        <h5>Enjoy our Early Bird Discount! <br />Before June 30 !</h5>
+        <p class="popAlert-description">
+          If you are interested in our products, please feel free to contact us
+          for more details. <br />
         </p>
+        <div class="popAlert-link">
+          <a href="https://wa.me/85269906913" target="_blank">
+            <i class="fa fa-whatsapp"></i>&nbsp;&nbsp;
+            <span class="hover-underline-animation">Whatsapp Us > </span>
+          </a>
+          <a href="mailto:Marketing@libpet.com">
+            <i class="fa fa-envelope"></i>&nbsp;&nbsp;
+            <span class="hover-underline-animation">Email Us ></span>
+          </a>
+          <div class="test-drive-book-link">
+            <a href="#" onclick="formOpen()" class="formOpen">
+              <span class="hover-underline-animation" style="color: #00394e"
+                >Test Drive Booking ></span
+              >
+            </a>
+            <div class="popAlert-form" id="form1">
+              <label for="name">Name: </label>
+              <br />
+              <input id="name" name="name" type="text" />
+              <br />
+              <label for="phone">Phone No: </label>
+              <br />
+              <input id="phone" name="phone" type="tel" />
+              <br />
+              <label for="preferred"
+                >Preferred Test Drive <br class="popAlert-form-breakline" />
+                Location & Time:
+              </label>
+              <br />
+              <input id="preferred" name="preferred" type="string" />
+              <br />
+              <button id="submit1">Submit</button>
+            </div>
+          </div>
+        </div>
       </aside>
     </section>
 
@@ -569,12 +591,9 @@
     <script src="js/nav.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/glide.js"></script>
-    <script>
-      function togglePop() {
-        let popup = document.getElementById("popAlert");
-        popup.classList.toggle("active");
-      }
+    <script src="js/form.js"></script>
 
+    <script>
       new Glide(".images", {
         type: "carousel",
         perView: 2,

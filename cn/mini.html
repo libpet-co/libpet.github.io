@@ -161,7 +161,7 @@
       <div class="mini-index-container-button-wrapper">
         <button
           class="mini-buy-button"
-          onclick="event.preventDefault(); togglePop();"
+          onclick="event.preventDefault(); togglePop('Mini');"
         >
           立即購買
         </button>
@@ -421,7 +421,7 @@
           <div class="mini-stat-container-button-wrapper" id="stat-button-sm">
             <button
               class="mini-buy-button"
-              onclick="event.preventDefault(); togglePop();"
+              onclick="event.preventDefault(); togglePop('Mini');"
             >
               立即購買
             </button>
@@ -450,7 +450,7 @@
       <div class="mini-stat-container-button-wrapper" id="stat-button-lg">
         <button
           class="mini-buy-button"
-          onclick="event.preventDefault(); togglePop();"
+          onclick="event.preventDefault(); togglePop('Mini');"
         >
           立即購買
         </button>
@@ -461,26 +461,47 @@
       <aside>
         <div class="popAlert-first-row">
           <h2>立即訂購</h2>
-          <button type="button" onclick="togglePop()" id="closeButton">
-            X
-          </button>
         </div>
-        <p>
-          感謝您對我們產品的興趣，如欲訂購或瞭解更多，請先聯繫我們取得相關資訊。<br /><br />
-          <a href="https://wa.me/85269906913" target="_blank"
-            ><i class="fa fa-whatsapp"></i>&nbsp;&nbsp;<span
-              class="hover-underline-animation"
-              >Whatsapp我們 ></span
-            ></a
-          >
+        <button type="button" onclick="togglePop('')" id="closeButton">
+          X
+        </button>
+        <h5>早鳥優惠在6月30日前!</h5>
+        <p class="popAlert-description">
+          感謝您對我們產品的興趣，如欲訂購或瞭解更多，請先聯繫我們取得相關資訊。
           <br />
-          <a href="mailto:Marketing@libpet.com"
-            ><i class="fa fa-envelope"></i>&nbsp;&nbsp;<span
-              class="hover-underline-animation"
-              >Email我們 ></span
-            ></a
-          >
         </p>
+        <div class="popAlert-link">
+          <a href="https://wa.me/85269906913" target="_blank">
+            <i class="fa fa-whatsapp"></i>&nbsp;&nbsp;
+            <span class="hover-underline-animation">Whatsapp我們 > </span>
+          </a>
+          <a href="mailto:Marketing@libpet.com">
+            <i class="fa fa-envelope"></i>&nbsp;&nbsp;
+            <span class="hover-underline-animation">Email我們 ></span>
+          </a>
+          <div class="test-drive-book-link">
+            <a href="#" onclick="formOpen()" class="formOpen">
+              <span class="hover-underline-animation" style="color: #00394e"
+                >試駕體驗 ></span
+              >
+            </a>
+            <div class="popAlert-form" id="form1">
+              <label for="name">您的姓名: </label>
+              <br />
+              <input id="name" name="name" type="text" />
+              <br />
+              <label for="phone">您的電話: </label>
+              <br />
+              <input id="phone" name="phone" type="tel" />
+              <br />
+              <label for="preferred">您方便的地點和時間 </label>
+              <br />
+              <input id="preferred" name="preferred" type="string" />
+              <br />
+              <button id="submit1">發送</button>
+            </div>
+          </div>
+        </div>
       </aside>
     </section>
 
@@ -527,12 +548,9 @@
     <script src="../js/nav.js"></script>
     <script src="../js/swiper-bundle.min.js"></script>
     <script src="../js/glide.js"></script>
-    <script>
-      function togglePop() {
-        let popup = document.getElementById("popAlert");
-        popup.classList.toggle("active");
-      }
+    <script src="../js/form.js"></script>
 
+    <script>
       new Glide(".images", {
         type: "carousel",
         perView: 2,

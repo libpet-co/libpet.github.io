@@ -146,7 +146,7 @@
         </div>
         <div class="index-power-button" id="power-btn-2">
           <div class="btn-2-a">
-            <a href="#" onclick="event.preventDefault(); togglePop();"
+            <a href="#" onclick="event.preventDefault(); togglePop('Power');"
               >Buy Now</a
             >
           </div>
@@ -177,7 +177,7 @@
               class="index-collection-button collection-btn-2 button-word-black"
             >
               <div class="btn-2-a">
-                <a href="#" onclick="event.preventDefault(); togglePop();"
+                <a href="#" onclick="event.preventDefault(); togglePop('Power');"
                   >Buy Now</a
                 >
               </div>
@@ -208,7 +208,7 @@
               class="index-collection-button collection-btn-2 button-word-black"
             >
               <div class="btn-2-a">
-                <a href="" onclick="event.preventDefault(); togglePop();"
+                <a href="" onclick="event.preventDefault(); togglePop('Mini');"
                   >Buy Now</a
                 >
               </div>
@@ -239,7 +239,7 @@
               class="index-collection-button collection-btn-2 button-word-black"
             >
               <div class="btn-2-a">
-                <a href="#" onclick="event.preventDefault(); togglePop();"
+                <a href="#" onclick="event.preventDefault(); togglePop('Air');"
                   >Buy Now</a
                 >
               </div>
@@ -466,27 +466,48 @@
       <aside>
         <div class="popAlert-first-row">
           <h2>Pre-order Now</h2>
-          <button type="button" onclick="togglePop()" id="closeButton">
-            X
-          </button>
         </div>
-        <p>
-          If you are interested in our products, please feel free to contact our
-          Marketing Manager for more details. <br /><br />
-          <a href="https://wa.me/85269906913" target="_blank"
-            ><i class="fa fa-whatsapp"></i>&nbsp;&nbsp;<span
-              class="hover-underline-animation"
-              >Whatsapp Us ></span
-            ></a
-          >
-          <br />
-          <a href="mailto:Marketing@libpet.com"
-            ><i class="fa fa-envelope"></i>&nbsp;&nbsp;<span
-              class="hover-underline-animation"
-              >Email Us ></span
-            ></a
-          >
+        <button type="button" onclick="togglePop('')" id="closeButton">X</button>
+        <h5>Enjoy our Early Bird Discount! <br />Before June 30 !</h5>
+        <p class="popAlert-description">
+          If you are interested in our products, please feel free to contact us
+          for more details. <br />
         </p>
+        <div class="popAlert-link">
+          <a href="https://wa.me/85269906913" target="_blank">
+            <i class="fa fa-whatsapp"></i>&nbsp;&nbsp;
+            <span class="hover-underline-animation">Whatsapp Us > </span>
+          </a>
+          <a href="mailto:Marketing@libpet.com">
+            <i class="fa fa-envelope"></i>&nbsp;&nbsp;
+            <span class="hover-underline-animation">Email Us ></span>
+          </a>
+          <div class="test-drive-book-link">
+            <a href="#" onclick="formOpen()" class="formOpen">
+              <span class="hover-underline-animation" style="color: #00394e"
+                >Test Drive Booking ></span
+              >
+            </a>
+            <div class="popAlert-form" id="form1">
+              <label for="name">Name: </label>
+              <br />
+              <input id="name" name="name" type="text" />
+              <br />
+              <label for="phone">Phone No: </label>
+              <br />
+              <input id="phone" name="phone" type="tel" />
+              <br />
+              <label for="preferred"
+                >Preferred Test Drive <br class="popAlert-form-breakline" />
+                Location & Time:
+              </label>
+              <br />
+              <input id="preferred" name="preferred" type="string" />
+              <br />
+              <button id="submit1">Submit</button>
+            </div>
+          </div>
+        </div>
       </aside>
     </section>
 
@@ -581,18 +602,9 @@
     <script src="js/index-swiper.js"></script>
     <script src="js/theme.js"></script>
     <script src="js/glide.js"></script>
+    <script src="js/form.js"></script>
 
     <script>
-      function togglePop() {
-        let popup = document.getElementById("popAlert");
-        popup.classList.toggle("active");
-      }
-
-      function togglePop2() {
-        let popup = document.getElementById("popAlert2");
-        popup.classList.toggle("active");
-      }
-
       // 檢查視窗寬度並更新標題內容
       function updateTitleContent() {
         var titleElement = document.getElementById(
