@@ -438,30 +438,32 @@
         <div class="popAlert-first-row">
           <h2>立即訂購</h2>
         </div>
-        <button type="button" onclick="togglePop('')" id="closeButton">
-          X
-        </button>
-        <h5>早鳥優惠在6月30日前!</h5>
-        <p class="popAlert-description">
-          感謝您對我們產品的興趣，如欲訂購或瞭解更多，請先聯繫我們取得相關資訊。 <br />
-        </p>
+        <button type="button" onclick="togglePop('')" id="closeButton">X</button>
+        <h5>早鳥優惠在6月30日前! <br> 請聯繫我們取得更多資訊</h5>
+        <!-- <p class="popAlert-description">
+          If you are interested in our products, please feel free to contact us
+          for more details. <br />
+        </p> -->
         <div class="popAlert-link">
-          <a href="https://wa.me/85269906913" target="_blank">
-            <i class="fa fa-whatsapp"></i>&nbsp;&nbsp;
-            <span class="hover-underline-animation">Whatsapp我們 > </span>
-          </a>
-          <a href="mailto:Marketing@libpet.com">
-            <i class="fa fa-envelope"></i>&nbsp;&nbsp;
-            <span class="hover-underline-animation">Email我們 ></span>
-          </a>
+          <div class="popAlert-contact-us">
+            <a href="https://wa.me/85269906913" target="_blank" class="popAlert-contact-a">
+              <i class="fa fa-whatsapp"></i>&nbsp;&nbsp;
+              <span class="hover-underline-animation">Whatsapp我們 > </span>
+            </a>
+            <a href="mailto:Marketing@libpet.com"  class="popAlert-contact-a">
+              <i class="fa fa-envelope"></i>&nbsp;&nbsp;
+              <span class="hover-underline-animation">Email我們 ></span>
+            </a>
+          </div>
+
           <div class="test-drive-book-link">
-            <a href="#" onclick="formOpen()" class="formOpen">
-              <span class="hover-underline-animation" style="color: #00394e"
-                >試駕體驗 ></span
+            <a class="formOpen">
+              <span style="color: #00394e; text-decoration: underline;"
+                >試駕體驗申請</span
               >
             </a>
             <div class="popAlert-form" id="form1">
-              <label for="name">您的姓名: </label>
+              <label for="name" style="margin-top: 0;">您的姓名: </label>
               <br />
               <input id="name" name="name" type="text" />
               <br />
@@ -470,7 +472,7 @@
               <input id="phone" name="phone" type="tel" />
               <br />
               <label for="preferred"
-                >您方便的地點和時間
+                >您方便的地點和時間: 
               </label>
               <br />
               <input id="preferred" name="preferred" type="string" />

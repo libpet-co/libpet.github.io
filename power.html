@@ -446,28 +446,32 @@
           <h2>Pre-order Now</h2>
         </div>
         <button type="button" onclick="togglePop('')" id="closeButton">X</button>
-        <h5>Enjoy our Early Bird Discount! <br />Before June 30 !</h5>
-        <p class="popAlert-description">
+        <h5>Enjoy our Early Bird Discount ! Before June 30 ! Contact us
+          for details.</h5>
+        <!-- <p class="popAlert-description">
           If you are interested in our products, please feel free to contact us
           for more details. <br />
-        </p>
+        </p> -->
         <div class="popAlert-link">
-          <a href="https://wa.me/85269906913" target="_blank">
-            <i class="fa fa-whatsapp"></i>&nbsp;&nbsp;
-            <span class="hover-underline-animation">Whatsapp Us > </span>
-          </a>
-          <a href="mailto:Marketing@libpet.com">
-            <i class="fa fa-envelope"></i>&nbsp;&nbsp;
-            <span class="hover-underline-animation">Email Us ></span>
-          </a>
+          <div class="popAlert-contact-us">
+            <a href="https://wa.me/85269906913" target="_blank" class="popAlert-contact-a">
+              <i class="fa fa-whatsapp"></i>&nbsp;&nbsp;
+              <span class="hover-underline-animation">Whatsapp Us > </span>
+            </a>
+            <a href="mailto:Marketing@libpet.com"  class="popAlert-contact-a">
+              <i class="fa fa-envelope"></i>&nbsp;&nbsp;
+              <span class="hover-underline-animation">Email Us ></span>
+            </a>
+          </div>
+
           <div class="test-drive-book-link">
-            <a href="#" onclick="formOpen()" class="formOpen">
-              <span class="hover-underline-animation" style="color: #00394e"
-                >Test Drive Booking ></span
+            <a class="formOpen">
+              <span style="color: #00394e; text-decoration: underline;"
+                >Test Drive Booking</span
               >
             </a>
             <div class="popAlert-form" id="form1">
-              <label for="name">Name: </label>
+              <label for="name" style="margin-top: 5px;">Name: </label>
               <br />
               <input id="name" name="name" type="text" />
               <br />

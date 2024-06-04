@@ -60,7 +60,7 @@ form1.addEventListener("click", (e) => {
           var popAlertDescription = document.querySelector(
             ".popAlert-description"
           );
-          popAlertDescription.classList.remove("show");
+          // popAlertDescription.classList.remove("show");
 
           const currentUrl = window.location.href;
           if (currentUrl.includes('/cn/')) {
@@ -113,7 +113,7 @@ function togglePop(productClick) {
   var popAlertDescription = document.querySelector(
     ".popAlert-description"
   );
-  popAlertDescription.classList.remove("show");
+  // popAlertDescription.classList.remove("show");
 }
 
 function togglePop2() {
