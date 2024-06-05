@@ -13,7 +13,7 @@ section#popAlert {
 
   transition: 1s top cubic-bezier(0.175, 0.885, 0.32, 1.3),
     0.1s background-color linear 0s;
-  padding-top: 5%;
+  padding-top: 3.5%;
 }
 
 section#popAlert.active {
@@ -32,6 +32,8 @@ section#popAlert aside {
   border-radius: 15px;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.6);
   margin: 0 5%;
+  max-height: 75vh;
+  overflow: scroll;
 }
 
 section#popAlert aside h2 {
@@ -49,7 +51,7 @@ section#popAlert aside h5 {
 
 section#popAlert aside .popAlert-description {
   font-size: 21px;
-  margin: 15px 0 10px 0;
+  margin: 5px 0 5px 0;
   text-align: start;
   display: block;
   line-height: 1.5;
