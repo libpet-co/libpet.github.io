@@ -97,7 +97,7 @@ form1.addEventListener("click", (e) => {
             );
           } else {
             window.alert(
-              "Thank you for providing your contact information. We will contact you as soon as possible! If you need further information, please feel free to contact us via Whatsapp or Email directly."
+              "Thank you for providing your relevant information for the test drive booking. We will contact you as soon as possible for the details! If you need further information, please feel free to contact us via Whatsapp or Email directly."
             );
           }
         } else {
