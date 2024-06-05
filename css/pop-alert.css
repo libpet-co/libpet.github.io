@@ -128,6 +128,10 @@ section#popAlert aside .test-drive-book-link {
   pointer-events: auto;
 }
 
+section#popAlert aside .test-drive-book-link input{
+  border-style: solid;
+}
+
 section#popAlert aside .popAlert-form {
   text-align: left;
   display: block;
