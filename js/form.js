@@ -1,5 +1,9 @@
 const submitButton1 = document.getElementById("submit1");
 const form1 = document.getElementById("form1");
+const loadingElement = document.getElementById("submit-loading");
+const elementsToBlur = document.querySelectorAll(
+  "body > *:not(.loading-screen)"
+);
 
 let product = "";
 let name1 = "";
@@ -20,6 +24,12 @@ form1.addEventListener("change", (e) => {
 
 form1.addEventListener("click", (e) => {
   if (e.target.id === "submit1") {
+    loadingElement.style.display = "block";
+    // 設置模糊效果
+    elementsToBlur.forEach((element) => {
+      element.style.filter = "blur(2px)";
+    });
+
     const currentUrl = window.location.href;
 
     var pageWrapper = document.body;
@@ -79,6 +89,12 @@ form1.addEventListener("click", (e) => {
     )
       .then((response) => response.text())
       .then((result) => {
+        loadingElement.style.display = "none";
+        // 移除模糊效果
+        elementsToBlur.forEach((element) => {
+          element.style.filter = "none";
+        });
+
         if (result === "success") {
           console.log("success");
           let popup = document.getElementById("popAlert");
@@ -121,7 +137,10 @@ form1.addEventListener("click", (e) => {
         formOpen.style.pointerEvents = "auto";
         formOpen.style.userSelect = "auto";
       })
-      .catch((error) => console.log("error", error));
+      .catch((error) => {
+        loadingElement.style.display = "none";
+        console.log("error", error);
+      });
   }
 });
 

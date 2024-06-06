@@ -47,6 +47,7 @@
     <link rel="stylesheet" href="../css/footer.css" />
     <link rel="stylesheet" href="../css/index-swiper.css" />
     <link rel="stylesheet" href="../css/language-dropdown.css" />
+    <link rel="stylesheet" href="../css/submit-load.css" />
 
     <link
       rel="icon"
@@ -466,7 +467,12 @@
 
           <div class="test-drive-book-link">
             <a class="formOpen">
-              <span style="color: #00394e; text-decoration: underline; font-weight: 600;"
+              <span
+                style="
+                  color: #00394e;
+                  text-decoration: underline;
+                  font-weight: 600;
+                "
                 >試駕體驗申請</span
               >
             </a>
@@ -517,6 +523,18 @@
         </p>
       </aside>
     </section>
+
+    <div class="loading-screen" id="submit-loading" style="display: none">
+      <div class="loading-wrapper">
+        <div class="box-folding">
+          <span class="box1"></span>
+          <span class="box2"></span>
+          <span class="box3"></span>
+          <span class="box4"></span>
+        </div>
+        <span class="loading" data-name="Loading" style="left: 0;">處理中</span>
+      </div>
+    </div>
 
     <footer class="footer-section">
       <div class="footer-text-wrapper">

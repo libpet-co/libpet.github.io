@@ -43,6 +43,7 @@
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/index-swiper.css" />
     <link rel="stylesheet" href="css/language-dropdown.css" />
+    <link rel="stylesheet" href="css/submit-load.css" />
 
     <link
       rel="icon"
@@ -177,7 +178,9 @@
               class="index-collection-button collection-btn-2 button-word-black"
             >
               <div class="btn-2-a">
-                <a href="#" onclick="event.preventDefault(); togglePop('Power');"
+                <a
+                  href="#"
+                  onclick="event.preventDefault(); togglePop('Power');"
                   >Buy Now</a
                 >
               </div>
@@ -467,19 +470,25 @@
         <div class="popAlert-first-row">
           <h2>Pre-order Now</h2>
         </div>
-        <button type="button" onclick="togglePop('')" id="closeButton">X</button>
-        <h5>Enjoy our Early Bird Discount ! <br>Before 30 June !</h5>
+        <button type="button" onclick="togglePop('')" id="closeButton">
+          X
+        </button>
+        <h5>Enjoy our Early Bird Discount ! <br />Before 30 June !</h5>
         <p class="popAlert-description">
           If you are interested in our products, please feel free to contact us
           for more details. <br />
         </p>
         <div class="popAlert-link">
           <div class="popAlert-contact-us">
-            <a href="https://wa.me/85269906913" target="_blank" class="popAlert-contact-a">
+            <a
+              href="https://wa.me/85269906913"
+              target="_blank"
+              class="popAlert-contact-a"
+            >
               <i class="fa fa-whatsapp"></i>&nbsp;&nbsp;
               <span class="hover-underline-animation">Whatsapp Us > </span>
             </a>
-            <a href="mailto:Marketing@libpet.com"  class="popAlert-contact-a">
+            <a href="mailto:Marketing@libpet.com" class="popAlert-contact-a">
               <i class="fa fa-envelope"></i>&nbsp;&nbsp;
               <span class="hover-underline-animation">Email Us ></span>
             </a>
@@ -487,25 +496,30 @@
 
           <div class="test-drive-book-link">
             <a class="formOpen">
-              <span style="color: #00394e; text-decoration: underline; font-weight: 600;"
+              <span
+                style="
+                  color: #00394e;
+                  text-decoration: underline;
+                  font-weight: 600;
+                "
                 >Test Drive Booking</span
               >
             </a>
             <div class="popAlert-form" id="form1">
-              <label for="name" style="margin-top: 5px;">Name: </label>
+              <label for="name" style="margin-top: 5px">Name: </label>
               <br />
-              <input id="name" name="name" type="text" required/>
+              <input id="name" name="name" type="text" required />
               <br />
               <label for="phone">Phone No: </label>
               <br />
-              <input id="phone" name="phone" type="tel" required/>
+              <input id="phone" name="phone" type="tel" required />
               <br />
               <label for="preferred"
                 >Preferred Test Drive <br class="popAlert-form-breakline" />
                 Location & Time:
               </label>
               <br />
-              <input id="preferred" name="preferred" type="string" required/>
+              <input id="preferred" name="preferred" type="string" required />
               <br />
               <button id="submit1">Submit</button>
             </div>
@@ -542,6 +556,18 @@
         </p>
       </aside>
     </section>
+
+    <div class="loading-screen" id="submit-loading" style="display: none;">
+      <div class="loading-wrapper">
+        <div class="box-folding">
+          <span class="box1"></span>
+          <span class="box2"></span>
+          <span class="box3"></span>
+          <span class="box4"></span>
+        </div>
+        <span class="loading" data-name="Loading">Loading</span>
+      </div>
+    </div>
 
     <footer class="footer-section">
       <div class="footer-text-wrapper">
