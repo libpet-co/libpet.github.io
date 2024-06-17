@@ -302,8 +302,9 @@
         }
       };
 
-      $(document).scroll(function () {
-        requestAnimationFrame(checkOffset);
+      $(document).ready(function () {
+        $(window).scroll(checkOffset);
+        checkOffset(); // 初次計算位置
       });
 
       function checkOffset() {
@@ -315,11 +316,11 @@
             $(".footer-section").height()
         ) {
           $(".components-main-showcase").css("position", "absolute");
-          $(".components-main-showcase").css("bottom", "-20%");
+          $(".components-main-showcase").css("bottom", "-35%");
         }
         if (
           $(document).scrollTop() + window.innerHeight <
-          $(".footer-section").offset().top + 100
+          $(".footer-section").offset().top - 0
         ) {
           $(".components-main-showcase").css("position", "fixed"); // restore when you scroll up
           $(".components-main-showcase").css("bottom", "75%");
