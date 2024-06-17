@@ -6,7 +6,7 @@
   font-weight: 400;
   max-width: 1600px;
   margin: 0 auto;
-  padding: 2% 0 0 5%;
+  padding: 1% 0 0 5%;
 }
 
 .components-main-container {
@@ -15,19 +15,77 @@
   align-items: flex-start;
   max-width: 1600px;
   margin: 0 auto;
-  padding: 2% 0 0 0;
+  padding: 1% 0 0 0;
 }
 
 .components-main-container .components-main-left {
-  width: 60%;
+  width: 70%;
+  position: relative;
+  min-height: 900px;
 }
 
 .components-main-container .components-main-right {
   width: 30%;
 }
 
+.components-main-showcase{
+  position: fixed;
+  scale: 0.9;
+}
+
 .components-main-showcase img {
-  width: 75%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  scale: 0.8;
+  transition: all 0.3s;
+}
+
+.components-main-showcase #base {
+  top: 15px;
+}
+
+.components-main-showcase #headrest {
+  top: 0;
+  left: 315px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.components-main-showcase #pushhandlers {
+  top: 115px;
+  left: 200px;
+  opacity: 0;
+}
+
+.components-main-showcase #phoneholder {
+  top: 254px;
+  left: 794px;
+  opacity: 0;
+}
+
+.components-main-showcase #storagebag {
+  top: 265px;
+  left: 201px;
+  opacity: 0;
+}
+
+.components-main-showcase #sideguardarm {
+  top: 175px;
+  left: 241px;
+  opacity: 0;
+}
+
+.components-main-showcase #sideguardthigh {
+  top: 374px;
+  left: 638px;
+  opacity: 0;
+}
+
+.components-main-showcase #infusionbracket {
+  top: -155px;
+  left: 437px;
+  opacity: 0;
 }
 
 .components-main-model,
@@ -68,7 +126,7 @@
   margin-bottom: 15px;
   text-align: left;
   padding: 25px 0 25px 20px;
-  width: 75%;
+  width: 82%;
   transition: all 0.2s ease-in-out;
 }
 
@@ -118,12 +176,12 @@
   margin-bottom: 70px;
   text-align: center;
   padding: 20px 0 20px 0;
-  width: 75%;
+  width: 82%;
   transition: all 0.2s ease-in-out;
 }
 
 .components-main-submit button:hover {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: #ff6317 3px solid;
   color: #000000;
 }
