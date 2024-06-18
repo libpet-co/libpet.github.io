@@ -141,15 +141,64 @@
       </div>
     </main>
 
-    <div class="components-title">
-      <h1>
-        Choose the accessories <br />
-        that suit you best
-      </h1>
-    </div>
-
     <div class="components-main-container">
-      <div class="components-main-left">
+      <div class="sandbox">
+        <div class="components-main-container">
+          <div class="components-main-right">
+            <h1>
+              Choose the accessories <br />
+              that suit you best
+            </h1>
+            <div class="components-main-model">
+              <p>Your car model</p>
+              <button class="model-button">LIBPET MINI</button>
+              <button class="model-button">LIBPET AIR</button>
+              <button class="model-button">LIBPET POWER</button>
+            </div>
+            <div class="components-main-accessories">
+              <p>Choose accessories</p>
+              <div class="accessories-list">
+                <div class="accessories-item2" id="selectHeadRest">
+                  <img src="img/components/headrest.png" alt="" />
+                  <h5>Headrest</h5>
+                </div>
+                <div class="accessories-item2" id="selectPushHandlers">
+                  <img src="img/components/pushhandlers.png" alt="" />
+                  <h5>Push Handlers</h5>
+                </div>
+                <div class="accessories-item2" id="selectPhoneHolder">
+                  <img src="img/components/phoneholder.png" alt="" />
+                  <h5>Phone Holder</h5>
+                </div>
+                <div class="accessories-item2" id="selectStorageBag">
+                  <img src="img/components/storagebag.png" alt="" />
+                  <h5>Storage Bag</h5>
+                </div>
+                <div class="accessories-guard">
+                  <div class="accessories-item2" id="selectArmGuard">
+                    <img src="img/components/sideguard.png" alt="" />
+                    <h5>Side Guard <br />(Arm)</h5>
+                  </div>
+                  <div class="accessories-item2" id="selectThighGuard">
+                    <img src="img/components/sideguard.png" alt="" />
+                    <h5>Side Guard <br />(Thigh)</h5>
+                  </div>
+                </div>
+                <div class="accessories-item2" id="selectInfusionBracket">
+                  <img src="img/components/infusionbracket.png" alt="" />
+                  <h5>Infusion Bracket</h5>
+                </div>
+              </div>
+            </div>
+            <div class="components-main-submit">
+              <button>Add To Cart</button>
+              <button>Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="showcase-sidebar">
         <div class="components-main-showcase">
           <img src="img/components/air-base.png" alt="" id="base" />
           <img src="img/components/air-headRest.png" alt="" id="headrest" />
@@ -179,54 +228,6 @@
             alt=""
             id="infusionbracket"
           />
-        </div>
-      </div>
-
-      <div class="components-main-right">
-        <div class="components-main-model">
-          <p>Your car model</p>
-          <button class="model-button">LIBPET MINI</button>
-          <button class="model-button">LIBPET AIR</button>
-          <button class="model-button">LIBPET POWER</button>
-        </div>
-        <div class="components-main-accessories">
-          <p>Choose accessories</p>
-          <div class="accessories-list">
-            <div class="accessories-item2" id="selectHeadRest">
-              <img src="img/components/headrest.png" alt="" />
-              <h5>Headrest</h5>
-            </div>
-            <div class="accessories-item2" id="selectPushHandlers">
-              <img src="img/components/pushhandlers.png" alt="" />
-              <h5>Push Handlers</h5>
-            </div>
-            <div class="accessories-item2" id="selectPhoneHolder">
-              <img src="img/components/phoneholder.png" alt="" />
-              <h5>Phone Holder</h5>
-            </div>
-            <div class="accessories-item2" id="selectStorageBag">
-              <img src="img/components/storagebag.png" alt="" />
-              <h5>Storage Bag</h5>
-            </div>
-            <div class="accessories-guard">
-              <div class="accessories-item2" id="selectArmGuard">
-                <img src="img/components/sideguard.png" alt="" />
-                <h5>Side Guard <br />(Arm)</h5>
-              </div>
-              <div class="accessories-item2" id="selectThighGuard">
-                <img src="img/components/sideguard.png" alt="" />
-                <h5>Side Guard <br />(Thigh)</h5>
-              </div>
-            </div>
-            <div class="accessories-item2" id="selectInfusionBracket">
-              <img src="img/components/infusionbracket.png" alt="" />
-              <h5>Infusion Bracket</h5>
-            </div>
-          </div>
-        </div>
-        <div class="components-main-submit">
-          <button>Add To Cart</button>
-          <button>Buy Now</button>
         </div>
       </div>
     </div>
@@ -302,30 +303,30 @@
         }
       };
 
-      $(document).ready(function () {
-        $(window).scroll(checkOffset);
-        checkOffset(); // 初次計算位置
-      });
+      // $(document).ready(function () {
+      //   $(window).scroll(checkOffset);
+      //   checkOffset(); // 初次計算位置
+      // });
 
-      function checkOffset() {
-        if (
-          $(".components-main-showcase").offset().top +
-            $(".components-main-showcase").height() >=
-          $(".footer-section").offset().top -
-            300 -
-            $(".footer-section").height()
-        ) {
-          $(".components-main-showcase").css("position", "absolute");
-          $(".components-main-showcase").css("bottom", "-35%");
-        }
-        if (
-          $(document).scrollTop() + window.innerHeight <
-          $(".footer-section").offset().top - 0
-        ) {
-          $(".components-main-showcase").css("position", "fixed"); // restore when you scroll up
-          $(".components-main-showcase").css("bottom", "75%");
-        }
-      }
+      // function checkOffset() {
+      //   if (
+      //     $(".components-main-showcase").offset().top +
+      //       $(".components-main-showcase").height() >=
+      //     $(".footer-section").offset().top -
+      //       300 -
+      //       $(".footer-section").height()
+      //   ) {
+      //     $(".components-main-showcase").css("position", "absolute");
+      //     $(".components-main-showcase").css("bottom", "-35%");
+      //   }
+      //   if (
+      //     $(document).scrollTop() + window.innerHeight <
+      //     $(".footer-section").offset().top - 0
+      //   ) {
+      //     $(".components-main-showcase").css("position", "fixed"); // restore when you scroll up
+      //     $(".components-main-showcase").css("bottom", "75%");
+      //   }
+      // }
 
       // 獲取所有按鈕元素
       const buttons = document.querySelectorAll(".model-button");

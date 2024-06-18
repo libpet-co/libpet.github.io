@@ -1,3 +1,31 @@
+.components-main-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 1% 0 0 0;
+}
+
+.components-main-container::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.components-main-container .sandbox {
+  width: 35%;
+  margin: 0 0 40px;
+  float: right;
+}
+
+.showcase-sidebar {
+  background: #fff;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  right: 5%;
+  width: 65%;
+  float: left;
+}
+
 .components-title {
   font-size: 78px;
   letter-spacing: -2px;
@@ -9,89 +37,14 @@
   padding: 1% 0 0 5%;
 }
 
-.components-main-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 1% 0 0 0;
-}
-
-.components-main-container .components-main-left {
-  width: 70%;
-  position: relative;
-  min-height: 900px;
-}
-
-.components-main-container .components-main-right {
-  width: 30%;
-}
-
-.components-main-showcase{
-  position: fixed;
-  scale: 0.75;
-}
-
-.components-main-showcase img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  scale: 0.8;
-  transition: all 0.3s;
-}
-
-.components-main-showcase #base {
-  top: 15px;
-}
-
-.components-main-showcase #headrest {
-  top: 0;
-  left: 315px;
-  opacity: 0;
-  transition: all 0.3s;
-}
-
-.components-main-showcase #pushhandlers {
-  top: 115px;
-  left: 200px;
-  opacity: 0;
-}
-
-.components-main-showcase #phoneholder {
-  top: 254px;
-  left: 794px;
-  opacity: 0;
-}
-
-.components-main-showcase #storagebag {
-  top: 265px;
-  left: 201px;
-  opacity: 0;
-}
-
-.components-main-showcase #sideguardarm {
-  top: 175px;
-  left: 241px;
-  opacity: 0;
-}
-
-.components-main-showcase #sideguardthigh {
-  top: 374px;
-  left: 638px;
-  opacity: 0;
-}
-
-.components-main-showcase #infusionbracket {
-  top: -155px;
-  left: 437px;
-  opacity: 0;
-}
-
 .components-main-model,
 .components-main-accessories {
   display: flex;
   flex-direction: column;
+}
+
+.components-main-right h1 {
+  margin-bottom: 50px;
 }
 
 .components-main-model p {
@@ -126,7 +79,7 @@
   margin-bottom: 15px;
   text-align: left;
   padding: 25px 0 25px 20px;
-  width: 82%;
+  width: 23vw;
   transition: all 0.2s ease-in-out;
 }
 
@@ -176,7 +129,7 @@
   margin-bottom: 70px;
   text-align: center;
   padding: 20px 0 20px 0;
-  width: 82%;
+  width: 23vw;
   transition: all 0.2s ease-in-out;
 }
 
@@ -196,6 +149,7 @@
   cursor: pointer;
   border: #f5f5f7 3px solid;
   transition: all 0.2s ease-in-out;
+  width: 11vw;
 }
 
 .accessories-item2 img {
@@ -222,4 +176,63 @@
 .accessories-item2.active {
   background-color: #ffffff;
   border: #ff6317 3px solid;
+}
+
+.components-main-showcase {
+  position: relative;
+  height: 900px;
+  margin-top: 12%;
+}
+
+.components-main-showcase img {
+  position: absolute;
+  scale: 0.7;
+  transition: all 0.3s;
+}
+
+.components-main-showcase #base {
+  top: 0%;
+  left: -170px;
+}
+
+.components-main-showcase #headrest {
+  top: 40px;
+  left: 169px;
+  opacity: 0;
+}
+
+.components-main-showcase #pushhandlers {
+  top: 144px;
+  left: 51px;
+  opacity: 0;
+}
+
+.components-main-showcase #phoneholder {
+  top: 265px;
+  left: 588px;
+  opacity: 0;
+}
+
+.components-main-showcase #storagebag {
+  top: 260px;
+  left: 52px;
+  opacity: 0;
+}
+
+.components-main-showcase #sideguardarm {
+  top: 194px;
+  left: 84px;
+  opacity: 0;
+}
+
+.components-main-showcase #sideguardthigh {
+  top: 366px;
+  left: 449px;
+  opacity: 0;
+}
+
+.components-main-showcase #infusionbracket {
+  top: -134px;
+  left: 271px;
+  opacity: 0;
 }
