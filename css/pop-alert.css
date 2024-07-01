@@ -37,10 +37,11 @@ section#popAlert aside {
 }
 
 section#popAlert aside h2 {
-  font-size: 32px;
-  color: #000;
+  font-size: 38px;
+  color: #00394E;
   margin: 0 auto;
   white-space: nowrap;
+  font-weight: 600;
 }
 
 section#popAlert aside h5 {
@@ -175,9 +176,6 @@ section#popAlert aside .popAlert-form.show {
 }
 
 @media screen and (max-width: 450px) {
-  section#popAlert aside h2 {
-    font-size: 28px;
-  }
   section#popAlert aside h5 {
     font-size: 18px;
   }
@@ -216,7 +214,7 @@ section#popAlert aside .popAlert-form.show {
 
 @media screen and (max-width: 400px) {
   section#popAlert aside h2 {
-    font-size: 24px;
+    font-size: 28px;
   }
   section#popAlert aside h5 {
     font-size: 18px;
@@ -246,7 +244,7 @@ section#popAlert aside .popAlert-form.show {
     margin-top: -8px;
   }
   section#popAlert aside h2 {
-    font-size: 7vw;
+    font-size: 9vw;
   }
   section#popAlert aside h5 {
     font-size: 4.5vw;

@@ -644,6 +644,16 @@ a {
   margin-top: 50px;
 }
 
+.power-index-container .power-index-container-button-wrapper p{
+  font-size: 24px;
+}
+
+.power-index-container .power-index-container-button-wrapper #power-price{
+  font-size: 32px;
+  color: #000000;
+  font-weight: 600;
+}
+
 .power-buy-button {
   width: auto;
   height: auto;
@@ -781,6 +791,16 @@ a {
   }
 }
 
+@media screen and (max-width: 400px){
+  .power-index-container .power-index-container-button-wrapper p{
+    font-size: 20px;
+  }
+  
+  .power-index-container .power-index-container-button-wrapper #power-price{
+    font-size: 28px;
+  }
+}
+
 @media screen and (max-width: 350px) {
   .power-index-container .power-index-container-image-wrapper .power-95deg img {
     width: 100px;
@@ -832,6 +852,13 @@ a {
   }
   .power-index-container .power-index-container-image-wrapper {
     margin: 30vw auto 30vw auto;
+  }
+  .power-index-container .power-index-container-button-wrapper p{
+    font-size: 7vw;
+  }
+  
+  .power-index-container .power-index-container-button-wrapper #power-price{
+    font-size: 10vw;
   }
 }
 /*-----------------------Finish power-index-container--------------------------------------*/
@@ -3616,3 +3643,4 @@ section {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+

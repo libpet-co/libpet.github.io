@@ -422,6 +422,16 @@ a {
   margin-top: 50px;
 }
 
+.mini-index-container .mini-index-container-button-wrapper p{
+  font-size: 24px;
+}
+
+.mini-index-container .mini-index-container-button-wrapper #mini-price{
+  font-size: 32px;
+  color: #000000;
+  font-weight: 600;
+}
+
 .mini-buy-button {
   width: auto;
   height: auto;
@@ -549,6 +559,14 @@ a {
   .mini-120deg p {
     font-size: 17px;
   }
+
+  .mini-index-container .mini-index-container-button-wrapper p{
+    font-size: 20px;
+  }
+  
+  .mini-index-container .mini-index-container-button-wrapper #mini-price{
+    font-size: 28px;
+  }
 }
 
 @media screen and (max-width: 300px) {
@@ -573,6 +591,13 @@ a {
   }
   .mini-index-container .mini-index-container-image-wrapper {
     margin: 30vw auto 30vw auto;
+  }
+  .mini-index-container .mini-index-container-button-wrapper p{
+    font-size: 7vw;
+  }
+  
+  .mini-index-container .mini-index-container-button-wrapper #mini-price{
+    font-size: 10vw;
   }
 }
 /*-----------------------Finish mini-index-container--------------------------------------*/
