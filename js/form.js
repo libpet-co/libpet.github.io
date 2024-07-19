@@ -71,6 +71,11 @@ form1.addEventListener("click", (e) => {
       popAlertFormBtn.style.userSelect = "auto";
       formOpen.style.pointerEvents = "auto";
       formOpen.style.userSelect = "auto";
+      loadingElement.style.display = "none";
+      // 移除模糊效果
+      elementsToBlur.forEach((element) => {
+        element.style.filter = "none";
+      });
       return;
     }
 

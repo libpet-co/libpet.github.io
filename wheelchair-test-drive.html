@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/e2ba1227d7.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-FDKG5TNYZZ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-FDKG5TNYZZ");
+    </script>
+
+    <title>Libpet</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/mini-buy.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/pop-alert.css" />
+    <link rel="stylesheet" href="css/language-dropdown.css" />
+    <link rel="stylesheet" href="css/submit-load.css" />
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="img/logo-black-without-word.svg"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="page-top">
+    <main>
+      <div class="nav-container">
+        <nav class="navbar navbar-expand-md power-bg-light fixed-top shadow-md">
+          <div
+            class="container override-nav"
+            style="max-width: 1600px; padding: 0 5%"
+          >
+            <a class="navbar-brand mx-auto d-lg-none" href="index.html">
+              <img
+                class="iconlogo"
+                src="img/logo-black-without-word.svg"
+                width="30"
+              />
+            </a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <a class="navbar-brand d-none d-lg-block" href="index.html">
+                <img
+                  class="iconlogo"
+                  src="img/logo-black-without-word.svg"
+                  width="23"
+                />
+              </a>
+              <ul class="navbar-nav" style="margin-left: auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="power.html">Power</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="mini.html">Mini</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="air.html">Air</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tenk.html">TenK</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="go-x.html">GoX</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="event.html">Event</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="about-us.html">About Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">
+              <i
+                class="fa fa-globe"
+                style="font-size: 24px; pointer-events: none"
+              ></i>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="mini.html">English</a>
+              <a href="cn/mini.html">繁體中文</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </main>
+
+    <div class="mini-index">
+      <div class="mini-index-image-wrapper">
+        <figure class="unit-image-mini"></figure>
+      </div>
+    </div>
+
+    <div class="mini-index-container">
+      <div class="mini-index-container-word-wrapper">
+        <div class="popAlert-form" id="form1">
+          <p>
+            請提供以下資料。 <br />
+            途齡產品專家以 WhatsApp 聯絡您，安排試車詳情
+          </p>
+          <div style="display: flex; column-gap: 3%">
+            <div class="left">
+              <label for="name" style="margin-top: 0">您的姓名: </label>
+              <br />
+              <input id="name" name="name" type="text" required />
+              <br />
+              <label for="phone">您的電話: </label>
+              <br />
+              <input id="phone" name="phone" type="tel" required />
+              <br />
+              <label for="preferred">您方便的地點和時間: </label>
+              <br />
+              <input id="preferred" name="preferred" type="string" required />
+              <br />
+            </div>
+            <div class="right">
+              <label for="inquiry" style="margin-top: 0">您的查詢: </label>
+              <br />
+              <input
+                id="inquiry"
+                name="inquiry"
+                type="text"
+                required
+                style="height: 83%"
+              />
+            </div>
+          </div>
+
+          <button id="submit1">發送</button>
+          <br>
+          <br>
+          <p>
+            感謝您的試車及查詢！ <br />
+            歡迎WhatsApp聯絡途齡產品專家。<br />
+            <br>
+            <a
+              href="https://wa.me/85269906913"
+              target="_blank"
+              class="popAlert-contact-a"
+            >
+              <i class="fa fa-whatsapp"></i>&nbsp;&nbsp;
+              <span class="hover-underline-animation">Whatsapp我們 > </span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="loading-screen" id="submit-loading" style="display: none">
+      <div class="loading-wrapper">
+        <div class="box-folding">
+          <span class="box1"></span>
+          <span class="box2"></span>
+          <span class="box3"></span>
+          <span class="box4"></span>
+        </div>
+        <span class="loading" data-name="Loading">Loading</span>
+      </div>
+    </div>
+
+    <footer class="footer-section">
+      <div class="footer-text-wrapper">
+        <h1>CONTACT US</h1>
+        <div class="contact-us-info">
+          <div class="footer-description">
+            <i class="fa fa-envelope"></i>&nbsp;&nbsp;Marketing@libpet.com
+          </div>
+          <div class="footer-description">
+            <i class="fa fa-phone-alt"></i>&nbsp;&nbsp;+852 6990 6913
+          </div>
+          <div class="footer-description">
+            <i class="fa fa-whatsapp"></i>&nbsp;&nbsp;+852 6990 6913
+          </div>
+        </div>
+        <hr />
+        <br />
+        <h1>LOCATION</h1>
+        <div class="location-info">
+          <div class="footer-description">
+            <i class="fa fa-map-marker-alt"></i> &nbsp;&nbsp;InnoHub 4/F, Jockey
+            Club Innovation Tower, The Hong Kong Polytechnic University
+          </div>
+          <div class="footer-description">
+            <i class="fa fa-map-marker-alt"></i> &nbsp;&nbsp;Unit 659, 6/F,
+            Building 19W, No. 19 Science Park West Avenue, Hong Kong Science
+            Park
+          </div>
+        </div>
+        <hr />
+        <br />
+        <div class="footer-description" style="line-height: 2">
+          Copyright © Libpet Tech Limited. All Right Reserved.
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery -->
+
+    <script src="js/jquery.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/mini-test.js"></script>
+
+    <script>
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+  </body>
+</html>
