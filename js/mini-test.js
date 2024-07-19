@@ -86,7 +86,7 @@ form1.addEventListener("click", (e) => {
         formdata.append("name", name1);
         formdata.append("phone", phone1);
         formdata.append("preferred", preferred1);
-        formdata.append("inquiry", preferred1);
+        formdata.append("inquiry", inquiry1);
 
         const config = { method: "POST", body: formdata, redirect: "follow" };
         //call api
@@ -118,7 +118,7 @@ form1.addEventListener("click", (e) => {
                         );
                     } else {
                         window.alert(
-                            "Thank you for providing your relevant information for the test drive booking. We will contact you as soon as possible for the details! If you need further information, please feel free to contact us via Whatsapp or Email directly."
+                            "感謝您的試車及查詢！歡迎WhatsApp聯絡途齡產品專家。"
                         );
                     }
                 } else {
@@ -129,7 +129,7 @@ form1.addEventListener("click", (e) => {
                         );
                     } else {
                         window.alert(
-                            "Oops! There is some problems when sending your information. Please try again. If this keeps happen, please contact us via Whatsapp or Email directly."
+                            "發送失敗! 請重新嘗試。如問題持續發生，請直接透過Whatsapp或電子郵件聯繫我們。不便之處，敬請原諒！"
                         );
                     }
                 }
