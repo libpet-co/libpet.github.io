@@ -312,7 +312,7 @@ a {
   }
 }
 
-@media screen and (max-width: 2000px) and (max-height: 1250px) {
+@media screen and (max-width: 2000px) and (max-height: 1150px) {
   .index-modular-robot {
     height: 990px;
   }
@@ -320,7 +320,7 @@ a {
     .index-modular-robot-image-wrapper
     .unit-image-modular-robot {
     height: 970px;
-    background-size: 1700px auto;
+    background-size: 1920px auto;
   }
 }
 
