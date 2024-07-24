@@ -190,6 +190,32 @@ a {
   }
 }
 
+/* @media screen and (max-width: 2400px) {
+  .index-modular-robot {
+    height: 1520px;
+  }
+  .index-modular-robot
+    .index-modular-robot-image-wrapper
+    .unit-image-modular-robot {
+    height: 1520px;
+    background-size: 3440px auto;
+  }
+}
+
+@media screen and (max-width: 2400px) and (max-height: 1475px) {
+  .index-modular-robot {
+    height: 1400px;
+  }
+  .index-modular-robot
+    .index-modular-robot-image-wrapper
+    .unit-image-modular-robot {
+    height: 1400px;
+    background-size: 2400px auto;
+  }
+} */
+
+
+
 @media screen and (max-width: 2000px) {
   .index-modular-robot {
     height: 1725px;
