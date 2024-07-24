@@ -172,6 +172,11 @@ function togglePop2() {
   popup.classList.toggle("active");
 }
 
+function togglePop3() {
+  let popup = document.getElementById("robotAlert");
+  popup.classList.toggle("active");
+}
+
 function formOpen() {
   event.preventDefault();
   var popAlertForm = document.querySelector(".popAlert-form");
