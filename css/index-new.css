@@ -442,6 +442,18 @@ a {
   }
 }
 
+@media screen and (max-width: 2000px) and (max-height: 1080px) {
+  .index-modular-robot {
+    height: 970px;
+  }
+  .index-modular-robot
+    .index-modular-robot-image-wrapper
+    .unit-image-modular-robot {
+    height: 950px;
+    background-size: 1865px auto;
+  }
+}
+
 @media screen and (min-width: 1999.5px) {
   .index-modular-robot .index-modular-robot-word-wrapper {
     bottom: 10%;
