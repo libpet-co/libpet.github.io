@@ -190,6 +190,18 @@ a {
   }
 }
 
+@media screen and (max-width: 2600px) and (max-height: 1450px) {
+  .index-modular-robot {
+    height: 1400px;
+  }
+  .index-modular-robot
+    .index-modular-robot-image-wrapper
+    .unit-image-modular-robot {
+    height: 1375px;
+    background-size: 2520px auto;
+  }
+}
+
 @media screen and (max-width: 2400px) {
   .index-modular-robot {
     height: 1920px;
