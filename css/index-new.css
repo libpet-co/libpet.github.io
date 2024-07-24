@@ -358,7 +358,7 @@ a {
   }
 }
 
-@media screen and (max-width: 2000px) and (max-height: 1700px) {
+@media screen and (max-width: 2000px) and (max-height: 1680px) {
   .index-modular-robot {
     height: 1600px;
   }
@@ -370,7 +370,7 @@ a {
   }
 }
 
-@media screen and (max-width: 2000px) and (max-height: 1600px) {
+@media screen and (max-width: 2000px) and (max-height: 1580px) {
   .index-modular-robot {
     height: 1500px;
   }
@@ -382,7 +382,7 @@ a {
   }
 }
 
-@media screen and (max-width: 2000px) and (max-height: 1500px) {
+@media screen and (max-width: 2000px) and (max-height: 1480px) {
   .index-modular-robot {
     height: 1400px;
   }
@@ -394,7 +394,7 @@ a {
   }
 }
 
-@media screen and (max-width: 2000px) and (max-height: 1400px) {
+@media screen and (max-width: 2000px) and (max-height: 1380px) {
   .index-modular-robot {
     height: 1300px;
   }
@@ -406,7 +406,7 @@ a {
   }
 }
 
-@media screen and (max-width: 2000px) and (max-height: 1300px) {
+@media screen and (max-width: 2000px) and (max-height: 1280px) {
   .index-modular-robot {
     height: 1200px;
   }
@@ -418,7 +418,7 @@ a {
   }
 }
 
-@media screen and (max-width: 2000px) and (max-height: 1200px) {
+@media screen and (max-width: 2000px) and (max-height: 1180px) {
   .index-modular-robot {
     height: 1100px;
   }
@@ -427,30 +427,6 @@ a {
     .unit-image-modular-robot {
     height: 1100px;
     background-size: 2000px auto;
-  }
-}
-
-@media screen and (max-width: 2000px) and (max-height: 1100px) {
-  .index-modular-robot {
-    height: 1000px;
-  }
-  .index-modular-robot
-    .index-modular-robot-image-wrapper
-    .unit-image-modular-robot {
-    height: 1000px;
-    background-size: 1800px auto;
-  }
-}
-
-@media screen and (max-width: 2000px) and (max-height: 1000px) {
-  .index-modular-robot {
-    height: 900px;
-  }
-  .index-modular-robot
-    .index-modular-robot-image-wrapper
-    .unit-image-modular-robot {
-    height: 900px;
-    background-size: 1600px auto;
   }
 }
 
