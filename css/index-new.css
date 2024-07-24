@@ -82,6 +82,12 @@ a {
   display: none;
 }
 
+@media screen and (min-width: 1999.5px) {
+  .index-modular-robot .index-modular-robot-word-wrapper {
+    bottom: 10%;
+}
+}
+
 @media screen and (max-width: 2000px) {
   .index-modular-robot {
     height: 1825px;
