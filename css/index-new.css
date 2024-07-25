@@ -1053,7 +1053,7 @@ a {
 
 .collection-module-2 .collection {
   height: 890px;
-  background-color: #bebebe;
+  background-color: #e5e5e5;
   position: relative;
   transition: background-color 1s ease;
   pointer-events: auto;
@@ -1067,7 +1067,7 @@ a {
 .collection .index-collection-2-word-wrapper h1 {
   font-size: 130px;
   line-height: 0.8;
-  color: #e1e1e1;
+  color: #b1afaf9e;
   font-weight: 700;
   position: relative;
   z-index: 5;
@@ -1120,7 +1120,7 @@ a {
 
 .index-collection-2-button-wrapper .collection-btn-2 {
   width: 250px;
-  height: 50px;
+  height: 65px;
   border-radius: 35px;
   background-color: #232323;
   margin-left: 20px;
@@ -1142,12 +1142,16 @@ a {
   color: #ffffff;
   transition: all 0.3s ease-out;
 }
-.index-collection-2-button-wrapper .button-word-white a:hover {
-  color: #000000;
+.index-collection-2-button-wrapper .button-word-white:hover a{
+  color: #FFFFFF;
+}
+.index-collection-2-button-wrapper .button-word-white:hover {
+  background-color: #FFFFFF;
 }
 
 .index-collection-2-button-wrapper .button-word-black {
-  background-color: #ffffff;
+  border: #000 solid 3px;
+  background-color: #FFFFFF;
   transition: all 0.3s ease-out;
 }
 .index-collection-2-button-wrapper .button-word-black a {
@@ -1160,6 +1164,7 @@ a {
 .index-collection-2-button-wrapper .button-word-black:hover a {
   color: #ffffff;
 }
+
 
 .index-collection-2
   .index-collection-2-image-wrapper
@@ -1180,7 +1185,7 @@ a {
   top: 0;
   -webkit-transform: none;
   transform: none;
-  filter: brightness(0.75);
+  filter: brightness(0.9);
   transition: filter 1s ease;
   pointer-events: none;
 }
@@ -1203,7 +1208,7 @@ a {
   top: 0;
   -webkit-transform: none;
   transform: none;
-  filter: brightness(0.75);
+  filter: brightness(0.9);
   transition: filter 1s ease;
   pointer-events: none;
 }
@@ -1226,7 +1231,7 @@ a {
   top: 0;
   -webkit-transform: none;
   transform: none;
-  filter: brightness(0.75);
+  filter: brightness(0.9);
   transition: filter 1s ease;
   pointer-events: none;
 }
@@ -1249,29 +1254,29 @@ a {
   top: 0;
   -webkit-transform: none;
   transform: none;
-  filter: brightness(0.75);
+  filter: brightness(0.9);
   transition: filter 1s ease;
   pointer-events: none;
 }
 
 .collection-module-2 .collection:hover .unit-collection-delivery {
-  filter: brightness(0.85);
+  filter: brightness(1.0);
 }
 
 .collection-module-2 .collection:hover .unit-collection-logistics {
-  filter: brightness(0.85);
+  filter: brightness(1.0);
 }
 
 .collection-module-2 .collection:hover .unit-collection-robot-chair {
-  filter: brightness(0.85);
+  filter: brightness(1.0);
 }
 
 .collection-module-2 .collection:hover .unit-collection-security {
-  filter: brightness(0.85);
+  filter: brightness(1.0);
 }
 
 .collection-module-2 .collection:hover {
-  background-color: #d8d8d8;
+  background-color: #FFFFFF;
 }
 
 @media screen and (max-width: 2300px) {
@@ -1577,7 +1582,7 @@ a {
   }
   .collection .index-collection-2-word-wrapper h1 {
     font-size: 14vw;
-    color: #e1e1e1;
+    color: #b1afaf9e;
     font-weight: 700;
   }
   .index-collection-2-button-wrapper .index-collection-2-button {
