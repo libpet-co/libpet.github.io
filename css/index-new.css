@@ -23,7 +23,7 @@ a {
 
 .index-modular-robot {
   background-color: #ffffff;
-  height: 1935px;
+  height: 1850px;
   position: relative;
   max-width: 3440px;
   margin: 0 auto;
@@ -43,7 +43,7 @@ a {
   .unit-image-modular-robot {
   background-image: url(../img/index-new/index-modular-robot-bg.png);
   width: 100%;
-  height: 1935px;
+  height: 1850px;
   background-size: 3440px auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -180,24 +180,24 @@ a {
 
 @media screen and (max-width: 2600px) and (max-height: 1535px) {
   .index-modular-robot {
-    height: 1520px;
+    height: 1450px;
   }
   .index-modular-robot
     .index-modular-robot-image-wrapper
     .unit-image-modular-robot {
-    height: 1520px;
+    height: 1450px;
     background-size: 2640px auto;
   }
 }
 
 @media screen and (max-width: 2600px) and (max-height: 1450px) {
   .index-modular-robot {
-    height: 1400px;
+    height: 1350px;
   }
   .index-modular-robot
     .index-modular-robot-image-wrapper
     .unit-image-modular-robot {
-    height: 1375px;
+    height: 1325px;
     background-size: 2520px auto;
   }
 }
@@ -348,12 +348,12 @@ a {
 
 @media screen and (max-width: 2200px) and (max-height: 1350px) {
   .index-modular-robot {
-    height: 1300px;
+    height: 1250px;
   }
   .index-modular-robot
     .index-modular-robot-image-wrapper
     .unit-image-modular-robot {
-    height: 1300px;
+    height: 1200px;
     background-size: 2200px auto;
   }
 }
