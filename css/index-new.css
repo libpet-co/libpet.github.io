@@ -1153,6 +1153,8 @@ a {
   border: #000 solid 3px;
   background-color: #FFFFFF;
   transition: all 0.3s ease-out;
+  cursor: pointer;
+  
 }
 .index-collection-2-button-wrapper .button-word-black a {
   color: #000000;
