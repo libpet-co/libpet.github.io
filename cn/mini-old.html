@@ -42,9 +42,9 @@
     <!-- Theme CSS -->
     <link rel="stylesheet" href="../css/glide.core.min.css" />
     <link rel="stylesheet" href="../css/glide.theme.min.css" />
-    <link rel="stylesheet" href="../css/power-new.css" />
-    <link rel="stylesheet" href="../css/pop-alert.css" />
+    <link rel="stylesheet" href="../css/mini-new.css" />
     <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/pop-alert.css" />
     <link rel="stylesheet" href="../css/language-dropdown.css" />
     <link rel="stylesheet" href="../css/submit-load.css" />
 
@@ -70,7 +70,7 @@
             class="container override-nav"
             style="max-width: 1600px; padding: 0 5%"
           >
-            <a class="navbar-brand mx-auto d-lg-none" href="index.html">
+            <a class="navbar-brand mx-auto d-lg-none" href="../cn/index.html">
               <img
                 class="iconlogo"
                 src="../img/logo-black-without-word.svg"
@@ -99,10 +99,10 @@
                 />
               </a>
               <ul class="navbar-nav" style="margin-left: auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link" href="power.html">Power</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                   <a class="nav-link" href="mini.html">Mini</a>
                 </li>
                 <li class="nav-item">
@@ -111,12 +111,15 @@
                 <li class="nav-item">
                   <a class="nav-link" href="../tenk.html">TenK</a>
                 </li>
+
                 <li class="nav-item">
                   <a class="nav-link" href="../go-x.html">GoX</a>
                 </li>
+
                 <li class="nav-item">
                   <a class="nav-link" href="event.html">新聞中心</a>
                 </li>
+
                 <li class="nav-item">
                   <a class="nav-link" href="about-us.html">關於我們</a>
                 </li>
@@ -124,7 +127,7 @@
             </div>
           </div>
 
-          <div class="dropdown dropdown-power">
+          <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">
               <i
                 class="fa fa-globe"
@@ -132,78 +135,87 @@
               ></i>
             </button>
             <div id="myDropdown" class="dropdown-content">
-              <a href="../power.html">English</a>
-              <a href="power.html">繁體中文</a>
+              <a href="../mini.html">English</a>
+              <a href="../cn/mini.html">繁體中文</a>
             </div>
           </div>
         </nav>
       </div>
     </main>
 
-    <div class="power-index">
-      <div class="power-index-image-wrapper">
-        <figure
-          class="unit-image-power header-container"
-          data-bgimage="../img/power-new/power-index.png"
-        ></figure>
+    <div class="mini-index">
+      <div class="mini-index-image-wrapper">
+        <figure class="unit-image-mini"></figure>
       </div>
     </div>
 
-    <div class="power-index-container">
-      <div class="power-index-container-button-wrapper phone-display">
-        <p>優惠期至8月31日</p>
-        <button class="power-buy-button" onclick="togglePop('Power')">
-          預約試車/訂購
-        </button>
-      </div>
-      <div class="power-index-container-word-wrapper">
-        <p style="font-weight: 400">
-          Libpet Power 結合了精緻的藝術和工程。
+    <div class="mini-index-container">
+      <div class="mini-index-container-word-wrapper">
+        <p>
+          Libpet Mini是一款精心打造的工藝品和精細工程的代表。
           <br class="breakline-lg" />
-          它代表着創新的工程成就，
+          它代表了創新的工程成就，
           <br class="breakline-lg" />
-          在提供卓越的駕乘品質的同時，還提供了高水平的客製化能力。
+          提供卓越的乘坐品質，為您的出行帶來快樂。
         </p>
       </div>
-      <div class="power-index-container-button-wrapper large-display">
-        <p>優惠期至8月31日</p>
-        <button class="power-buy-button" onclick="togglePop('Power')">
-          預約試車/訂購
+      <div class="mini-index-container-button-wrapper">
+        <p><span id="mini-price">HK$38,000</span> 起</p>
+        <button
+          class="mini-buy-button"
+          onclick="event.preventDefault(); togglePop('Mini');"
+        >
+          立即購買
         </button>
       </div>
 
-      <div class="power-index-container-image-wrapper">
-        <div class="power-95deg">
-          <img
-            loading="lazy"
-            src="../img/power-new/power-degree-95.png"
-            alt=""
-          />
+      <div class="mini-index-container-image-wrapper">
+        <div class="mini-95deg">
+          <img loading="lazy" src="../img/mini-new/mini-degree-95.png" alt="" />
           <p>手靠調節</p>
         </div>
-        <div class="power-145deg">
+        <div class="mini-120deg">
           <img
             loading="lazy"
-            src="../img/power-new/power-degree-145.png"
+            src="../img/mini-new/mini-degree-120.png"
             alt=""
           />
           <p>背靠調節</p>
         </div>
-        <div class="power-145deg">
-          <img
-            loading="lazy"
-            src="../img/power-new/power-degree-80.png"
-            alt=""
-          />
-          <p>腳踏調節</p>
-        </div>
       </div>
     </div>
 
-    <div class="power-data-section">
+    <div class="mini-smart-section">
+      <div class="mini-smart-word-wrapper">
+        <h1 class="mini-smart-title">智慧出行</h1>
+        <br />
+        <br class="mini-smart-para-breakline" />
+        <p class="mini-smart-description">
+          Libpet Mini 能夠應對各種室內和室外環境，
+          <br class="mini-smart-breakline-lg" />
+          全靠其精密的設計和智能的控制方式
+        </p>
+      </div>
+      <div class="mini-smart-image-wrapper">
+        <img
+          loading="lazy"
+          id="mini-smart-image-1"
+          src="../img/mini-new/mini-smart-background-1.png"
+          alt=""
+        />
+        <img
+          loading="lazy"
+          id="air-smart-image-2"
+          src="../img/mini-new/mini-smart-background-2.png"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div class="mini-data-section">
       <div class="data">
         <div class="data-image">
-          <img loading="lazy" src="../img/power-new/data-weight.png" alt="" />
+          <img loading="lazy" src="../img/mini-new/data-weight.png" alt="" />
         </div>
         <p class="data-description">最大承重</p>
       </div>
@@ -211,7 +223,7 @@
         <div class="data-image">
           <img
             loading="lazy"
-            src="../img/power-new/data-ground-clearance.png"
+            src="../img/mini-new/data-ground-clearance.png"
             alt=""
           />
         </div>
@@ -221,11 +233,7 @@
       </div>
       <div class="data">
         <div class="data-image">
-          <img
-            loading="lazy"
-            src="../img/power-new/data-max-speed.png"
-            alt=""
-          />
+          <img loading="lazy" src="../img/mini-new/data-max-speed.png" alt="" />
         </div>
         <p class="data-description">最大速度</p>
       </div>
@@ -233,7 +241,7 @@
         <div class="data-image">
           <img
             loading="lazy"
-            src="../img/power-new/data-obstacle-clearance.png"
+            src="../img/mini-new/data-obstacle-clearance.png"
             alt=""
           />
         </div>
@@ -245,7 +253,7 @@
         <div class="data-image">
           <img
             loading="lazy"
-            src="../img/power-new/data-driving-range.png"
+            src="../img/mini-new/data-driving-range.png"
             alt=""
           />
         </div>
@@ -253,20 +261,20 @@
       </div>
       <div class="data">
         <div class="data-image">
-          <img loading="lazy" src="../img/power-new/data-gradient.png" alt="" />
+          <img loading="lazy" src="../img/mini-new/data-gradient.png" alt="" />
         </div>
         <p class="data-description">可爬坡角度</p>
       </div>
     </div>
 
-    <div class="power-ultrasonic-section">
-      <div class="power-ultrasonic-image-wrapper">
+    <div class="mini-ultrasonic-section">
+      <div class="mini-ultrasonic-image-wrapper">
         <figure
           class="unit-image-ultrasonic header-container"
-          data-bgimage="../img/power-new/power-ultrasonic.png"
+          data-bgimage="../img/mini-new/mini-ultrasonic.png"
         ></figure>
       </div>
-      <div class="power-ultrasonic-word-wrapper">
+      <div class="mini-ultrasonic-word-wrapper">
         <h1>超聲波防碰撞<br /></h1>
         <p>
           智能超聲波防碰撞系統 <br />
@@ -275,38 +283,61 @@
       </div>
     </div>
 
-    <div class="power-control-section">
-      <div class="power-control-word-wrapper">
-        <h1 id="power-control-title">模組化控制面板</h1>
+    <div class="mini-control-section">
+      <div class="mini-control-word-wrapper">
+        <h1>控制面板</h1>
         <p>
-          多功能集成控制面板控制車輛
-          <br class="power-control-breakline-lg" />，輕鬆易用
+          360度萬向操作杆控制<br
+            class="mini-control-breakline-lg"
+          />助您靈活操控
         </p>
       </div>
-      <div class="power-control-image-wrapper">
+      <div class="mini-control-image-wrapper">
         <figure
           class="unit-image-control header-container"
-          data-bgimage="../img/power-new/power-control-panel.png"
+          data-bgimage="../img/mini-new/mini-control-panel.png"
         ></figure>
       </div>
     </div>
 
-    <div class="power-app-word-wrapper">
+    <div class="mini-turning-section">
+      <div class="mini-turning-word-wrapper">
+        <h1>
+          最小旋轉半徑 <br />
+          72厘米
+        </h1>
+        <p>
+          Libpet Mini 最小旋轉半徑僅有72厘米，
+          <br class="mini-turning-breakline-lg-2" />
+          讓您能在狹小的空間中方便順暢地活動與駕駛
+          <br class="mini-turning-breakline-lg-2" />
+          讓您能夠輕鬆進行迴轉，為您帶來無語倫比的操作體驗。
+        </p>
+      </div>
+      <div class="mini-turning-image-wrapper">
+        <figure
+          class="unit-image-turning header-container"
+          data-bgimage="../img/mini-new/mini-turning.png"
+        ></figure>
+      </div>
+    </div>
+
+    <div class="mini-app-word-wrapper">
       <h1>APP 控制</h1>
       <p>可於平板或手機控制</p>
     </div>
-    <div class="power-app-showcase-section">
+    <div class="mini-app-showcase-section">
       <div class="images glide">
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides">
             <li class="glide__slide">
-              <img loading="lazy" src="../img/power-new/power-app-1.png" />
+              <img loading="lazy" src="../img/mini-new/mini-app-1.png" />
             </li>
             <li class="glide__slide">
-              <img loading="lazy" src="../img/power-new/power-app-2.png" />
+              <img loading="lazy" src="../img/mini-new/mini-app-1.png" />
             </li>
             <li class="glide__slide">
-              <img loading="lazy" src="../img/power-new/power-app-3.png" />
+              <img loading="lazy" src="../img/mini-new/mini-app-1.png" />
             </li>
           </ul>
         </div>
@@ -318,61 +349,61 @@
       </div>
     </div>
 
-    <div class="power-removable-section">
-      <div class="power-removable-word-wrapper">
+    <div class="mini-removable-section">
+      <div class="mini-removable-word-wrapper">
         <h1>可拆卸電池</h1>
         <p>輕鬆更換或充電</p>
       </div>
-      <div class="power-removable-image-wrapper">
+      <div class="mini-removable-image-wrapper">
         <figure
           class="unit-image-removable header-container"
-          data-bgimage="../img/power-new/power-removable.png"
+          data-bgimage="../img/mini-new/mini-removable.png"
         ></figure>
       </div>
     </div>
 
-    <div class="power-components-section">
-      <div class="power-components-image-wrapper">
+    <div class="mini-components-section">
+      <div class="mini-components-image-wrapper">
         <figure
           class="unit-image-components header-container"
-          data-bgimage="../img/power-new/power-components.png"
+          data-bgimage="../img/mini-new/mini-components.png"
         ></figure>
       </div>
-      <div class="power-components-word-wrapper">
+      <div class="mini-components-word-wrapper">
         <h1>
-          各種配件 <br class="power-components-breakline-lg" />
+          各種配件 <br class="mini-components-breakline-lg" />
           可供選擇
         </h1>
         <!-- <a href="#">More Accessories ></a> -->
       </div>
     </div>
 
-    <div class="power-stat-section">
-      <hr id="power-stat-hr" />
+    <div class="mini-stat-section">
+      <hr id="mini-stat-hr" />
       <div class="stat-detail">
         <div class="stat-container">
           <p>
             LIBPET <br />
-            POWER
+            MINI
             <br />
             <span class="stat-container-light"> 產品參數 </span>
           </p>
         </div>
         <div class="stat-container">
           <ul>
-            <li>行駛里程: 約 36 公里</li>
+            <li>行駛里程: 約 20 公里</li>
             <li>最高速度: 10 公里/小時</li>
-            <li>障礙跨越最大高度: 20 厘米</li>
-            <li>可爬坡角度: 36°</li>
+            <li>障礙跨越最大高度: 5 厘米</li>
+            <li>可爬坡角度: 15°</li>
             <li>最小迴轉半徑: 72 厘米</li>
-            <li>尺寸: 107 x 68 x 116 厘米</li>
-            <li>載具重量: 約 75 kg</li>
+            <li>尺寸: 95 x 60 x 95 厘米</li>
+            <li>載具重量: 約 54 kg</li>
           </ul>
         </div>
         <div class="stat-container">
           <ul>
-            <li>前輪: 8 英寸全向輪</li>
-            <li>後輪: 18 英寸實心輪</li>
+            <li>前輪: 10 英寸全向輪</li>
+            <li>後輪: 12 英寸實心輪</li>
             <li>最大承重: 100 kg</li>
             <li>電池: 鋰離子電池 (24V, 18AH)</li>
             <li>避震: 獨立懸掛系統</li>
@@ -385,27 +416,30 @@
         <div class="stat-container">
           <p style="line-height: 1.2">
             LIBPET <br />
-            POWER
+            MINI
             <br />
             <span class="stat-container-light"> 產品參數 </span>
           </p>
-          <div class="power-stat-container-button-wrapper" id="stat-button-sm">
-            <button class="power-buy-button" onclick="togglePop('Power')">
-              預約試車/訂購
+          <div class="mini-stat-container-button-wrapper" id="stat-button-sm">
+            <button
+              class="mini-buy-button"
+              onclick="event.preventDefault(); togglePop('Mini');"
+            >
+              立即購買
             </button>
           </div>
         </div>
         <div class="stat-container" id="text-container-sm">
           <ul>
-            <li>行駛里程: 約 36 公里</li>
+            <li>行駛里程: 約 20 公里</li>
             <li>最高速度: 10 公里/小時</li>
-            <li>障礙跨越最大高度: 20 厘米</li>
-            <li>可爬坡角度: 36°</li>
+            <li>障礙跨越最大高度: 5 厘米</li>
+            <li>可爬坡角度: 15°</li>
             <li>最小迴轉半徑: 72 厘米</li>
-            <li>尺寸: 107 x 68 x 116 厘米</li>
-            <li>載具重量: 約 75 kg</li>
-            <li>前輪: 8 英寸全向輪</li>
-            <li>後輪: 18 英寸實心輪</li>
+            <li>尺寸: 95 x 60 x 95 厘米</li>
+            <li>載具重量: 約 54 kg</li>
+            <li>前輪: 10 英寸全向輪</li>
+            <li>後輪: 12 英寸實心輪</li>
             <li>最大承重: 100 kg</li>
             <li>電池: 鋰離子電池 (24V, 18AH)</li>
             <li>避震: 獨立懸掛系統</li>
@@ -415,9 +449,12 @@
         </div>
       </div>
 
-      <div class="power-stat-container-button-wrapper" id="stat-button-lg">
-        <button class="power-buy-button" onclick="togglePop('Power')">
-          預約試車/訂購
+      <div class="mini-stat-container-button-wrapper" id="stat-button-lg">
+        <button
+          class="mini-buy-button"
+          onclick="event.preventDefault(); togglePop('Mini');"
+        >
+          立即購買
         </button>
       </div>
     </div>
@@ -561,24 +598,21 @@
     <script src="../js/form.js"></script>
 
     <script>
-      // 檢查視窗寬度並更新標題內容
-      function updateTitleContent() {
-        var titleElement = document.getElementById("power-control-title");
-        var windowWidth =
-          window.innerWidth ||
-          document.documentElement.clientWidth ||
-          document.body.clientWidth;
-
-        if (windowWidth < 700) {
-          titleElement.innerHTML = "控制面板";
-        } else {
-          titleElement.innerHTML = "模組化控制面板";
-        }
-      }
-
-      // 在頁面載入時和視窗大小改變時觸發更新
-      window.addEventListener("DOMContentLoaded", updateTitleContent);
-      window.addEventListener("resize", updateTitleContent);
+      new Glide(".images", {
+        type: "carousel",
+        perView: 2,
+        focusAt: "center",
+        gap: 40,
+        breakpoints: {
+          1200: {
+            perView: 2,
+            gap: 20,
+          },
+          800: {
+            perView: 1,
+          },
+        },
+      }).mount();
 
       function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
@@ -628,22 +662,6 @@
             "url('" + header.dataset.bgimage + "')";
         });
       }
-
-      new Glide(".images", {
-        type: "carousel",
-        perView: 2,
-        focusAt: "center",
-        gap: 40,
-        breakpoints: {
-          1200: {
-            perView: 2,
-            gap: 20,
-          },
-          800: {
-            perView: 1,
-          },
-        },
-      }).mount();
     </script>
   </body>
 </html>

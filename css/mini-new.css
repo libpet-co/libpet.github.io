@@ -393,6 +393,21 @@ a {
 /*-------------------------------------------------------------*/
 
 /*-----------------------Start mini-index-container--------------------------------------*/
+.phone-display {
+  display: none;
+}
+.large-display {
+  display: block;
+}
+@media screen and (max-width: 435px) {
+  .phone-display {
+    display: block;
+  }
+  .large-display {
+    display: none;
+  }
+}
+
 .mini-index-container {
   background-color: #ffffff;
   height: 850px;
@@ -419,14 +434,15 @@ a {
 
 .mini-index-container .mini-index-container-button-wrapper {
   text-align: center;
-  margin-top: 50px;
+  margin-bottom: 35px;
 }
 
-.mini-index-container .mini-index-container-button-wrapper p{
+.mini-index-container .mini-index-container-button-wrapper p {
   font-size: 24px;
+  line-height: 1.2;
 }
 
-.mini-index-container .mini-index-container-button-wrapper #mini-price{
+.mini-index-container .mini-index-container-button-wrapper #mini-price {
   font-size: 32px;
   color: #000000;
   font-weight: 600;
@@ -560,11 +576,11 @@ a {
     font-size: 17px;
   }
 
-  .mini-index-container .mini-index-container-button-wrapper p{
+  .mini-index-container .mini-index-container-button-wrapper p {
     font-size: 20px;
   }
-  
-  .mini-index-container .mini-index-container-button-wrapper #mini-price{
+
+  .mini-index-container .mini-index-container-button-wrapper #mini-price {
     font-size: 28px;
   }
 }
@@ -592,11 +608,11 @@ a {
   .mini-index-container .mini-index-container-image-wrapper {
     margin: 30vw auto 30vw auto;
   }
-  .mini-index-container .mini-index-container-button-wrapper p{
+  .mini-index-container .mini-index-container-button-wrapper p {
     font-size: 7vw;
   }
-  
-  .mini-index-container .mini-index-container-button-wrapper #mini-price{
+
+  .mini-index-container .mini-index-container-button-wrapper #mini-price {
     font-size: 10vw;
   }
 }
@@ -3818,7 +3834,6 @@ section {
 .index-sl span.faded {
   opacity: 1;
 }
-
 
 .hover-underline-animation {
   display: inline-block;
