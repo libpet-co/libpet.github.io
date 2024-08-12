@@ -31,28 +31,22 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Custom Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Varela:100,200,300,400,500,600,700,800,900"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Muli|Great+Vibes|Marmelad"
-      rel="stylesheet"
-    />
-
     <!-- Font Awesome CSS -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
     <!-- Theme CSS -->
-    <link href="css/theme.css" rel="stylesheet" />
-    <link href="css/dropdown.css" rel="stylesheet" />
-    <link href="css/footer.css" rel="stylesheet" />
-    <link href="css/temp.css" rel="stylesheet" />
-    <link href="css/temp-air.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/glide.core.min.css" />
+    <link rel="stylesheet" href="css/glide.theme.min.css" />
+    <link rel="stylesheet" href="css/air-new.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/pop-alert.css" />
+    <link rel="stylesheet" href="css/language-dropdown.css" />
+    <link rel="stylesheet" href="css/submit-load.css" />
 
     <link
       rel="icon"
@@ -71,9 +65,7 @@
   <body id="page-top">
     <main>
       <div class="nav-container">
-        <nav
-          class="navbar navbar-expand-md bg-light-modified fixed-top shadow-md"
-        >
+        <nav class="navbar navbar-expand-md power-bg-light fixed-top shadow-md">
           <div
             class="container override-nav"
             style="max-width: 1600px; padding: 0 5%"
@@ -114,7 +106,7 @@
                   <a class="nav-link" href="mini.html">Mini</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Air</a>
+                  <a class="nav-link" href="air.html">Air</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="tenk.html">TenK</a>
@@ -134,95 +126,80 @@
               </ul>
             </div>
           </div>
+
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">
+              <i
+                class="fa fa-globe"
+                style="font-size: 24px; pointer-events: none"
+              ></i>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="air.html">English</a>
+              <a href="air.html">繁體中文</a>
+            </div>
+          </div>
         </nav>
       </div>
     </main>
 
-    <div class="air-section" id="air-s">
-      <div class="air-word-wrapper">
-        <p class="air-word-title">
-          Smart <br />
-          Mobility <br />
-          Device
-        </p>
-      </div>
-      <div class="air-image-wrapper">
-        <figure class="unit-air"></figure>
+    <div class="air-index">
+      <div class="air-index-image-wrapper">
+        <figure class="unit-image-air"></figure>
       </div>
     </div>
 
-    <div class="air-stat-section" id="air-stat">
-      <div class="stat-first-row">
-        <div class="items stat-item">
-          <h1>7<span class="f-small">km/h</span></h1>
-          <div class="item-description">
-            <img src="img/air/air-max-speed.svg" alt="" />
-            <p class="description-word-wrapper">
-              Max <br />
-              Speed
-            </p>
-          </div>
-        </div>
-
-        <div class="items stat-small">
-          <div class="stat-small-item">
-            <h1>40<span class="f-small">kg</span></h1>
-            <div class="small-item-description">
-              <img src="img/air/air-weight.svg" alt="" />
-              <p class="description-word-wrapper">Weight</p>
-            </div>
-          </div>
-          <div class="stat-small-item">
-            <h1>100<span class="f-small">kg</span></h1>
-            <div class="small-item-description-2">
-              <img src="img/air/air-weight-capacity.svg" alt="" />
-              <p class="description-word-wrapper">
-                Weight <br />
-                Capacity
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="items stat-item">
-          <h1>20<span class="f-small">km</span></h1>
-          <div class="item-description">
-            <img src="img/air/air-range.svg" alt="" />
-            <p class="description-word-wrapper">
-              Max <br />
-              Range
-            </p>
-          </div>
-        </div>
-        <div class="items stat-item">
-          <h1>5<span class="f-small">cm</span></h1>
-          <div class="item-description">
-            <img src="img/air/air-obstacle.svg" alt="" />
-            <p class="description-word-wrapper">
-              Obstacle <br />
-              Clearance
-            </p>
-          </div>
-        </div>
+    <div class="air-index-container">
+      <div class="air-index-container-button-wrapper phone-display">
+        <p>
+          Discount Valid Until <br />
+          31 August
+        </p>
+        <button
+          class="air-buy-button"
+          onclick="event.preventDefault(); togglePop('Air');"
+        >
+          Order Now
+        </button>
       </div>
-    </div>
-
-    <div class="air-control-section" style="transform: translateY(-1px)">
-      <div class="air-control-word-wrapper">
-        <h1 class="air-control-title" id="air-c-title">Central Control</h1>
-        <p class="air-control-description" id="air-c-description">
-          The Libpet Air controller offers comfortable, intuitive use through
-          its ergonomic joystick grip and series of LED indicators.
-          <br class="air-control-breakline" />
-          Its angled design and helpful lights display speed,
-          <br class="air-control-breakline" />
-          battery life and more for seamless wheelchair navigation.
-          <br class="air-control-breakline" />
-          With Bluetooth for updates, the Libpet Air empowers independent
-          mobility through simple, reliable control.
+      <div class="air-index-container-word-wrapper">
+        <p>
+          Libpet Air is a craft of well refined art and detailed engineering.
+          <br class="breakline-lg" />
+          It represents an innovative engineering achievement,
+          <br class="breakline-lg" />
+          delivering exceptional ride quality while offering the highest level
+          of customization and reclining capability.
         </p>
       </div>
-      <div class="air-control-image-wrapper">
-        <figure class="unit-air-control"></figure>
+      <div class="air-index-container-button-wrapper large-display">
+        <p>
+          <span id="power-price"></span>Discount Valid Until <br />
+          31 August
+        </p>
+        <button
+          class="air-buy-button"
+          onclick="event.preventDefault(); togglePop('Air');"
+        >
+          Order Now
+        </button>
+      </div>
+
+      <div class="air-index-container-image-wrapper">
+        <div class="air-95deg">
+          <img loading="lazy" src="img/air/air-degree-95.png" alt="" />
+          <p>
+            Armrest <br />
+            Adjustment
+          </p>
+        </div>
+        <div class="air-120deg">
+          <img loading="lazy" src="img/air/air-degree-120.png" alt="" />
+          <p>
+            Backrest <br />
+            Adjustment
+          </p>
+        </div>
       </div>
     </div>
 
@@ -230,201 +207,384 @@
       <div class="air-smart-word-wrapper">
         <h1 class="air-smart-title">
           Smart <br />
-          Mobility Device.
+          Mobility <br />
+          Device
         </h1>
         <br />
         <br class="air-smart-para-breakline" />
         <p class="air-smart-description">
           Air can handle any indoor or outdoor scene,
-          <br class="air-smart-breakline-2" />
-          thanks to its reasonable design <br class="air-smart-breakline" />
-          and intelligent control mode.
+          <br class="air-smart-breakline-lg" />
+          thanks to its reasonable design and intelligent control mode.
         </p>
       </div>
       <div class="air-smart-image-wrapper">
         <img
-          id="air-smart-image-1"
+          loading="lazy"
+          id="air-smart-image-2"
           src="img/air/air-smart-background-1.png"
           alt=""
         />
         <img
-          id="air-smart-image-2"
+          loading="lazy"
+          id="air-smart-image-1"
           src="img/air/air-smart-background-2.png"
           alt=""
         />
       </div>
     </div>
 
-    <div class="air-omni-section">
-      <div class="air-omni-word-wrapper">
-        <h1 class="air-omni-title">
-          Omni <br />
-          Wheel
-        </h1>
-        <p class="air-omni-description" id="air-omni-d">
-          Omni wheels give electric wheelchairs unparalleled maneuverability
-          through <br class="air-omni-breakline" />
-          their 360-degree pivot for easy navigation in tight spaces.
-          <br class="air-omni-breakline" />
-          This simplified movement delivers enhanced accessibility,
-          <br class="air-omni-breakline" />
-          control and independence for wheelchair users.
+    <div class="air-data-section">
+      <div class="data">
+        <div class="data-image">
+          <img loading="lazy" src="img/air/data-weight.png" alt="" />
+        </div>
+        <p class="data-description">
+          Weight <br class="data-breakline-lg" />
+          Capacity
         </p>
       </div>
-      <div class="air-omni-image-wrapper">
-        <figure class="unit-air-omni"></figure>
+      <div class="data">
+        <div class="data-image">
+          <img
+            loading="lazy"
+            src="img/air/data-ground-clearance.png"
+            alt=""
+          />
+        </div>
+        <p class="data-description">
+          Ground <br class="data-breakline-lg" />
+          Clearance
+        </p>
+      </div>
+      <div class="data">
+        <div class="data-image">
+          <img loading="lazy" src="img/air/data-max-speed.png" alt="" />
+        </div>
+        <p class="data-description">
+          Max. <br class="data-breakline-lg" />
+          Speed
+        </p>
+      </div>
+      <div class="data">
+        <div class="data-image">
+          <img
+            loading="lazy"
+            src="img/air/data-obstacle-clearance.png"
+            alt=""
+          />
+        </div>
+        <p class="data-description">
+          Obstacle <br class="data-breakline-lg" />
+          Clearance
+        </p>
+      </div>
+      <div class="data">
+        <div class="data-image">
+          <img
+            loading="lazy"
+            src="img/air/data-driving-range.png"
+            alt=""
+          />
+        </div>
+        <p class="data-description">
+          Driving <br class="data-breakline-lg" />
+          Range
+        </p>
+      </div>
+      <div class="data">
+        <div class="data-image">
+          <img loading="lazy" src="img/air/data-gradient.png" alt="" />
+        </div>
+        <p class="data-description">
+          Max. <br class="data-breakline-lg" />
+          Gradient
+        </p>
       </div>
     </div>
 
-    <div class="air-radius-section">
-      <div class="air-radius-word-wrapper">
-        <p class="air-radius-subtitle">66cm</p>
-        <h1 class="air-radius-title">
-          Turning <br class="air-radius-title-breakline" />
-          Radius
+    <div class="air-turning-section">
+      <div class="air-turning-word-wrapper">
+        <h1>
+          Turning Radius <br />
+          720mm
         </h1>
-        <p class="air-radius-description" id="radius-descsription">
-          With a tight turning radius of only 66cm,
-          <br class="radius-breakline" />
-          the Libpet Air wheelchair can smoothly maneuver around furniture and
-          through tight spaces, <br class="radius-breakline" />
+        <p>
+          With a tight turning radius of only 720mm,
+          <br class="air-turning-breakline-lg" />
+          the Libpet AIR wheelchair can smoothly maneuver around furniture and
+          through tight spaces, <br class="air-turning-breakline-lg" />
           allowing users to easily make U-turns and fit through narrow doors
           where other chairs may struggle.
         </p>
-        <p class="air-radius-subtitle-sm">66cm</p>
       </div>
-      <div class="air-radius-image-wrapper">
-        <figure class="unit-air-radius"></figure>
+      <div class="air-turning-image-wrapper">
+        <figure
+          class="unit-image-turning header-container"
+          data-bgimage="img/air/air-turning.png"
+        ></figure>
       </div>
     </div>
 
-    <div class="air-app-section">
-      <div class="air-app-word-wrapper">
-        <h1 class="air-app-title">
-          Libpet <br class="air-app-title-breakline" />
-          App
+    <div class="air-control-section">
+      <div class="air-control-word-wrapper">
+        <h1>Control Panel</h1>
+        <p>
+          Navigate with no delays and
+          <br class="air-control-breakline-lg" />experience instant actions.
+        </p>
+      </div>
+      <div class="air-control-image-wrapper">
+        <figure
+          class="unit-image-control header-container"
+          data-bgimage="img/air/air-control-panel.png"
+        ></figure>
+      </div>
+    </div>
+
+    <div class="air-app-word-wrapper">
+      <h1>APP Control</h1>
+      <p>
+        Can be controlled by <br class="air-app-breakline-lg" />
+        phone or pad
+      </p>
+    </div>
+    <div class="air-app-showcase-section">
+      <div class="images glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <img loading="lazy" src="img/air/air-app-1.png" />
+            </li>
+            <li class="glide__slide">
+              <img loading="lazy" src="img/air/air-app-2.png" />
+            </li>
+            <li class="glide__slide">
+              <img loading="lazy" src="img/air/air-app-3.png" />
+            </li>
+          </ul>
+        </div>
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+          <button class="glide__bullet" data-glide-dir="=2"></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="air-ultrasonic-section">
+      <div class="air-ultrasonic-image-wrapper">
+        <figure
+          class="unit-image-ultrasonic header-container"
+          data-bgimage="img/air/air-ultrasonic.png"
+        ></figure>
+      </div>
+      <div class="air-ultrasonic-word-wrapper">
+        <h1>
+          Ultrasonic <br />
+          Anti-collision
         </h1>
-        <br /><br class="air-app-para-breakline" />
-        <p class="air-app-description" id="air-app-d">
-          Libpet app let you navigate AIR from your phone with just a few taps.
-          <br class="air-app-description-breakline-1" />
-          Our onboard diagnostics constantly monitor your wheelchair's systems
-          for optimal performance.
-          <br class="air-app-description-breakline-2" />
-          And if an issue does arise, you have direct access to our technical
-          support team at the touch of a button.
-          <br class="air-app-description-breakline-2" />
-          Love ones can also stay close through our Family Care features,
-          emergency contacts will always know your real-time
-          <br class="air-app-description-breakline-2" />
-          location for added reassurance. Assistance is never far.
+        <p>
+          The smart anti-collision <br />
+          system will keep you safer
         </p>
       </div>
     </div>
 
-    <div class="custom-carousel" style="margin-top: 0">
-      <div
-        class="custom-carousel-inner"
-        style="background-color: #efefef; max-width: 3440px"
-      >
-        <input
-          class="custom-carousel-open"
-          type="radio"
-          id="custom-carousel-1"
-          name="custom-carousel"
-          aria-hidden="true"
-          hidden=""
-          checked="checked"
-        />
-        <div class="custom-carousel-item">
-          <figure class="unit-air-app-showcase-1"></figure>
-        </div>
-        <input
-          class="custom-carousel-open"
-          type="radio"
-          id="custom-carousel-2"
-          name="custom-carousel"
-          aria-hidden="true"
-          hidden=""
-        />
-        <div class="custom-carousel-item">
-          <figure class="unit-air-app-showcase-2"></figure>
-        </div>
-        <input
-          class="custom-carousel-open"
-          type="radio"
-          id="custom-carousel-3"
-          name="custom-carousel"
-          aria-hidden="true"
-          hidden=""
-        />
-        <div class="custom-carousel-item">
-          <figure class="unit-air-app-showcase-3"></figure>
-        </div>
-        <label
-          for="custom-carousel-3"
-          class="custom-carousel-control prev control-1"
-          >‹</label
-        >
-        <label
-          for="custom-carousel-2"
-          class="custom-carousel-control next control-1"
-          >›</label
-        >
-        <label
-          for="custom-carousel-1"
-          class="custom-carousel-control prev control-2"
-          >‹</label
-        >
-        <label
-          for="custom-carousel-3"
-          class="custom-carousel-control next control-2"
-          >›</label
-        >
-        <label
-          for="custom-carousel-2"
-          class="custom-carousel-control prev control-3"
-          >‹</label
-        >
-        <label
-          for="custom-carousel-1"
-          class="custom-carousel-control next control-3"
-          >›</label
-        >
-        <ol class="custom-carousel-indicators">
-          <li>
-            <label
-              for="custom-carousel-1"
-              class="custom-carousel-bullet"
-            ></label>
-          </li>
-          <li>
-            <label
-              for="custom-carousel-2"
-              class="custom-carousel-bullet"
-            ></label>
-          </li>
-          <li>
-            <label
-              for="custom-carousel-3"
-              class="custom-carousel-bullet"
-            ></label>
-          </li>
-        </ol>
+    <div class="air-removable-section">
+      <div class="air-removable-word-wrapper">
+        <h1>
+          Removable <br class="air-removable-breakline-lg" />
+          Battery
+        </h1>
+        <p>Super easy to swap</p>
+      </div>
+      <div class="air-removable-image-wrapper">
+        <figure
+          class="unit-image-removable header-container"
+          data-bgimage="img/air/air-removable.png"
+        ></figure>
       </div>
     </div>
 
-    <div class="air-journey-section">
-      <div class="air-journey-word-wrapper">
-        <h1 class="air-journey-title">
-          Your <br />
-          New <br class="air-journey-title-breakline" />
-          Journey <br />
-          In Life.
-        </h1>
+    <div class="air-components-section">
+      <div class="air-components-image-wrapper">
+        <figure
+          class="unit-image-components header-container"
+          data-bgimage="img/air/air-components.png"
+        ></figure>
       </div>
-      <div class="air-journey-image-wrapper">
-        <figure class="unit-air-journey"></figure>
+      <div class="air-components-word-wrapper">
+        <h1>
+          Incredible <br class="air-components-breakline-lg" />
+          Optional <br />
+          Components
+        </h1>
+        <!-- <a href="#">More Accessories ></a> -->
+      </div>
+    </div>
+
+    <div class="air-stat-section">
+      <hr id="air-stat-hr" />
+      <div class="stat-detail">
+        <div class="stat-container">
+          <p>
+            LIBPET <br />
+            AIR
+            <br />
+            <span class="stat-container-light">
+              Specification <br />
+              Parameters
+            </span>
+          </p>
+        </div>
+        <div class="stat-container">
+          <ul>
+            <li>Max range: Approximately 20 km</li>
+            <li>Max speed: 10 km/h</li>
+            <li>Obstacle clearance: 50 mm</li>
+            <li>Climbing ability: 15°</li>
+            <li>Turning radius: 720 mm</li>
+            <li>Dimensions: 950 x 600 x 950 mm</li>
+            <li>Weight: Approximately 54 kg</li>
+          </ul>
+        </div>
+        <div class="stat-container">
+          <ul>
+            <li>Front wheels: 10-inch Omni Wheel</li>
+            <li>Rear wheels: 12-inch solid wheels</li>
+            <li>Weight capacity: 100 kg</li>
+            <li>Battery: Lithium-ion battery (24V, 18AH)</li>
+            <li>Suspension: Independent Suspension System</li>
+            <li>Charging time: Approximately 5 hours</li>
+            <li>Operating environment: -15°C to 40°C</li>
+          </ul>
+        </div>
+      </div>
+      <div class="stat-detail-sm">
+        <div class="stat-container">
+          <p>
+            LIBPET <br />
+            AIR
+            <br />
+            <span class="stat-container-light">
+              Specification <br />
+              Parameters
+            </span>
+          </p>
+          <div class="air-stat-container-button-wrapper" id="stat-button-sm">
+            <button
+              class="air-buy-button"
+              onclick="event.preventDefault(); togglePop('Air');"
+            >
+              Order Now
+            </button>
+          </div>
+        </div>
+        <div class="stat-container" id="text-container-sm">
+          <ul>
+            <li>Max range: Approximately 20 km</li>
+            <li>Max speed: 10 km/h</li>
+            <li>Obstacle clearance: 50 mm</li>
+            <li>Climbing ability: 15°</li>
+            <li>Turning radius: 720 mm</li>
+            <li>Dimensions: 950 x 600 x 950 mm</li>
+            <li>Weight: Approximately 54 kg</li>
+            <li>Front wheels: 10-inch Omni Wheel</li>
+            <li>Rear wheels: 12-inch solid wheels</li>
+            <li>Weight capacity: 100 kg</li>
+            <li>Battery: Lithium-ion battery (24V, 18AH)</li>
+            <li>
+              Suspension: Independent <br class="stat-breakline-sm" />Suspension
+              System
+            </li>
+            <li>Charging time: Approximately 5 hours</li>
+            <li>Operating environment: -15°C to 40°C</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="air-stat-container-button-wrapper" id="stat-button-lg">
+        <button
+          class="air-buy-button"
+          onclick="event.preventDefault(); togglePop('Air');"
+        >
+          Order Now
+        </button>
+      </div>
+    </div>
+
+    <section id="popAlert">
+      <aside>
+        <div class="popAlert-first-row">
+          <h2>Order Now</h2>
+        </div>
+        <button type="button" onclick="togglePop('')" id="closeButton">
+          X
+        </button>
+        <p class="popAlert-description">
+          If you are interested in our products, please feel free to contact us
+          for more details. <br />
+        </p>
+        <div class="popAlert-link">
+          <div class="popAlert-contact-us">
+            <a
+              href="https://wa.me/85269906913"
+              target="_blank"
+              class="popAlert-contact-a"
+            >
+              <i class="fa fa-whatsapp"></i>&nbsp;&nbsp;
+              <span class="hover-underline-animation">Whatsapp Us > </span>
+            </a>
+            <a href="mailto:Marketing@libpet.com" class="popAlert-contact-a">
+              <i class="fa fa-envelope"></i>&nbsp;&nbsp;
+              <span class="hover-underline-animation">Email Us ></span>
+            </a>
+          </div>
+
+          <div class="test-drive-book-link">
+            <a class="formOpen">
+              <span
+                style="
+                  color: #00394e;
+                  text-decoration: underline;
+                  font-weight: 600;
+                "
+                >Test Drive Booking</span
+              >
+            </a>
+            <div class="popAlert-form" id="form1">
+              <label for="name" style="margin-top: 0">Name: </label>
+              <br />
+              <input id="name" name="name" type="text" required />
+              <br />
+              <label for="phone">Phone No: </label>
+              <br />
+              <input id="phone" name="phone" type="tel" required />
+              <br />
+              <label for="preferred"
+                >Preferred Test Drive <br class="popAlert-form-breakline" />
+                Location & Time:
+              </label>
+              <br />
+              <input id="preferred" name="preferred" type="string" required />
+              <br />
+              <button id="submit1">Submit</button>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <div class="loading-screen" id="submit-loading" style="display: none">
+      <div class="loading-wrapper">
+        <div class="box-folding">
+          <span class="box1"></span>
+          <span class="box2"></span>
+          <span class="box3"></span>
+          <span class="box4"></span>
+        </div>
+        <span class="loading" data-name="Loading">Loading</span>
       </div>
     </div>
 
@@ -486,55 +646,81 @@
       </div>
     </footer>
 
-    <!-- jQuery -->
-
     <script src="js/jquery.min.js"></script>
 
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
-    <script src="js/progressbar.js"></script>
     <script src="js/nav.js"></script>
-    <script src="js/temp.js"></script>
-    <script src="js/air.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/glide.js"></script>
+    <script src="js/form.js"></script>
 
     <script>
-      // 檢查視窗寬度並更新標題內容
-      function updateTitleContent() {
-        var airCTitle = document.getElementById("air-c-title");
-        var airCDescription = document.getElementById("air-c-description");
-        var airOmniDescription = document.getElementById("air-omni-d");
-        var radiusDescription = document.getElementById("radius-descsription");
-        var airAppD = document.getElementById("air-app-d");
+      new Glide(".images", {
+        type: "carousel",
+        perView: 2,
+        focusAt: "center",
+        gap: 40,
+        breakpoints: {
+          1200: {
+            perView: 2,
+            gap: 20,
+          },
+          800: {
+            perView: 1,
+          },
+        },
+      }).mount();
 
-        var windowWidth =
-          window.innerWidth ||
-          document.documentElement.clientWidth ||
-          document.body.clientWidth;
-
-        if (windowWidth < 568) {
-          airCTitle.textContent = "Controller";
-          airCDescription.innerHTML = `Comfortable, intuitive use with ergonomic joystick, <br class="air-control-breakline-sm"> LED indicators for speed and battery life. <br class="air-control-breakline-sm"> Bluetooth enabled for easy updates and reliable, independent mobility.`;
-          airOmniDescription.innerHTML =
-            "Omni wheels enhance electric wheelchair maneuverability for increased accessibility and independence.";
-          radiusDescription.innerHTML = `Libpet Air wheelchair maneuvers <br class="radius-breakline-sm"> easily in tight spaces thanks to a 66cm turning radius.`;
-          airAppD.innerHTML =
-            "Libpet app lets you control your AIR wheelchair from your phone and keep emergency contacts informed of your location.";
-        } else {
-          airCTitle.textContent = "Central Control";
-          airCDescription.innerHTML = `The Libpet Air controller offers comfortable, intuitive use through its ergonomic joystick grip and series of LED indicators. <br class="air-control-breakline" /> Its angled design and helpful lights display speed, <br class="air-control-breakline" /> battery life and more for seamless wheelchair navigation. <br class="air-control-breakline" /> With Bluetooth for updates, the Libpet Air empowers independent mobility through simple, reliable control.`;
-          airOmniDescription.innerHTML = `Omni wheels give electric wheelchairs unparalleled maneuverability through <br class="air-omni-breakline"/> their 360-degree pivot for easy navigation in tight spaces. <br class="air-omni-breakline"/> This simplified movement delivers enhanced accessibility, <br class="air-omni-breakline"/> control and independence for wheelchair users.`;
-          radiusDescription.innerHTML = `With a tight turning radius of only 66cm, <br class="radius-breakline" /> the Libpet Air wheelchair can smoothly maneuver around furniture and through tight spaces, <br class="radius-breakline" /> allowing users to easily make U-turns and fit through narrow doors where other chairs may struggle.`;
-          airAppD.innerHTML =
-            'Libpet app let you navigate AIR from your phone with just a few taps. <br class="air-app-description-breakline-1"/> Our onboard diagnostics constantly monitor your wheelchair\'s systems for optimal performance. <br class="air-app-description-breakline-2"/>And if an issue does arise, you have direct access to our technical support team at the touch of a button. <br class="air-app-description-breakline-2"/>Love ones can also stay close through our Family Care features, emergency contacts will always know your real-time <br class="air-app-description-breakline-2"/>location for added reassurance. Assistance is never far.';
-        }
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
       }
 
-      // 在頁面載入時和視窗大小改變時觸發更新
-      window.addEventListener("DOMContentLoaded", updateTitleContent);
-      window.addEventListener("resize", updateTitleContent);
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+
+      // Check for IntersectionObserver support
+      if ("IntersectionObserver" in window) {
+        document.addEventListener("DOMContentLoaded", function () {
+          function handleIntersection(entries) {
+            entries.map((entry) => {
+              if (entry.isIntersecting) {
+                // Item has crossed our observation
+                // threshold - load src from data-src
+                entry.target.style.backgroundImage =
+                  "url('" + entry.target.dataset.bgimage + "')";
+                // Job done for this item - no need to watch it!
+                observer.unobserve(entry.target);
+              }
+            });
+          }
+
+          const headers = document.querySelectorAll(".header-container");
+          const observer = new IntersectionObserver(handleIntersection, {
+            rootMargin: "250px",
+          });
+          headers.forEach((header) => observer.observe(header));
+        });
+      } else {
+        // No interaction support? Load all background images automatically
+        const headers = document.querySelectorAll(".header-container");
+        headers.forEach((header) => {
+          header.style.backgroundImage =
+            "url('" + header.dataset.bgimage + "')";
+        });
+      }
     </script>
   </body>
 </html>
