@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-FDKG5TNYZZ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-FDKG5TNYZZ");
+    </script>
+
+    <title>Libpet</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/glide.core.min.css" />
+    <link rel="stylesheet" href="css/glide.theme.min.css" />
+    <link rel="stylesheet" href="css/robots.css" />
+    <link rel="stylesheet" href="css/pop-alert.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/index-swiper.css" />
+    <link rel="stylesheet" href="css/language-dropdown.css" />
+    <link rel="stylesheet" href="css/submit-load.css" />
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="img/logo-black-without-word.svg"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="page-top">
+    <main>
+      <div class="nav-container">
+        <nav class="navbar navbar-expand-md power-bg-light fixed-top shadow-md">
+          <div
+            class="container override-nav"
+            style="max-width: 1600px; padding: 0 5%"
+          >
+            <a class="navbar-brand mx-auto d-lg-none" href="#">
+              <img
+                class="iconlogo"
+                src="img/logo-black-without-word.svg"
+                width="30"
+              />
+            </a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <a class="navbar-brand d-none d-lg-block" href="index.html">
+                <img
+                  class="iconlogo"
+                  src="img/logo-black-without-word.svg"
+                  width="23"
+                />
+              </a>
+              <ul class="navbar-nav" style="margin-left: auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="power.html">Power</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="mini.html">Mini</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="air.html">Air</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tenk.html">TenK</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="go-x.html">GoX</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="event.html">Event</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="about-us.html">About Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">
+              <i
+                class="fa fa-globe"
+                style="font-size: 24px; pointer-events: none"
+              ></i>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="index.html">English</a>
+              <a href="cn/index.html">繁體中文</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </main>
+
+    <div class="index-modular-robot">
+      <div class="index-modular-robot-image-wrapper">
+        <figure class="unit-image-modular-robot"></figure>
+      </div>
+    </div>
+
+    <div class="index-collection-2">
+      <section class="collection-module-2">
+        <div class="collection" id="module-accessories">
+          <div class="index-collection-2-word-wrapper">
+            <h1>
+              SECURITY<br class="collection-2-breakline" /><span
+                style="font-weight: 400"
+              >
+                Robot</span
+              >
+            </h1>
+          </div>
+          <div class="index-collection-2-button-wrapper" style="bottom: 0">
+            <div class="index-collection-2-button-wrapper">
+              <div
+                onclick="event.preventDefault(); togglePop2();"
+                class="index-collection-2-button collection-btn-2 button-word-black"
+              >
+                <div class="btn-2-a">
+                  <a href="">Cooperation</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="index-collection-2-image-wrapper">
+            <figure
+              class="unit-collection-security header-container"
+              data-bgimage="img/robots/security_robot.png"
+            ></figure>
+          </div>
+        </div>
+        <div class="module-mini collection">
+          <div class="index-collection-2-word-wrapper">
+            <h1>
+              LOGISTICS<br class="collection-2-breakline" /><span
+                style="font-weight: 400"
+              >
+                Robot</span
+              >
+            </h1>
+          </div>
+          <div class="index-collection-2-button-wrapper">
+            <div
+              onclick="event.preventDefault(); togglePop2();"
+              class="index-collection-2-button collection-btn-2 button-word-black"
+            >
+              <div class="btn-2-a">
+                <a href="">Cooperation</a>
+              </div>
+            </div>
+          </div>
+          <div class="index-collection-2-image-wrapper">
+            <figure
+              class="unit-collection-logistics header-container"
+              data-bgimage="img/robots/logistics_robot.png"
+            ></figure>
+          </div>
+        </div>
+        <div class="module-air collection">
+          <div class="index-collection-2-word-wrapper">
+            <h1>
+              <span style="font-weight: 400">Robot</span
+              ><br class="collection-2-breakline" />
+              CHAIR
+            </h1>
+          </div>
+          <div class="index-collection-2-button-wrapper">
+            <div
+              onclick="event.preventDefault(); togglePop2();"
+              class="index-collection-2-button collection-btn-2 button-word-black"
+            >
+              <div class="btn-2-a">
+                <a href="">Cooperation</a>
+              </div>
+            </div>
+          </div>
+          <div class="index-collection-2-image-wrapper">
+            <figure
+              class="unit-collection-robot-chair header-container"
+              data-bgimage="img/robots/robot_chair.png"
+            ></figure>
+          </div>
+        </div>
+        <div class="collection" id="module-accessories">
+          <div class="index-collection-2-word-wrapper">
+            <h1>
+              ECO-<br class="collection-2-breakline" /><span
+                style="font-weight: 400"
+                >Robot</span
+              >
+            </h1>
+          </div>
+          <div class="index-collection-2-button-wrapper" style="bottom: 0">
+            <div class="index-collection-2-button-wrapper">
+              <div
+                onclick="event.preventDefault(); togglePop2();"
+                class="index-collection-2-button collection-btn-2 button-word-black"
+              >
+                <div class="btn-2-a">
+                  <a href="">Cooperation</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="index-collection-2-image-wrapper">
+            <figure
+              class="unit-collection-security header-container"
+              data-bgimage="img/robots/eco_robot.png"
+            ></figure>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="robots-showcase">
+      <h1>Intelligent Modular <br />Robot</h1>
+      <div class="robots-showcase-row">
+        <div class="robots-showcase-image-wrapper">
+          <figure
+            class="unit-showcase-security unit-showcase-images"
+            data-bgimage="img/robots/security_robot_showcase.png"
+          ></figure>
+        </div>
+        <div class="robots-showcase-text-wrapper">
+          <div class="align-right">
+            <h5>Security Robot</h5>
+            <p>
+              It is not only an excellent intelligent security robot, but
+              also a good hand for carrying, covering all aspects!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="robots-showcase-row">
+        <div class="robots-showcase-image-wrapper">
+          <figure
+            class="unit-showcase-logistic unit-showcase-images"
+            data-bgimage="img/robots/logistic_robot_showcase.png"
+          ></figure>
+        </div>
+        <div class="robots-showcase-text-wrapper">
+          <div class="align-left">
+            <h5>Logistic Robot</h5>
+            <p>
+              IIt can not only deliver express, but also serve meals, so it is
+              flexible and versatile.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="robots-showcase-row">
+        <div class="robots-showcase-image-wrapper">
+          <figure
+            class="unit-showcase-robotChair unit-showcase-images"
+            data-bgimage="img/robots/robot_chair_showcase.png"
+          ></figure>
+        </div>
+        <div class="robots-showcase-text-wrapper">
+          <div class="align-right">
+            <h5>Robot Chair</h5>
+            <p>
+              Wherever in the community, the park, or the amusement park, it can
+              be your robot scooter, equipped with navigation and intelligent
+              driving system, safe and reliable.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="robots-showcase-row">
+        <div class="robots-showcase-image-wrapper">
+          <figure
+            class="unit-showcase-ecoRobot unit-showcase-images"
+            data-bgimage="img/robots/eco_robot_showcase.png"
+          ></figure>
+        </div>
+        <div class="robots-showcase-text-wrapper">
+          <div class="align-left">
+            <h5>Eco-Robot</h5>
+            <p>
+              The advanced environmental protection robot can classify garbage.
+              It will come as soon as you call it. Whether it is property
+              management service or catering place, it will be your
+              indispensable intelligent assistant.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="popAlert">
+      <aside>
+        <div class="popAlert-first-row">
+          <h2>Order Now</h2>
+        </div>
+        <button type="button" onclick="togglePop('')" id="closeButton">
+          X
+        </button>
+        <p class="popAlert-description">
+          If you are interested in our products, please feel free to contact us
+          for more details. <br />
+        </p>
+        <div class="popAlert-link">
+          <div class="popAlert-contact-us">
+            <a
+              href="https://wa.me/85269906913"
+              target="_blank"
+              class="popAlert-contact-a"
+            >
+              <i class="fa fa-whatsapp"></i>&nbsp;&nbsp;
+              <span class="hover-underline-animation">Whatsapp Us > </span>
+            </a>
+            <a href="mailto:Marketing@libpet.com" class="popAlert-contact-a">
+              <i class="fa fa-envelope"></i>&nbsp;&nbsp;
+              <span class="hover-underline-animation">Email Us ></span>
+            </a>
+          </div>
+
+          <div class="test-drive-book-link">
+            <a class="formOpen">
+              <span
+                style="
+                  color: #00394e;
+                  text-decoration: underline;
+                  font-weight: 600;
+                "
+                >Test Drive Booking</span
+              >
+            </a>
+            <div class="popAlert-form" id="form1">
+              <label for="name" style="margin-top: 5px">Name: </label>
+              <br />
+              <input id="name" name="name" type="text" required />
+              <br />
+              <label for="phone">Phone No: </label>
+              <br />
+              <input id="phone" name="phone" type="tel" required />
+              <br />
+              <label for="preferred"
+                >Preferred Test Drive <br class="popAlert-form-breakline" />
+                Location & Time:
+              </label>
+              <br />
+              <input id="preferred" name="preferred" type="string" required />
+              <br />
+              <button id="submit1">Submit</button>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="popAlert2">
+      <aside>
+        <div class="popAlert-first-row">
+          <h2>For Cooperation</h2>
+          <button type="button" onclick="togglePop2()" id="closeButton">
+            X
+          </button>
+        </div>
+        <p>
+          If you are interested to coorperate with us for the intelligent
+          modular robotics, please feel free to contact us for more details.
+          <br /><br />
+          <a href="https://wa.me/85259317389" target="_blank"
+            ><i class="fa fa-whatsapp"></i>&nbsp;&nbsp;<span
+              class="hover-underline-animation"
+              >Whatsapp Us ></span
+            ></a
+          >
+          <br />
+          <a href="mailto:Marketing@libpet.com"
+            ><i class="fa fa-envelope"></i>&nbsp;&nbsp;<span
+              class="hover-underline-animation"
+              >Email Us ></span
+            ></a
+          >
+        </p>
+      </aside>
+    </section>
+
+    <div class="loading-screen" id="submit-loading" style="display: none">
+      <div class="loading-wrapper">
+        <div class="box-folding">
+          <span class="box1"></span>
+          <span class="box2"></span>
+          <span class="box3"></span>
+          <span class="box4"></span>
+        </div>
+        <span class="loading" data-name="Loading">Loading</span>
+      </div>
+    </div>
+
+    <footer class="footer-section">
+      <div class="footer-text-wrapper">
+        <h1>CONTACT US</h1>
+        <br />
+        <h2>Contact Our CEO</h2>
+        <div class="contact-us-info">
+          <div class="footer-description">
+            <i class="fa fa-envelope"></i
+            >&nbsp;&nbsp;jojo@libpet.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </div>
+          <div class="footer-description">
+            <i class="fa fa-phone-alt"></i>&nbsp;&nbsp;+852 5931 7389
+          </div>
+          <div class="footer-description">
+            <i class="fa fa-whatsapp"></i>&nbsp;&nbsp;+852 5931 7389
+          </div>
+          <div class="footer-description">
+            <i class="fa fa-weixin"></i>&nbsp;&nbsp;jojo_libpet
+          </div>
+        </div>
+        <br />
+        <h2>For Business Collaboration</h2>
+        <div class="contact-us-info">
+          <div class="footer-description">
+            <i class="fa fa-envelope"></i>&nbsp;&nbsp;Marketing@libpet.com
+          </div>
+          <div class="footer-description">
+            <i class="fa fa-envelope"></i>&nbsp;&nbsp;info@libpet.com
+          </div>
+          <div class="footer-description">
+            <i class="fa fa-phone-alt"></i>&nbsp;&nbsp;+852 6990 6913
+          </div>
+          <div class="footer-description">
+            <i class="fa fa-whatsapp"></i>&nbsp;&nbsp;+852 6990 6913
+          </div>
+        </div>
+        <hr />
+        <br />
+        <h1>LOCATION</h1>
+        <div class="location-info">
+          <div class="footer-description">
+            <i class="fa fa-map-marker-alt"></i> &nbsp;&nbsp;InnoHub 4/F, Jockey
+            Club Innovation Tower, The Hong Kong Polytechnic University
+          </div>
+          <div class="footer-description">
+            <i class="fa fa-map-marker-alt"></i> &nbsp;&nbsp;Unit 659, 6/F,
+            Building 19W, No. 19 Science Park West Avenue, Hong Kong Science
+            Park
+          </div>
+        </div>
+        <hr />
+        <br />
+        <div class="footer-description" style="line-height: 2">
+          Copyright © Libpet Tech Limited. All Right Reserved.
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery -->
+
+    <script src="js/jquery.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+      integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/e2ba1227d7.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/nav.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/index-swiper.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/glide.js"></script>
+    <script src="js/form.js"></script>
+
+    <script>
+      // 檢查視窗寬度並更新標題內容
+      function updateTitleContent() {
+        var titleElement = document.getElementById(
+          "index-elderly-community-description"
+        );
+        var windowWidth =
+          window.innerWidth ||
+          document.documentElement.clientWidth ||
+          document.body.clientWidth;
+
+        if (windowWidth < 568) {
+          titleElement.innerHTML =
+            "In a harmonious symphony of motion, Libpet's autonomous vehicles slide like whisper across the landscapes of care, commerce and community, weaving a future where every movement is a silent promise of care, comfort, and elegance.";
+        } else {
+          titleElement.innerHTML =
+            "In a harmonious symphony of motion, Libpet’s autonomous vehicles weave through the heart of our communities. They offer a silent, guiding hand in the bustling terminals of airports, the serene walkways of hospitals, and the tranquil spaces of elderly homes. These vehicles extend their grace to the lively corridors of malls, where the joy of shopping is elevated by the convenience of modern mobility. This seamless integration of technology and daily life paints a future where every journey is an effortless glide through a world of care, comfort, and elegance.";
+        }
+      }
+
+      // 在頁面載入時和視窗大小改變時觸發更新
+      window.addEventListener("DOMContentLoaded", updateTitleContent);
+      window.addEventListener("resize", updateTitleContent);
+
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+
+      // Check for IntersectionObserver support
+      if ("IntersectionObserver" in window) {
+        document.addEventListener("DOMContentLoaded", function () {
+          function handleIntersection(entries) {
+            entries.map((entry) => {
+              if (entry.isIntersecting) {
+                // Item has crossed our observation
+                // threshold - load src from data-src
+                entry.target.style.backgroundImage =
+                  "url('" + entry.target.dataset.bgimage + "')";
+                // Job done for this item - no need to watch it!
+                observer.unobserve(entry.target);
+              }
+            });
+          }
+
+          const headers = document.querySelectorAll(".header-container");
+          const observer = new IntersectionObserver(handleIntersection, {
+            rootMargin: "250px",
+          });
+          headers.forEach((header) => observer.observe(header));
+        });
+      } else {
+        // No interaction support? Load all background images automatically
+        const headers = document.querySelectorAll(".header-container");
+        headers.forEach((header) => {
+          header.style.backgroundImage =
+            "url('" + header.dataset.bgimage + "')";
+        });
+      }
+
+      new Glide(".images", {
+        type: "carousel",
+        perView: 2,
+        focusAt: "center",
+        gap: 40,
+        breakpoints: {
+          1200: {
+            perView: 2,
+            gap: 20,
+          },
+          800: {
+            perView: 1,
+          },
+        },
+      }).mount();
+
+      function updateSlides() {
+        var slides = document.getElementsByClassName("glide__slide");
+
+        for (var i = 0; i < slides.length; i++) {
+          var slide = slides[i];
+          var width = slide.offsetWidth;
+          var height = (width * 9) / 16; // 計算高度
+          slide.style.height = height + "px"; // 將計算後的高度應用到元素的CSS中
+        }
+      }
+      window.addEventListener("DOMContentLoaded", updateSlides);
+      window.addEventListener("resize", updateSlides);
+    </script>
+  </body>
+</html>
