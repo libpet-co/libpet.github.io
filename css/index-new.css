@@ -1120,6 +1120,12 @@ a {
 #module-accessories{
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+}
+
+#join-us-or-coor{
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
