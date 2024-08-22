@@ -1117,6 +1117,12 @@ a {
   font-size: 104px;
 }
 
+#module-accessories{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .index-collection-2 .index-collection-2-image-wrapper {
   position: absolute;
   top: 0;
@@ -1315,6 +1321,49 @@ a {
   }
 }
 
+@media screen and (max-width: 2200px) {
+  .collection-module-2 .collection {
+    height: 50vw;
+  }
+  .index-collection-2
+    .index-collection-2-image-wrapper
+    .unit-collection-delivery {
+    height: 45vw;
+    background-size: 70vw auto;
+  }
+  .index-collection-2
+    .index-collection-2-image-wrapper
+    .unit-collection-robot-chair {
+    height: 47vw;
+    background-size: 60vw auto;
+  }
+  .index-collection-2
+    .index-collection-2-image-wrapper
+    .unit-collection-logistics {
+    height: 46vw;
+    background-size: 70vw auto;
+  }
+  .index-collection-2
+    .index-collection-2-image-wrapper
+    .unit-collection-security {
+    height: 765px;
+    background-size: 1156px auto;
+  }
+  .index-collection-2-button-wrapper .collection-btn-2 {
+    margin: 0 auto;
+    width: 15vw;
+    height: 4vw;
+    border-radius: 38px;
+    background-color: #ffffff;
+  }
+  .index-collection-2-button-wrapper {
+    bottom: 3vw;
+  }
+  .index-collection-2-button-wrapper .collection-btn-2 a {
+    font-size: 2vw;
+}
+}
+
 @media screen and (max-width: 2100px) {
   .collection .index-collection-2-word-wrapper h1 {
     font-size: 110px;
@@ -1367,33 +1416,6 @@ a {
   .module-accessories .index-collection-2-word-wrapper h1 {
     font-size: 70px;
   }
-  .collection-module-2 .collection {
-    height: 810px;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-delivery {
-    height: 765px;
-    background-size: 1156px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-robot-chair {
-    height: 765px;
-    background-size: 1156px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-logistics {
-    height: 765px;
-    background-size: 1156px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-security {
-    height: 765px;
-    background-size: 1156px auto;
-  }
 }
 
 @media screen and (max-width: 1250px) {
@@ -1406,33 +1428,6 @@ a {
   .collection .index-collection-2-word-wrapper p {
     font-size: 28px;
   }
-  .collection-module-2 .collection {
-    height: 810px;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-delivery {
-    height: 740px;
-    background-size: 1100px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-robot-chair {
-    height: 740px;
-    background-size: 1100px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-logistics {
-    height: 740px;
-    background-size: 1100px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-security {
-    height: 740px;
-    background-size: 1100px auto;
-  }
 }
 
 @media screen and (max-width: 1150px) {
@@ -1442,78 +1437,17 @@ a {
   .collection .index-collection-2-word-wrapper p {
     font-size: 24px;
   }
-  .collection-module-2 .collection {
-    height: 750px;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-delivery {
-    height: 670px;
-    background-size: 1000px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-robot-chair {
-    height: 670px;
-    background-size: 1000px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-logistics {
-    height: 670px;
-    background-size: 1000px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-security {
-    height: 670px;
-    background-size: 1000px auto;
-  }
 }
 
 @media screen and (max-width: 1050px) {
   .collection .index-collection-2-word-wrapper h1 {
     font-size: 55px;
   }
-  .collection-module-2 .collection {
-    height: 700px;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-delivery {
-    height: 620px;
-    background-size: 900px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-robot-chair {
-    height: 620px;
-    background-size: 900px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-logistics {
-    height: 620px;
-    background-size: 900px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-security {
-    height: 620px;
-    background-size: 900px auto;
-  }
-  .index-collection-2-button-wrapper .collection-btn-2 {
-    margin: 0 auto;
-    width: 200px;
-    height: 50px;
-    border-radius: 38px;
-    background-color: #ffffff;
-  }
 }
 
 @media screen and (max-width: 1000px) {
   .collection .index-collection-2-word-wrapper h1 {
-    font-size: 50px;
+    font-size: 5vw;
     padding: 0 10px;
   }
   .module-accessories .index-collection-2-word-wrapper h1 {
@@ -1521,33 +1455,6 @@ a {
   }
   .collection .index-collection-2-word-wrapper p {
     font-size: 22px;
-  }
-  .collection-module-2 .collection {
-    height: 650px;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-delivery {
-    height: 570px;
-    background-size: 800px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-robot-chair {
-    height: 570px;
-    background-size: 800px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-logistics {
-    height: 570px;
-    background-size: 800px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-security {
-    height: 570px;
-    background-size: 800px auto;
   }
 }
 
@@ -1559,38 +1466,11 @@ a {
   .collection-2-breakline {
     display: block;
   }
-  .collection-module-2 .collection {
-    height: 580px;
-  }
   .collection .index-collection-2-word-wrapper {
     margin-top: 30px;
   }
   .collection .index-collection-2-word-wrapper p {
     font-size: 20px;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-delivery {
-    height: 540px;
-    background-size: 700px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-robot-chair {
-    height: 540px;
-    background-size: 700px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-logistics {
-    height: 540px;
-    background-size: 700px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-security {
-    height: 540px;
-    background-size: 700px auto;
   }
 }
 
@@ -1599,22 +1479,22 @@ a {
     grid-template-columns: repeat(1, 1fr);
   }
   .collection-module-2 .collection {
-    height: 775px;
+    height: 110vw;
     overflow-y: hidden;
   }
   .collection .index-collection-2-word-wrapper {
     position: relative;
     z-index: 2;
-    margin-top: 60px;
+    margin-top: 10vw;
   }
   .collection .index-collection-2-word-wrapper h1 {
-    font-size: 14vw;
+    font-size: 11vw;
     color: #b1afaf9e;
     font-weight: 700;
   }
   .index-collection-2-button-wrapper .index-collection-2-button {
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 5vw;
   }
   .index-collection-2-button-wrapper .collection-btn-1 a {
     font-size: 22px;
@@ -1622,235 +1502,42 @@ a {
     color: #ffffff;
   }
   .index-collection-2-button-wrapper .collection-btn-2 {
-    margin: 0 auto;
-    width: 220px;
-    height: 70px;
-    border-radius: 38px;
-    background-color: #ffffff;
+    width: 25vw;
+    height: 6vw;
   }
+  .index-collection-2-button-wrapper .button-word-black {
+    border: #000 solid 1px;
+}
   .index-collection-2-button-wrapper .collection-btn-2 a {
-    font-size: 25px;
+    font-size: 3.5vw;
     color: #000000;
   }
   .index-collection-2
     .index-collection-2-image-wrapper
     .unit-collection-delivery {
-    background-image: url(../img/index-new/index-collection-power-sm.png);
-    height: 800px;
-    background-size: 768px auto;
+    height: 100vw;
+    background-size: 140vw auto;
   }
   .index-collection-2
     .index-collection-2-image-wrapper
     .unit-collection-robot-chair {
-    background-image: url(../img/index-new/index-collection-air-sm.png);
-    height: 800px;
-    background-size: 768px auto;
+    height: 100vw;
+    background-size: 120vw auto;
   }
   .index-collection-2
     .index-collection-2-image-wrapper
     .unit-collection-logistics {
-    background-image: url(../img/index-new/index-collection-mini-sm.png);
-    height: 800px;
-    background-size: 768px auto;
+    height: 100vw;
+    background-size: 140vw auto;
   }
   .index-collection-2
     .index-collection-2-image-wrapper
     .unit-collection-security {
-    background-image: url(../img/index-new/index-collection-accessories-sm.png);
     height: 840px;
     background-size: 768px auto;
   }
 }
 
-@media screen and (max-width: 650px) {
-  #module-accessories {
-    height: 650px;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-security {
-    height: 650px;
-    background-size: 650px auto;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .collection .index-collection-2-word-wrapper {
-    margin-top: 30px;
-  }
-  .collection-module-2 .collection {
-    height: 690px;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-delivery {
-    height: 670px;
-    background-size: 670px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-robot-chair {
-    height: 670px;
-    background-size: 670px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-logistics {
-    height: 670px;
-    background-size: 670px auto;
-  }
-  .collection-module-2 {
-    padding: 0 8px;
-  }
-}
-
-@media screen and (max-width: 550px) {
-}
-
-@media screen and (max-width: 500px) {
-  .index-collection-2-button-wrapper .collection-btn-2 {
-    margin: 0 auto;
-    width: 200px;
-    height: 50px;
-    border-radius: 38px;
-    background-color: #ffffff;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .collection-module-2 .collection {
-    height: 680px;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-delivery {
-    height: 610px;
-    background-size: 700px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-robot-chair {
-    height: 610px;
-    background-size: 700px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-logistics {
-    height: 610px;
-    background-size: 700px auto;
-  }
-  #module-accessories {
-    height: 550px;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-security {
-    height: 550px;
-    background-size: 650px auto;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .collection-module-2 .collection {
-    height: 640px;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-delivery {
-    height: 620px;
-    background-size: 600px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-robot-chair {
-    height: 620px;
-    background-size: 600px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-logistics {
-    height: 620px;
-    background-size: 600px auto;
-  }
-  #module-accessories {
-    height: 520px;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-security {
-    height: 520px;
-    background-size: 650px auto;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .collection-module-2 .collection {
-    height: 600px;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-delivery {
-    height: 580px;
-    background-size: 550px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-robot-chair {
-    height: 580px;
-    background-size: 550px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-logistics {
-    height: 580px;
-    background-size: 550px auto;
-  }
-  #module-accessories {
-    height: 520px;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-security {
-    height: 520px;
-    background-size: 650px auto;
-  }
-}
-
-@media screen and (max-width: 300px) {
-  .collection-module-2 .collection {
-    height: 550px;
-  }
-  .collection .index-collection-2-word-wrapper p {
-    font-size: 18px;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-delivery {
-    height: 500px;
-    background-size: 500px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-robot-chair {
-    height: 500px;
-    background-size: 500px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-logistics {
-    height: 500px;
-    background-size: 500px auto;
-  }
-  #module-accessories {
-    height: 520px;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-security {
-    height: 420px;
-    background-size: 500px auto;
-  }
-}
 
 /*-------------------------------------------------------------*/
 
