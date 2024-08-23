@@ -1117,13 +1117,13 @@ a {
   font-size: 104px;
 }
 
-#module-accessories{
+#module-accessories {
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
 
-#join-us-or-coor{
+#join-us-or-coor {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1150,17 +1150,24 @@ a {
 }
 
 .index-collection-2-button-wrapper .collection-btn-1 a {
-  font-size: 22px;
+  font-size: 24px;
   line-height: 1.1;
   color: #000000;
   font-weight: 400;
-  margin-right: 20px;
+}
+
+.index-collection-2-button-wrapper .right-button {
+  margin-left: 30px;
+}
+
+.index-collection-2-button-wrapper .left-button {
+  margin-right: 30px;
 }
 
 .index-collection-2-button-wrapper .collection-btn-2 {
-  width: 250px;
-  height: 65px;
-  border-radius: 35px;
+  width: 107px;
+  height: 32px;
+  border-radius: 16px;
   background-color: #232323;
   margin-left: 20px;
 }
@@ -1178,21 +1185,16 @@ a {
 }
 
 .index-collection-2-button-wrapper .button-word-white a {
-  color: #ffffff;
+  color: #000000;
   transition: all 0.3s ease-out;
 }
-.index-collection-2-button-wrapper .button-word-white:hover a {
-  color: #ffffff;
-}
-.index-collection-2-button-wrapper .button-word-white:hover {
-  background-color: #ffffff;
+.index-collection-2-button-wrapper .button-word-white a:hover {
+  color: #000000;
 }
 
 .index-collection-2-button-wrapper .button-word-black {
-  border: #000 solid 3px;
   background-color: #ffffff;
   transition: all 0.3s ease-out;
-  cursor: pointer;
 }
 .index-collection-2-button-wrapper .button-word-black a {
   color: #000000;
@@ -1355,19 +1357,18 @@ a {
     height: 765px;
     background-size: 1156px auto;
   }
-  .index-collection-2-button-wrapper .collection-btn-2 {
-    margin: 0 auto;
-    width: 15vw;
-    height: 4vw;
-    border-radius: 38px;
-    background-color: #ffffff;
-  }
   .index-collection-2-button-wrapper {
     bottom: 3vw;
   }
-  .index-collection-2-button-wrapper .collection-btn-2 a {
+  .index-collection-2-button-wrapper .collection-btn-1 a {
     font-size: 2vw;
-}
+  }
+  .index-collection-2-button-wrapper .left-button {
+    margin-right: 2vw;
+  }
+  .index-collection-2-button-wrapper .right-button {
+    margin-left: 2vw;
+  }
 }
 
 @media screen and (max-width: 2100px) {
@@ -1498,26 +1499,6 @@ a {
     color: #b1afaf9e;
     font-weight: 700;
   }
-  .index-collection-2-button-wrapper .index-collection-2-button {
-    display: block;
-    margin-bottom: 5vw;
-  }
-  .index-collection-2-button-wrapper .collection-btn-1 a {
-    font-size: 22px;
-    margin-right: 0;
-    color: #ffffff;
-  }
-  .index-collection-2-button-wrapper .collection-btn-2 {
-    width: 25vw;
-    height: 6vw;
-  }
-  .index-collection-2-button-wrapper .button-word-black {
-    border: #000 solid 1px;
-}
-  .index-collection-2-button-wrapper .collection-btn-2 a {
-    font-size: 3.5vw;
-    color: #000000;
-  }
   .index-collection-2
     .index-collection-2-image-wrapper
     .unit-collection-delivery {
@@ -1542,8 +1523,23 @@ a {
     height: 840px;
     background-size: 768px auto;
   }
+  .index-collection-2-button-wrapper .collection-btn-1 a {
+    margin-right: 0;
+  }
+  .index-collection-2-button-wrapper .collection-btn-2 {
+    margin: 0 auto;
+    width: 150px;
+    height: 40px;
+    border-radius: 38px;
+    background-color: #ffffff;
+  }
+  .index-collection-2-button-wrapper .collection-btn-1 a {
+    font-size: 4vw;
+  }
+  .index-collection-2-button-wrapper {
+    bottom: 7vw;
+  }
 }
-
 
 /*-------------------------------------------------------------*/
 
