@@ -780,7 +780,7 @@ a {
   align-items: center;
 }
 .index-collection-2-button-wrapper .collection-btn-2 a {
-  font-size: 22px;
+  font-size: 32px;
   line-height: 1.1;
   color: #ffffff;
   font-weight: 400;
@@ -814,11 +814,9 @@ a {
   color: #ffffff;
 }
 
-.index-collection-2
-  .index-collection-2-image-wrapper
-  .unit-collection-delivery {
+.index-collection-2 .index-collection-2-image-wrapper .unit-collection-eco {
   width: 100%;
-  height: 1050px;
+  height: 1110px;
   background-size: 1256px auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -907,7 +905,7 @@ a {
   pointer-events: none;
 }
 
-.collection-module-2 .collection:hover .unit-collection-delivery {
+.collection-module-2 .collection:hover .unit-collection-eco {
   filter: brightness(1);
 }
 
@@ -961,29 +959,9 @@ a {
   .module-accessories .index-collection-2-word-wrapper h1 {
     font-size: 90px;
   }
-}
 
-@media screen and (max-width: 1700px) {
-  .module-accessories .index-collection-2-word-wrapper h1 {
+  .collection .index-collection-2-word-wrapper h1 {
     font-size: 90px;
-  }
-}
-
-@media screen and (max-width: 1600px) {
-  .collection .index-collection-2-word-wrapper h1 {
-    font-size: 80px;
-  }
-  .module-accessories .index-collection-2-word-wrapper h1 {
-    font-size: 80px;
-  }
-  .collection .index-collection-2-word-wrapper p {
-    font-size: 32px;
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  .collection .index-collection-2-word-wrapper h1 {
-    font-size: 70px;
   }
   .module-accessories .index-collection-2-word-wrapper h1 {
     font-size: 70px;
@@ -991,9 +969,7 @@ a {
   .collection-module-2 .collection {
     height: 900px;
   }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-delivery {
+  .index-collection-2 .index-collection-2-image-wrapper .unit-collection-eco {
     height: 880px;
     background-size: 1156px auto;
   }
@@ -1017,159 +993,56 @@ a {
   }
 }
 
-@media screen and (max-width: 1250px) {
-  .collection .index-collection-2-word-wrapper h1 {
-    font-size: 60px;
-  }
+@media screen and (max-width: 1700px) {
   .module-accessories .index-collection-2-word-wrapper h1 {
-    font-size: 60px;
-  }
-  .collection .index-collection-2-word-wrapper p {
-    font-size: 28px;
+    font-size: 90px;
   }
   .collection-module-2 .collection {
-    height: 830px;
+    height: 55vw;
   }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-delivery {
-    height: 800px;
-    background-size: 1100px auto;
+  .index-collection-2 .index-collection-2-image-wrapper .unit-collection-eco {
+    height: 55vw;
+    background-size: 65vw auto;
   }
   .index-collection-2
     .index-collection-2-image-wrapper
     .unit-collection-robot-chair {
-    height: 800px;
-    background-size: 1100px auto;
+    height: 55vw;
+    background-size: 65vw auto;
   }
   .index-collection-2
     .index-collection-2-image-wrapper
     .unit-collection-logistics {
-    height: 800px;
-    background-size: 1100px auto;
+    height: 55vw;
+    background-size: 65vw auto;
   }
   .index-collection-2
     .index-collection-2-image-wrapper
     .unit-collection-security {
-    height: 800px;
-    background-size: 1100px auto;
+    height: 55vw;
+    background-size: 65vw auto;
   }
-}
-
-@media screen and (max-width: 1150px) {
-  .module-accessories .index-collection-2-word-wrapper h1 {
-    font-size: 50px;
+  .collection .index-collection-2-word-wrapper {
+    margin-top: 3vw;
   }
-  .collection .index-collection-2-word-wrapper p {
-    font-size: 24px;
-  }
-  .collection-module-2 .collection {
-    height: 800px;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-delivery {
-    height: 770px;
-    background-size: 1000px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-robot-chair {
-    height: 770px;
-    background-size: 1000px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-logistics {
-    height: 770px;
-    background-size: 1000px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-security {
-    height: 770px;
-    background-size: 1000px auto;
-  }
-}
-
-@media screen and (max-width: 1050px) {
   .collection .index-collection-2-word-wrapper h1 {
-    font-size: 55px;
+    font-size: 5vw;
   }
-  .collection-module-2 .collection {
-    height: 750px;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-delivery {
-    height: 750px;
-    background-size: 900px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-robot-chair {
-    height: 750px;
-    background-size: 900px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-logistics {
-    height: 750px;
-    background-size: 900px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-security {
-    height: 750px;
-    background-size: 900px auto;
+
+  .index-collection-2-button-wrapper {
+    bottom: 3vw;
   }
   .index-collection-2-button-wrapper .collection-btn-2 {
-    margin: 0 auto;
-    width: 200px;
-    height: 50px;
+    width: 20vw;
+    height: 5vw;
     border-radius: 38px;
-    background-color: #ffffff;
   }
+  .index-collection-2-button-wrapper .collection-btn-2 a {
+    font-size: 3vw;
+  }
+  .index-collection-2-button-wrapper .button-word-black {
+    border: #000 solid 0.2vw;
 }
-
-@media screen and (max-width: 1000px) {
-  .collection .index-collection-2-word-wrapper h1 {
-    font-size: 50px;
-    padding: 0 10px;
-  }
-  .module-accessories .index-collection-2-word-wrapper h1 {
-    font-size: 50px;
-  }
-  .collection .index-collection-2-word-wrapper p {
-    font-size: 22px;
-  }
-  .collection-module-2 .collection {
-    height: 650px;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-delivery {
-    height: 650px;
-    background-size: 800px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-robot-chair {
-    height: 650px;
-    background-size: 800px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-logistics {
-    height: 650px;
-    background-size: 800px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-security {
-    height: 650px;
-    background-size: 800px auto;
-  }
 }
 
 .collection-2-breakline {
@@ -1181,37 +1054,25 @@ a {
     display: block;
   }
   .collection-module-2 .collection {
-    height: 620px;
-  }
-  .collection .index-collection-2-word-wrapper {
-    margin-top: 30px;
-  }
-  .collection .index-collection-2-word-wrapper p {
-    font-size: 20px;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-delivery {
-    height: 620px;
-    background-size: 700px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-robot-chair {
-    height: 620px;
-    background-size: 700px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-logistics {
-    height: 620px;
-    background-size: 700px auto;
+    height: 58vw;
   }
   .index-collection-2
     .index-collection-2-image-wrapper
     .unit-collection-security {
-    height: 620px;
-    background-size: 700px auto;
+    height: 60vw;
+  }
+  .index-collection-2
+    .index-collection-2-image-wrapper
+    .unit-collection-logistics {
+    height: 60vw;
+  }
+  .index-collection-2
+    .index-collection-2-image-wrapper
+    .unit-collection-robot-chair {
+    height: 60vw;
+  }
+  .index-collection-2 .index-collection-2-image-wrapper .unit-collection-eco {
+    height: 60vw;
   }
 }
 
@@ -1219,255 +1080,66 @@ a {
   .collection-module-2 {
     grid-template-columns: repeat(1, 1fr);
   }
-  .collection-module-2 .collection {
-    height: 775px;
-    overflow-y: hidden;
-  }
   .collection .index-collection-2-word-wrapper {
     position: relative;
     z-index: 2;
-    margin-top: 60px;
+  }
+  .index-collection-2-button-wrapper .button-word-black {
+    border: #000 solid 0.3vw;
   }
   .collection .index-collection-2-word-wrapper h1 {
     font-size: 14vw;
     color: #b1afaf9e;
     font-weight: 700;
   }
-  .index-collection-2-button-wrapper .index-collection-2-button {
-    display: block;
-    margin-bottom: 30px;
+  .collection-module-2 .collection {
+    height: 90vw;
   }
-  .index-collection-2-button-wrapper .collection-btn-1 a {
-    font-size: 22px;
-    margin-right: 0;
-    color: #ffffff;
-  }
-  .index-collection-2-button-wrapper .collection-btn-2 {
-    margin: 0 auto;
-    width: 220px;
-    height: 70px;
-    border-radius: 38px;
-    background-color: #ffffff;
-  }
-  .index-collection-2-button-wrapper .collection-btn-2 a {
-    font-size: 25px;
-    color: #000000;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-delivery {
-    height: 870px;
-    background-size: 768px auto;
+  .index-collection-2 .index-collection-2-image-wrapper .unit-collection-eco {
+    height: 100vw;
+    background-size: 100vw auto;
   }
   .index-collection-2
     .index-collection-2-image-wrapper
     .unit-collection-robot-chair {
-    height: 870px;
-    background-size: 768px auto;
+    height: 93vw;
+    background-size: 95vw auto;
   }
   .index-collection-2
     .index-collection-2-image-wrapper
     .unit-collection-logistics {
-    height: 870px;
-    background-size: 768px auto;
+    height: 93vw;
+    background-size: 95vw auto;
   }
   .index-collection-2
     .index-collection-2-image-wrapper
     .unit-collection-security {
-    height: 870px;
-    background-size: 768px auto;
+    height: 93vw;
+    background-size: 95vw auto;
+  }
+  .collection .index-collection-2-word-wrapper {
+    margin-top: 5vw;
+  }
+  .collection .index-collection-2-word-wrapper h1 {
+    font-size: 10vw;
+  }
+
+  .index-collection-2-button-wrapper {
+    bottom: 4vw;
+  }
+  .index-collection-2-button-wrapper .collection-btn-2 {
+    width: 35vw;
+    height: 8vw;
+    border-radius: 38px;
+  }
+  .index-collection-2-button-wrapper .collection-btn-2 a {
+    font-size: 5vw;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .collection .index-collection-2-word-wrapper {
-    margin-top: 30px;
-  }
-  .collection-module-2 .collection {
-    height: 650px;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-security {
-    height: 670px;
-    background-size: 670px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-delivery {
-    height: 670px;
-    background-size: 670px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-robot-chair {
-    height: 670px;
-    background-size: 670px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-logistics {
-    height: 670px;
-    background-size: 670px auto;
-  }
   .collection-module-2 {
     padding: 0 8px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .index-collection-2-button-wrapper .collection-btn-2 {
-    margin: 0 auto;
-    width: 200px;
-    height: 50px;
-    border-radius: 38px;
-    background-color: #ffffff;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .collection-module-2 .collection {
-    height: 620px;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-delivery {
-    height: 610px;
-    background-size: 700px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-robot-chair {
-    height: 610px;
-    background-size: 700px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-logistics {
-    height: 610px;
-    background-size: 700px auto;
-  }
-  #module-accessories {
-    height: 550px;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-security {
-    height: 610px;
-    background-size: 650px auto;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .collection-module-2 .collection {
-    height: 640px;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-delivery {
-    height: 620px;
-    background-size: 600px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-robot-chair {
-    height: 620px;
-    background-size: 600px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-logistics {
-    height: 620px;
-    background-size: 600px auto;
-  }
-  #module-accessories {
-    height: 520px;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-security {
-    height: 620px;
-    background-size: 650px auto;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .collection-module-2 .collection {
-    height: 600px;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-delivery {
-    height: 580px;
-    background-size: 550px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-robot-chair {
-    height: 580px;
-    background-size: 550px auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-logistics {
-    height: 580px;
-    background-size: 550px auto;
-  }
-  #module-accessories {
-    height: 520px;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-security {
-    height: 580px;
-    background-size: 650px auto;
-  }
-}
-
-@media screen and (max-width: 300px) {
-  .collection-module-2 .collection {
-    height: 165vw;
-  }
-  .collection .index-collection-2-word-wrapper p {
-    font-size: 18px;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-delivery {
-    height: 500px;
-    background-size: 180vw auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-robot-chair {
-    height: 160vw;
-    background-size: 180vw auto;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-logistics {
-    height: 160vw;
-    background-size: 180vw auto;
-  }
-  #module-accessories {
-    height: 520px;
-  }
-  .index-collection-2
-    .index-collection-2-image-wrapper
-    .unit-collection-security {
-    height: 160vw;
-    background-size: 180vw auto;
-  }
-  .index-collection-2-button-wrapper {
-    bottom: 10vw;
-  }
-  .index-collection-2-button-wrapper .collection-btn-2 {
-    width: 65vw;
-    height: 15vw;
-    border-radius: 38px;
-  }
-  .index-collection-2-button-wrapper .collection-btn-2 a {
-    font-size: 8vw;
   }
 }
 
