@@ -230,7 +230,7 @@ html {
   width: 100%;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Outfit", sans-serif;
   webkit-tap-highlight-color: #222;
   color: #999;
 }
@@ -296,7 +296,7 @@ p {
 }
 .btn,
 .navbar-default .nav > li > a {
-  font-family: "Roboto", sans-serif;
+  font-family: "Outfit", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -569,7 +569,7 @@ footer,section.contact {
 }
 header .header-content .header-content-inner h1 {
   font-size: 80px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 section {
   padding: 100px 0;
@@ -608,7 +608,7 @@ section.couponsection h2 {
 }
 
 section .title {
-  font-family: "Roboto Flex", sans-serif;
+  font-family: "Outfit", sans-serif;
   line-height: 1.2;
   font-weight: 600;
   letter-spacing: 0.007em;
@@ -839,7 +839,7 @@ footer ul li a.active,footer ul li a:active,footer ul li a:focus,footer ul li a:
 .spacer-h1 {
   font-size: 24px;
   font-weight: 500;
-  font-family: "Roboto Flex", sans-serif;
+  font-family: "Outfit", sans-serif;
   background-image: linear-gradient(45deg, #000 -200%, #fff -100%, #323232 0%);
   background-position: "100px 100px";
   -webkit-background-clip: text;

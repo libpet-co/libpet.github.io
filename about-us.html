@@ -40,11 +40,12 @@
     <!-- Theme CSS -->
     <link href="css/theme.css" rel="stylesheet" />
 
-    <link href="css/team-old.css" rel="stylesheet" />
-    <link href="css/team-old-2.css" rel="stylesheet" />
+    <link href="css/team-new.css" rel="stylesheet" />
     <link href="css/dropdown.css" rel="stylesheet" />
     <link href="css/footer.css" rel="stylesheet" />
     <link href="css/language-dropdown.css" rel="stylesheet" />
+    <link href="css/pop-alert.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/submit-load.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -141,349 +142,199 @@
       </div>
     </main>
 
-    <!-- Team Description-->
-    <div class="team-description">
-      <h4>Libpet</h4>
-      <h2>Make Great Things Happen</h2>
-      <p>
-        Libpet is founded by a group of ambitious engineers who wants every
-        family to have a robot at home just like computer. We believe with the
-        help of technology people can spend more time on something meaningful.
-      </p>
+    <div class="team-description-section">
+      <div class="team-description-word-wrapper">
+        <p>
+          LIBPET, established in 2022, brings together leading researchers and
+          experienced engineers from the Hong Kong Polytechnic University, the
+          Hong Kong University of Science and Technology, and the University of
+          London. We focus on the research, development, and application of
+          cutting-edge technologies. Our commitment lies in creating a new
+          ecosystem for smart travel, providing high-performance robotic
+          solutions, and spearheading innovations in energy-saving management
+          systems. Our aim is to promote social progress and sustainable
+          development through the power of technology.
+        </p>
+      </div>
     </div>
 
-    <!-- Team Start asd-->
-    <div class="team">
-      <div class="container">
-        <div class="section-header">
-          <h2 style="color: #3a3a47; font-weight: 600; font-size: 30px">
-            Meet Our Team
-          </h2>
+    <div class="team-joining-section">
+      <div class="team-joining-container">
+        <div class="join-us">
+          <h1>Join Us</h1>
+          <p>
+            <button class="" onclick="togglePop('Join')">
+              <span class="black-underline">Leave us a message</span>
+            </button>
+            or send us an email: info@libpet.com
+          </p>
         </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-            <div class="team-item">
-              <div class="team-img">
-                <img
-                  src="img/team/akina.png"
-                  alt="Image"
-                  style="visibility: hidden"
-                />
-                <div class="team-logo">
-                  <img src="img/team/team-logo.svg" alt="" />
-                </div>
-                <div class="team-image">
-                  <img src="img/team/akina.png" alt="Image" />
-                </div>
-                <div class="team-nickname">
-                  <h1>AKINA</h1>
-                </div>
-                <div class="team-text">
-                  <h2>邊牧之</h2>
-                  <p>Marketing Researcher</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-            <div class="team-item">
-              <div class="team-img">
-                <img
-                  src="img/team/alex.png"
-                  alt="Image"
-                  style="visibility: hidden"
-                />
-                <div class="team-logo">
-                  <img src="img/team/team-logo.svg" alt="" />
-                </div>
-                <div class="team-image">
-                  <img src="img/team/alex.png" alt="Image" />
-                </div>
-                <div class="team-nickname">
-                  <h1>ALEX</h1>
-                </div>
-                <div class="team-text">
-                  <h2>林炫燚</h2>
-                  <p>Mechatronic Lead</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-            <div class="team-item">
-              <div class="team-img">
-                <img
-                  src="img/team/andrew.png"
-                  alt="Image"
-                  style="visibility: hidden"
-                />
-                <div class="team-logo">
-                  <img src="img/team/team-logo.svg" alt="" />
-                </div>
-                <div class="team-image">
-                  <img src="img/team/andrew.png" alt="Image" />
-                </div>
-                <div class="team-nickname">
-                  <h1>ANDREW</h1>
-                </div>
-                <div class="team-text">
-                  <h2>張仲瑜</h2>
-                  <p>Marketing Manager</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-            <div class="team-item">
-              <div class="team-img">
-                <img
-                  src="img/team/andrew.png"
-                  alt="Image"
-                  style="visibility: hidden"
-                />
-                <div class="team-logo">
-                  <img src="img/team/team-logo.svg" alt="" />
-                </div>
-                <div class="team-image">
-                  <img src="img/team/Dominic.jpg" alt="Image" />
-                </div>
-                <div class="team-nickname">
-                  <h1>DOMINIC</h1>
-                </div>
-                <div class="team-text">
-                  <h2>周忠耀</h2>
-                  <p>
-                    Regional Business
-                    <br id="dominic-position-breakline" />Development
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-            <div class="team-item">
-              <div class="team-img">
-                <img
-                  src="img/team/jeremy.png"
-                  alt="Image"
-                  style="visibility: hidden"
-                />
-                <div class="team-logo">
-                  <img src="img/team/team-logo.svg" alt="" />
-                </div>
-                <div class="team-image">
-                  <img src="img/team/edison.png" alt="Image" />
-                </div>
-                <div class="team-nickname">
-                  <h1>EDISON</h1>
-                </div>
-                <div class="team-text">
-                  <h2>黄致广</h2>
-                  <p>Visual Designer</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-            <div class="team-item">
-              <div class="team-img">
-                <img
-                  src="img/team/jeremy.png"
-                  alt="Image"
-                  style="visibility: hidden"
-                />
-                <div class="team-logo">
-                  <img src="img/team/team-logo.svg" alt="" />
-                </div>
-                <div class="team-image">
-                  <img src="img/team/jeremy.png" alt="Image" />
-                </div>
-                <div class="team-nickname">
-                  <h1>JEREMY</h1>
-                </div>
-                <div class="team-text">
-                  <h2>常睿</h2>
-                  <p>Physiatry Expert</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-            <div class="team-item">
-              <div class="team-img">
-                <img
-                  src="img/team/jojo.png"
-                  alt="Image"
-                  style="visibility: hidden"
-                />
-                <div class="photo-container">
-                  <div class="team-logo">
-                    <img src="img/team/team-logo.svg" alt="" />
-                  </div>
-                  <div class="team-image">
-                    <img src="img/team/jojo.png" alt="Image" />
-                  </div>
-                  <div class="team-nickname">
-                    <h1>JOJO</h1>
-                  </div>
-                  <div class="team-text">
-                    <h2>徐華峰</h2>
-                    <p>CEO</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-            <div class="team-item">
-              <div class="team-img">
-                <img
-                  src="img/team/patrick.png"
-                  alt="Image"
-                  style="visibility: hidden"
-                />
-                <div class="team-logo">
-                  <img src="img/team/team-logo.svg" alt="" />
-                </div>
-                <div class="team-image">
-                  <img src="img/team/patrick.png" alt="Image" />
-                </div>
-                <div class="team-nickname">
-                  <h1>PATRICK</h1>
-                </div>
-                <div class="team-text">
-                  <h2>張國禧</h2>
-                  <p>Software Engineer</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-            <div class="team-item">
-              <div class="team-img">
-                <img
-                  src="img/team/stephen.png"
-                  alt="Image"
-                  style="visibility: hidden"
-                />
-                <div class="team-logo">
-                  <img src="img/team/team-logo.svg" alt="" />
-                </div>
-                <div class="team-image">
-                  <img src="img/team/stephen.png" alt="Image" />
-                </div>
-                <div class="team-nickname">
-                  <h1>STEPHEN</h1>
-                </div>
-                <div class="team-text">
-                  <h2>陳錫錦</h2>
-                  <p>Operation Manager</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="img/team/kevin.png" alt="Image" style="visibility: hidden;">
-                            <div class="team-logo">
-                                <img src="img/team/team-logo.svg" alt="">
-                            </div>
-                            <div class="team-image">
-                                <img src="img/team/kevin.png" alt="Image">
-                            </div>
-                            <div class="team-nickname">
-                                <h1>KEVIN</h1>
-                            </div>
-                            <div class="team-text">
-                                <h2>邱鵬洋</h2>
-                                <p>Software Engineer</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-
-          <!-- <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-            <div class="team-item">
-              <div class="team-img">
-                <img
-                  src="img/team/jeremy.png"
-                  alt="Image"
-                  style="visibility: hidden"
-                />
-                <div class="team-logo">
-                  <img src="img/team/team-logo.svg" alt="" />
-                </div>
-                <div class="team-image">
-                  <img src="img/team/calvin.png" alt="Image" />
-                </div>
-                <div class="team-nickname">
-                  <h1>CALVIN</h1>
-                </div>
-                <div class="team-text">
-                  <h2>譚于浚</h2>
-                  <p>Product Designer</p>
-                </div>
-              </div>
-            </div>
-          </div> -->
+        <div class="coorperation-with-us">
+          <h1>Become a partner/ Collaborator</h1>
+          <p>
+            <button class="" onclick="togglePop('Partner')">
+              <span class="black-underline">Leave us a message</span>
+            </button>
+            or send us an email: info@libpet.com
+          </p>
         </div>
       </div>
     </div>
-    <!-- Team End -->
 
-    <div class="div-pnk">
-      <!-- responsive version not made -->
-      <h2>
-        Build the dream <br class="div-pink-breaker" />
-        together
-      </h2>
-      <p>
-        The things that we are trying to achieve is a bit crazy, if the things
-        we are doing is the future, we want you to be that future with us. If
-        you believes in what we believes, and you are looking for a place that
-        is fun, innovative and surrounded by ambitious and creative people,
-        Libpet might be the place you looking for.
-      </p>
-      <button
-        type="button"
-        id="my_button"
-        class="text-white rounded-3xl button_lib"
-        onclick="window.open('https://www.linkedin.com/company/libpet/', '_blank');"
-      >
-        Become our developer
-      </button>
+    <div class="team-supported-organizations">
+      <div class="supported-organizations-container">
+        <div class="supported-organizations">
+          <h1>Supported Organizations:</h1>
+          <div class="logo-grid">
+            <div class="logo-container">
+              <img
+                src="img/team/logo-research-centre-for-assistive-technology.png"
+                alt=""
+                class="logo"
+              />
+            </div>
+            <div class="logo-container">
+              <img src="img/team/logo-ihk.png" alt="" class="logo" />
+            </div>
+            <div class="logo-container">
+              <img src="img/team/logo-mizuho.png" alt="" class="logo" />
+            </div>
+            <div class="logo-container">
+              <img src="img/team/logo-byd.png" alt="" class="logo" />
+            </div>
+            <div class="logo-container">
+              <img src="img/team/logo-smbc.png" alt="" class="logo" />
+            </div>
+            <div class="logo-container">
+              <img src="img/team/logo-kone.png" alt="" class="logo" />
+            </div>
+            <div class="logo-container">
+              <img src="img/team/logo-hktdc.png" alt="" class="logo" />
+            </div>
+            <div class="logo-container">
+              <img src="img/team/logo-hkstp.png" alt="" class="logo" />
+            </div>
+            <div class="logo-container">
+              <img
+                src="img/team/logo-hkust-entrepreneurship-center.png"
+                alt=""
+                class="logo"
+              />
+            </div>
+            <div class="logo-container">
+              <img
+                src="img/team/logo-department-of-rehabilitation-science.png"
+                alt=""
+                class="logo"
+              />
+            </div>
+
+            <div class="logo-container">
+              <img src="img/team/logo-kteo.png" alt="" class="logo" />
+            </div>
+
+            <div class="logo-container">
+              <img src="img/team/logo-cyberport.png" alt="" class="logo" />
+            </div>
+
+            <div class="logo-container">
+              <img src="img/team/logo-aia.png" alt="" class="logo" />
+            </div>
+
+            <div class="logo-container">
+              <img src="img/team/logo-hkfhy.png" alt="" class="logo" />
+            </div>
+
+            <div class="logo-container">
+              <img
+                src="img/team/logo-hospital-authority.png"
+                alt=""
+                class="logo"
+              />
+            </div>
+
+            <div class="logo-container">
+              <img src="img/team/logo-ymmss.png" alt="" class="logo" />
+            </div>
+
+            <div class="logo-container">
+              <img src="img/team/logo-likons.png" alt="" class="logo" />
+            </div>
+
+            <div class="logo-container">
+              <img src="img/team/logo-invest-tokyo.png" alt="" class="logo" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- <div class="lets-talk">
-      <form method="post" action="#">
-        <h2>Lets talk</h2>
-        <p>We try our best to reply in 24 hours</p>
-        <div class="fields_container">
-          <input type="text" placeholder="Name *" class="input-1" />
-          <input type="email" placeholder="E-mail *" class="input-2" />
-          <textarea
-            class="textarea-1"
-            placeholder="Your message *"
-            rows="15"
-          ></textarea>
-          <input
-            type="submit"
-            value="Send"
-            class="input-3"
-            onclick="event.preventDefault(); alert('Please contact us directly by the email or phone call: \n info@libpet.com & +852 6990 6913');"
-          />
+    <section id="popAlert">
+      <aside>
+        <div class="popAlert-first-row">
+          <h2>Contact Us</h2>
         </div>
-      </form>
-    </div> -->
+        <button type="button" onclick="togglePop('')" id="closeButton">
+          X
+        </button>
+        <div class="popAlert-link">
+          <div class="popAlert-contact-us">
+            <a
+              href="https://wa.me/85269906913"
+              target="_blank"
+              class="popAlert-contact-a"
+            >
+              <i class="fa fa-whatsapp"></i>&nbsp;&nbsp;
+              <span class="hover-underline-animation">Whatsapp Us > </span>
+            </a>
+            <a href="mailto:Marketing@libpet.com" class="popAlert-contact-a">
+              <i class="fa fa-envelope"></i>&nbsp;&nbsp;
+              <span class="hover-underline-animation">Email Us ></span>
+            </a>
+          </div>
+
+          <div class="test-drive-book-link">
+            <a class="formOpen">
+              <span
+                style="
+                  color: #00394e;
+                  text-decoration: underline;
+                  font-weight: 600;
+                "
+                >Leave us a message</span
+              >
+            </a>
+            <div class="popAlert-form" id="form1">
+              <label for="name" style="margin-top: 5px">Name: </label>
+              <br />
+              <input id="name" name="name" type="text" required />
+              <br />
+              <label for="phone">Phone No: </label>
+              <br />
+              <input id="phone" name="phone" type="tel" required />
+              <br />
+              <label for="preferred">Message </label>
+              <br />
+              <input id="preferred" name="preferred" type="string" required />
+              <br />
+              <button id="submit1">Submit</button>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <div class="loading-screen" id="submit-loading" style="display: none">
+      <div class="loading-wrapper">
+        <div class="box-folding">
+          <span class="box1"></span>
+          <span class="box2"></span>
+          <span class="box3"></span>
+          <span class="box4"></span>
+        </div>
+        <span class="loading" data-name="Loading">Loading</span>
+      </div>
+    </div>
 
     <footer class="footer-section">
       <div class="footer-text-wrapper">
@@ -551,6 +402,8 @@
     <script src="js/nav.js"></script>
 
     <script src="js/validate.js"></script>
+
+    <script src="js/form.js"></script>
 
     <script>
       function contact() {

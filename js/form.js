@@ -113,13 +113,25 @@ form1.addEventListener("click", (e) => {
           // popAlertDescription.classList.remove("show");
 
           if (currentUrl.includes("/cn/")) {
-            window.alert(
-              "感謝您提供相關資料，我們會盡快聯絡您商量試駕細節。如有任何問題，歡迎隨時透過Whatsapp或電子郵件聯繫我們。"
-            );
+            if (currentUrl.includes("/about-us.html")) {
+              window.alert(
+                "感謝您提供相關資料，我們會盡快聯絡您。如有任何問題，歡迎隨時透過Whatsapp或電子郵件聯繫我們。"
+              );
+            } else {
+              window.alert(
+                "感謝您提供相關資料，我們會盡快聯絡您商量試駕細節。如有任何問題，歡迎隨時透過Whatsapp或電子郵件聯繫我們。"
+              );
+            }
           } else {
-            window.alert(
-              "Thank you for providing your relevant information for the test drive booking. We will contact you as soon as possible for the details! If you need further information, please feel free to contact us via Whatsapp or Email directly."
-            );
+            if (currentUrl.includes("/about-us.html")) {
+              window.alert(
+                "Thank you for providing your relevant information. We will contact you as soon as possible for the details! If you need further information, please feel free to contact us via Whatsapp or Email directly."
+              );
+            } else {
+              window.alert(
+                "Thank you for providing your relevant information for the test drive booking. We will contact you as soon as possible for the details! If you need further information, please feel free to contact us via Whatsapp or Email directly."
+              );
+            }
           }
         } else {
           const currentUrl = window.location.href;
