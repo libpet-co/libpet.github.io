@@ -922,3 +922,58 @@ svg {
     width: 100%;
   }
 }
+
+/*Category-buttons */
+.news {
+  margin-top: 50px;
+}
+
+.category-buttons-container {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.category-buttons {
+  margin-top: 50px;
+  display: flex;
+  column-gap: 10px;
+  row-gap: 10px;
+  justify-content: flex-start;
+}
+
+.category-buttons .category-button {
+  width: 140px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  padding: 5px 10px;
+}
+
+@media screen and (max-width: 650px) {
+  .category-buttons {
+    flex-wrap: wrap;
+  }
+  .category-buttons-container {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+  .category-buttons {
+    margin-top: 25px;
+  }
+  .news {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .category-buttons .category-button {
+    font-size: 14px;
+    width: 120px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 5px 0px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+}
