@@ -1343,6 +1343,7 @@ body{
 .row > [class*='col-'] {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .black-text{
