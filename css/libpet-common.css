@@ -152,25 +152,25 @@
   overflow: hidden;
   border-radius: 25px 25px 0 0;
 }
-.card {
+.slide-content .card {
   width: 320px;
   border-radius: 25px 25px 0 0;
   background-color: #fff;
 }
-.image-content,
-.card-content {
+.slide-content .image-content,
+.slide-content .card-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px 14px;
 }
-.image-content {
+.slide-content .image-content {
   position: relative;
   row-gap: 5px;
   padding: 25px 0;
   height: 200px;
 }
-.overlay {
+.slide-content .overlay {
   position: absolute;
   left: 0;
   top: 0;
@@ -180,7 +180,7 @@
   border-radius: 25px 25px 0 25px;
 }
 
-.card-image {
+.slide-content .card-image {
   position: absolute;
   left: 0;
   top: 0;
@@ -189,7 +189,7 @@
   background-color: #e4e4e4;
   border-radius: 25px 25px 0 0;
 }
-.card-image .card-img {
+.slide-content .card-image .card-img {
   height: 100%;
   width: 100%;
   object-fit: cover;
