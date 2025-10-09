@@ -10,8 +10,6 @@ text.forEach(paragraph => {
     paragraph.innerHTML = htmlString;
 })
 
-// spans = [...document.querySelectorAll('span')];
-
 function revealSpans() {
     for(let i = 0; i < spans.length; i++){
         if(spans[i].parentElement.getBoundingClientRect().top < window.innerHeight / 100 * 93){
@@ -40,7 +38,6 @@ function animationOne() {
           scrub: true,
           pin: true,
           end: "bottom+=2000px",
-        //   markers: true
         }
       });
     animationOne
@@ -63,12 +60,8 @@ function animationTwo() {
         }
       });
     animationTwo
-    // .to(".slide-x1", { opacity: 0})
     .to(".slide-x2", { opacity: 1, xPercent: 20})
-    // .to(".slide-xx", { opacity: 1, yPercent: 30}, '<')
     .to(".slide-x2", { opacity: 0, xPercent: 40})
-    // .to(".slide-xx", { opacity: 0, yPercent: 60}, '<')
-    // .set("slide-xx", {yPercent: 0})
     .to(".slide-x3", { opacity: 1})
     .to(".slide-xx", { opacity: 1, yPercent: -20}, '<')
     .to(".slide-x3", { opacity: 1})
@@ -88,48 +81,3 @@ function animationTwo() {
 const master = gsap.timeline();
 master.add(animationOne());
 master.add(animationTwo(), '+=1');
-// let tl = gsap
-//   .timeline({
-//     scrollTrigger: {
-//       trigger: "#cont_anim",
-//       start: "top top",
-//       scrub: true,
-//       pin: true,
-//       end: "bottom+=3000px",
-//       markers: true,
-//       paused: true
-//     }
-//   })
-//   .to(".slide-1", { opacity: 0, xPercent: 20})
-//   .to(".slide-2", { opacity: 1, xPercent: 20})
-//   .to(".slide-2", {opacity: 1, xPercent: 20})
-//   .to(".slide-2", { opacity: 0, xPercent: 40 })
-//   .to(".slide-3", { opacity: 1 });
-
-
-
-//   let tl_2 = gsap.timeline({
-//         scrollTrigger: {
-//         trigger: "#cont_anim_2",
-//         start: "top 5%",
-//         scrub: true,
-//         pin: true,
-//         end: "bottom+=3000px",
-//         markers: true,
-//         paused: true
-//         }
-//     });
-
-//     tl_2
-//     .to(".slide-x1", { opacity: 0})
-//     .to(".slide-x2", { opacity: 1})
-//     .to(".slide-x2", {opacity: 0})
-//     .to(".slide-x3", { opacity: 1})
-//     .to(".slide-x3", { opacity: 0})
-//     .to(".slide-2-4", { opacity: 1 })
-//     .to(".slide-2-4", { opacity: 0 });
-
-
-// window.onscroll = function (e) {
-//     window.scrollBy(0, 100vw);
-// }

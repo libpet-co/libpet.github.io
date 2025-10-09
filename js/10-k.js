@@ -7,7 +7,6 @@ const tl2 = gsap.timeline({
     scrub: true,
     pin: true,
     end: "bottom top",
-    // markers: true,
   }
 });
 tl2.staggerFromTo(

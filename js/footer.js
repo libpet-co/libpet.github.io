@@ -14,7 +14,6 @@ function resizeOpacity(){
     if (window.innerWidth > 767) {
         dropdownContentOne.style.opacity = 1;
         dropdownContentTwo.style.opacity = 1;
-        // dropdownContentTwo.style.height = "180px";
         footerTextOne.style.pointerEvents = "none";
         footerTextTwo.style.pointerEvents = "none";
     }else{
@@ -62,7 +61,5 @@ function change_2() {
         dropdownContent.style.height = '0';
         dropdownContent.style.opacity = 0;
         icon.style.transform = 'rotate(0deg)';
-        // icon.classList.add('fa-rotate-270');
     }
 }
-

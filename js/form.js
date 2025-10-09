@@ -25,7 +25,6 @@ form1.addEventListener("change", (e) => {
 form1.addEventListener("click", (e) => {
   if (e.target.id === "submit1") {
     loadingElement.style.display = "block";
-    // 設置模糊效果
     elementsToBlur.forEach((element) => {
       element.style.filter = "blur(2px)";
     });
@@ -46,7 +45,6 @@ form1.addEventListener("click", (e) => {
     formOpen.style.pointerEvents = "none";
     formOpen.style.userSelect = "none";
 
-    // 檢查必填欄位
     const nameInput = document.getElementById("name");
     const phoneInput = document.getElementById("phone");
     const preferredInput = document.getElementById("preferred");
@@ -72,7 +70,6 @@ form1.addEventListener("click", (e) => {
       formOpen.style.pointerEvents = "auto";
       formOpen.style.userSelect = "auto";
       loadingElement.style.display = "none";
-      // 移除模糊效果
       elementsToBlur.forEach((element) => {
         element.style.filter = "none";
       });
@@ -87,7 +84,6 @@ form1.addEventListener("click", (e) => {
     formdata.append("preferred", preferred1);
 
     const config = { method: "POST", body: formdata, redirect: "follow" };
-    //call api
     fetch(
       "https://script.google.com/macros/s/AKfycbxi5ZuyFSWlLz1R4cUNdKBmjaWrez_yfyKg_mz49P_7COq88y7mMtBeVvENmhYuD6sQ/exec",
       config
@@ -95,7 +91,6 @@ form1.addEventListener("click", (e) => {
       .then((response) => response.text())
       .then((result) => {
         loadingElement.style.display = "none";
-        // 移除模糊效果
         elementsToBlur.forEach((element) => {
           element.style.filter = "none";
         });
@@ -110,7 +105,6 @@ form1.addEventListener("click", (e) => {
           var popAlertDescription = document.querySelector(
             ".popAlert-description"
           );
-          // popAlertDescription.classList.remove("show");
 
           if (currentUrl.includes("/cn/")) {
             if (currentUrl.includes("/about-us.html")) {
@@ -170,13 +164,11 @@ function togglePop(productClick) {
   popAlertForm.classList.remove("show");
   var inputElements = document.querySelectorAll("input");
 
-  // 遍历并清空每个 input 元素
   for (var i = 0; i < inputElements.length; i++) {
     inputElements[i].value = "";
   }
 
   var popAlertDescription = document.querySelector(".popAlert-description");
-  // popAlertDescription.classList.remove("show");
 }
 
 function togglePop2() {
@@ -197,7 +189,6 @@ function formOpen() {
   popAlertDescription.classList.toggle("show");
   var inputElements = document.querySelectorAll("input");
 
-  // 遍历并清空每个 input 元素
   for (var i = 0; i < inputElements.length; i++) {
     inputElements[i].value = "";
   }

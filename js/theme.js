@@ -10,8 +10,6 @@ window.onload = function () {
   fancyText.textContent = "";
   for (let i = 0; i < splitText.length; i++) {
     fancyText.innerHTML += "<span>" + splitText[i] + "</span>";
-    //   const span = fancyText.querySelectorAll('span')[i];
-    //   span.classList.add('faded');
   }
 
   const staggerTween = TweenMax.staggerFromTo(
@@ -26,7 +24,6 @@ window.onload = function () {
     triggerElement: ".index-sl",
     triggerHook: 0.5,
   })
-    // .addIndicators()
     .on("enter", function (e) {
       for (let i = 0; i < splitText.length; i++) {
         setTimeout(function () {

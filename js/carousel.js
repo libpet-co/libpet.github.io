@@ -17,7 +17,6 @@
           };
   
           var progressCircles = $(".center svg").get(0);
-          // var progressContents = $(".autoplay-progress span").get(0);
           currentVideo.ontimeupdate = function(){
             var progress = currentVideo.currentTime / currentVideo.duration;
             progressCircles.style.setProperty("--progress", progress);
@@ -27,7 +26,6 @@
           var btn = $(".center #play-control-btn").get(0);
   
           $(btn).click(function() {
-            // toggle the value of the 'playing' variable
             if(playing){
               $(btn).removeClass("playing");
               currentVideo.pause();
@@ -61,7 +59,6 @@
           };    
   
           var progressCircles = $(".center svg").get(0);
-          // var progressContents = $(".autoplay-progress span").get(0);
           currentVideo.ontimeupdate = function(){
             var progress = currentVideo.currentTime / currentVideo.duration;
             progressCircles.style.setProperty("--progress", progress);
@@ -70,7 +67,6 @@
           var playing = true;
   
           $(btn).click(function() {
-            // toggle the value of the 'playing' variable
             if(playing){
               $(btn).removeClass("playing");
               currentVideo.pause();
@@ -116,9 +112,6 @@
     };
   
     (function ($) {
-      // $(window).on('load', function(){
-      //   carousels();
-      // })
       carousels();
     })(jQuery);
   })();

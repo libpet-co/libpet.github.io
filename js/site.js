@@ -1,8 +1,3 @@
-/**
- * Shared site-wide scripts.
- * - Handles collapsing the navbar on link click.
- * - Initialises the Swiper carousel when present.
- */
 (function ($) {
   "use strict";
 
