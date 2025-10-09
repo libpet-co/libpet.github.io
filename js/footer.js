@@ -1,26 +1,27 @@
-touchAvailable = false;
 var dropdownContentOne = document.getElementById('dropdown-content-1');
 var dropdownContentTwo = document.getElementById('dropdown-content-2');
 var icon_2 = document.getElementById('icon_2');
 
 var dropdownOne = document.querySelector('.dropdown1');
-var dropdownTwo = document.querySelector('.dropdown2')
+var dropdownTwo = document.querySelector('.dropdown2');
 
 var footerTextOne = document.getElementById('footer-text-1');
 var footerTextTwo = document.getElementById('footer-text-2');
 
-
 function resizeOpacity(){
+    if (!dropdownContentOne || !dropdownContentTwo || !footerTextOne || !footerTextTwo) {
+        return;
+    }
+
     if (window.innerWidth > 767) {
         dropdownContentOne.style.opacity = 1;
         dropdownContentTwo.style.opacity = 1;
         footerTextOne.style.pointerEvents = "none";
         footerTextTwo.style.pointerEvents = "none";
-    }else{
+    } else {
         footerTextOne.style.pointerEvents = "auto";
         footerTextTwo.style.pointerEvents = "auto";
     }
-
 }
 
 resizeOpacity();
