@@ -223,27 +223,101 @@
       return;
     }
 
+    function parseRatio(value) {
+      if (!value) {
+        return null;
+      }
+
+      var normalised = value.toString().toLowerCase().trim();
+      if (normalised === "auto") {
+        return null;
+      }
+
+      if (normalised.indexOf(":") !== -1) {
+        var parts = normalised.split(":");
+        var w = parseFloat(parts[0]);
+        var h = parseFloat(parts[1]);
+        if (w > 0 && h > 0) {
+          return h / w;
+        }
+      }
+
+      var numeric = parseFloat(normalised);
+      if (!isNaN(numeric) && numeric > 0) {
+        return numeric;
+      }
+
+      return null;
+    }
+
+    function findMedia(slide) {
+      var media = slide.querySelector('img, picture img, video, iframe');
+      if (!media) {
+        var picture = slide.querySelector('picture');
+        if (picture) {
+          var img = picture.querySelector('img');
+          if (img) {
+            media = img;
+          }
+        }
+      }
+      return media;
+    }
+
     function applyRatio() {
       containers.forEach(function (container) {
-        var ratio = container.dataset.glideResize || "16:9";
-        var parts = ratio.split(":");
-        var widthRatio = parseFloat(parts[0]) || 16;
-        var heightRatio = parseFloat(parts[1]) || 9;
+        var baseRatio = parseRatio(container.dataset.glideResize);
         var slides = container.querySelectorAll(".glide__slide");
 
         slides.forEach(function (slide) {
-          var width = slide.offsetWidth;
+          var ratio = baseRatio;
+          var media = findMedia(slide);
+
+          if (media) {
+            if (media.tagName === 'IMG') {
+              if (!media.dataset.glideSizeBound) {
+                media.addEventListener('load', applyRatio, { once: true });
+                media.dataset.glideSizeBound = '1';
+              }
+              if (media.naturalWidth && media.naturalHeight) {
+                ratio = media.naturalHeight / media.naturalWidth;
+              }
+              media.style.width = 'auto';
+              media.style.height = '100%';
+              media.style.maxWidth = '100%';
+              media.style.maxHeight = '100%';
+              media.style.objectFit = 'contain';
+            } else if (media.tagName === 'VIDEO' || media.tagName === 'IFRAME') {
+              media.style.width = '100%';
+              media.style.height = '100%';
+            }
+          }
+
+          if (!ratio) {
+            ratio = 9 / 16;
+          }
+
+          var width = slide.getBoundingClientRect().width;
+          if (!width && media) {
+            width = media.getBoundingClientRect().width;
+          }
           if (!width) {
             return;
           }
-          var height = (width * heightRatio) / widthRatio;
-          slide.style.height = height + "px";
+
+          var height = width * ratio;
+          slide.style.height = height + 'px';
+          slide.style.maxHeight = height + 'px';
+          slide.style.display = 'flex';
+          slide.style.alignItems = 'stretch';
+          slide.style.justifyContent = 'center';
         });
       });
     }
 
     applyRatio();
-    window.addEventListener("resize", applyRatio);
+    window.addEventListener('resize', applyRatio);
+    window.addEventListener('load', applyRatio);
   }
 
   function initAOS() {
