@@ -11,15 +11,6 @@
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDKG5TNYZZ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-FDKG5TNYZZ");
-  </script>
 
   <title>Libpet</title>
 
@@ -91,7 +82,7 @@
         </div>
 
         <div class="dropdown">
-          <button onclick="myFunction()" class="dropbtn">
+          <button class="dropbtn">
             <i class="fa fa-globe" style="font-size: 24px; pointer-events: none"></i>
           </button>
           <div id="myDropdown" class="dropdown-content">
@@ -2012,26 +2003,6 @@
   <script src="js/jquery.easing.min.js"></script>
   <script src="js/site.js"></script>
 
-
-  <script>
-    function myFunction() {
-      document.getElementById("myDropdown").classList.toggle("show");
-    }
-
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function (event) {
-      if (!event.target.matches(".dropbtn")) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains("show")) {
-            openDropdown.classList.remove("show");
-          }
-        }
-      }
-    };
-  </script>
 </body>
 
 </html>

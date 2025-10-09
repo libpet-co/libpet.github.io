@@ -93,7 +93,7 @@
         </div>
 
         <div class="dropdown">
-          <button onclick="myFunction()" class="dropbtn">
+          <button class="dropbtn">
             <i class="fa fa-globe" style="font-size: 24px; pointer-events: none"></i>
           </button>
           <div id="myDropdown" class="dropdown-content">
@@ -195,7 +195,7 @@
       <h1>新聞</h1>
     </div>
     <div class="index-video-section">
-      <div class="images glide">
+      <div class="images glide" data-glide-resize="16:9">
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides">
             <li class="glide__slide">
@@ -463,107 +463,6 @@
   <script src="../js/glide.js"></script>
   <script src="../js/form.js"></script>
 
-  <script>
-    // 檢查視窗寬度並更新標題內容
-    function updateTitleContent() {
-      var titleElement = document.getElementById(
-        "index-elderly-community-description"
-      );
-      var windowWidth =
-        window.innerWidth ||
-        document.documentElement.clientWidth ||
-        document.body.clientWidth;
-
-      if (windowWidth < 568) {
-        titleElement.innerHTML =
-          "在途齡科技的智慧出行生態中，途齡科技的自動駕駛車輛穿梭於社區當中。它們在繁忙的機場候機廳、寧靜的醫院走廊和安寧的老人院中默默提供引導。科技與日常生活的無縫融合描繪出一個未來，每一次旅程都是在關懷、舒適和優雅的空間中輕鬆出行。";
-      } else {
-        titleElement.innerHTML =
-          "在途齡科技的智慧出行生態中，途齡科技的自動駕駛車輛穿梭於社區當中。它們在繁忙的機場候機廳、寧靜的醫院走廊和安寧的老人院中默默提供引導。它們的優雅延伸到繁華的商場，購物的喜悅因現代交通的便利而提升。科技與日常生活的無縫融合描繪出一個未來，每一次旅程都是在關懷、舒適和優雅的空間中輕鬆出行。";
-      }
-    }
-
-    // 在頁面載入時和視窗大小改變時觸發更新
-    window.addEventListener("DOMContentLoaded", updateTitleContent);
-    window.addEventListener("resize", updateTitleContent);
-
-    function myFunction() {
-      document.getElementById("myDropdown").classList.toggle("show");
-    }
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function (event) {
-      if (!event.target.matches(".dropbtn")) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains("show")) {
-            openDropdown.classList.remove("show");
-          }
-        }
-      }
-    };
-
-    // Check for IntersectionObserver support
-    if ("IntersectionObserver" in window) {
-      document.addEventListener("DOMContentLoaded", function () {
-        function handleIntersection(entries) {
-          entries.map((entry) => {
-            if (entry.isIntersecting) {
-              // Item has crossed our observation
-              // threshold - load src from data-src
-              entry.target.style.backgroundImage =
-                "url('" + entry.target.dataset.bgimage + "')";
-              // Job done for this item - no need to watch it!
-              observer.unobserve(entry.target);
-            }
-          });
-        }
-
-        const headers = document.querySelectorAll(".header-container");
-        const observer = new IntersectionObserver(handleIntersection, {
-          rootMargin: "250px",
-        });
-        headers.forEach((header) => observer.observe(header));
-      });
-    } else {
-      // No interaction support? Load all background images automatically
-      const headers = document.querySelectorAll(".header-container");
-      headers.forEach((header) => {
-        header.style.backgroundImage =
-          "url('" + header.dataset.bgimage + "')";
-      });
-    }
-
-    new Glide(".images", {
-      type: "carousel",
-      perView: 2,
-      focusAt: "center",
-      gap: 40,
-      breakpoints: {
-        1200: {
-          perView: 2,
-          gap: 20,
-        },
-        800: {
-          perView: 1,
-        },
-      },
-    }).mount();
-
-    function updateSlides() {
-      var slides = document.getElementsByClassName("glide__slide");
-
-      for (var i = 0; i < slides.length; i++) {
-        var slide = slides[i];
-        var width = slide.offsetWidth;
-        var height = (width * 9) / 16; // 計算高度
-        slide.style.height = height + "px"; // 將計算後的高度應用到元素的CSS中
-      }
-    }
-    window.addEventListener("DOMContentLoaded", updateSlides);
-    window.addEventListener("resize", updateSlides);
-  </script>
 </body>
 
 </html>

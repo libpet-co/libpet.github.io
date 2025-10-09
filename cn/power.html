@@ -16,15 +16,6 @@
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-FDKG5TNYZZ"
     ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-FDKG5TNYZZ");
-    </script>
 
     <title>Libpet</title>
 
@@ -122,7 +113,7 @@
           </div>
 
           <div class="dropdown dropdown-power">
-            <button onclick="myFunction()" class="dropbtn">
+            <button class="dropbtn">
               <i
                 class="fa fa-globe"
                 style="font-size: 24px; pointer-events: none"
@@ -274,7 +265,7 @@
 
     <div class="power-control-section">
       <div class="power-control-word-wrapper">
-        <h1 id="power-control-title">模組化控制面板</h1>
+        <h1 id="power-control-title" data-text-small="控制面板" data-breakpoint="700">模組化控制面板</h1>
         <p>
           多功能集成控制面板控制車輛
           <br class="power-control-breakline-lg" />，輕鬆易用
@@ -293,7 +284,7 @@
       <p>可於平板或手機控制</p>
     </div>
     <div class="power-app-showcase-section">
-      <div class="images glide">
+      <div class="images glide" data-glide-resize="16:9">
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides">
             <li class="glide__slide">
@@ -555,91 +546,5 @@
     <script src="../js/site.js"></script>
     <script src="../js/glide.js"></script>
     <script src="../js/form.js"></script>
-
-    <script>
-      // 檢查視窗寬度並更新標題內容
-      function updateTitleContent() {
-        var titleElement = document.getElementById("power-control-title");
-        var windowWidth =
-          window.innerWidth ||
-          document.documentElement.clientWidth ||
-          document.body.clientWidth;
-
-        if (windowWidth < 700) {
-          titleElement.innerHTML = "控制面板";
-        } else {
-          titleElement.innerHTML = "模組化控制面板";
-        }
-      }
-
-      // 在頁面載入時和視窗大小改變時觸發更新
-      window.addEventListener("DOMContentLoaded", updateTitleContent);
-      window.addEventListener("resize", updateTitleContent);
-
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-
-      // Close the dropdown if the user clicks outside of it
-      window.onclick = function (event) {
-        if (!event.target.matches(".dropbtn")) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains("show")) {
-              openDropdown.classList.remove("show");
-            }
-          }
-        }
-      };
-
-      // Check for IntersectionObserver support
-      if ("IntersectionObserver" in window) {
-        document.addEventListener("DOMContentLoaded", function () {
-          function handleIntersection(entries) {
-            entries.map((entry) => {
-              if (entry.isIntersecting) {
-                // Item has crossed our observation
-                // threshold - load src from data-src
-                entry.target.style.backgroundImage =
-                  "url('" + entry.target.dataset.bgimage + "')";
-                // Job done for this item - no need to watch it!
-                observer.unobserve(entry.target);
-              }
-            });
-          }
-
-          const headers = document.querySelectorAll(".header-container");
-          const observer = new IntersectionObserver(handleIntersection, {
-            rootMargin: "250px",
-          });
-          headers.forEach((header) => observer.observe(header));
-        });
-      } else {
-        // No interaction support? Load all background images automatically
-        const headers = document.querySelectorAll(".header-container");
-        headers.forEach((header) => {
-          header.style.backgroundImage =
-            "url('" + header.dataset.bgimage + "')";
-        });
-      }
-
-      new Glide(".images", {
-        type: "carousel",
-        perView: 2,
-        focusAt: "center",
-        gap: 40,
-        breakpoints: {
-          1200: {
-            perView: 2,
-            gap: 20,
-          },
-          800: {
-            perView: 1,
-          },
-        },
-      }).mount();
-    </script>
   </body>
 </html>

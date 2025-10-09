@@ -122,7 +122,7 @@
           </div>
 
           <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">
+            <button class="dropbtn">
               <i
                 class="fa fa-globe"
                 style="font-size: 24px; pointer-events: none"
@@ -299,130 +299,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/site.js"></script>
     <script src="js/glide.js"></script>
+    <script src="js/components.js"></script>
 
-    <script>
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-
-      // Close the dropdown if the user clicks outside of it
-      window.onclick = function (event) {
-        if (!event.target.matches(".dropbtn")) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains("show")) {
-              openDropdown.classList.remove("show");
-            }
-          }
-        }
-      };
-
-      // $(document).ready(function () {
-      //   $(window).scroll(checkOffset);
-      //   checkOffset(); // 初次計算位置
-      // });
-
-      // function checkOffset() {
-      //   if (
-      //     $(".components-main-showcase").offset().top +
-      //       $(".components-main-showcase").height() >=
-      //     $(".footer-section").offset().top -
-      //       300 -
-      //       $(".footer-section").height()
-      //   ) {
-      //     $(".components-main-showcase").css("position", "absolute");
-      //     $(".components-main-showcase").css("bottom", "-35%");
-      //   }
-      //   if (
-      //     $(document).scrollTop() + window.innerHeight <
-      //     $(".footer-section").offset().top - 0
-      //   ) {
-      //     $(".components-main-showcase").css("position", "fixed"); // restore when you scroll up
-      //     $(".components-main-showcase").css("bottom", "75%");
-      //   }
-      // }
-
-      // 獲取所有按鈕元素
-      const buttons = document.querySelectorAll(".model-button");
-
-      buttons[0].classList.add("active");
-
-      buttons.forEach((btn) => {
-        btn.addEventListener("click", function () {
-          buttons.forEach((b) => b.classList.remove("active"));
-          this.classList.add("active");
-        });
-      });
-
-      const items = document.querySelectorAll(".accessories-item2");
-
-      items.forEach((item) => {
-        item.addEventListener("click", function () {
-          this.classList.toggle("active");
-
-          const activeItems = document.querySelectorAll(
-            ".accessories-item2.active"
-          );
-
-          // 獲取所有具有 active 類別的元素的 ID
-          const activeIds = Array.from(activeItems).map((item) => item.id);
-
-          handleVisibility(activeIds);
-        });
-      });
-
-      function handleVisibility(activeIds) {
-        // 處理 headrest 元素的可見性
-        if (activeIds.includes("selectHeadRest")) {
-          document.getElementById("headrest").style.opacity = "1";
-        } else {
-          document.getElementById("headrest").style.opacity = "0";
-        }
-
-        // 處理 pushhandlers 元素的可見性
-        if (activeIds.includes("selectPushHandlers")) {
-          document.getElementById("pushhandlers").style.opacity = "1";
-        } else {
-          document.getElementById("pushhandlers").style.opacity = "0";
-        }
-
-        // 處理 phoneholder 元素的可見性
-        if (activeIds.includes("selectPhoneHolder")) {
-          document.getElementById("phoneholder").style.opacity = "1";
-        } else {
-          document.getElementById("phoneholder").style.opacity = "0";
-        }
-
-        // 處理 storagebag 元素的可見性
-        if (activeIds.includes("selectStorageBag")) {
-          document.getElementById("storagebag").style.opacity = "1";
-        } else {
-          document.getElementById("storagebag").style.opacity = "0";
-        }
-
-        // 處理 sideguardarm 元素的可見性
-        if (activeIds.includes("selectArmGuard")) {
-          document.getElementById("sideguardarm").style.opacity = "1";
-        } else {
-          document.getElementById("sideguardarm").style.opacity = "0";
-        }
-
-        // 處理 sideguardthigh 元素的可見性
-        if (activeIds.includes("selectThighGuard")) {
-          document.getElementById("sideguardthigh").style.opacity = "1";
-        } else {
-          document.getElementById("sideguardthigh").style.opacity = "0";
-        }
-
-        // 處理 infusionbracket 元素的可見性
-        if (activeIds.includes("selectInfusionBracket")) {
-          document.getElementById("infusionbracket").style.opacity = "1";
-        } else {
-          document.getElementById("infusionbracket").style.opacity = "0";
-        }
-      }
-    </script>
   </body>
 </html>

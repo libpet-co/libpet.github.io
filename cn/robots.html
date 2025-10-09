@@ -12,15 +12,6 @@
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-FDKG5TNYZZ"
     ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-FDKG5TNYZZ");
-    </script>
 
     <title>Libpet</title>
 
@@ -121,7 +112,7 @@
           </div>
 
           <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">
+            <button class="dropbtn">
               <i
                 class="fa fa-globe"
                 style="font-size: 24px; pointer-events: none"
@@ -505,107 +496,5 @@
     <script src="../js/glide.js"></script>
     <script src="../js/form.js"></script>
 
-    <script>
-      // 檢查視窗寬度並更新標題內容
-      function updateTitleContent() {
-        var titleElement = document.getElementById(
-          "index-elderly-community-description"
-        );
-        var windowWidth =
-          window.innerWidth ||
-          document.documentElement.clientWidth ||
-          document.body.clientWidth;
-
-        if (windowWidth < 568) {
-          titleElement.innerHTML =
-            "In a harmonious symphony of motion, Libpet's autonomous vehicles slide like whisper across the landscapes of care, commerce and community, weaving a future where every movement is a silent promise of care, comfort, and elegance.";
-        } else {
-          titleElement.innerHTML =
-            "In a harmonious symphony of motion, Libpet’s autonomous vehicles weave through the heart of our communities. They offer a silent, guiding hand in the bustling terminals of airports, the serene walkways of hospitals, and the tranquil spaces of elderly homes. These vehicles extend their grace to the lively corridors of malls, where the joy of shopping is elevated by the convenience of modern mobility. This seamless integration of technology and daily life paints a future where every journey is an effortless glide through a world of care, comfort, and elegance.";
-        }
-      }
-
-      // 在頁面載入時和視窗大小改變時觸發更新
-      window.addEventListener("DOMContentLoaded", updateTitleContent);
-      window.addEventListener("resize", updateTitleContent);
-
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-
-      // Close the dropdown if the user clicks outside of it
-      window.onclick = function (event) {
-        if (!event.target.matches(".dropbtn")) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains("show")) {
-              openDropdown.classList.remove("show");
-            }
-          }
-        }
-      };
-
-      // Check for IntersectionObserver support
-      if ("IntersectionObserver" in window) {
-        document.addEventListener("DOMContentLoaded", function () {
-          function handleIntersection(entries) {
-            entries.map((entry) => {
-              if (entry.isIntersecting) {
-                // Item has crossed our observation
-                // threshold - load src from data-src
-                entry.target.style.backgroundImage =
-                  "url('" + entry.target.dataset.bgimage + "')";
-                // Job done for this item - no need to watch it!
-                observer.unobserve(entry.target);
-              }
-            });
-          }
-
-          const headers = document.querySelectorAll(".header-container");
-          const observer = new IntersectionObserver(handleIntersection, {
-            rootMargin: "250px",
-          });
-          headers.forEach((header) => observer.observe(header));
-        });
-      } else {
-        // No interaction support? Load all background images automatically
-        const headers = document.querySelectorAll(".header-container");
-        headers.forEach((header) => {
-          header.style.backgroundImage =
-            "url('" + header.dataset.bgimage + "')";
-        });
-      }
-
-      new Glide(".images", {
-        type: "carousel",
-        perView: 2,
-        focusAt: "center",
-        gap: 40,
-        breakpoints: {
-          1200: {
-            perView: 2,
-            gap: 20,
-          },
-          800: {
-            perView: 1,
-          },
-        },
-      }).mount();
-
-      function updateSlides() {
-        var slides = document.getElementsByClassName("glide__slide");
-
-        for (var i = 0; i < slides.length; i++) {
-          var slide = slides[i];
-          var width = slide.offsetWidth;
-          var height = (width * 9) / 16; // 計算高度
-          slide.style.height = height + "px"; // 將計算後的高度應用到元素的CSS中
-        }
-      }
-      window.addEventListener("DOMContentLoaded", updateSlides);
-      window.addEventListener("resize", updateSlides);
-    </script>
   </body>
 </html>
