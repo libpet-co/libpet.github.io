@@ -94,10 +94,6 @@
   max-width: 1600px;
 }
 
-.dropdown-power{
-  margin-top: 4px;
-}
-
 .dropdown-content {
   display: none;
   position: absolute;
