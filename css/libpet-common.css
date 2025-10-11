@@ -53,9 +53,10 @@
     outline-offset: -2px;
 }
 
-.fa-globe{
-    font-size: 22px;
+.fa-globe {
+    font-size: 24px;
     color: #000;
+    pointer-events: none;
 }
 
 .btn{
