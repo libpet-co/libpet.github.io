@@ -3236,11 +3236,10 @@ a {
   gap: 20px;
   max-width: 1500px;
   margin: 0 auto;
-  padding: 0 5%;
 }
 
 .indexs .indexs-container .indexs-image img {
-  width: 498px;
+  width: 50vw;
 }
 
 .indexs .indexs-container .indexs-text {
@@ -3337,9 +3336,7 @@ a {
 }
 
 @media screen and (max-width: 1023.5px) {
-  .indexs .indexs-container .indexs-image img {
-    width: 400px;
-  }
+
 
   .indexs-container .indexs-text h1 {
     font-size: 26px;
