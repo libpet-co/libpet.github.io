@@ -55,7 +55,7 @@
 
 .fa-globe {
     font-size: 24px;
-    color: #000;
+    color: #FFF;
     pointer-events: none;
 }
 
@@ -68,7 +68,7 @@
 
 .dropbtn {
   background-color: transparent;
-  color: #717275;
+  color: #FFFFFF;
   font-size: 16px;
   border: none;
   cursor: pointer;
@@ -81,6 +81,24 @@
 
 .dropbtn:hover {
   color: #000000;
+  transform: scale(1.1);
+}
+
+.navbar-nav .nav-link {
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.navbar-nav .nav-link:hover {
+  transform: scale(1.1);
+}
+
+.navbar-brand {
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.navbar-brand:hover {
   transform: scale(1.1);
 }
 
@@ -122,12 +140,12 @@
 }
 
 .dropbtn{
-  margin-top: 27px;
+  margin-top: 24px;
 }
 
 @media screen and (max-width: 768.5px) {
     .dropbtn{
-        top: -8px;
+        top: -10px;
         margin-top: 25px;
         margin-right: 3%;
     }
@@ -1002,7 +1020,7 @@ section#popAlert2 aside #closeButton {
   position: relative;
   max-width: calc(10% + 3440px);
   margin: 0 auto;
-  background-color: #000000;
+  background-color: #002fa7 ;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -1013,7 +1031,7 @@ section#popAlert2 aside #closeButton {
   width: 100%;
   max-width: 1224.5px;
   height: min-content;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 140px;
   z-index: 2;
   padding-left: 5%;
@@ -1022,17 +1040,16 @@ section#popAlert2 aside #closeButton {
 
 .footer-text-wrapper h1 {
   font-size: 27px;
-  letter-spacing: 6px;
   line-height: 1.81;
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 600;
   font-family: "Outfit";
-  letter-spacing: 6px;
+  letter-spacing: 1px;
 }
 
 .footer-text-wrapper .contact-us-info {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto;
 }
 
 .footer-text-wrapper h2 {
@@ -1041,8 +1058,8 @@ section#popAlert2 aside #closeButton {
 }
 
 .footer-section i {
-  font-size: 30px;
-  color: #b8b8b8;
+  font-size: 24px;
+  color: #FFFFFF;
 }
 
 .footer-section hr {
@@ -1056,11 +1073,23 @@ section#popAlert2 aside #closeButton {
 }
 
 .footer-section .footer-description {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
   font-size: 20px;
-  line-height: 2.9;
+  line-height: 1.9;
   color: #ffffff;
-  font-weight: 250;
+  font-weight: 300;
   font-family: "Outfit";
+}
+
+.footer-section .footer-description p  {
+  margin: 0;
+}
+
+.footer-section .footer-description i {
+  flex-shrink: 0;
+  margin-top: 8px;
 }
 
 .footer-text-wrapper .location-info {
