@@ -3210,12 +3210,13 @@ section {
 .navbar {
   padding-top: 10px;
   padding-bottom: 5px;
+  background: #002fa7;
 }
 
 .navbar-brand {
-  color: var(--primary-color);
-  font-size: var(--h5-font-size);
-  font-weight: var(--font-weight-bold);
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 700;
   margin: 0 20px 0 20px;
   padding: 0;
   text-align: center;
@@ -3243,7 +3244,7 @@ section {
 }
 
 .navbar-nav .nav-link {
-  color: var(--p-color);
+  color: #FFFFFF;
   font-weight: var(--font-weight-semibold);
   font-size: var(--menu-font-size);
   /* padding-top: 15px;
@@ -3253,11 +3254,11 @@ section {
 .navbar-nav .nav-item.active .nav-link,
 .nav-link:focus,
 .nav-link:hover {
-  color: var(--dark-color);
+  color: #FFFFFF;
 }
 
 .nav-link:focus {
-  color: var(--p-color);
+  color: #FFFFFF;
 }
 
 .navbar-toggler {
@@ -3297,7 +3298,7 @@ section {
 }
 
 .navbar-toggler .navbar-toggler-icon {
-  background: var(--dark-color);
+  background: #FFFFFF;
   transition: background 10ms 300ms ease;
   display: block;
   width: 30px;
@@ -3314,7 +3315,7 @@ section {
   position: absolute;
   right: 0;
   left: 0;
-  background: var(--dark-color);
+  background: #FFFFFF;
   width: 30px;
   height: 2px;
   content: "";
