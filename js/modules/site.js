@@ -193,8 +193,8 @@
         return;
       }
 
-      var glide = new Glide(carousel, {
-        type: "carousel",
+      var glideOptions = {
+        type: carousel.dataset.glideType || "carousel",
         perView: 2,
         focusAt: "center",
         gap: 40,
@@ -207,7 +207,70 @@
             perView: 1,
           },
         },
-      });
+      };
+
+      if (carousel.dataset.glidePerView) {
+        var perView = parseInt(carousel.dataset.glidePerView, 10);
+        if (!isNaN(perView)) {
+          glideOptions.perView = perView;
+        }
+      }
+
+      if (carousel.dataset.glideFocusAt) {
+        glideOptions.focusAt = carousel.dataset.glideFocusAt;
+      }
+
+      if (carousel.dataset.glideGap) {
+        var gapValue = parseInt(carousel.dataset.glideGap, 10);
+        if (!isNaN(gapValue)) {
+          glideOptions.gap = gapValue;
+        }
+      }
+
+      if (carousel.dataset.glideBound === "true") {
+        glideOptions.bound = true;
+      }
+
+      if (carousel.dataset.glidePeek) {
+        var peekSetting = carousel.dataset.glidePeek.trim();
+        var peekBefore = peekSetting;
+        var peekAfter = peekSetting;
+
+        if (peekSetting.includes(",")) {
+          var parts = peekSetting.split(",");
+          peekBefore = parts[0];
+          peekAfter = parts[1];
+        }
+
+        var beforeValue = parseInt(peekBefore, 10);
+        var afterValue = parseInt(peekAfter, 10);
+
+        if (!isNaN(beforeValue) && !isNaN(afterValue)) {
+          glideOptions.peek = {
+            before: beforeValue,
+            after: afterValue,
+          };
+        }
+      }
+
+      if ((carousel.dataset.glidePerView || carousel.dataset.glidePeek) && glideOptions.breakpoints) {
+        Object.keys(glideOptions.breakpoints).forEach(function (key) {
+          var bpConfig = glideOptions.breakpoints[key] || {};
+          if (carousel.dataset.glidePerView) {
+            bpConfig.perView = glideOptions.perView;
+          }
+          if (glideOptions.peek) {
+            bpConfig.peek = { before: 0, after: 0 };
+          }
+          glideOptions.breakpoints[key] = bpConfig;
+        });
+      }
+
+      if (carousel.dataset.glideRewind === "false") {
+        glideOptions.rewind = false;
+      }
+
+      var glide = new Glide(carousel, glideOptions);
 
       glide.mount();
       carousel.dataset.glideInitialized = "true";
